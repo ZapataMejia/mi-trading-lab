@@ -29,10 +29,13 @@ export async function fetchCapabilities(force = false): Promise<Capabilities> {
     }
     if (!res.ok) throw new Error(String(res.status));
     const raw = await res.json();
+    const maxFromApi =
+      typeof raw.max_sim_days === "number" && raw.max_sim_days > 0 ? raw.max_sim_days : 0;
     const data = {
       ...DEFAULTS,
       ...raw,
-      max_sim_days: typeof raw.max_sim_days === "number" && raw.max_sim_days > 0 ? raw.max_sim_days : DEFAULTS.max_sim_days,
+      // PA online_mode sin max_sim_days → backend limita a 90; no mostrar 400 en la UI
+      max_sim_days: maxFromApi > 0 ? maxFromApi : raw.online_mode ? 90 : DEFAULTS.max_sim_days,
     } as Capabilities;
     cache = data;
     return data;

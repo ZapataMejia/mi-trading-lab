@@ -16,6 +16,8 @@ export function fetchErrorMessage(err: unknown): string {
   if (msg.includes("504") || msg.includes("502")) {
     return "El servidor tardó demasiado. Prueba un periodo más corto (ej. Ene–Mar 2026).";
   }
+  const jsonMatch = msg.match(/\{"detail"\s*:\s*"([^"]+)"/);
+  if (jsonMatch) return jsonMatch[1];
   return msg.replace(/^Error:\s*/, "").slice(0, 240);
 }
 
