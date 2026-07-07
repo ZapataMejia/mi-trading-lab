@@ -6,15 +6,24 @@ $ErrorActionPreference = "Stop"
 $root = Split-Path (Split-Path $PSScriptRoot -Parent) -Parent
 Set-Location $root
 
+function Get-PythonCmd {
+    if (Get-Command py -ErrorAction SilentlyContinue) { return "py" }
+    if (Get-Command python -ErrorAction SilentlyContinue) { return "python" }
+    throw "Python no encontrado. Instala Python 3.12 y reinicia PowerShell."
+}
+
 Write-Host "==> Mi Trading Lab — setup en VPS" -ForegroundColor Cyan
 Write-Host "    Raiz: $root" -ForegroundColor DarkGray
 
+$pythonCmd = Get-PythonCmd
 Write-Host "==> Python:" -ForegroundColor Cyan
-python --version
+& $pythonCmd --version
 
-Write-Host "==> Entorno virtual (.venv-lab)..." -ForegroundColor Cyan
+Write-Host '==> Entorno virtual venv-lab...' -ForegroundColor Cyan
 $venv = Join-Path $root ".venv-lab"
-if (-not (Test-Path $venv)) { python -m venv $venv }
+if (-not (Test-Path $venv)) {
+    & $pythonCmd -m venv $venv
+}
 
 $py = Join-Path $venv "Scripts\python.exe"
 $pip = Join-Path $venv "Scripts\pip.exe"
@@ -31,8 +40,8 @@ Write-Host "==> Instalar CSV (si existe gzip o deploy)..." -ForegroundColor Cyan
 if ($LASTEXITCODE -ne 0) {
     Write-Host ""
     Write-Host "AVISO: falta EURUSD. Copia desde tu Mac:" -ForegroundColor Yellow
-    Write-Host "  data\forex_cache\EURUSD_M5_full.csv.gz" -ForegroundColor Yellow
-    Write-Host "  Luego: .venv-lab\Scripts\python.exe scripts\install_forex_data.py" -ForegroundColor Yellow
+    Write-Host '  data\forex_cache\EURUSD_M5_full.csv.gz' -ForegroundColor Yellow
+    Write-Host '  Luego: .\.venv-lab\Scripts\python.exe scripts\install_forex_data.py' -ForegroundColor Yellow
 }
 
 Write-Host ""
