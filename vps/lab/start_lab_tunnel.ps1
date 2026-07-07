@@ -1,4 +1,4 @@
-# Arranca API + túnel Cloudflare (quick tunnel). Deja esta ventana abierta.
+# Arranca API + tunel Cloudflare (quick tunnel). Deja esta ventana abierta.
 # Uso: cd C:\Users\Administrador\mi-trading-lab
 #      powershell -ExecutionPolicy Bypass -File vps\lab\start_lab_tunnel.ps1
 $ErrorActionPreference = "Stop"
@@ -14,7 +14,7 @@ if (-not (Test-Path $cf)) {
     exit 1
 }
 
-# Liberar puerto 8000 si quedó colgado (ignorar Idle/0)
+# Liberar puerto 8000 si quedo colgado (ignorar Idle/0)
 $p = Get-NetTCPConnection -LocalPort 8000 -ErrorAction SilentlyContinue |
     Select-Object -ExpandProperty OwningProcess -Unique |
     Where-Object { $_ -gt 0 }
@@ -38,11 +38,11 @@ try {
     if ($h.status -ne "ok") { throw "health bad" }
     Write-Host "API OK en :8000" -ForegroundColor Green
 } catch {
-    Write-Host "AVISO: API aún no responde — revisa la otra ventana." -ForegroundColor Yellow
+    Write-Host "AVISO: API aun no responde - revisa la otra ventana." -ForegroundColor Yellow
 }
 
 Write-Host ""
-Write-Host "==> Túnel Cloudflare (NO CIERRES esta ventana)" -ForegroundColor Cyan
-Write-Host "    Copia la URL https://....trycloudflare.com y pásala a Santiago para Vercel." -ForegroundColor Yellow
+Write-Host "==> Tunel Cloudflare (NO CIERRES esta ventana)" -ForegroundColor Cyan
+Write-Host "    Copia la URL https://....trycloudflare.com y pasala a Santiago para Vercel." -ForegroundColor Yellow
 Write-Host ""
 & $cf tunnel --url http://127.0.0.1:8000
