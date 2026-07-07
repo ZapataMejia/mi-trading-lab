@@ -4,8 +4,11 @@ export function fetchErrorMessage(err: unknown): string {
     return "La simulación tardó demasiado (~1 min). Elige un periodo más corto (máx. 3 meses en la nube).";
   }
   const msg = String(err);
+  if (msg.includes("500") || msg.includes("Internal Server Error")) {
+    return "Error interno del servidor al simular. Si acabas de actualizar el VPS, reinicia la API (start_lab_api.ps1).";
+  }
   if (msg.includes("Failed to fetch") || msg.includes("NetworkError")) {
-    return "No se pudo conectar con el servidor. Espera unos segundos e inténtalo de nuevo.";
+    return "No se pudo conectar con el servidor (red o API caída). Espera unos segundos e inténtalo de nuevo.";
   }
   if (msg.includes("429") || msg.includes("simulación en curso")) {
     return "El servidor está ocupado. Espera unos segundos e inténtalo otra vez.";

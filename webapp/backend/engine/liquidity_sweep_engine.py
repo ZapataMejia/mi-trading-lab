@@ -125,18 +125,24 @@ def run_liquidity_sweep(
         if position is None:
             return
         d, entry, notional = position["direction"], position["entry"], position["notional"]
-        pnl = notional * (exit_p - entry) / entry if d == "long" else notional * (entry - exit_p) / entry
+        entry_f, exit_f, notional_f = float(entry), float(exit_p), float(notional)
+        pnl = round(
+            notional_f * (exit_f - entry_f) / entry_f
+            if d == "long"
+            else notional_f * (entry_f - exit_f) / entry_f,
+            2,
+        )
         balance += pnl
         trades.append(
             Trade(
                 timestamp=ts.isoformat(),
                 asset=symbol,
                 direction=d,
-                entry_price=round(entry, 5),
-                exit_price=round(exit_p, 5),
-                stake_usd=round(notional, 2),
-                cost_paid=round(notional, 2),
-                pnl=round(pnl, 2),
+                entry_price=round(entry_f, 5),
+                exit_price=round(exit_f, 5),
+                stake_usd=round(notional_f, 2),
+                cost_paid=round(notional_f, 2),
+                pnl=pnl,
                 is_winner=pnl > 0,
                 bankroll_after=round(balance, 2),
                 extra={
@@ -160,7 +166,7 @@ def run_liquidity_sweep(
 
     for i in range(n):
         ts = timestamps.iloc[i]
-        hi, lx, cx = h[i], lo[i], cl[i]
+        hi, lx, cx = float(h[i]), float(lo[i]), float(cl[i])
         bars_seen += 1
         dk = _day_key(ts, offset)
         if dk != day_key:

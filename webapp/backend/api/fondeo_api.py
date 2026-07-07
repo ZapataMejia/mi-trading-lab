@@ -321,7 +321,7 @@ def _liq_payload(result, req: LiquiditySweepRequest, bars_len: int, liq_cfg: Liq
     ]
     payload["ws_eval"] = evaluate_ws_classic(result, ws_cfg)
     payload["strategy_config"] = liq_cfg.to_dict()
-    return payload
+    return _json_native(payload)
 
 
 def _downsample(points: list, target: int) -> list:
@@ -407,7 +407,7 @@ def _trade_markers(result) -> list[dict]:
                 "sl": extra.get("sl"),
                 "tp": extra.get("tp"),
                 "pnl": t.pnl,
-                "won": t.is_winner,
+                "won": bool(t.is_winner),
                 "reason": extra.get("reason"),
             }
         )
