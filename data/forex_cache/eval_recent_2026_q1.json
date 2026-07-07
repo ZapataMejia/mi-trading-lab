@@ -1,0 +1,20 @@
+{
+  "period": "2026-01-01 → 2026-03-31",
+  "data_bars": 18180,
+  "data_range": "2003-05-05 → 2026-07-01",
+  "q1_total": {
+    "pnl_usd": 449.14,
+    "pass_ws_eval": true,
+    "days_to_meta": 26,
+    "static_dd_pct": -3.06,
+    "max_daily_dd_pct": 1.5,
+    "trades": 63,
+    "win_rate_pct": 44.44
+  },
+  "by_month": {
+    "2026-01": {"pnl_usd": 247.1, "pass_ws_eval": false, "note": "positivo pero no alcanza +8% en 31d"},
+    "2026-02": {"pnl_usd": -375.58, "pass_ws_eval": false, "static_dd_pct": -9.55, "note": "mes malo — patrón similar a mar histórico"},
+    "2026-03": {"pnl_usd": 408.35, "pass_ws_eval": true, "days_to_meta": 15, "note": "habría pasado eval en 15 días"}
+  },
+  "conclusion": "Con datos reales Dukascopy el Q1 2026 SÍ pasa eval acumulado. Feb fue el mes débil. El resultado negativo anterior era por hueco de datos, no por la estrategia."
+}

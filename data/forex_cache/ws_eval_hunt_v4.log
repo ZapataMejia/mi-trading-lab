@@ -1,0 +1,41 @@
+WS HUNT v4 — scan 167,992 barras · full 391,810 · 420 combos
+
+  scan 50/420 ok=4
+  scan 100/420 ok=4
+  scan 150/420 ok=5
+  scan 200/420 ok=5
+  scan 250/420 ok=6
+  scan 300/420 ok=6
+  scan 350/420 ok=6
+  scan 400/420 ok=9
+
+Scan 2y: 9 candidatas
+
+Full 5y: 6 pasan DD
+
+
+Survivors: 0
+
+Guardado /Users/santiago/Documents/Personal/trading/data/forex_cache/ws_eval_best.json
+
+{
+  "fast_period": 3,
+  "slow_period": 8,
+  "risk_pct": 2.1,
+  "tp_ratio": 0.8,
+  "sess_start": 800,
+  "sess_end": 1000,
+  "max_trades_per_day": 2,
+  "broker_utc_offset_hours": 7,
+  "trades": 67,
+  "tpm": 1.05,
+  "pnl": 512.36,
+  "dd": -0.37,
+  "pf": 1.18,
+  "full_pass": true,
+  "fallback_full_period": true,
+  "full_trades": 67,
+  "full_pnl": 512.36,
+  "full_dd": -0.37,
+  "full_pf": 1.18
+}

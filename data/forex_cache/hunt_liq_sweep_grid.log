@@ -1,0 +1,34 @@
+FASE 1 MP — 768 combos · 8 workers
+
+  80/768 survivors=21
+  160/768 survivors=31
+  240/768 survivors=33
+  320/768 survivors=39
+  400/768 survivors=45
+  480/768 survivors=57
+  560/768 survivors=60
+  640/768 survivors=93
+  720/768 survivors=107
+
+Fase 1: 112 pass full (1042s)
+
+FASE 2 MP — 30d en top 100
+
+  25/100
+  HIT 30d=42.9% lb=36 700-1200 TP1.5
+  50/100
+  HIT 30d=42.9% lb=36 700-1200 TP1.5
+  HIT 30d=42.9% lb=24 700-1100 TP1.5
+  75/100
+  100/100
+Traceback (most recent call last):
+  File "/Users/santiago/Documents/Personal/trading/scripts/eval_hunt_liq_sweep_grid.py", line 193, in <module>
+    main()
+    ~~~~^^
+  File "/Users/santiago/Documents/Personal/trading/scripts/eval_hunt_liq_sweep_grid.py", line 167, in main
+    baseline_row = _screen_one(BASELINE) or {}
+                   ~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/santiago/Documents/Personal/trading/scripts/eval_hunt_liq_sweep_grid.py", line 56, in _screen_one
+    assert _BARS is not None
+           ^^^^^^^^^^^^^^^^^
+AssertionError

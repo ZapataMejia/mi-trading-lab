@@ -1,0 +1,51 @@
+{
+  "curso 9/20 8-10": {
+    "params": {
+      "fast_period": 9,
+      "slow_period": 20,
+      "tp_ratio": 1.0,
+      "sess_start": 800,
+      "sess_end": 1000,
+      "broker_utc_offset_hours": 7
+    },
+    "attempts": 27,
+    "passed": 0,
+    "breached": 3,
+    "timeout_180d": 24,
+    "pass_rate_pct": 0.0,
+    "median_days_to_pass": null
+  },
+  "lab 9/18 7-11": {
+    "params": {
+      "fast_period": 9,
+      "slow_period": 18,
+      "tp_ratio": 1.0,
+      "sess_start": 700,
+      "sess_end": 1100,
+      "broker_utc_offset_hours": 7
+    },
+    "attempts": 27,
+    "passed": 1,
+    "breached": 2,
+    "timeout_180d": 24,
+    "pass_rate_pct": 3.7,
+    "median_days_to_pass": 160
+  },
+  "3/8 TP2.5 7-14": {
+    "params": {
+      "fast_period": 3,
+      "slow_period": 8,
+      "tp_ratio": 2.5,
+      "sess_start": 700,
+      "sess_end": 1400,
+      "broker_utc_offset_hours": 7
+    },
+    "attempts": 27,
+    "passed": 0,
+    "breached": 2,
+    "timeout_180d": 25,
+    "pass_rate_pct": 0.0,
+    "median_days_to_pass": null
+  },
+  "recommendation": "Mejor: lab 9/18 7-11 \u2014 3.7% pasa en \u2264180d, mediana 160d"
+}

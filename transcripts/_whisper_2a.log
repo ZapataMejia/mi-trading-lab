@@ -1,0 +1,3021 @@
+load_backend: loaded BLAS backend from /opt/homebrew/Cellar/ggml/0.13.1/libexec/libggml-blas.so
+ggml_metal_device_init: tensor API disabled for pre-M5 and pre-A19 devices
+ggml_metal_library_init: using embedded metal library
+ggml_metal_library_init: loaded in 0.034 sec
+ggml_metal_rsets_init: creating a residency set collection (keep_alive = 180 s)
+ggml_metal_device_init: GPU name:   MTL0 (Apple M1)
+ggml_metal_device_init: GPU family: MTLGPUFamilyApple7  (1007)
+ggml_metal_device_init: GPU family: MTLGPUFamilyCommon3 (3003)
+ggml_metal_device_init: GPU family: MTLGPUFamilyMetal3  (5001)
+ggml_metal_device_init: simdgroup reduction   = true
+ggml_metal_device_init: simdgroup matrix mul. = true
+ggml_metal_device_init: has unified memory    = true
+ggml_metal_device_init: has bfloat            = true
+ggml_metal_device_init: has tensor            = false
+ggml_metal_device_init: use residency sets    = true
+ggml_metal_device_init: use shared buffers    = true
+ggml_metal_device_init: recommendedMaxWorkingSetSize  = 11453.25 MB
+load_backend: loaded MTL backend from /opt/homebrew/Cellar/ggml/0.13.1/libexec/libggml-metal.so
+load_backend: loaded CPU backend from /opt/homebrew/Cellar/ggml/0.13.1/libexec/libggml-cpu-apple_m1.so
+whisper_init_from_file_with_params_no_state: loading model from '/Users/santiago/whisper-models/ggml-large-v3-turbo.bin'
+whisper_init_with_params_no_state: use gpu    = 1
+whisper_init_with_params_no_state: flash attn = 1
+whisper_init_with_params_no_state: gpu_device = 0
+whisper_init_with_params_no_state: dtw        = 0
+whisper_init_with_params_no_state: devices    = 3
+whisper_init_with_params_no_state: backends   = 3
+whisper_model_load: loading model
+whisper_model_load: n_vocab       = 51866
+whisper_model_load: n_audio_ctx   = 1500
+whisper_model_load: n_audio_state = 1280
+whisper_model_load: n_audio_head  = 20
+whisper_model_load: n_audio_layer = 32
+whisper_model_load: n_text_ctx    = 448
+whisper_model_load: n_text_state  = 1280
+whisper_model_load: n_text_head   = 20
+whisper_model_load: n_text_layer  = 4
+whisper_model_load: n_mels        = 128
+whisper_model_load: ftype         = 1
+whisper_model_load: qntvr         = 0
+whisper_model_load: type          = 5 (large v3)
+whisper_model_load: adding 1609 extra tokens
+whisper_model_load: n_langs       = 100
+whisper_model_load:         MTL0 total size =  1623.92 MB
+whisper_model_load: model size    = 1623.92 MB
+whisper_backend_init_gpu: device 0: BLAS (type: 3)
+whisper_backend_init_gpu: device 1: MTL0 (type: 1)
+whisper_backend_init_gpu: found GPU device 1: MTL0 (type: 1, cnt: 0)
+whisper_backend_init_gpu: using MTL0 backend
+ggml_metal_init: allocating
+ggml_metal_init: found device: Apple M1
+ggml_metal_init: picking default device: Apple M1
+ggml_metal_init: use fusion         = true
+ggml_metal_init: use concurrency    = true
+ggml_metal_init: use graph optimize = true
+whisper_backend_init: using BLAS backend
+whisper_init_state: kv self size  =   10.49 MB
+whisper_init_state: kv cross size =   31.46 MB
+whisper_init_state: kv pad  size  =    7.86 MB
+whisper_init_state: compute buffer (conv)   =   37.69 MB
+whisper_init_state: compute buffer (encode) =   67.31 MB
+whisper_init_state: compute buffer (cross)  =   63.03 MB
+whisper_init_state: compute buffer (decode) =  100.04 MB
+
+system_info: n_threads = 6 / 8 | WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | DOTPROD = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | 
+
+main: processing 'transcripts/mentoria_2_a.wav' (59200512 samples, 3700.0 sec), 6 threads, 1 processors, 5 beams + best of 5, lang = es, task = transcribe, timestamps = 1 ...
+
+
+[00:00:00.000 --> 00:00:10.660]   Bienvenidos y bienvenidas a la mentoría de febrero de 2026.
+[00:00:11.920 --> 00:00:15.560]   Hoy el tema principal es, pues bueno, un poco el resumen.
+[00:00:16.460 --> 00:00:18.840]   No solo el resumen, sino ya también un paso a paso práctico
+[00:00:18.840 --> 00:00:22.380]   para que podamos afrontar las evaluaciones de fondeo
+[00:00:22.380 --> 00:00:27.360]   de forma predecible, le podríamos llamar,
+[00:00:27.360 --> 00:00:31.220]   el objetivo que le podríamos llamar, predecible para que todo el mundo
+[00:00:31.220 --> 00:00:34.820]   pueda realizar una hoja de cálculo de costes
+[00:00:34.820 --> 00:00:37.900]   y de rentabilidades esperadas aproximadas.
+[00:00:37.940 --> 00:00:41.160]   Ya sabéis que en el mundo del trading no existe nada seguro,
+[00:00:41.260 --> 00:00:43.460]   no existe nada fijo, todo son probabilidades,
+[00:00:44.020 --> 00:00:47.340]   pero cuanto más lo podamos cuantificar y cuanto más lo podamos
+[00:00:47.340 --> 00:00:54.040]   saber unas probabilidades más cercanas a que no sean muy dispares,
+[00:00:54.540 --> 00:00:57.720]   podamos hacer una hoja de ruta y vosotros mismos, cada uno,
+[00:00:58.400 --> 00:01:01.700]   dependiendo de su bolsillo, podremos hacer una inversión más alta o más pequeña,
+[00:01:01.800 --> 00:01:05.820]   pero siempre con un plan establecido que te diga,
+[00:01:05.900 --> 00:01:09.640]   vale, si yo invierto tanto, pues tengo muchas posibilidades de recuperar esto u otro.
+[00:01:10.400 --> 00:01:17.220]   Va a ser un poco, hoy va a ser un poco, poco no, va a ser full práctico, ¿bien?
+[00:01:17.400 --> 00:01:22.220]   La teoría, os la sabéis todos, todas, quiero hacer un inciso que me he olvidado.
+[00:01:23.140 --> 00:01:27.260]   Aquí hay gente nueva, es la primera vez que hay una, la primera edición que empezó en 2026,
+[00:01:28.260 --> 00:01:31.080]   lo tenemos ahora entre nosotros, hay gente que se ha conectado,
+[00:01:32.080 --> 00:01:35.300]   en esta es su primera mentoría mensual, así que los doy la bienvenida.
+[00:01:36.140 --> 00:01:41.280]   Ya como siempre os digo la primera vez, en las mentorías mensuales no es obligatorio la asistencia
+[00:01:41.280 --> 00:01:46.840]   mientras estáis en un programa de mentorías, sé que hay otra edición que también está aún en un programa de mentorías finalizando.
+[00:01:48.180 --> 00:01:50.400]   Sabéis que esto no es obligatorio hasta que lo terminéis,
+[00:01:51.160 --> 00:01:58.040]   pero volver a deciros el mensaje de lo que vais a escuchar aquí es algo que está aún lejos de lo que estáis aprendiendo.
+[00:01:58.180 --> 00:02:02.760]   Por tanto, enfocaros muy bien en vuestro temario de la semana que os toque,
+[00:02:03.740 --> 00:02:09.340]   más que mañana o esta noche poneros a hacer lo que vamos a explicar hoy, ¿bien?
+[00:02:09.340 --> 00:02:14.680]   Porque todas las otras personas que están hoy aquí conectadas y todas las personas que lo van a ver en grabado
+[00:02:14.680 --> 00:02:18.180]   son personas que ya hace un tiempo, hace poco, más o menos,
+[00:02:18.600 --> 00:02:22.180]   pero han pasado y han creado su primer portfolio y ya saben cómo crear portfolios ganadores
+[00:02:22.180 --> 00:02:25.040]   o con probabilidad de ganadora.
+[00:02:26.220 --> 00:02:28.480]   Lo que vais a ver hoy es algo bastante avanzado,
+[00:02:29.400 --> 00:02:33.460]   donde hay conceptos que yo he explicado en mentorías mensuales anteriores a esta,
+[00:02:34.000 --> 00:02:36.280]   que no volveré a dar toda la explicación en esta,
+[00:02:36.280 --> 00:02:39.280]   porque si no vamos a estar de nuevo repitiendo cosas,
+[00:02:39.800 --> 00:02:43.920]   que a los nuevos se os va a deslocar las mentorías mensuales a partir de mañana,
+[00:02:44.000 --> 00:02:47.720]   cuando subamos esta sesión y que tomároslo en calma,
+[00:02:47.840 --> 00:02:52.020]   porque repito, lo de aquí, lo de hoy y lo de toda la mentoría mensuales es algo avanzado
+[00:02:52.020 --> 00:02:56.660]   que se va pillando una vez terminéis el programa de mentorías, ¿vale?
+[00:02:57.120 --> 00:03:00.140]   Así que he dicho este paréntesis, bienvenidos y bienvenidas,
+[00:03:00.600 --> 00:03:04.460]   para que podáis parar un poco la oreja y veáis un poco en qué movidas estoy metido
+[00:03:04.460 --> 00:03:11.060]   y ya veréis poco a poco que, bueno, pues cada cierta mentoría mensuales siempre os traigo cosas nuevas
+[00:03:11.060 --> 00:03:12.480]   o al menos cosas...
+[00:03:12.480 --> 00:03:18.380]   Pueden ir bien, pueden ir mal, pero al menos soy una persona que intento siempre pagar cosas nuevas
+[00:03:18.380 --> 00:03:22.560]   y ya os avanzo a todos, que ya tengo mi próxima movida en mi cabeza.
+[00:03:23.680 --> 00:03:28.980]   No voy a avanzar nada ahora porque no está ni empezado, solo dentro de mi cabeza,
+[00:03:29.220 --> 00:03:36.180]   pero espero que se pueda desarrollar, es otra herramienta que se pueda desarrollar dentro de este año, ¿vale?
+[00:03:36.940 --> 00:03:39.540]   Vale, pues ahora sí que empezamos, ¿de acuerdo?
+[00:03:41.600 --> 00:03:43.060]   ¡Oh, hoy batimos récord, eh!
+[00:03:43.060 --> 00:03:45.060]   Más de 150 personas en una mentoría mensual.
+[00:03:45.840 --> 00:03:47.520]   Se nota que el tema gusta esto, ¿eh?
+[00:03:48.620 --> 00:03:53.220]   Vale, acordaros un poco que es...
+[00:03:56.160 --> 00:03:58.920]   ¿Va a utilizar por primera vez esto de las pizarras?
+[00:04:06.940 --> 00:04:10.340]   Vale, ahora mismo estáis viendo una pizarra, ¿no?
+[00:04:11.460 --> 00:04:11.860]   Creo.
+[00:04:13.540 --> 00:04:19.040]   Vale, no me pintéis vosotros, no sé cómo se hace para que vosotros no me pintáis, ¿vale?
+[00:04:19.360 --> 00:04:20.860]   Que veo por aquí nombrecitos.
+[00:04:22.160 --> 00:04:23.160]   Si no, lo voy a quitar, ¿eh?
+[00:04:23.160 --> 00:04:24.800]   Si esto empieza a ser...
+[00:04:24.800 --> 00:04:24.980]   Ahí.
+[00:04:29.380 --> 00:04:31.020]   Bueno, ahora sí he quitado a todos, genial.
+[00:04:32.300 --> 00:04:32.500]   Vale.
+[00:04:34.980 --> 00:04:36.500]   Está el tema de las evaluaciones.
+[00:04:36.940 --> 00:04:38.720]   Que tendrías por aquí.
+[00:04:40.920 --> 00:04:42.080]   Evaluaciones de fondeo.
+[00:04:47.000 --> 00:04:49.320]   Y está el tema de...
+[00:04:49.320 --> 00:04:53.180]   Las cuentas fondeadas.
+[00:04:54.400 --> 00:04:56.560]   Bueno, ya estás fondeado, estás fondeada, ¿de acuerdo?
+[00:04:58.060 --> 00:05:03.120]   Son dos partes principales en el mundo de las empresas de fondeo.
+[00:05:05.040 --> 00:05:10.340]   En el sitio fondeado, hoy no voy a entrar yo en qué vamos a hacer cuando ya tenéis una cuenta fondeada.
+[00:05:10.460 --> 00:05:11.800]   A lo mejor al final, pues...
+[00:05:11.800 --> 00:05:17.040]   Pero ya sabéis que yo aquí soy partidario de conectar los sistemas y el portfolio y el multiestrategias
+[00:05:17.040 --> 00:05:21.000]   que habéis aprendido cada una y cada una de vosotros a crear en este programa.
+[00:05:21.420 --> 00:05:23.300]   Y habéis mejorado los que lleven más tiempo y demás.
+[00:05:23.960 --> 00:05:27.060]   O sea, en la parte fondeada van nuestros porfolios, ¿de acuerdo?
+[00:05:28.340 --> 00:05:33.900]   Ya os digo, a finalizar de esta sesión, a lo mejor diré algunas cosas, algunas otras vías que podéis realizar en fondeado
+[00:05:33.900 --> 00:05:36.840]   para si queréis realmente tenerlo todo bien controlado.
+[00:05:37.280 --> 00:05:41.940]   O tener más recurrencia en retiros, aunque os resulte a un coste más elevado, ¿vale?
+[00:05:42.940 --> 00:05:46.520]   Lo de hoy va a tratar sobre evaluaciones.
+[00:05:48.820 --> 00:05:51.940]   El tema de las evaluaciones...
+[00:05:51.940 --> 00:06:01.300]   Lo que nos sale más a cuenta a todos nosotros, lo que nos sale más barato el hecho de estar fondeado
+[00:06:01.300 --> 00:06:06.980]   son las cuentas de fondeo de dos steps, de dos fases.
+[00:06:09.040 --> 00:06:10.940]   Esto es importante entenderlo.
+[00:06:11.360 --> 00:06:11.500]   ¿Bien?
+[00:06:12.100 --> 00:06:20.300]   Ya, Ramón, porque si en una fase yo pago y ya tengo la cuenta fondeada, pero si es mejor, ¿no?
+[00:06:20.300 --> 00:06:23.520]   Ya me paso todo el tema de evaluaciones y tal.
+[00:06:24.300 --> 00:06:29.960]   Incluso, ya veréis ahora, el porcentual de éxito que tendríamos en pasar a estas evaluaciones
+[00:06:29.960 --> 00:06:33.500]   es entre el 25 y el 30%.
+[00:06:33.500 --> 00:06:34.440]   Ya os lo avanzo, ¿de acuerdo?
+[00:06:35.180 --> 00:06:38.120]   Pero como que es un método que es bastante infalible,
+[00:06:39.320 --> 00:06:42.720]   dependiendo de cómo lo hagáis, podéis subir un poco más del 25%,
+[00:06:42.720 --> 00:06:44.400]   pero como mínimo es el 25%.
+[00:06:44.400 --> 00:06:48.900]   Obviamente, si tú tienes un 25% de posibilidades de tener una cuenta fondeada
+[00:06:48.900 --> 00:06:51.720]   cuando te compras una empresa de evaluación, una cuenta de evaluación,
+[00:06:52.720 --> 00:06:54.920]   te tienes que gastar, si una cuenta de 100.000,
+[00:06:56.040 --> 00:06:57.380]   si una cuenta de 100.000 dólares,
+[00:06:58.760 --> 00:07:00.060]   te lo he explicado ya varias veces,
+[00:07:01.220 --> 00:07:02.180]   pero para refrescar un poco,
+[00:07:02.300 --> 00:07:03.420]   si una cuenta de 100.000 dólares,
+[00:07:04.020 --> 00:07:05.340]   pongamos, vamos a poner números redondos,
+[00:07:05.420 --> 00:07:06.180]   cuesta un poco más ahora,
+[00:07:06.300 --> 00:07:08.720]   pero está en torno a los 500 dólares,
+[00:07:11.060 --> 00:07:15.300]   si yo os digo que tenemos una probabilidad del 25%
+[00:07:15.300 --> 00:07:21.400]   de tasa de éxito al pasar de las evaluaciones,
+[00:07:21.680 --> 00:07:23.660]   cuando digo pasar de las evaluaciones me refiero a las dos fases,
+[00:07:24.300 --> 00:07:30.560]   del 25% estamos hablando que nos tenemos que dejar 2.000 dólares
+[00:07:30.560 --> 00:07:34.900]   si queremos afrontar con el método que vamos a explicar,
+[00:07:36.300 --> 00:07:39.000]   que es muy parecido al que siempre os he explicado,
+[00:07:39.300 --> 00:07:42.120]   pero esta vez con robots,
+[00:07:42.360 --> 00:07:42.640]   ¿de acuerdo?
+[00:07:42.720 --> 00:07:44.800]   Y con herramientas que hemos desarrollado a través de para ello,
+[00:07:44.840 --> 00:07:44.960]   ¿vale?
+[00:07:45.500 --> 00:07:48.960]   Pues la inversión inicial que debemos de realizar son 2.000 dólares.
+[00:07:49.600 --> 00:07:52.080]   Esto tiene que estar muy bien entendido, ¿bien?
+[00:07:52.800 --> 00:07:53.480]   Vuelvo a repetir,
+[00:07:53.820 --> 00:07:56.100]   si yo quiero una cuenta fondeada de 100.000
+[00:07:56.100 --> 00:07:57.420]   y tengo un método,
+[00:07:57.560 --> 00:07:58.980]   que ahora sé que aún no lo tenéis,
+[00:07:59.100 --> 00:08:00.300]   pero al finalizar esta sesión,
+[00:08:01.260 --> 00:08:03.000]   veréis más luz en ese túnel.
+[00:08:03.680 --> 00:08:06.940]   Si yo tengo un método que sé que el 25% de las veces
+[00:08:06.940 --> 00:08:09.120]   llego a tener la cuenta fondeada,
+[00:08:09.720 --> 00:08:12.040]   es de cajón que yo para tener una cuenta de 100.000
+[00:08:12.040 --> 00:08:15.460]   tengo que sacar de mi bolsillo 2.000 dólares.
+[00:08:15.840 --> 00:08:19.500]   Aunque una cuenta individual me cueste 500 dólares,
+[00:08:19.740 --> 00:08:22.120]   el hecho de poder tener cuatro intentos
+[00:08:22.120 --> 00:08:25.520]   para que al menos uno de ellos sea fondeado,
+[00:08:26.020 --> 00:08:28.320]   me va a costar 2.000 dólares, ¿vale?
+[00:08:29.720 --> 00:08:32.100]   Dicho esto, por eso digo lo de los bolsillos,
+[00:08:32.600 --> 00:08:34.280]   si no tenéis 22.000 euros ahorrados,
+[00:08:34.360 --> 00:08:36.200]   no os podéis permitir invertir 2.000 euros,
+[00:08:36.680 --> 00:08:38.320]   puedes empezar con cantidades más pequeñas.
+[00:08:38.420 --> 00:08:39.680]   No vayáis por cuentas de 100.000
+[00:08:39.680 --> 00:08:41.500]   y por cuentas de 50.000.
+[00:08:41.660 --> 00:08:43.060]   O id a cuentas de 20.000,
+[00:08:43.140 --> 00:08:43.800]   que no pasa nada,
+[00:08:44.240 --> 00:08:45.360]   que ya llegarán las de 100.000.
+[00:08:45.440 --> 00:08:46.820]   Ya sé que todo el mundo quiere las de 100.000,
+[00:08:47.540 --> 00:08:48.440]   pero es una...
+[00:08:48.440 --> 00:08:53.280]   es una presión que no os lo tenéis que poner de primera,
+[00:08:53.420 --> 00:08:56.000]   sobre todo si no habéis trabajado nunca cuentas de fondeo.
+[00:08:56.760 --> 00:08:58.420]   Bien, hasta aquí claro.
+[00:09:01.800 --> 00:09:03.120]   Debéis entender algo también.
+[00:09:03.860 --> 00:09:06.180]   Que cuando estamos hablando de probabilidades,
+[00:09:06.820 --> 00:09:08.280]   bueno, la que vamos a ver hoy,
+[00:09:08.340 --> 00:09:08.980]   ya la definitiva,
+[00:09:09.220 --> 00:09:10.340]   sí que es muy estricta.
+[00:09:10.680 --> 00:09:13.340]   Pero generalmente cuando hablan de probabilidades,
+[00:09:13.460 --> 00:09:14.180]   para que lo sepáis,
+[00:09:14.960 --> 00:09:16.620]   si vosotros, yo qué sé,
+[00:09:17.060 --> 00:09:19.540]   tiráis una piedra y sabéis que el 25% de las veces
+[00:09:19.540 --> 00:09:21.520]   la metéis dentro del agujero,
+[00:09:22.720 --> 00:09:25.520]   esto no significa que estrictamente
+[00:09:25.520 --> 00:09:27.340]   cada cuatro tiradas,
+[00:09:27.520 --> 00:09:29.080]   una la vais a acertar.
+[00:09:30.140 --> 00:09:32.320]   Es mucho más probable que se cumpla
+[00:09:32.320 --> 00:09:34.720]   en cada 100 tiradas
+[00:09:34.720 --> 00:09:36.340]   vais a acertar 25
+[00:09:36.340 --> 00:09:38.960]   que cada cuatro tiradas vais a acertar una,
+[00:09:39.060 --> 00:09:40.540]   porque necesitamos aquí estadística.
+[00:09:40.640 --> 00:09:40.760]   Bien,
+[00:09:42.000 --> 00:09:44.060]   esto es lo que pasaba antes en cuentas de fondeo,
+[00:09:44.160 --> 00:09:45.020]   según qué métodos,
+[00:09:45.060 --> 00:09:47.660]   que yo he venido explicando en esta academia.
+[00:09:48.500 --> 00:09:51.640]   Pero lo que yo premio en cuentas de fondeo
+[00:09:51.640 --> 00:09:53.760]   es tener control.
+[00:09:55.100 --> 00:09:56.600]   Que yo tengo una estadística
+[00:09:56.600 --> 00:09:57.840]   que obviamente me diga
+[00:09:57.840 --> 00:09:59.160]   que el 25% de las veces
+[00:09:59.160 --> 00:10:00.720]   va a pasar una fase de fondeo,
+[00:10:00.840 --> 00:10:02.040]   pero esto se cumple
+[00:10:02.040 --> 00:10:03.800]   cuando tenga 100 evaluaciones,
+[00:10:04.380 --> 00:10:06.220]   yo no sé si las primeras cuatro evaluaciones
+[00:10:06.220 --> 00:10:09.240]   voy a tener una fondeada.
+[00:10:09.480 --> 00:10:10.360]   A lo mejor tendré dos.
+[00:10:10.940 --> 00:10:11.700]   A lo mejor la estadística
+[00:10:11.700 --> 00:10:12.840]   en ese periodo tan pequeñito,
+[00:10:13.300 --> 00:10:13.860]   por varianza,
+[00:10:13.940 --> 00:10:14.980]   en ese periodo tan pequeñito
+[00:10:14.980 --> 00:10:16.180]   justo al empezar,
+[00:10:16.960 --> 00:10:17.400]   pues mira,
+[00:10:17.480 --> 00:10:17.980]   se ha dado la suerte
+[00:10:17.980 --> 00:10:18.800]   que me ha tocado dos,
+[00:10:18.840 --> 00:10:19.860]   luego a lo mejor las cuatro siguientes
+[00:10:19.860 --> 00:10:20.580]   no me toca ni una.
+[00:10:21.080 --> 00:10:21.560]   ¿Entendéis, no?
+[00:10:22.640 --> 00:10:24.100]   Yo quería eliminar este factor
+[00:10:24.100 --> 00:10:24.980]   de varianza.
+[00:10:26.080 --> 00:10:26.900]   Esto es para que tengáis
+[00:10:26.900 --> 00:10:27.660]   un poco el símil,
+[00:10:27.740 --> 00:10:28.760]   es como cuando vosotros ponéis
+[00:10:28.760 --> 00:10:30.140]   vuestra multiestrategia al principio
+[00:10:30.140 --> 00:10:30.940]   en una cuenta de Darwin,
+[00:10:31.020 --> 00:10:31.740]   ex cero, por ejemplo,
+[00:10:33.160 --> 00:10:33.760]   pues hay gente
+[00:10:33.760 --> 00:10:34.880]   que los dos primeros meses,
+[00:10:35.140 --> 00:10:36.180]   hay gente que los dos primeros meses,
+[00:10:36.340 --> 00:10:37.020]   boom, hacia arriba.
+[00:10:37.940 --> 00:10:38.860]   Otras personas,
+[00:10:39.000 --> 00:10:39.520]   otros traders,
+[00:10:40.100 --> 00:10:41.200]   pues empatáis.
+[00:10:41.600 --> 00:10:42.840]   Y otros, pues empezáis en negativo
+[00:10:42.840 --> 00:10:43.460]   los dos meses.
+[00:10:44.020 --> 00:10:44.580]   Y luego de los dos meses
+[00:10:44.580 --> 00:10:44.980]   decís,
+[00:10:45.340 --> 00:10:46.260]   hostia, tú, qué mala suerte.
+[00:10:46.960 --> 00:10:48.400]   Estamos trabajando en una estadística
+[00:10:48.400 --> 00:10:49.520]   que tenemos una estadística
+[00:10:49.520 --> 00:10:50.320]   de 15 años
+[00:10:50.320 --> 00:10:52.260]   y no podemos pretender
+[00:10:52.260 --> 00:10:53.280]   que la estadística de 15 años
+[00:10:53.280 --> 00:10:54.580]   se cumple en los próximos dos meses,
+[00:10:54.660 --> 00:10:54.940]   ¿de acuerdo?
+[00:10:55.380 --> 00:10:56.780]   Pero yo esto lo quería eliminar
+[00:10:56.780 --> 00:10:57.820]   en evaluaciones de fondeo.
+[00:10:57.880 --> 00:10:58.340]   Yo no quería
+[00:10:58.340 --> 00:10:59.380]   algo
+[00:10:59.380 --> 00:11:01.800]   que las cuatro próximas tiradas
+[00:11:01.800 --> 00:11:02.620]   a corto plazo
+[00:11:02.620 --> 00:11:04.040]   a lo mejor
+[00:11:04.040 --> 00:11:05.140]   me cae una,
+[00:11:05.200 --> 00:11:05.640]   a lo mejor dos,
+[00:11:05.700 --> 00:11:06.460]   a lo mejor no me cae ninguna.
+[00:11:06.560 --> 00:11:07.440]   Yo quiero una.
+[00:11:08.720 --> 00:11:09.900]   Yo quiero control.
+[00:11:11.200 --> 00:11:11.540]   Repito,
+[00:11:11.780 --> 00:11:13.840]   el objetivo de todo esto
+[00:11:13.840 --> 00:11:14.960]   que llevo desde agosto,
+[00:11:15.380 --> 00:11:15.680]   ya sabéis,
+[00:11:16.160 --> 00:11:17.220]   realizando robots nuevos
+[00:11:17.220 --> 00:11:17.720]   con Iván,
+[00:11:17.800 --> 00:11:18.020]   de hecho,
+[00:11:18.020 --> 00:11:19.340]   es el que me ha ayudado
+[00:11:19.340 --> 00:11:22.120]   en todo este periodo.
+[00:11:22.180 --> 00:11:22.260]   Bueno,
+[00:11:22.320 --> 00:11:22.960]   sí está por aquí Iván,
+[00:11:23.120 --> 00:11:23.960]   Radicales por aquí,
+[00:11:24.700 --> 00:11:25.580]   entre toda esta gente,
+[00:11:25.780 --> 00:11:27.020]   pero...
+[00:11:27.560 --> 00:11:28.120]   Sí, aquí estoy,
+[00:11:28.200 --> 00:11:28.620]   aquí estoy.
+[00:11:29.620 --> 00:11:29.940]   Bueno,
+[00:11:30.020 --> 00:11:30.880]   pero te he mencionado antes
+[00:11:30.880 --> 00:11:32.240]   porque me he metido ya en el tema,
+[00:11:32.420 --> 00:11:33.380]   pero Iván es quien me ha ayudado
+[00:11:33.380 --> 00:11:34.060]   a hacer todo esto
+[00:11:34.060 --> 00:11:34.600]   y de hecho es quien
+[00:11:34.600 --> 00:11:36.340]   ha llevado toda la operativa.
+[00:11:36.720 --> 00:11:36.840]   O sea,
+[00:11:36.920 --> 00:11:37.840]   al final Iván es
+[00:11:37.840 --> 00:11:39.840]   gran culpa tuya
+[00:11:39.840 --> 00:11:41.420]   al que hemos podido llegar aquí hoy.
+[00:11:45.220 --> 00:11:46.720]   Mi objetivo no es aumentar
+[00:11:46.720 --> 00:11:47.560]   el ratio de
+[00:11:47.560 --> 00:11:48.940]   cuántas evaluaciones paso,
+[00:11:49.000 --> 00:11:49.220]   es decir,
+[00:11:49.320 --> 00:11:50.220]   pasar una de cada dos.
+[00:11:50.760 --> 00:11:51.840]   Ojalá pudiésemos pasar
+[00:11:51.840 --> 00:11:52.580]   una de cada dos.
+[00:11:53.640 --> 00:11:53.800]   O sea,
+[00:11:53.840 --> 00:11:54.380]   las dos fases,
+[00:11:54.520 --> 00:11:55.940]   una de cada dos que me compro.
+[00:11:56.480 --> 00:11:57.620]   Ojalá tuviéramos
+[00:11:57.620 --> 00:11:59.600]   un acierto del 100%,
+[00:11:59.620 --> 00:12:00.520]   nadie lo tiene.
+[00:12:01.220 --> 00:12:01.900]   Nadie en la industria
+[00:12:01.900 --> 00:12:02.640]   tiene ese acierto.
+[00:12:03.300 --> 00:12:04.220]   Nadie en la industria
+[00:12:04.220 --> 00:12:05.120]   os diría que tiene
+[00:12:05.120 --> 00:12:05.760]   un acierto de uno
+[00:12:05.760 --> 00:12:06.320]   de cada dos,
+[00:12:06.500 --> 00:12:06.920]   ninguno.
+[00:12:10.520 --> 00:12:10.920]   Perdónate
+[00:12:10.920 --> 00:12:12.160]   que tengo todas las veces
+[00:12:12.160 --> 00:12:13.300]   cuando hablo muy rápido
+[00:12:13.300 --> 00:12:14.740]   o muy de seguido.
+[00:12:16.120 --> 00:12:16.740]   Y te diría
+[00:12:16.740 --> 00:12:17.380]   que algunos,
+[00:12:17.520 --> 00:12:18.340]   si algunos se dedican
+[00:12:18.340 --> 00:12:19.040]   exclusivamente
+[00:12:19.040 --> 00:12:19.840]   en cuentas de fondeo,
+[00:12:20.640 --> 00:12:21.260]   tienen algunos ratios
+[00:12:21.260 --> 00:12:21.760]   de pasarse
+[00:12:21.760 --> 00:12:22.480]   una de cada tres.
+[00:12:23.200 --> 00:12:24.320]   Pero no de forma controlada,
+[00:12:24.420 --> 00:12:25.300]   de la forma que os digo yo,
+[00:12:25.360 --> 00:12:25.980]   de probabilidades.
+[00:12:28.860 --> 00:12:30.120]   yo al ser algorítmico,
+[00:12:30.200 --> 00:12:31.000]   al ser cuantitativo,
+[00:12:31.080 --> 00:12:31.580]   que soy una persona
+[00:12:31.580 --> 00:12:33.540]   que vengo de ingeniería,
+[00:12:33.680 --> 00:12:34.700]   que me gustan las cosas
+[00:12:34.700 --> 00:12:35.440]   cuadriculadas,
+[00:12:36.080 --> 00:12:36.760]   pues yo lo quiero tener
+[00:12:36.760 --> 00:12:37.620]   lo más controlada posible.
+[00:12:37.740 --> 00:12:38.040]   Por tanto,
+[00:12:38.180 --> 00:12:39.480]   siempre he premiado más
+[00:12:39.480 --> 00:12:41.560]   que las próximas cuatro
+[00:12:41.560 --> 00:12:42.100]   utilidades que tenga
+[00:12:42.100 --> 00:12:42.980]   al menos me asegure una.
+[00:12:43.980 --> 00:12:44.200]   ¿De acuerdo?
+[00:12:44.300 --> 00:12:45.200]   Y esto es el objetivo.
+[00:12:45.320 --> 00:12:45.960]   Para que lo sepáis,
+[00:12:46.160 --> 00:12:46.780]   este es el objetivo.
+[00:12:47.340 --> 00:12:47.740]   Para que al final
+[00:12:47.740 --> 00:12:48.320]   de la sesión me digáis,
+[00:12:48.440 --> 00:12:48.680]   hostia,
+[00:12:48.760 --> 00:12:49.480]   en serio tenéis un método
+[00:12:49.480 --> 00:12:50.440]   que es una de cada cuatro,
+[00:12:50.500 --> 00:12:51.180]   me tengo que dejar
+[00:12:51.180 --> 00:12:52.640]   multiplicar por cuatro ya,
+[00:12:52.760 --> 00:12:53.360]   pero es que van a tener
+[00:12:53.360 --> 00:12:54.440]   controlado tus gastos.
+[00:12:54.540 --> 00:12:54.860]   Que esto es,
+[00:12:55.200 --> 00:12:55.820]   en las cuentas de fondo,
+[00:12:55.920 --> 00:12:57.280]   lo más importante de todos.
+[00:12:57.820 --> 00:12:58.500]   Tener controlados
+[00:12:58.500 --> 00:12:59.260]   vuestros gastos.
+[00:12:59.780 --> 00:13:00.520]   Porque de esta forma
+[00:13:00.520 --> 00:13:01.940]   son más predecibles
+[00:13:01.940 --> 00:13:03.560]   y los ingresos también.
+[00:13:06.240 --> 00:13:06.720]   Bien.
+[00:13:09.360 --> 00:13:10.740]   Hecha esta introducción,
+[00:13:11.260 --> 00:13:13.820]   hecha esta introducción,
+[00:13:15.400 --> 00:13:15.960]   el método
+[00:13:15.960 --> 00:13:16.860]   que ya muchos
+[00:13:16.860 --> 00:13:17.900]   de vosotros conocéis
+[00:13:17.900 --> 00:13:19.340]   es el de abrir
+[00:13:19.340 --> 00:13:20.240]   una operación
+[00:13:20.240 --> 00:13:21.180]   digamos
+[00:13:21.180 --> 00:13:21.860]   y aleatoria
+[00:13:21.860 --> 00:13:22.680]   en una cuenta
+[00:13:22.680 --> 00:13:24.260]   y replicar
+[00:13:24.260 --> 00:13:25.040]   en otra cuenta
+[00:13:25.040 --> 00:13:26.760]   la operación
+[00:13:26.760 --> 00:13:27.340]   contraria.
+[00:13:28.080 --> 00:13:28.260]   ¿De acuerdo?
+[00:13:29.100 --> 00:13:29.580]   Esto
+[00:13:29.580 --> 00:13:30.620]   a ellos
+[00:13:30.620 --> 00:13:31.620]   si lo hacéis
+[00:13:31.620 --> 00:13:32.500]   en dos cuentas
+[00:13:32.500 --> 00:13:34.040]   de la misma empresa
+[00:13:34.040 --> 00:13:35.000]   no les gusta.
+[00:13:35.520 --> 00:13:36.080]   Obviamente
+[00:13:36.080 --> 00:13:36.900]   porque lo que vais
+[00:13:36.900 --> 00:13:37.820]   es a conseguir
+[00:13:37.820 --> 00:13:38.940]   el capital fondeado
+[00:13:38.940 --> 00:13:39.440]   y ya sabéis
+[00:13:39.440 --> 00:13:40.360]   que las empresas
+[00:13:40.360 --> 00:13:40.920]   de fondeo
+[00:13:40.920 --> 00:13:42.040]   no nos dan
+[00:13:42.040 --> 00:13:42.800]   capital real.
+[00:13:43.000 --> 00:13:43.780]   Todo es demo.
+[00:13:43.900 --> 00:13:44.240]   Es decir,
+[00:13:44.820 --> 00:13:45.860]   cuando tú estás fondeado
+[00:13:45.860 --> 00:13:46.960]   y cuando estás fondeado
+[00:13:46.960 --> 00:13:48.180]   es demo
+[00:13:48.180 --> 00:13:49.340]   tanto una cuenta
+[00:13:49.340 --> 00:13:49.800]   de fondeo
+[00:13:49.800 --> 00:13:50.140]   o una empresa
+[00:13:50.140 --> 00:13:50.460]   de fondeo
+[00:13:50.460 --> 00:13:50.900]   tiene que tener
+[00:13:50.900 --> 00:13:51.480]   un equilibrio
+[00:13:51.480 --> 00:13:52.020]   entre la gente
+[00:13:52.020 --> 00:13:52.780]   que está pagando
+[00:13:52.780 --> 00:13:53.300]   evaluaciones
+[00:13:53.300 --> 00:13:54.400]   y palma evaluaciones
+[00:13:54.400 --> 00:13:56.820]   y la poca gente
+[00:13:56.820 --> 00:13:57.460]   que llega a estar
+[00:13:57.460 --> 00:13:58.040]   fondeada
+[00:13:58.040 --> 00:13:59.860]   controlar bien
+[00:13:59.860 --> 00:14:00.580]   los retiros
+[00:14:00.580 --> 00:14:01.440]   que están pidiendo.
+[00:14:01.680 --> 00:14:01.900]   ¿De acuerdo?
+[00:14:01.980 --> 00:14:03.160]   Por eso hay tantas reglas
+[00:14:03.160 --> 00:14:04.640]   por eso hay
+[00:14:04.640 --> 00:14:06.160]   muchas revisiones
+[00:14:06.160 --> 00:14:07.920]   y por eso intentamos
+[00:14:07.920 --> 00:14:08.160]   pues
+[00:14:08.160 --> 00:14:09.680]   que tengan
+[00:14:09.680 --> 00:14:10.700]   la mínima excusa
+[00:14:10.700 --> 00:14:11.580]   o sea que no tengan
+[00:14:11.580 --> 00:14:12.320]   ninguna excusa
+[00:14:12.320 --> 00:14:14.760]   para delegarnos
+[00:14:14.760 --> 00:14:15.280]   nada.
+[00:14:16.960 --> 00:14:19.760]   Bien
+[00:14:19.760 --> 00:14:25.060]   perdón si hago
+[00:14:25.060 --> 00:14:25.560]   algunos parones
+[00:14:25.560 --> 00:14:26.240]   porque necesito
+[00:14:26.240 --> 00:14:26.960]   dar toda la información
+[00:14:26.960 --> 00:14:28.000]   de forma secuencial
+[00:14:28.000 --> 00:14:28.560]   y correcta
+[00:14:28.560 --> 00:14:28.700]   ¿vale?
+[00:14:28.720 --> 00:14:29.320]   Porque hoy
+[00:14:29.320 --> 00:14:30.440]   hay mucha información
+[00:14:30.440 --> 00:14:33.120]   Habiendo dicho
+[00:14:33.120 --> 00:14:33.560]   lo de
+[00:14:33.560 --> 00:14:35.920]   lo del por qué
+[00:14:35.920 --> 00:14:37.240]   las cuentas
+[00:14:37.240 --> 00:14:37.560]   de fondeo
+[00:14:37.560 --> 00:14:38.120]   no les interesa
+[00:14:38.120 --> 00:14:38.660]   que todo el mundo
+[00:14:38.660 --> 00:14:39.180]   esté ahí
+[00:14:39.180 --> 00:14:40.200]   como fondeado
+[00:14:40.200 --> 00:14:42.380]   nosotros
+[00:14:42.380 --> 00:14:42.920]   el hecho
+[00:14:42.920 --> 00:14:43.580]   de replicar
+[00:14:43.580 --> 00:14:44.200]   las operaciones
+[00:14:44.200 --> 00:14:45.080]   tienen que ser
+[00:14:45.080 --> 00:14:45.600]   en empresas
+[00:14:45.600 --> 00:14:46.420]   distintas
+[00:14:46.420 --> 00:14:47.920]   lo bueno que tenemos
+[00:14:47.920 --> 00:14:48.680]   ahí es que
+[00:14:48.680 --> 00:14:49.360]   en la gran mayoría
+[00:14:49.360 --> 00:14:49.820]   de empresas
+[00:14:49.820 --> 00:14:51.060]   las reglas son
+[00:14:51.060 --> 00:14:52.100]   el 90%
+[00:14:52.100 --> 00:14:52.680]   las mismas
+[00:14:52.680 --> 00:14:53.060]   sobre todo
+[00:14:53.060 --> 00:14:53.900]   las más grandes
+[00:14:53.900 --> 00:14:55.140]   la de take profit
+[00:14:55.140 --> 00:14:57.240]   la de stop loss
+[00:14:57.240 --> 00:14:59.020]   la de
+[00:14:59.020 --> 00:15:00.180]   la de la máxima
+[00:15:00.180 --> 00:15:00.860]   pérdida diaria
+[00:15:00.860 --> 00:15:02.620]   la de la máxima
+[00:15:02.620 --> 00:15:03.800]   caída permitida
+[00:15:03.800 --> 00:15:04.660]   etcétera
+[00:15:04.660 --> 00:15:04.860]   etcétera
+[00:15:04.860 --> 00:15:05.120]   por lo tanto
+[00:15:05.120 --> 00:15:05.620]   podemos hacer
+[00:15:05.620 --> 00:15:06.200]   la contraria
+[00:15:06.200 --> 00:15:06.360]   ¿vale?
+[00:15:08.840 --> 00:15:09.420]   Pero esto
+[00:15:09.420 --> 00:15:09.820]   igualmente
+[00:15:09.820 --> 00:15:10.260]   no gusta
+[00:15:10.260 --> 00:15:10.840]   aunque
+[00:15:10.840 --> 00:15:12.260]   si una empresa
+[00:15:12.260 --> 00:15:12.520]   entera
+[00:15:12.520 --> 00:15:13.120]   que hace la contraria
+[00:15:13.120 --> 00:15:14.740]   en otra vecina
+[00:15:14.740 --> 00:15:15.660]   no le gusta
+[00:15:15.660 --> 00:15:16.160]   pero no tienen
+[00:15:16.160 --> 00:15:16.820]   manera de saber
+[00:15:16.820 --> 00:15:17.800]   porque
+[00:15:17.800 --> 00:15:19.300]   son competencia
+[00:15:19.300 --> 00:15:20.500]   bien
+[00:15:20.500 --> 00:15:23.960]   y deberían
+[00:15:23.960 --> 00:15:24.760]   trackear
+[00:15:24.760 --> 00:15:25.300]   trades
+[00:15:25.300 --> 00:15:25.860]   en tiempo real
+[00:15:25.860 --> 00:15:26.040]   bueno
+[00:15:26.040 --> 00:15:27.280]   no lo están haciendo
+[00:15:27.280 --> 00:15:29.960]   al
+[00:15:29.960 --> 00:15:31.640]   al tener
+[00:15:31.640 --> 00:15:32.500]   este planteamiento
+[00:15:32.500 --> 00:15:34.320]   yo lo que siempre
+[00:15:34.320 --> 00:15:34.540]   he dicho
+[00:15:34.540 --> 00:15:35.260]   en Windows de Fondeo
+[00:15:35.260 --> 00:15:35.880]   y lo he explicado
+[00:15:35.880 --> 00:15:36.480]   muchas veces
+[00:15:36.480 --> 00:15:37.080]   ahora aquí voy a quitar
+[00:15:37.080 --> 00:15:37.860]   un poco la pantalla
+[00:15:37.860 --> 00:15:38.420]   porque ahora ya
+[00:15:38.420 --> 00:15:39.820]   voy a presentar
+[00:15:39.820 --> 00:15:40.640]   ya mi pantalla
+[00:15:40.640 --> 00:15:41.380]   o sea voy a quitar
+[00:15:41.380 --> 00:15:42.880]   la pizarra
+[00:15:42.880 --> 00:15:47.640]   en empresas de Fondeo
+[00:15:47.640 --> 00:15:50.920]   un momentito
+[00:15:50.920 --> 00:15:51.360]   a ver si me puedo
+[00:15:51.360 --> 00:15:51.920]   poner en medio
+[00:15:51.920 --> 00:15:53.320]   ahí
+[00:15:53.320 --> 00:15:54.360]   vale
+[00:15:54.360 --> 00:15:57.700]   en las empresas
+[00:15:57.700 --> 00:15:58.100]   de Fondeo
+[00:15:58.100 --> 00:15:58.880]   yo lo que siempre
+[00:15:58.880 --> 00:16:00.140]   yo lo que siempre
+[00:16:00.140 --> 00:16:00.520]   he hecho
+[00:16:00.520 --> 00:16:01.140]   es
+[00:16:01.140 --> 00:16:02.920]   hacerlo
+[00:16:02.920 --> 00:16:03.640]   de forma manual
+[00:16:03.640 --> 00:16:04.440]   abrir una compra
+[00:16:04.440 --> 00:16:04.780]   en un sitio
+[00:16:04.780 --> 00:16:05.320]   abrir una venta
+[00:16:05.320 --> 00:16:05.820]   en otro sitio
+[00:16:05.820 --> 00:16:07.060]   yo para tener
+[00:16:07.060 --> 00:16:07.960]   controlado esto
+[00:16:07.960 --> 00:16:10.440]   para tener controlado
+[00:16:10.440 --> 00:16:10.800]   esto
+[00:16:10.800 --> 00:16:12.380]   siempre riesgo
+[00:16:12.380 --> 00:16:12.880]   uno a uno
+[00:16:12.880 --> 00:16:13.540]   es decir
+[00:16:13.540 --> 00:16:14.080]   si en un sitio
+[00:16:14.080 --> 00:16:14.600]   quiero ganar
+[00:16:14.600 --> 00:16:14.860]   mil
+[00:16:14.860 --> 00:16:15.720]   voy a arriesgar
+[00:16:15.720 --> 00:16:15.980]   mil
+[00:16:15.980 --> 00:16:16.800]   en otro sitio
+[00:16:16.800 --> 00:16:17.620]   va a ser al revés
+[00:16:17.620 --> 00:16:17.860]   es decir
+[00:16:17.860 --> 00:16:18.540]   si en un broker
+[00:16:18.540 --> 00:16:19.900]   yo gano mil
+[00:16:19.900 --> 00:16:20.600]   en otro voy a perder
+[00:16:20.600 --> 00:16:20.900]   mil
+[00:16:20.900 --> 00:16:21.680]   es verdad que están
+[00:16:21.680 --> 00:16:22.340]   las comisiones
+[00:16:22.340 --> 00:16:22.860]   las comisiones
+[00:16:22.860 --> 00:16:23.300]   merman
+[00:16:23.300 --> 00:16:24.080]   la rentabilidad
+[00:16:24.080 --> 00:16:24.440]   vale
+[00:16:24.440 --> 00:16:24.820]   por tanto
+[00:16:24.820 --> 00:16:27.100]   si vamos a hacer
+[00:16:27.100 --> 00:16:28.040]   muchas operaciones
+[00:16:28.040 --> 00:16:29.040]   si no hay una
+[00:16:29.040 --> 00:16:29.960]   de las dos cuentas
+[00:16:29.960 --> 00:16:30.740]   que tenga
+[00:16:30.740 --> 00:16:31.760]   varios tres seguidos
+[00:16:31.760 --> 00:16:32.760]   ganadores
+[00:16:32.760 --> 00:16:34.240]   se nos va a comer
+[00:16:34.240 --> 00:16:35.000]   se nos van a mermar
+[00:16:35.000 --> 00:16:35.760]   las comisiones
+[00:16:35.760 --> 00:16:37.680]   este es el único
+[00:16:37.680 --> 00:16:38.320]   problema que viene
+[00:16:38.320 --> 00:16:38.780]   todo esto
+[00:16:38.780 --> 00:16:39.020]   vale
+[00:16:39.020 --> 00:16:40.200]   el que tengamos
+[00:16:40.200 --> 00:16:40.960]   el que tengamos
+[00:16:40.960 --> 00:16:41.980]   que hacer muchas operaciones
+[00:16:41.980 --> 00:16:43.000]   para llegar a nuestro
+[00:16:43.000 --> 00:16:43.380]   team profit
+[00:16:43.380 --> 00:16:44.500]   porque las comisiones
+[00:16:44.500 --> 00:16:45.140]   nos van a mermar
+[00:16:45.140 --> 00:16:46.840]   vais a ver ejemplos
+[00:16:46.840 --> 00:16:49.180]   ¿cuál es el objetivo?
+[00:16:49.720 --> 00:16:50.020]   es
+[00:16:50.020 --> 00:16:51.640]   cuenta A
+[00:16:51.640 --> 00:16:52.100]   cuenta B
+[00:16:52.100 --> 00:16:53.420]   una la pasamos
+[00:16:53.420 --> 00:16:54.120]   la otra la tendríamos
+[00:16:54.120 --> 00:16:54.680]   a menos 8
+[00:16:54.680 --> 00:16:55.660]   normalmente la máxima
+[00:16:55.660 --> 00:16:56.560]   cae desde el menor 10
+[00:16:56.560 --> 00:16:57.760]   pero ya os digo yo
+[00:16:57.760 --> 00:16:58.660]   que con
+[00:16:58.660 --> 00:16:59.300]   con
+[00:16:59.300 --> 00:17:00.900]   con las comisiones
+[00:17:00.900 --> 00:17:01.120]   y tal
+[00:17:01.120 --> 00:17:01.540]   la vamos a
+[00:17:01.540 --> 00:17:02.100]   la vais a tener
+[00:17:02.100 --> 00:17:03.360]   al final del menos 10
+[00:17:03.360 --> 00:17:03.520]   ¿vale?
+[00:17:03.520 --> 00:17:04.220]   la otra la tendríamos
+[00:17:04.220 --> 00:17:04.580]   pasada
+[00:17:04.580 --> 00:17:05.120]   fase 1
+[00:17:05.120 --> 00:17:07.180]   tenemos una cuenta
+[00:17:07.180 --> 00:17:07.660]   fase 1
+[00:17:07.660 --> 00:17:08.660]   volvemos a comprar
+[00:17:08.660 --> 00:17:09.320]   dos cuentas
+[00:17:09.320 --> 00:17:09.520]   bueno
+[00:17:09.520 --> 00:17:10.680]   la que acabas de perder
+[00:17:10.680 --> 00:17:11.700]   la vuelves a recomprar
+[00:17:11.700 --> 00:17:12.380]   y compras
+[00:17:12.380 --> 00:17:13.200]   una tercera empresa
+[00:17:13.200 --> 00:17:13.420]   ¿vale?
+[00:17:14.000 --> 00:17:14.860]   vuelves a hacer lo mismo
+[00:17:14.860 --> 00:17:16.240]   otra la pasas
+[00:17:16.240 --> 00:17:17.100]   a evaluación 2
+[00:17:17.100 --> 00:17:17.820]   esto lo conocéis
+[00:17:17.820 --> 00:17:19.220]   ya tenéis dos empresas
+[00:17:19.220 --> 00:17:20.060]   dos cuentas
+[00:17:20.060 --> 00:17:21.040]   en evaluación número 2
+[00:17:21.040 --> 00:17:21.800]   en fase número 2
+[00:17:21.800 --> 00:17:22.700]   ahora aquí simplemente
+[00:17:22.700 --> 00:17:23.560]   hacéis de nuevo
+[00:17:23.560 --> 00:17:24.280]   la contraria
+[00:17:24.280 --> 00:17:25.760]   y una de las dos
+[00:17:25.760 --> 00:17:26.540]   la tendréis fondeada
+[00:17:26.540 --> 00:17:28.220]   ¿vale?
+[00:17:28.480 --> 00:17:29.100]   es decir
+[00:17:29.100 --> 00:17:30.020]   hemos comprado
+[00:17:30.020 --> 00:17:31.240]   dos cuentas
+[00:17:31.240 --> 00:17:33.880]   una fase 2
+[00:17:33.880 --> 00:17:34.680]   la otra hemos perdido
+[00:17:34.680 --> 00:17:36.380]   esta la volvemos a comprar
+[00:17:36.380 --> 00:17:37.200]   más otra cuarta más
+[00:17:37.200 --> 00:17:37.700]   hemos comprado
+[00:17:37.700 --> 00:17:38.520]   cuatro cuentas
+[00:17:38.520 --> 00:17:39.160]   para poder tener
+[00:17:39.160 --> 00:17:39.980]   una cuenta fondeada
+[00:17:39.980 --> 00:17:41.820]   las matemáticas salen
+[00:17:41.820 --> 00:17:43.620]   y esto funciona
+[00:17:43.620 --> 00:17:44.520]   yo llevo haciendo años
+[00:17:44.520 --> 00:17:45.320]   haciéndolo manual
+[00:17:45.320 --> 00:17:46.240]   ¿qué pasa?
+[00:17:46.280 --> 00:17:46.740]   que el año pasado
+[00:17:46.740 --> 00:17:47.180]   me propuse
+[00:17:47.180 --> 00:17:47.820]   hacerlo todo esto
+[00:17:47.820 --> 00:17:48.860]   de forma automatizada
+[00:17:48.860 --> 00:17:50.320]   y ahora tenemos
+[00:17:50.320 --> 00:17:51.040]   las herramientas
+[00:17:51.040 --> 00:17:51.800]   para poder hacer esto
+[00:17:51.800 --> 00:17:52.640]   de forma automatizada
+[00:17:52.640 --> 00:17:53.160]   es decir
+[00:17:53.160 --> 00:17:54.920]   que lo podáis hacer
+[00:17:54.920 --> 00:17:56.000]   en base a una estrategia
+[00:17:56.000 --> 00:17:56.320]   es decir
+[00:17:56.320 --> 00:17:57.420]   no de forma aleatoria
+[00:17:57.420 --> 00:17:58.880]   sino en base a una estrategia
+[00:17:58.880 --> 00:17:59.240]   porque a veces
+[00:17:59.240 --> 00:18:00.620]   la aleatoriedad
+[00:18:00.620 --> 00:18:01.300]   pues es lo que os digo
+[00:18:01.300 --> 00:18:01.560]   pues
+[00:18:01.560 --> 00:18:03.200]   os puede
+[00:18:03.200 --> 00:18:07.060]   concadenar varios trades
+[00:18:07.060 --> 00:18:08.360]   que no son
+[00:18:08.360 --> 00:18:09.360]   digamos
+[00:18:09.360 --> 00:18:10.280]   como
+[00:18:10.280 --> 00:18:11.120]   al ser aleatorios
+[00:18:11.120 --> 00:18:12.660]   puede ser que una cuenta
+[00:18:12.660 --> 00:18:12.980]   sea
+[00:18:12.980 --> 00:18:13.940]   ganadora
+[00:18:13.940 --> 00:18:14.280]   perdedora
+[00:18:14.280 --> 00:18:14.640]   ganadora
+[00:18:14.640 --> 00:18:14.660]   ganadora
+[00:18:14.660 --> 00:18:15.060]   perdedora
+[00:18:15.060 --> 00:18:15.340]   ganadora
+[00:18:15.340 --> 00:18:15.780]   perdedora
+[00:18:15.780 --> 00:18:16.340]   y no tengáis
+[00:18:16.340 --> 00:18:16.960]   ganador
+[00:18:16.960 --> 00:18:17.280]   ganador
+[00:18:17.280 --> 00:18:17.660]   ganador
+[00:18:17.660 --> 00:18:18.540]   y que os vaya
+[00:18:18.540 --> 00:18:19.480]   al más 8%
+[00:18:19.480 --> 00:18:19.780]   por lo tanto
+[00:18:19.780 --> 00:18:21.420]   lo que sería interesante
+[00:18:21.420 --> 00:18:22.000]   era utilizar
+[00:18:22.000 --> 00:18:23.080]   alguna
+[00:18:23.080 --> 00:18:24.680]   alguna estrategia
+[00:18:24.680 --> 00:18:26.020]   sobre todo
+[00:18:26.020 --> 00:18:27.500]   que tenga rachas largas
+[00:18:27.500 --> 00:18:29.480]   porque si esa estrategia
+[00:18:29.480 --> 00:18:30.560]   tiene las rachas largas
+[00:18:30.560 --> 00:18:33.740]   ya sea una u otra
+[00:18:33.740 --> 00:18:34.920]   os va a pasar
+[00:18:34.920 --> 00:18:35.800]   la evaluación
+[00:18:35.800 --> 00:18:36.580]   de forma muy rápida
+[00:18:36.580 --> 00:18:37.420]   que es lo que nos interesa
+[00:18:37.420 --> 00:18:38.640]   pasar las evaluaciones
+[00:18:38.640 --> 00:18:39.360]   de forma muy rápida
+[00:18:39.360 --> 00:18:39.820]   en tres días
+[00:18:39.820 --> 00:18:40.380]   a poder ser
+[00:18:40.380 --> 00:18:41.540]   tres días
+[00:18:41.540 --> 00:18:42.500]   máximo
+[00:18:42.500 --> 00:18:43.420]   siete días
+[00:18:43.420 --> 00:18:43.780]   ah mire
+[00:18:43.780 --> 00:18:44.280]   estoy hablando
+[00:18:44.280 --> 00:18:44.720]   no
+[00:18:44.720 --> 00:18:45.860]   no
+[00:18:45.860 --> 00:18:46.520]   no te hablarles
+[00:18:46.520 --> 00:18:47.200]   porque los fines de semana
+[00:18:47.200 --> 00:18:47.940]   no se puede operar
+[00:18:47.940 --> 00:18:49.320]   bien
+[00:18:49.320 --> 00:18:52.560]   que hemos desarrollado
+[00:18:52.560 --> 00:18:53.460]   para poder
+[00:18:53.460 --> 00:18:54.280]   realizar esto
+[00:18:54.280 --> 00:18:55.000]   con robots
+[00:18:55.000 --> 00:18:56.540]   primero de todo
+[00:18:56.540 --> 00:18:57.420]   os explico un poco
+[00:18:57.420 --> 00:18:58.220]   la teoría
+[00:18:58.220 --> 00:18:59.480]   y ahora vamos a la práctica
+[00:18:59.480 --> 00:18:59.980]   primero de todo
+[00:18:59.980 --> 00:19:01.300]   es desarrollar una estrategia
+[00:19:01.300 --> 00:19:02.100]   con el algo wizard
+[00:19:02.100 --> 00:19:03.700]   o
+[00:19:03.700 --> 00:19:05.500]   si queréis
+[00:19:05.500 --> 00:19:06.120]   con buscador
+[00:19:06.120 --> 00:19:06.480]   de estrategia
+[00:19:06.480 --> 00:19:06.720]   igual
+[00:19:06.720 --> 00:19:07.440]   tenemos que
+[00:19:07.440 --> 00:19:08.120]   debemos de tener
+[00:19:08.120 --> 00:19:08.740]   una estrategia
+[00:19:08.740 --> 00:19:09.840]   cargada
+[00:19:09.840 --> 00:19:10.700]   en estrategia igual
+[00:19:10.700 --> 00:19:12.860]   eso es lo que necesitamos
+[00:19:12.860 --> 00:19:14.360]   y ahí cada uno
+[00:19:14.360 --> 00:19:15.700]   esto es de libre elección
+[00:19:15.700 --> 00:19:16.260]   yo hoy
+[00:19:16.260 --> 00:19:17.580]   voy a hacer un ejemplo
+[00:19:17.580 --> 00:19:18.760]   con una estrategia
+[00:19:18.760 --> 00:19:19.480]   hecha a mano
+[00:19:19.480 --> 00:19:20.240]   que la voy a diseñar
+[00:19:20.240 --> 00:19:20.800]   en algo wizard
+[00:19:20.800 --> 00:19:21.180]   de forma
+[00:19:21.180 --> 00:19:22.560]   muy sencilla
+[00:19:22.560 --> 00:19:23.800]   no necesitamos
+[00:19:23.800 --> 00:19:24.220]   que sea
+[00:19:24.220 --> 00:19:25.260]   realmente
+[00:19:25.260 --> 00:19:26.320]   no necesitamos
+[00:19:26.320 --> 00:19:26.640]   que sea
+[00:19:26.640 --> 00:19:27.240]   la estrategia
+[00:19:27.240 --> 00:19:27.940]   ganadora
+[00:19:27.940 --> 00:19:28.740]   como las que estamos
+[00:19:28.740 --> 00:19:29.660]   creando
+[00:19:29.660 --> 00:19:30.120]   en
+[00:19:30.120 --> 00:19:31.140]   en estrategia igual
+[00:19:31.140 --> 00:19:31.440]   para
+[00:19:31.440 --> 00:19:32.320]   para nuestros
+[00:19:32.320 --> 00:19:32.860]   porfolios
+[00:19:32.860 --> 00:19:34.340]   porque es que
+[00:19:34.340 --> 00:19:35.200]   recordad que tenemos
+[00:19:35.200 --> 00:19:35.680]   otra cuenta
+[00:19:35.680 --> 00:19:36.720]   que es la contrapartida
+[00:19:36.720 --> 00:19:37.920]   y por tanto
+[00:19:37.920 --> 00:19:39.260]   si una estrategia
+[00:19:39.260 --> 00:19:40.160]   que desarrolláis
+[00:19:40.160 --> 00:19:40.580]   o tenéis
+[00:19:40.580 --> 00:19:41.380]   va todo el rato
+[00:19:41.380 --> 00:19:41.840]   hacia abajo
+[00:19:41.840 --> 00:19:43.580]   de puta madre
+[00:19:43.580 --> 00:19:45.380]   porque en la otra
+[00:19:45.380 --> 00:19:46.020]   en la que vamos a hacer
+[00:19:46.020 --> 00:19:47.180]   la replicada
+[00:19:47.180 --> 00:19:48.600]   va a ir hacia arriba
+[00:19:48.600 --> 00:19:49.020]   de acuerdo
+[00:19:49.020 --> 00:19:50.180]   esto no aplica
+[00:19:50.180 --> 00:19:50.580]   en el trading
+[00:19:50.580 --> 00:19:51.380]   lo que voy a decir ahora
+[00:19:51.380 --> 00:19:52.120]   esto es una
+[00:19:52.120 --> 00:19:53.200]   una falacia
+[00:19:53.200 --> 00:19:53.740]   que al principio
+[00:19:53.740 --> 00:19:54.840]   cuando entres en el trading
+[00:19:54.840 --> 00:19:55.300]   te lo crees
+[00:19:55.300 --> 00:19:55.760]   tipo hostia
+[00:19:55.760 --> 00:19:56.320]   si esta estrategia
+[00:19:56.320 --> 00:19:57.140]   todo el rato va perdiendo
+[00:19:57.140 --> 00:19:58.440]   si hago la inversa
+[00:19:58.440 --> 00:19:59.960]   realmente no funciona así
+[00:19:59.960 --> 00:20:00.280]   la cosa
+[00:20:00.280 --> 00:20:00.840]   pero bueno
+[00:20:00.840 --> 00:20:01.960]   vamos a ver ejemplos
+[00:20:01.960 --> 00:20:02.260]   ahora vale
+[00:20:02.260 --> 00:20:02.940]   una vez tenemos
+[00:20:02.940 --> 00:20:03.620]   esta estrategia
+[00:20:03.620 --> 00:20:05.800]   hemos desarrollado
+[00:20:05.800 --> 00:20:08.000]   un copiador
+[00:20:08.000 --> 00:20:10.460]   un copiador adaptado
+[00:20:10.460 --> 00:20:11.600]   a casos de profil
+[00:20:11.600 --> 00:20:12.740]   que esto se activa
+[00:20:12.740 --> 00:20:13.300]   y lo veréis
+[00:20:13.300 --> 00:20:14.080]   como se activa
+[00:20:14.080 --> 00:20:15.420]   y
+[00:20:15.420 --> 00:20:16.680]   un
+[00:20:16.680 --> 00:20:17.740]   parchador
+[00:20:17.740 --> 00:20:18.480]   vale
+[00:20:18.480 --> 00:20:19.660]   son dos herramientas
+[00:20:19.660 --> 00:20:21.080]   el copiador
+[00:20:21.080 --> 00:20:21.980]   es sencillo
+[00:20:21.980 --> 00:20:22.240]   ahora
+[00:20:22.240 --> 00:20:23.200]   luego lo
+[00:20:23.200 --> 00:20:23.900]   lo veréis
+[00:20:23.900 --> 00:20:25.000]   los parámetros
+[00:20:25.000 --> 00:20:25.500]   que tiene
+[00:20:25.500 --> 00:20:26.200]   que
+[00:20:26.200 --> 00:20:27.460]   que podemos copiar
+[00:20:27.460 --> 00:20:28.260]   los modos que tiene
+[00:20:28.260 --> 00:20:29.000]   que eso es lo interesante
+[00:20:29.000 --> 00:20:29.520]   este copiador
+[00:20:29.520 --> 00:20:30.160]   o sea no es un simple
+[00:20:30.160 --> 00:20:31.000]   copiador de operaciones
+[00:20:31.000 --> 00:20:32.240]   lo es
+[00:20:32.240 --> 00:20:32.620]   es la idea
+[00:20:32.620 --> 00:20:33.000]   pero
+[00:20:33.000 --> 00:20:34.760]   hay diferentes modos
+[00:20:34.760 --> 00:20:35.520]   y diferentes maneras
+[00:20:35.520 --> 00:20:37.320]   que pues yo he considerado
+[00:20:37.320 --> 00:20:37.940]   pues interesantes
+[00:20:37.940 --> 00:20:38.960]   para añadir
+[00:20:38.960 --> 00:20:40.020]   y la gente que lo use
+[00:20:40.020 --> 00:20:41.080]   a medida de su conveniencia
+[00:20:41.080 --> 00:20:42.440]   pero luego
+[00:20:42.440 --> 00:20:43.660]   hay un parchador
+[00:20:43.660 --> 00:20:46.720]   este parchador
+[00:20:46.720 --> 00:20:48.180]   es un poquito
+[00:20:48.180 --> 00:20:49.120]   lo mismo que la gestión
+[00:20:49.120 --> 00:20:49.560]   de escalado
+[00:20:49.560 --> 00:20:50.760]   que explicamos ya hace meses
+[00:20:50.760 --> 00:20:51.560]   en el cual
+[00:20:51.560 --> 00:20:52.240]   tú te descargas
+[00:20:52.240 --> 00:20:53.100]   el robot de Statistic One
+[00:20:53.100 --> 00:20:54.300]   y lo tienes que pasar
+[00:20:54.300 --> 00:20:55.280]   por esa herramienta
+[00:20:55.280 --> 00:20:55.800]   de parchador
+[00:20:55.800 --> 00:20:57.760]   porque lo que hace
+[00:20:57.760 --> 00:20:58.520]   este parchador
+[00:20:58.520 --> 00:20:59.280]   es
+[00:20:59.280 --> 00:21:00.140]   añade
+[00:21:00.140 --> 00:21:00.940]   un código
+[00:21:00.940 --> 00:21:01.840]   en el robot
+[00:21:01.840 --> 00:21:04.320]   para que funcionen
+[00:21:04.320 --> 00:21:05.860]   todas las funcionalidades
+[00:21:05.860 --> 00:21:06.820]   del copiador
+[00:21:06.820 --> 00:21:08.340]   el copiador
+[00:21:08.340 --> 00:21:09.280]   no solo os copia
+[00:21:09.280 --> 00:21:09.780]   operaciones
+[00:21:09.780 --> 00:21:10.360]   sino que además
+[00:21:10.360 --> 00:21:11.500]   os hace de guardián
+[00:21:11.500 --> 00:21:13.440]   mira que la cuenta
+[00:21:13.440 --> 00:21:14.840]   por ejemplo
+[00:21:14.840 --> 00:21:16.040]   un ejemplo
+[00:21:16.040 --> 00:21:16.640]   muy interesante
+[00:21:16.640 --> 00:21:17.620]   en evaluaciones
+[00:21:17.620 --> 00:21:18.680]   de fondeo
+[00:21:18.680 --> 00:21:19.660]   o en AdSty también
+[00:21:19.660 --> 00:21:20.820]   cuando llegamos
+[00:21:20.820 --> 00:21:22.240]   al 8%
+[00:21:22.240 --> 00:21:22.620]   de profit
+[00:21:22.620 --> 00:21:23.220]   que nos piden
+[00:21:23.220 --> 00:21:23.840]   en una fase
+[00:21:23.840 --> 00:21:25.740]   a que a veces
+[00:21:25.740 --> 00:21:26.160]   sobre todo
+[00:21:26.160 --> 00:21:26.760]   los algorímicos
+[00:21:26.760 --> 00:21:27.420]   nosotros no estamos
+[00:21:27.420 --> 00:21:28.320]   delante de la pantalla
+[00:21:28.320 --> 00:21:29.500]   para mí me ha pasado
+[00:21:29.500 --> 00:21:30.060]   muchas veces
+[00:21:30.060 --> 00:21:31.020]   que a lo mejor
+[00:21:31.020 --> 00:21:31.660]   el trade
+[00:21:31.660 --> 00:21:32.880]   ya está por encima
+[00:21:32.880 --> 00:21:33.720]   del 8%
+[00:21:33.720 --> 00:21:34.800]   no ha llegado
+[00:21:34.800 --> 00:21:35.460]   el take profit
+[00:21:35.460 --> 00:21:37.780]   se da la vuelta
+[00:21:37.780 --> 00:21:38.520]   y toca stop loss
+[00:21:38.520 --> 00:21:39.040]   o break even
+[00:21:39.040 --> 00:21:40.100]   y de esto tío
+[00:21:40.100 --> 00:21:41.180]   el trade ha llegado
+[00:21:41.180 --> 00:21:41.800]   es decir
+[00:21:41.800 --> 00:21:42.840]   a mí me daba igual
+[00:21:42.840 --> 00:21:43.400]   si el trade
+[00:21:43.400 --> 00:21:43.860]   no llegaba
+[00:21:43.860 --> 00:21:44.440]   a take profit
+[00:21:44.440 --> 00:21:45.640]   a mí lo que me interesaba
+[00:21:45.640 --> 00:21:46.220]   en esa cuenta
+[00:21:46.220 --> 00:21:47.460]   era que llegas
+[00:21:47.460 --> 00:21:48.040]   al 8%
+[00:21:48.040 --> 00:21:48.520]   si ya estaba
+[00:21:48.520 --> 00:21:49.540]   al 8.1%
+[00:21:49.540 --> 00:21:50.700]   que me pare
+[00:21:50.700 --> 00:21:52.160]   no necesito
+[00:21:52.160 --> 00:21:52.520]   que me llegue
+[00:21:52.520 --> 00:21:52.940]   al take profit
+[00:21:52.940 --> 00:21:53.840]   justo en ese momento
+[00:21:53.840 --> 00:21:54.620]   justo en ese trade
+[00:21:54.620 --> 00:21:55.680]   obviamente en una cuenta
+[00:21:55.680 --> 00:21:56.920]   de track record y demás
+[00:21:56.920 --> 00:21:57.500]   sí pero no
+[00:21:57.500 --> 00:21:58.300]   no en ese trade
+[00:21:58.300 --> 00:21:58.800]   porque el objetivo
+[00:21:58.800 --> 00:21:59.240]   no es
+[00:21:59.240 --> 00:22:00.020]   generar un track record
+[00:22:00.020 --> 00:22:00.520]   a largo plazo
+[00:22:00.520 --> 00:22:01.060]   en la evaluación
+[00:22:01.060 --> 00:22:02.480]   es pasarte la evaluación
+[00:22:02.480 --> 00:22:03.340]   por lo tanto
+[00:22:03.340 --> 00:22:04.780]   hay parámetros
+[00:22:04.780 --> 00:22:06.280]   que necesitamos
+[00:22:06.280 --> 00:22:07.520]   modificar el código
+[00:22:07.520 --> 00:22:07.960]   del robot
+[00:22:07.960 --> 00:22:08.540]   de strategy one
+[00:22:08.540 --> 00:22:09.780]   para que funcione
+[00:22:09.780 --> 00:22:10.580]   bien con el
+[00:22:10.580 --> 00:22:11.620]   copiador
+[00:22:11.620 --> 00:22:12.540]   ¿de acuerdo?
+[00:22:13.980 --> 00:22:14.640]   sé que a lo mejor
+[00:22:14.640 --> 00:22:15.160]   puede haber liado
+[00:22:15.160 --> 00:22:15.440]   un poco
+[00:22:15.440 --> 00:22:16.640]   ahora la explicación
+[00:22:16.640 --> 00:22:17.580]   pero lo quería explicar
+[00:22:17.580 --> 00:22:18.500]   dar esta introducción
+[00:22:18.500 --> 00:22:19.560]   para ir ahora
+[00:22:19.560 --> 00:22:20.700]   a ver todas las herramientas
+[00:22:20.700 --> 00:22:21.600]   y cómo lo debemos de hacer
+[00:22:21.600 --> 00:22:21.860]   ¿de acuerdo?
+[00:22:22.560 --> 00:22:23.500]   yo me acabo de comprar
+[00:22:23.500 --> 00:22:24.260]   hace una hora y media
+[00:22:24.260 --> 00:22:25.660]   dos cuentas de fondeo
+[00:22:25.660 --> 00:22:26.780]   de evaluaciones de fondeo
+[00:22:26.780 --> 00:22:28.380]   de 100.000 dólares
+[00:22:28.380 --> 00:22:29.740]   me he comprado
+[00:22:29.740 --> 00:22:30.960]   en Funded Nets
+[00:22:30.960 --> 00:22:32.180]   y me acabo de comprar
+[00:22:32.180 --> 00:22:33.620]   en The Fifers
+[00:22:33.620 --> 00:22:36.140]   ayer me compré
+[00:22:36.140 --> 00:22:38.160]   que os lo enseñaré
+[00:22:38.160 --> 00:22:38.700]   porque ya he hecho
+[00:22:38.700 --> 00:22:39.300]   varios trades
+[00:22:39.300 --> 00:22:41.520]   en Wall Street Funded
+[00:22:41.520 --> 00:22:43.240]   y la otra
+[00:22:43.240 --> 00:22:44.620]   fue en
+[00:22:44.620 --> 00:22:45.740]   The Trading Pit
+[00:22:45.740 --> 00:22:46.560]   ¿de acuerdo?
+[00:22:46.760 --> 00:22:47.920]   estas dos son las que he juntado
+[00:22:47.920 --> 00:22:48.640]   y ahora voy a juntar
+[00:22:48.640 --> 00:22:49.180]   estas dos
+[00:22:49.180 --> 00:22:50.820]   digo ayer hice estas dos
+[00:22:50.820 --> 00:22:52.000]   y digo mira mañana
+[00:22:52.000 --> 00:22:52.580]   pues en directo
+[00:22:52.580 --> 00:22:53.240]   en la sesión de mentorías
+[00:22:53.240 --> 00:22:53.980]   pues haré las otras dos
+[00:22:53.980 --> 00:22:55.000]   para que veáis todos y todas
+[00:22:55.000 --> 00:22:56.320]   cómo lo he hecho
+[00:22:56.320 --> 00:22:57.160]   y que no sea un repaso
+[00:22:57.160 --> 00:22:58.300]   sobre lo ya hecho
+[00:22:58.300 --> 00:22:58.760]   que a veces
+[00:22:58.760 --> 00:23:00.120]   pues siempre es mejor
+[00:23:00.120 --> 00:23:01.700]   así que
+[00:23:01.700 --> 00:23:02.380]   yo lo que
+[00:23:02.380 --> 00:23:02.900]   simplemente
+[00:23:02.900 --> 00:23:04.440]   lo que tengo hecho
+[00:23:04.440 --> 00:23:05.760]   es comprar dos cuentas
+[00:23:05.760 --> 00:23:06.520]   y a partir de ahora
+[00:23:06.520 --> 00:23:07.360]   voy a configurarlo
+[00:23:07.360 --> 00:23:07.820]   todo
+[00:23:07.820 --> 00:23:09.020]   todo el paso a paso
+[00:23:09.020 --> 00:23:09.800]   y veréis
+[00:23:09.800 --> 00:23:10.540]   todo mi razonamiento
+[00:23:10.540 --> 00:23:11.340]   y toda mi explicación
+[00:23:11.340 --> 00:23:13.700]   a fin de que lo tenga
+[00:23:13.700 --> 00:23:14.560]   todo configurado
+[00:23:14.560 --> 00:23:15.160]   y ya listo
+[00:23:15.160 --> 00:23:16.160]   para que empiecen a operar
+[00:23:16.160 --> 00:23:17.040]   ¿ok?
+[00:23:18.180 --> 00:23:19.040]   así que empieza
+[00:23:19.040 --> 00:23:22.880]   no os voy a pedir ahora
+[00:23:22.880 --> 00:23:23.720]   turno de preguntas
+[00:23:23.720 --> 00:23:25.200]   porque probablemente
+[00:23:25.200 --> 00:23:26.700]   ahora entraré mucho en detalle
+[00:23:26.700 --> 00:23:27.820]   en cada paso
+[00:23:27.820 --> 00:23:28.060]   ¿vale?
+[00:23:28.440 --> 00:23:30.000]   a medida que vamos haciendo pasos
+[00:23:30.000 --> 00:23:31.040]   os pediré
+[00:23:31.040 --> 00:23:31.900]   os pediré preguntas
+[00:23:31.900 --> 00:23:33.200]   y las vamos resolviendo
+[00:23:33.200 --> 00:23:36.900]   ahora me voy a quitar
+[00:23:36.900 --> 00:23:37.940]   eliminar destacado
+[00:23:37.940 --> 00:23:40.080]   y voy a compartir pantalla
+[00:23:40.080 --> 00:23:41.260]   espera que me cargo
+[00:23:41.260 --> 00:23:42.220]   esta de igual primero
+[00:23:42.220 --> 00:23:45.560]   vale
+[00:23:45.560 --> 00:24:03.000]   comparto pantalla
+[00:24:03.000 --> 00:24:16.060]   bien
+[00:24:16.060 --> 00:24:18.060]   esto ya está dentro
+[00:24:18.060 --> 00:24:19.100]   de un VPS
+[00:24:19.100 --> 00:24:19.880]   que de hecho
+[00:24:19.880 --> 00:24:20.680]   es de Neura
+[00:24:20.680 --> 00:24:22.460]   esto es una estrategia
+[00:24:22.460 --> 00:24:23.320]   que yo creé ayer
+[00:24:23.320 --> 00:24:24.060]   a ver
+[00:24:24.060 --> 00:24:27.760]   debéis entender
+[00:24:27.760 --> 00:24:28.560]   que aquí la estrategia
+[00:24:28.560 --> 00:24:29.680]   no importa demasiado
+[00:24:29.680 --> 00:24:30.660]   ¿vale?
+[00:24:31.000 --> 00:24:31.540]   repito
+[00:24:31.540 --> 00:24:33.860]   si tuvierais que elegir
+[00:24:33.860 --> 00:24:34.940]   entre una y otra
+[00:24:34.940 --> 00:24:36.240]   lo mejor
+[00:24:36.240 --> 00:24:37.820]   es que
+[00:24:37.820 --> 00:24:40.320]   tenga muchas rachas largas
+[00:24:40.320 --> 00:24:41.440]   es decir
+[00:24:41.440 --> 00:24:41.660]   que
+[00:24:41.660 --> 00:24:42.680]   se tire
+[00:24:42.680 --> 00:24:44.840]   7-3 seguidos
+[00:24:44.840 --> 00:24:45.320]   ganando
+[00:24:45.320 --> 00:24:46.860]   y 7-3 seguidos
+[00:24:46.860 --> 00:24:47.520]   perdiendo
+[00:24:47.520 --> 00:24:48.520]   me da igual
+[00:24:48.520 --> 00:24:49.380]   la equity curve
+[00:24:49.380 --> 00:24:50.420]   de hecho
+[00:24:50.420 --> 00:24:51.080]   el ejemplo
+[00:24:51.080 --> 00:24:51.920]   que cogí ayer
+[00:24:51.920 --> 00:24:53.480]   ni lo miré
+[00:24:53.480 --> 00:24:54.500]   es este de aquí
+[00:24:54.500 --> 00:24:56.040]   es esta estrategia
+[00:24:56.040 --> 00:24:57.000]   diseñé esta estrategia
+[00:24:57.000 --> 00:24:57.400]   fijaros
+[00:24:57.400 --> 00:24:59.340]   veis que tiene
+[00:24:59.340 --> 00:25:00.700]   muchas rachas
+[00:25:00.700 --> 00:25:01.280]   hacia abajo
+[00:25:01.280 --> 00:25:02.340]   es decir
+[00:25:02.340 --> 00:25:03.920]   bueno
+[00:25:03.920 --> 00:25:04.400]   aquí hacia arriba
+[00:25:04.400 --> 00:25:04.700]   a lo mejor
+[00:25:04.700 --> 00:25:05.200]   no tanto
+[00:25:05.200 --> 00:25:05.420]   bueno
+[00:25:05.420 --> 00:25:05.740]   hacia arriba
+[00:25:05.740 --> 00:25:06.320]   sí que tiene
+[00:25:06.320 --> 00:25:07.360]   tiene momentos
+[00:25:07.360 --> 00:25:07.580]   ¿vale?
+[00:25:07.860 --> 00:25:08.600]   yo esto no me lo he mirado
+[00:25:08.600 --> 00:25:09.580]   demasiado en esta estrategia
+[00:25:09.580 --> 00:25:09.780]   ¿vale?
+[00:25:09.780 --> 00:25:11.000]   aunque os lo haya dicho ahora
+[00:25:11.000 --> 00:25:12.120]   no me lo he mirado
+[00:25:12.120 --> 00:25:12.540]   demasiado
+[00:25:12.540 --> 00:25:13.160]   en esta
+[00:25:13.160 --> 00:25:14.200]   en esta simplemente
+[00:25:14.200 --> 00:25:15.000]   lo que he hecho es
+[00:25:15.000 --> 00:25:18.100]   cuando la media móvil rápida
+[00:25:18.100 --> 00:25:20.100]   cruza la media móvil lenta
+[00:25:20.100 --> 00:25:22.940]   da una señal de compra
+[00:25:22.940 --> 00:25:24.420]   es decir
+[00:25:24.420 --> 00:25:26.520]   vamos a poner aquí
+[00:25:26.520 --> 00:25:28.280]   gráficos de trading view
+[00:25:28.280 --> 00:25:29.220]   para que entendáis
+[00:25:29.220 --> 00:25:30.340]   la estrategia que he diseñado
+[00:25:30.340 --> 00:25:31.820]   y veréis que me la he inventado
+[00:25:31.820 --> 00:25:32.000]   ¿eh?
+[00:25:32.580 --> 00:25:33.620]   la típica estrategia
+[00:25:33.620 --> 00:25:34.700]   de medias móviles
+[00:25:34.700 --> 00:25:37.960]   pues yo lo que he hecho es
+[00:25:37.960 --> 00:25:42.840]   esto de aquí
+[00:25:42.840 --> 00:25:48.140]   voy a hacerlo a una hora
+[00:25:48.140 --> 00:25:49.900]   voy a poner euro dólar
+[00:25:49.900 --> 00:25:50.960]   ¿vale?
+[00:25:51.560 --> 00:25:52.260]   una EMA
+[00:25:52.260 --> 00:25:53.080]   creo que puse
+[00:25:53.080 --> 00:25:54.080]   claro
+[00:25:54.080 --> 00:25:55.760]   aquí la gracia
+[00:25:55.760 --> 00:25:56.920]   es que no copiéis
+[00:25:56.920 --> 00:25:58.500]   la misma que he hecho yo
+[00:25:58.500 --> 00:25:59.620]   o al menos utilizar
+[00:25:59.620 --> 00:26:00.980]   periodos distintos
+[00:26:00.980 --> 00:26:01.260]   ¿vale?
+[00:26:02.220 --> 00:26:03.400]   yo he puesto de 20
+[00:26:03.400 --> 00:26:04.600]   si no recuerdo mal
+[00:26:04.600 --> 00:26:05.680]   vamos a ponerla
+[00:26:05.680 --> 00:26:07.100]   de color roja
+[00:26:07.100 --> 00:26:11.300]   y voy a poner
+[00:26:11.300 --> 00:26:12.500]   la 9
+[00:26:12.500 --> 00:26:14.120]   vamos a dejarla azul
+[00:26:14.120 --> 00:26:14.300]   ¿vale?
+[00:26:15.800 --> 00:26:16.540]   yo lo que he hecho
+[00:26:16.540 --> 00:26:17.020]   es lo siguiente
+[00:26:17.020 --> 00:26:18.940]   cuando esta media móvil azul
+[00:26:18.940 --> 00:26:20.140]   cruce por encima
+[00:26:20.140 --> 00:26:20.900]   la roja
+[00:26:20.900 --> 00:26:21.620]   abro una compra
+[00:26:21.620 --> 00:26:24.600]   y cuando la cruce
+[00:26:24.600 --> 00:26:25.040]   por debajo
+[00:26:25.040 --> 00:26:25.840]   encima la temporalidad
+[00:26:25.840 --> 00:26:26.580]   de 5 minutos
+[00:26:26.580 --> 00:26:27.840]   lo he hecho
+[00:26:27.840 --> 00:26:29.800]   y por debajo
+[00:26:29.800 --> 00:26:30.500]   me abro una venta
+[00:26:30.500 --> 00:26:31.440]   y obviamente
+[00:26:31.440 --> 00:26:32.940]   en la cuenta contraria
+[00:26:32.940 --> 00:26:33.940]   va a hacer
+[00:26:33.940 --> 00:26:35.480]   la de al revés
+[00:26:35.480 --> 00:26:37.920]   esto es una chorrada
+[00:26:37.920 --> 00:26:38.500]   de estrategias
+[00:26:38.500 --> 00:26:39.020]   ya habéis visto
+[00:26:39.020 --> 00:26:40.140]   de hecho me sorprende
+[00:26:40.140 --> 00:26:41.580]   que al finalizar esos años
+[00:26:41.580 --> 00:26:43.040]   estén positivos
+[00:26:43.040 --> 00:26:44.480]   ¿pero por qué
+[00:26:44.480 --> 00:26:45.420]   yo he hecho esto?
+[00:26:45.560 --> 00:26:46.480]   porque cada día
+[00:26:46.480 --> 00:26:47.100]   da señales
+[00:26:47.100 --> 00:26:48.480]   a mí me interesa
+[00:26:48.480 --> 00:26:49.160]   que cada día
+[00:26:49.160 --> 00:26:50.260]   entre
+[00:26:50.260 --> 00:26:51.680]   porque como os he dicho
+[00:26:51.680 --> 00:26:52.020]   antes
+[00:26:52.020 --> 00:26:53.320]   lo principal es
+[00:26:53.320 --> 00:26:54.960]   que pasemos
+[00:26:54.960 --> 00:26:55.420]   la evaluación
+[00:26:55.420 --> 00:26:56.480]   de forma rápida
+[00:26:56.480 --> 00:26:57.660]   ¿de acuerdo?
+[00:26:57.700 --> 00:26:58.260]   que se cumpla
+[00:26:58.260 --> 00:26:58.940]   la estadística
+[00:26:58.940 --> 00:26:59.480]   y la pasemos
+[00:26:59.480 --> 00:27:00.360]   lo antes posible
+[00:27:00.360 --> 00:27:01.840]   en 2-3 días
+[00:27:01.840 --> 00:27:02.520]   a poder ser
+[00:27:02.520 --> 00:27:02.980]   ¿bien?
+[00:27:02.980 --> 00:27:04.960]   por tanto
+[00:27:04.960 --> 00:27:05.440]   fijaros
+[00:27:05.440 --> 00:27:06.120]   este de aquí
+[00:27:06.120 --> 00:27:07.080]   hoy ha dado señal
+[00:27:07.080 --> 00:27:08.820]   a las 4 de la tarde
+[00:27:08.820 --> 00:27:09.480]   en compra
+[00:27:09.480 --> 00:27:11.560]   al cierre de esta vela
+[00:27:11.560 --> 00:27:12.060]   seguramente
+[00:27:12.060 --> 00:27:14.720]   y por aquí en venta
+[00:27:14.720 --> 00:27:15.620]   a las 4 y media
+[00:27:15.620 --> 00:27:16.420]   del mediodía
+[00:27:16.420 --> 00:27:17.140]   por en venta
+[00:27:17.140 --> 00:27:17.760]   y por aquí
+[00:27:17.760 --> 00:27:18.680]   pues también habrá dado
+[00:27:18.680 --> 00:27:19.360]   alguna señal
+[00:27:19.360 --> 00:27:19.640]   bueno
+[00:27:19.640 --> 00:27:20.600]   a mí la cuestión
+[00:27:20.600 --> 00:27:21.120]   lo que me interesa
+[00:27:21.120 --> 00:27:21.480]   es que
+[00:27:21.480 --> 00:27:22.340]   abra una operación
+[00:27:22.340 --> 00:27:23.980]   y pueda seguir
+[00:27:23.980 --> 00:27:24.580]   una estrategia
+[00:27:24.580 --> 00:27:25.300]   ¿por qué dices
+[00:27:25.300 --> 00:27:26.500]   una estrategia?
+[00:27:26.500 --> 00:27:30.080]   por si acaso
+[00:27:30.080 --> 00:27:31.940]   por si acaso
+[00:27:31.940 --> 00:27:32.920]   os dicen
+[00:27:32.920 --> 00:27:34.540]   a ver
+[00:27:34.540 --> 00:27:35.840]   a mí no me ha pasado nunca
+[00:27:35.840 --> 00:27:36.320]   pero yo sé
+[00:27:36.320 --> 00:27:37.020]   hay gente que lo ha pasado
+[00:27:37.020 --> 00:27:37.720]   oye
+[00:27:37.720 --> 00:27:38.240]   ¿me puedes compartir
+[00:27:38.240 --> 00:27:38.740]   la estrategia
+[00:27:38.740 --> 00:27:39.760]   alea que has utilizado?
+[00:27:41.400 --> 00:27:42.140]   se lo podéis compartir
+[00:27:42.140 --> 00:27:42.920]   un cruce de medias
+[00:27:42.920 --> 00:27:43.980]   no te pueden decir nada
+[00:27:43.980 --> 00:27:46.140]   te dirán
+[00:27:46.140 --> 00:27:46.280]   vale
+[00:27:46.280 --> 00:27:46.880]   estrategia mierda
+[00:27:46.880 --> 00:27:47.020]   ya
+[00:27:47.020 --> 00:27:47.400]   pero me he pasado
+[00:27:47.400 --> 00:27:47.900]   una evaluación
+[00:27:47.900 --> 00:27:48.780]   ¿sabes?
+[00:27:50.560 --> 00:27:51.280]   ya os digo yo
+[00:27:51.280 --> 00:27:51.820]   que hay mucha gente
+[00:27:51.820 --> 00:27:52.660]   que utiliza estrategias
+[00:27:52.660 --> 00:27:53.380]   basura
+[00:27:53.380 --> 00:27:55.040]   ahí en internet
+[00:27:55.040 --> 00:27:55.720]   pero más de
+[00:27:55.720 --> 00:27:56.680]   muchísima gente
+[00:27:56.680 --> 00:27:58.580]   tenéis una estrategia
+[00:27:58.580 --> 00:27:59.660]   os estáis basando
+[00:27:59.660 --> 00:28:00.900]   en una estrategia
+[00:28:00.900 --> 00:28:01.160]   ¿vale?
+[00:28:01.880 --> 00:28:02.540]   por eso digo
+[00:28:02.540 --> 00:28:03.300]   que es interesante
+[00:28:03.300 --> 00:28:04.880]   no abrirlo
+[00:28:04.880 --> 00:28:05.280]   en aleatorio
+[00:28:05.280 --> 00:28:05.800]   pero sí algo
+[00:28:05.800 --> 00:28:06.380]   que os dé señales
+[00:28:06.380 --> 00:28:06.800]   cada día
+[00:28:06.800 --> 00:28:07.380]   varias señales
+[00:28:07.380 --> 00:28:07.820]   cada día
+[00:28:07.820 --> 00:28:08.800]   ok
+[00:28:08.800 --> 00:28:10.340]   ¿cuál es el objetivo?
+[00:28:10.400 --> 00:28:10.740]   el objetivo
+[00:28:10.740 --> 00:28:11.220]   es hacer
+[00:28:11.220 --> 00:28:12.500]   un trade al día
+[00:28:12.500 --> 00:28:14.100]   la primera vez
+[00:28:14.100 --> 00:28:14.560]   que os dé
+[00:28:14.560 --> 00:28:16.520]   la señal
+[00:28:16.520 --> 00:28:17.760]   un trade
+[00:28:17.760 --> 00:28:19.860]   arriesgar el 4%
+[00:28:19.860 --> 00:28:20.540]   porque no os dejan
+[00:28:20.540 --> 00:28:21.920]   arriesgar más del 5%
+[00:28:21.920 --> 00:28:23.800]   hay empresas de fondeo
+[00:28:23.800 --> 00:28:24.420]   que os capan
+[00:28:24.420 --> 00:28:24.880]   el riesgo
+[00:28:24.880 --> 00:28:25.540]   por idea de trading
+[00:28:25.540 --> 00:28:25.860]   por ejemplo
+[00:28:25.860 --> 00:28:26.900]   Wall Street Funded
+[00:28:26.900 --> 00:28:30.320]   capa por el 2,3%
+[00:28:30.320 --> 00:28:32.540]   por idea de trading
+[00:28:32.540 --> 00:28:33.960]   por lo tanto
+[00:28:33.960 --> 00:28:35.660]   no vayáis un 4%
+[00:28:35.660 --> 00:28:36.400]   en Wall Street Funded
+[00:28:36.400 --> 00:28:36.760]   que por ejemplo
+[00:28:36.760 --> 00:28:37.360]   ayer yo
+[00:28:37.360 --> 00:28:38.480]   lo tuve que configurar
+[00:28:38.480 --> 00:28:38.760]   el riesgo
+[00:28:38.760 --> 00:28:39.920]   al 2,1%
+[00:28:39.920 --> 00:28:40.820]   de hecho
+[00:28:40.820 --> 00:28:41.580]   esto lo hemos hecho
+[00:28:41.580 --> 00:28:41.980]   con Iván
+[00:28:41.980 --> 00:28:42.880]   en Wall Street Funded
+[00:28:42.880 --> 00:28:43.100]   pues
+[00:28:43.100 --> 00:28:44.880]   tener que bajar el riesgo
+[00:28:44.880 --> 00:28:45.980]   ¿cuál es la putada
+[00:28:45.980 --> 00:28:46.820]   de bajar el riesgo?
+[00:28:47.280 --> 00:28:48.180]   que necesitas más trades
+[00:28:48.180 --> 00:28:49.080]   para llegar al take profit
+[00:28:49.080 --> 00:28:49.600]   es una putada
+[00:28:49.600 --> 00:28:50.140]   que te cagas
+[00:28:50.140 --> 00:28:51.600]   si queréis empezar
+[00:28:51.600 --> 00:28:52.380]   con las primeras
+[00:28:52.380 --> 00:28:53.160]   no empecéis con
+[00:28:53.160 --> 00:28:53.720]   Wall Street Funded
+[00:28:53.720 --> 00:28:54.920]   por esa regla
+[00:28:54.920 --> 00:28:56.960]   empezar con otras
+[00:28:56.960 --> 00:28:57.740]   trading pit
+[00:28:57.740 --> 00:28:58.360]   y
+[00:28:58.360 --> 00:28:59.060]   Funded Nets
+[00:28:59.060 --> 00:28:59.380]   por ejemplo
+[00:28:59.380 --> 00:29:00.440]   que es las que me he dejado
+[00:29:00.440 --> 00:29:00.840]   para hoy
+[00:29:00.840 --> 00:29:02.900]   y yo por ejemplo
+[00:29:02.900 --> 00:29:03.500]   le tengo que
+[00:29:03.500 --> 00:29:04.860]   como que
+[00:29:04.860 --> 00:29:06.680]   en Wall Street Funded
+[00:29:06.680 --> 00:29:07.660]   tengo que arriesgar
+[00:29:07.660 --> 00:29:08.600]   2,1%
+[00:29:08.600 --> 00:29:10.180]   y como máximo al día
+[00:29:10.180 --> 00:29:11.460]   puedo perder un 5%
+[00:29:11.460 --> 00:29:12.280]   ahí sí que le dejo
+[00:29:12.280 --> 00:29:13.140]   abrir dos operaciones
+[00:29:13.140 --> 00:29:14.340]   hoy ya me he abierto
+[00:29:14.340 --> 00:29:14.880]   dos operaciones
+[00:29:14.880 --> 00:29:15.740]   y me las ha cerrado
+[00:29:15.740 --> 00:29:16.960]   bien por tanto
+[00:29:16.960 --> 00:29:18.260]   las dos primeras veces
+[00:29:18.260 --> 00:29:19.280]   que veo un cruce de medias
+[00:29:19.280 --> 00:29:20.380]   si ya he cerrado
+[00:29:20.380 --> 00:29:21.100]   la operación primera
+[00:29:21.100 --> 00:29:22.020]   va a abrir una segunda
+[00:29:22.020 --> 00:29:24.660]   y le tengo puesto
+[00:29:24.660 --> 00:29:25.360]   que me opere
+[00:29:25.360 --> 00:29:26.640]   de las 8 de la mañana
+[00:29:26.640 --> 00:29:29.520]   hasta las 10 de la mañana
+[00:29:29.520 --> 00:29:30.440]   cuando cierra
+[00:29:30.440 --> 00:29:31.180]   esa hora que cierran
+[00:29:31.180 --> 00:29:31.780]   los CFDs
+[00:29:31.780 --> 00:29:31.900]   ¿vale?
+[00:29:32.020 --> 00:29:33.220]   y ahí me cierra la operación
+[00:29:33.220 --> 00:29:34.040]   me da igual cuando esté
+[00:29:34.040 --> 00:29:35.120]   me cierra la operación
+[00:29:35.120 --> 00:29:35.720]   porque yo sé
+[00:29:35.720 --> 00:29:36.720]   que aunque no me llega
+[00:29:36.720 --> 00:29:37.340]   el take profit
+[00:29:37.340 --> 00:29:38.800]   si está a la mitad
+[00:29:38.800 --> 00:29:39.520]   el otro también
+[00:29:39.520 --> 00:29:40.280]   me cierra a la mitad
+[00:29:40.280 --> 00:29:40.620]   ¿vale?
+[00:29:40.640 --> 00:29:41.340]   por lo que gano de uno
+[00:29:41.340 --> 00:29:42.300]   lo pego del otro siempre
+[00:29:42.300 --> 00:29:42.520]   ¿vale?
+[00:29:42.860 --> 00:29:43.700]   aunque no ha llegado
+[00:29:43.700 --> 00:29:44.400]   a ese 4%
+[00:29:44.400 --> 00:29:44.680]   pero
+[00:29:44.680 --> 00:29:46.220]   el ir a ajustar
+[00:29:46.220 --> 00:29:47.300]   el riesgo al 4%
+[00:29:47.300 --> 00:29:47.860]   hace que
+[00:29:47.860 --> 00:29:49.020]   en dos trades
+[00:29:49.020 --> 00:29:50.140]   si tenéis
+[00:29:50.140 --> 00:29:51.580]   suerte
+[00:29:51.580 --> 00:29:52.700]   en dos días
+[00:29:52.700 --> 00:29:53.680]   estéis al 8%
+[00:29:53.680 --> 00:29:55.460]   ¿bien?
+[00:29:55.920 --> 00:29:57.040]   y esa vez no lo ha pasado
+[00:29:57.040 --> 00:29:57.880]   y es
+[00:29:57.880 --> 00:29:58.720]   es de agradecer
+[00:29:58.720 --> 00:29:59.020]   la verdad
+[00:29:59.020 --> 00:30:01.060]   porque es bastante rápido
+[00:30:01.060 --> 00:30:01.260]   ¿vale?
+[00:30:01.260 --> 00:30:01.540]   y si no
+[00:30:01.540 --> 00:30:02.300]   pues esperáis un tercero
+[00:30:02.300 --> 00:30:02.740]   un cuarto día
+[00:30:02.740 --> 00:30:04.140]   bien
+[00:30:04.140 --> 00:30:05.060]   pues esta es la estrategia
+[00:30:05.060 --> 00:30:05.460]   chorra
+[00:30:05.460 --> 00:30:06.140]   y ahí cada uno
+[00:30:06.140 --> 00:30:06.940]   sinceramente
+[00:30:06.940 --> 00:30:07.720]   que diseñe
+[00:30:07.720 --> 00:30:08.400]   lo que quiera
+[00:30:08.400 --> 00:30:09.360]   si no
+[00:30:09.360 --> 00:30:10.360]   cualquier cosa
+[00:30:10.360 --> 00:30:10.940]   buscad
+[00:30:10.940 --> 00:30:11.560]   y no pongáis
+[00:30:11.560 --> 00:30:12.460]   muchos filtros
+[00:30:12.460 --> 00:30:14.180]   de rentabilidad
+[00:30:14.180 --> 00:30:14.840]   en el builder
+[00:30:14.840 --> 00:30:17.340]   lo ponéis a 5 minutos
+[00:30:17.340 --> 00:30:19.120]   podéis generar estrategias
+[00:30:19.120 --> 00:30:19.860]   del último año
+[00:30:19.860 --> 00:30:20.480]   2025
+[00:30:20.480 --> 00:30:20.960]   no hace falta
+[00:30:20.960 --> 00:30:22.100]   os vayáis a 10 años atrás
+[00:30:22.100 --> 00:30:23.900]   que os haga una estrategia
+[00:30:23.900 --> 00:30:24.860]   y que opere
+[00:30:24.860 --> 00:30:26.180]   cada día
+[00:30:26.180 --> 00:30:27.140]   ¿vale?
+[00:30:27.300 --> 00:30:27.780]   cada día
+[00:30:27.780 --> 00:30:29.380]   o casi cada día
+[00:30:29.380 --> 00:30:30.580]   ahí eso es
+[00:30:30.580 --> 00:30:31.680]   elección de cada uno
+[00:30:31.680 --> 00:30:33.360]   lo que necesitamos nosotros
+[00:30:33.360 --> 00:30:35.460]   es este código
+[00:30:35.460 --> 00:30:35.780]   de aquí
+[00:30:35.780 --> 00:30:37.280]   esto es lo que necesitamos
+[00:30:37.280 --> 00:30:39.180]   de la estrategia
+[00:30:39.180 --> 00:30:40.440]   va abordando
+[00:30:40.440 --> 00:30:41.560]   yo esta estrategia
+[00:30:41.560 --> 00:30:44.320]   la guardáis
+[00:30:44.320 --> 00:30:45.300]   eso sí
+[00:30:45.300 --> 00:30:46.040]   MetaTrader 5
+[00:30:46.040 --> 00:30:47.320]   esto está
+[00:30:47.320 --> 00:30:48.280]   en todas las herramientas
+[00:30:48.280 --> 00:30:49.900]   que hemos desarrollado
+[00:30:49.900 --> 00:30:51.020]   está para MetaTrader 5
+[00:30:51.020 --> 00:30:55.480]   claro
+[00:30:55.480 --> 00:30:56.700]   esto no se podría utilizar
+[00:30:56.700 --> 00:30:58.340]   porque
+[00:30:58.340 --> 00:30:59.180]   MetaTrader 4
+[00:30:59.180 --> 00:30:59.580]   pero bueno
+[00:30:59.580 --> 00:31:00.080]   por ahora
+[00:31:00.080 --> 00:31:00.720]   hemos sacado
+[00:31:00.720 --> 00:31:01.480]   esta MetaTrader 5
+[00:31:01.480 --> 00:31:01.840]   que es
+[00:31:01.840 --> 00:31:03.020]   el 90%
+[00:31:03.020 --> 00:31:03.640]   del 95%
+[00:31:03.640 --> 00:31:04.160]   de las cuentas
+[00:31:04.160 --> 00:31:05.260]   que estamos utilizando
+[00:31:05.260 --> 00:31:05.840]   a día de hoy
+[00:31:05.840 --> 00:31:08.280]   esto nos lo guardamos
+[00:31:08.280 --> 00:31:09.480]   ¿bien?
+[00:31:10.260 --> 00:31:11.760]   cuando nos guardamos esto
+[00:31:11.760 --> 00:31:13.620]   ahora sí
+[00:31:13.620 --> 00:31:14.140]   nos vamos
+[00:31:14.140 --> 00:31:15.060]   a
+[00:31:15.060 --> 00:31:17.420]   a
+[00:31:17.420 --> 00:31:22.580]   Academia Hobby Code
+[00:31:22.580 --> 00:31:24.940]   que es nuestra web
+[00:31:24.940 --> 00:31:25.780]   para alumnos
+[00:31:25.780 --> 00:31:28.580]   y se os han habilitado
+[00:31:28.580 --> 00:31:29.620]   varios
+[00:31:29.620 --> 00:31:31.000]   varios apartados
+[00:31:31.000 --> 00:31:32.660]   recientemente
+[00:31:32.660 --> 00:31:33.340]   uno que se llama
+[00:31:33.340 --> 00:31:33.980]   Copy Trading
+[00:31:33.980 --> 00:31:34.840]   y otro que se llama
+[00:31:34.840 --> 00:31:35.560]   Expert at Bash
+[00:31:35.560 --> 00:31:36.900]   Expert at Bash
+[00:31:36.900 --> 00:31:38.060]   pero no había subido nada
+[00:31:38.060 --> 00:31:38.260]   ¿vale?
+[00:31:39.140 --> 00:31:39.820]   en Expert at Bash
+[00:31:39.820 --> 00:31:40.760]   ahora deberéis de ver
+[00:31:40.760 --> 00:31:41.120]   dos
+[00:31:41.120 --> 00:31:43.300]   uno que es
+[00:31:43.300 --> 00:31:43.760]   el
+[00:31:43.760 --> 00:31:44.260]   LA Hobby Code
+[00:31:44.260 --> 00:31:44.740]   Copy Trading
+[00:31:44.740 --> 00:31:45.980]   y el LA Hobby Code
+[00:31:45.980 --> 00:31:46.480]   News Manager
+[00:31:46.480 --> 00:31:47.220]   que muchos de vosotros
+[00:31:47.220 --> 00:31:48.080]   me lo pedíais
+[00:31:48.080 --> 00:31:50.220]   y lo teníamos
+[00:31:50.220 --> 00:31:50.720]   lo que pasa es que
+[00:31:50.720 --> 00:31:51.360]   lo quería lanzar
+[00:31:51.360 --> 00:31:52.220]   conjuntamente
+[00:31:52.220 --> 00:31:52.900]   porque tiene que ver
+[00:31:52.900 --> 00:31:53.340]   esto también
+[00:31:53.340 --> 00:31:53.840]   tiene que ver
+[00:31:53.840 --> 00:31:55.520]   porque es una de las reglas
+[00:31:55.520 --> 00:31:56.620]   que vale más
+[00:31:56.620 --> 00:31:57.500]   cubrirnos
+[00:31:57.500 --> 00:31:59.340]   y luego tenemos
+[00:31:59.340 --> 00:31:59.820]   la herramienta
+[00:31:59.820 --> 00:32:00.440]   de Copy Trading
+[00:32:00.440 --> 00:32:01.800]   ¿bien?
+[00:32:02.300 --> 00:32:03.160]   que aquí nos dice
+[00:32:03.160 --> 00:32:04.040]   este parchador
+[00:32:04.040 --> 00:32:05.000]   solo funciona con EAS
+[00:32:05.000 --> 00:32:05.940]   generado de Strategic One
+[00:32:05.940 --> 00:32:06.760]   que mantengan
+[00:32:06.760 --> 00:32:07.800]   su estructura original
+[00:32:07.800 --> 00:32:08.040]   bueno
+[00:32:08.040 --> 00:32:08.440]   lo que
+[00:32:08.440 --> 00:32:09.600]   de la pestañita
+[00:32:09.600 --> 00:32:10.360]   que os he dicho
+[00:32:10.360 --> 00:32:11.960]   los portales de ahí
+[00:32:11.960 --> 00:32:12.760]   como siempre hemos hecho
+[00:32:12.760 --> 00:32:14.040]   requisitos
+[00:32:14.040 --> 00:32:14.300]   de EAS
+[00:32:14.300 --> 00:32:15.380]   tienen que ser exportados
+[00:32:15.380 --> 00:32:15.900]   de Strategic One
+[00:32:15.900 --> 00:32:17.440]   y no lo debéis
+[00:32:17.440 --> 00:32:18.180]   de haber manipulado
+[00:32:18.180 --> 00:32:19.580]   ¿bien?
+[00:32:21.380 --> 00:32:22.340]   no compatible
+[00:32:22.340 --> 00:32:23.360]   con EAS
+[00:32:23.360 --> 00:32:23.980]   que no vengan
+[00:32:23.980 --> 00:32:24.640]   de Strategic One
+[00:32:24.640 --> 00:32:25.620]   valga la redundancia
+[00:32:25.620 --> 00:32:26.340]   pero para quedar
+[00:32:26.340 --> 00:32:27.220]   dejarlo claro
+[00:32:27.220 --> 00:32:28.720]   y EAS
+[00:32:28.720 --> 00:32:29.200]   que obviamente
+[00:32:29.200 --> 00:32:29.880]   hayan sido parcheados
+[00:32:29.880 --> 00:32:30.180]   previamente
+[00:32:30.180 --> 00:32:30.460]   básicamente
+[00:32:30.460 --> 00:32:31.060]   los controles
+[00:32:31.060 --> 00:32:32.060]   de los dedos de arriba
+[00:32:32.060 --> 00:32:32.980]   es para repetir
+[00:32:32.980 --> 00:32:33.700]   de nuevo
+[00:32:33.700 --> 00:32:34.340]   lo que hace
+[00:32:34.340 --> 00:32:34.500]   ¿vale?
+[00:32:35.180 --> 00:32:36.220]   ¿qué hace este parchador?
+[00:32:36.800 --> 00:32:37.680]   prepara tu EAS
+[00:32:37.680 --> 00:32:38.900]   el que opera
+[00:32:38.900 --> 00:32:39.740]   el que realmente
+[00:32:39.740 --> 00:32:40.760]   tiene la estrategia
+[00:32:40.760 --> 00:32:43.160]   para que sea compatible
+[00:32:43.160 --> 00:32:43.740]   con el sistema
+[00:32:43.740 --> 00:32:44.480]   Copy Trading
+[00:32:44.480 --> 00:32:46.260]   del Expert Advisor
+[00:32:46.260 --> 00:32:48.240]   respetando los límites
+[00:32:48.240 --> 00:32:49.400]   de tu prop firm
+[00:32:49.400 --> 00:32:51.360]   ¿vale?
+[00:32:52.860 --> 00:32:53.600]   por ejemplo
+[00:32:53.600 --> 00:32:54.420]   cuando lea Master
+[00:32:54.420 --> 00:32:55.540]   bueno esto de Master
+[00:32:55.540 --> 00:32:55.920]   y Slave
+[00:32:55.920 --> 00:32:56.700]   ahora os explicaré
+[00:32:56.700 --> 00:32:58.340]   cuando lea Master
+[00:32:58.340 --> 00:32:59.240]   detecta que se ha alcanzado
+[00:32:59.240 --> 00:33:00.060]   un límite de riesgo
+[00:33:00.060 --> 00:33:00.600]   lo que os he dicho
+[00:33:00.600 --> 00:33:01.900]   pues yo hoy quiero arriesgar
+[00:33:01.900 --> 00:33:03.080]   como máximo un 4%
+[00:33:03.080 --> 00:33:04.380]   cuando llega al 4%
+[00:33:04.380 --> 00:33:04.640]   ¡pam!
+[00:33:04.640 --> 00:33:05.240]   me para todo
+[00:33:05.240 --> 00:33:05.840]   ¿bien?
+[00:33:06.560 --> 00:33:07.780]   envía una señal de stop
+[00:33:07.780 --> 00:33:09.740]   para enviar esta señal de stop
+[00:33:09.740 --> 00:33:12.240]   se tiene que coordinar
+[00:33:12.240 --> 00:33:13.160]   con nuestro robot
+[00:33:13.160 --> 00:33:13.600]   que hemos creado
+[00:33:13.600 --> 00:33:14.140]   en Strategic One
+[00:33:14.140 --> 00:33:14.720]   por eso
+[00:33:14.720 --> 00:33:15.600]   tenemos que pasar
+[00:33:15.600 --> 00:33:16.400]   por este parchador
+[00:33:16.400 --> 00:33:17.560]   para la gente
+[00:33:17.560 --> 00:33:18.260]   que es desarrollador
+[00:33:18.260 --> 00:33:19.340]   que sea más técnica
+[00:33:19.340 --> 00:33:20.280]   para que me entienda
+[00:33:20.280 --> 00:33:21.020]   lo que hace esto
+[00:33:21.020 --> 00:33:22.620]   es añadir unas variables
+[00:33:22.620 --> 00:33:23.620]   globales
+[00:33:23.620 --> 00:33:25.880]   para que se puedan hablar
+[00:33:25.880 --> 00:33:26.620]   ambos
+[00:33:26.620 --> 00:33:28.740]   expert advisors
+[00:33:28.740 --> 00:33:30.260]   conectados a la misma cuenta
+[00:33:30.260 --> 00:33:30.620]   ¿de acuerdo?
+[00:33:30.700 --> 00:33:31.400]   esto es
+[00:33:31.400 --> 00:33:32.000]   una explicación
+[00:33:32.000 --> 00:33:32.400]   para la gente
+[00:33:32.400 --> 00:33:33.660]   un poco más avanzada
+[00:33:33.660 --> 00:33:34.380]   en programación
+[00:33:34.380 --> 00:33:35.280]   que no es necesario entender
+[00:33:35.280 --> 00:33:37.040]   por tanto
+[00:33:37.040 --> 00:33:37.620]   yo voy
+[00:33:37.620 --> 00:33:39.160]   a ver si tengo por aquí
+[00:33:39.160 --> 00:33:44.800]   el robot
+[00:33:44.800 --> 00:33:49.800]   vale
+[00:33:49.800 --> 00:33:53.940]   espera
+[00:33:53.940 --> 00:33:54.720]   si no me lo descargo
+[00:33:54.720 --> 00:33:55.040]   de nuevo
+[00:33:55.040 --> 00:33:55.600]   pensaba
+[00:33:55.600 --> 00:33:56.520]   lo tenía aquí descargado
+[00:33:56.520 --> 00:33:58.160]   si lo hice ayer
+[00:33:58.160 --> 00:34:00.380]   ah vale
+[00:34:00.380 --> 00:34:00.860]   espera
+[00:34:00.860 --> 00:34:01.700]   que lo debo tener
+[00:34:01.700 --> 00:34:03.400]   en el metatrader
+[00:34:03.400 --> 00:34:03.800]   seguro
+[00:34:03.800 --> 00:34:10.780]   a ver
+[00:34:10.780 --> 00:34:12.780]   a ver
+[00:34:12.780 --> 00:34:19.180]   vale
+[00:34:19.180 --> 00:34:19.820]   es este el robot
+[00:34:19.820 --> 00:34:21.200]   es macrosover
+[00:34:21.200 --> 00:34:21.380]   vale
+[00:34:21.380 --> 00:34:21.620]   es este
+[00:34:21.620 --> 00:34:22.620]   que me lo descargué
+[00:34:22.620 --> 00:34:24.040]   no hay que compilarlo
+[00:34:24.040 --> 00:34:24.280]   aún
+[00:34:24.280 --> 00:34:25.780]   no hay que compilarlo
+[00:34:25.780 --> 00:34:27.580]   es sin compilar
+[00:34:27.580 --> 00:34:28.580]   tanto
+[00:34:28.580 --> 00:34:29.320]   este de aquí
+[00:34:29.320 --> 00:34:30.200]   me lo voy
+[00:34:30.200 --> 00:34:31.140]   a poner
+[00:34:31.140 --> 00:34:33.800]   bueno
+[00:34:33.800 --> 00:34:35.280]   lo voy a poner
+[00:34:35.280 --> 00:34:35.660]   exactamente
+[00:34:35.660 --> 00:34:36.280]   en esta ruta
+[00:34:36.280 --> 00:34:38.320]   me voy aquí
+[00:34:38.320 --> 00:34:39.480]   seleccionar archivo
+[00:34:39.480 --> 00:34:40.580]   me voy
+[00:34:40.580 --> 00:34:41.080]   a
+[00:34:41.080 --> 00:34:43.280]   esta carpeta
+[00:34:43.280 --> 00:34:44.640]   bien
+[00:34:44.640 --> 00:34:45.820]   y le doy
+[00:34:45.820 --> 00:34:46.220]   ea
+[00:34:46.220 --> 00:34:47.020]   emacrosover
+[00:34:47.020 --> 00:34:47.840]   que es el robot
+[00:34:47.840 --> 00:34:48.540]   exportado
+[00:34:48.540 --> 00:34:49.540]   de strategy one
+[00:34:49.540 --> 00:34:49.780]   ¿de acuerdo?
+[00:34:49.840 --> 00:34:50.520]   esto es mi ordenador
+[00:34:50.520 --> 00:34:51.200]   pero ya me lo he pasado
+[00:34:51.200 --> 00:34:51.920]   de mi vps
+[00:34:51.920 --> 00:34:52.580]   a mi ordenador
+[00:34:52.580 --> 00:34:54.160]   ese paso me lo salto
+[00:34:54.160 --> 00:34:54.660]   le doy a abrir
+[00:34:54.660 --> 00:34:59.640]   lo que pasa
+[00:34:59.640 --> 00:35:00.460]   creo que este
+[00:35:00.460 --> 00:35:01.820]   ya está parcheado
+[00:35:01.820 --> 00:35:02.260]   creo
+[00:35:02.260 --> 00:35:03.760]   bueno
+[00:35:03.760 --> 00:35:04.160]   lo voy a volver
+[00:35:04.160 --> 00:35:04.980]   si no me va a dar error
+[00:35:04.980 --> 00:35:06.320]   este está parcheado
+[00:35:06.320 --> 00:35:08.020]   el archivo ya contiene
+[00:35:08.020 --> 00:35:08.520]   la verificación
+[00:35:08.520 --> 00:35:09.100]   de copy trading
+[00:35:09.100 --> 00:35:09.300]   claro
+[00:35:09.300 --> 00:35:10.040]   es que este está parcheado
+[00:35:10.040 --> 00:35:10.820]   es que lo borré
+[00:35:10.820 --> 00:35:11.480]   vale
+[00:35:11.480 --> 00:35:12.260]   me lo vuelvo a descargar
+[00:35:12.260 --> 00:35:12.440]   vale
+[00:35:12.440 --> 00:35:13.240]   dame un momentito
+[00:35:13.240 --> 00:35:15.360]   un momentito
+[00:35:15.360 --> 00:35:16.680]   que esto ya lo hice ayer
+[00:35:16.680 --> 00:35:18.100]   es básicamente
+[00:35:18.100 --> 00:35:18.960]   para que lo veáis
+[00:35:18.960 --> 00:35:19.240]   o sea
+[00:35:19.240 --> 00:35:20.180]   el resultante es este
+[00:35:20.180 --> 00:35:20.760]   pero quiero
+[00:35:20.760 --> 00:35:21.340]   quiero hacerlo
+[00:35:21.340 --> 00:35:23.140]   quiero enseñaroslo
+[00:35:23.140 --> 00:35:27.020]   fondeo
+[00:35:27.020 --> 00:35:27.980]   vale
+[00:35:27.980 --> 00:35:28.720]   ahí lo tengo
+[00:35:28.720 --> 00:35:34.660]   no es que también
+[00:35:34.660 --> 00:35:36.280]   lo subí parcheado
+[00:35:36.280 --> 00:35:37.140]   vale
+[00:35:37.140 --> 00:35:37.960]   voy a seleccionar otro
+[00:35:37.960 --> 00:35:38.120]   ¿vale?
+[00:35:38.140 --> 00:35:38.460]   de acuerdo
+[00:35:38.460 --> 00:35:40.500]   voy a seleccionar otro
+[00:35:40.500 --> 00:35:43.100]   para que veáis el proceso
+[00:35:43.100 --> 00:35:46.600]   pues cogeré
+[00:35:46.600 --> 00:35:49.140]   no es que tiene que ser
+[00:35:49.140 --> 00:35:49.780]   de strategy one
+[00:35:49.780 --> 00:35:51.720]   tiene que ser
+[00:35:51.720 --> 00:35:52.520]   de strategy one
+[00:35:52.520 --> 00:36:00.220]   creo que este
+[00:36:00.220 --> 00:36:01.200]   este lo es
+[00:36:01.200 --> 00:36:05.500]   no este no lo es
+[00:36:05.500 --> 00:36:07.360]   a ver
+[00:36:07.360 --> 00:36:08.040]   fondeo
+[00:36:08.040 --> 00:36:18.320]   a ver si no tendré
+[00:36:18.320 --> 00:36:19.100]   ningún robot por aquí
+[00:36:19.100 --> 00:36:19.760]   para enseñarlo
+[00:36:19.760 --> 00:36:20.320]   perdónate
+[00:36:20.320 --> 00:36:30.080]   vamos a ver este
+[00:36:30.080 --> 00:36:30.720]   vale
+[00:36:30.720 --> 00:36:31.180]   este sí
+[00:36:31.180 --> 00:36:32.740]   bueno
+[00:36:32.740 --> 00:36:33.200]   este es un robot
+[00:36:33.200 --> 00:36:34.080]   que tenía por ahí
+[00:36:34.080 --> 00:36:34.960]   del Dow Jones
+[00:36:34.960 --> 00:36:37.540]   fichero de código
+[00:36:37.540 --> 00:36:37.740]   ¿vale?
+[00:36:37.740 --> 00:36:38.900]   el MQL5
+[00:36:38.900 --> 00:36:39.800]   que nos descargamos
+[00:36:39.800 --> 00:36:40.480]   de strategy one
+[00:36:40.480 --> 00:36:41.520]   y básicamente
+[00:36:41.520 --> 00:36:42.040]   aquí abajo
+[00:36:42.040 --> 00:36:42.480]   nos dice
+[00:36:42.480 --> 00:36:43.620]   he aparcheado con éxito
+[00:36:43.620 --> 00:36:44.480]   ha sido modificado
+[00:36:44.480 --> 00:36:45.580]   le dais click aquí
+[00:36:45.580 --> 00:36:46.960]   y fijaros que simplemente
+[00:36:46.960 --> 00:36:47.940]   os añade un
+[00:36:47.940 --> 00:36:48.480]   barra baja
+[00:36:48.480 --> 00:36:49.940]   copytrading.mq5
+[00:36:49.940 --> 00:36:51.280]   se descarga
+[00:36:51.280 --> 00:36:52.160]   se me lo acaba de descargar
+[00:36:52.160 --> 00:36:52.540]   ahora
+[00:36:52.540 --> 00:36:54.260]   y este es el robot
+[00:36:54.260 --> 00:36:54.620]   que tenemos
+[00:36:54.620 --> 00:36:55.300]   debemos de utilizar
+[00:36:55.300 --> 00:36:56.640]   en nuestras cuentas
+[00:36:56.640 --> 00:36:56.900]   ¿de acuerdo?
+[00:36:56.960 --> 00:36:57.740]   en la evaluación
+[00:36:57.740 --> 00:36:59.220]   el que pone
+[00:36:59.220 --> 00:36:59.680]   barra baja
+[00:36:59.680 --> 00:37:00.360]   copytrading
+[00:37:00.360 --> 00:37:01.180]   yo eliminé eso
+[00:37:01.180 --> 00:37:01.640]   de barra baja
+[00:37:01.640 --> 00:37:02.280]   copytrading
+[00:37:02.280 --> 00:37:03.240]   y ya le puse
+[00:37:03.240 --> 00:37:04.660]   el nombre que tenía antes
+[00:37:04.660 --> 00:37:05.000]   ¿de acuerdo?
+[00:37:05.280 --> 00:37:06.700]   tanto con este robot
+[00:37:06.700 --> 00:37:07.480]   ahora sí
+[00:37:07.480 --> 00:37:08.820]   os lo lleváis
+[00:37:08.820 --> 00:37:09.900]   al VPS
+[00:37:09.900 --> 00:37:10.360]   donde tenéis
+[00:37:10.360 --> 00:37:11.240]   los metatraders
+[00:37:11.240 --> 00:37:14.420]   nos vamos
+[00:37:14.420 --> 00:37:15.200]   al VPS
+[00:37:15.200 --> 00:37:15.980]   donde tenemos
+[00:37:15.980 --> 00:37:17.000]   los metatraders
+[00:37:17.000 --> 00:37:19.700]   yo creo que lo tengo aquí
+[00:37:19.700 --> 00:37:28.360]   vale
+[00:37:28.360 --> 00:37:31.260]   y os lo descargáis
+[00:37:31.260 --> 00:37:31.660]   aquí
+[00:37:31.660 --> 00:37:32.200]   os lo pasáis
+[00:37:32.200 --> 00:37:32.600]   en este
+[00:37:32.600 --> 00:37:33.140]   en este
+[00:37:33.140 --> 00:37:35.120]   en este VPS
+[00:37:35.120 --> 00:37:35.720]   donde tengáis
+[00:37:35.720 --> 00:37:36.300]   el metatrader
+[00:37:36.300 --> 00:37:36.840]   recordad
+[00:37:36.840 --> 00:37:37.640]   el metatrader
+[00:37:37.640 --> 00:37:38.760]   debe de tener
+[00:37:38.760 --> 00:37:39.640]   todos los indicadores
+[00:37:39.640 --> 00:37:40.420]   de strategic 1
+[00:37:40.420 --> 00:37:40.960]   es decir
+[00:37:40.960 --> 00:37:41.920]   todos los indicadores
+[00:37:41.920 --> 00:37:42.780]   los tenéis que copiar
+[00:37:42.780 --> 00:37:43.860]   en cada carpeta
+[00:37:43.860 --> 00:37:46.160]   de metatrader 5
+[00:37:46.160 --> 00:37:47.820]   porque los robots
+[00:37:47.820 --> 00:37:49.080]   creados por el strategic 1
+[00:37:49.080 --> 00:37:49.760]   utilizan
+[00:37:49.760 --> 00:37:50.440]   los ficheros
+[00:37:50.440 --> 00:37:51.000]   de indicadores
+[00:37:51.000 --> 00:37:52.080]   de strategic 1
+[00:37:52.080 --> 00:37:53.260]   si utilizáis
+[00:37:53.260 --> 00:37:53.660]   el VPS
+[00:37:53.660 --> 00:37:54.060]   en Eura
+[00:37:54.060 --> 00:37:55.060]   ahí
+[00:37:55.060 --> 00:37:56.220]   ya os dejamos
+[00:37:56.220 --> 00:37:57.440]   los metatraders
+[00:37:57.440 --> 00:37:57.760]   os dejamos
+[00:37:57.760 --> 00:37:58.900]   creo que 10 metatraders
+[00:37:58.900 --> 00:37:59.560]   en cada VPS
+[00:37:59.560 --> 00:38:00.240]   de metatrader
+[00:38:00.240 --> 00:38:01.880]   con todos los indicadores
+[00:38:01.880 --> 00:38:02.240]   metidos
+[00:38:02.240 --> 00:38:02.440]   es decir
+[00:38:02.440 --> 00:38:03.160]   no los tenéis que meter
+[00:38:03.160 --> 00:38:03.460]   vosotros
+[00:38:03.460 --> 00:38:04.360]   porque ya vienen metidos
+[00:38:04.360 --> 00:38:05.400]   es una comodidad
+[00:38:05.400 --> 00:38:07.000]   que os damos
+[00:38:07.000 --> 00:38:07.380]   pero bueno
+[00:38:07.380 --> 00:38:08.440]   recordad de tenerlo ahí
+[00:38:08.440 --> 00:38:08.600]   ¿vale?
+[00:38:09.980 --> 00:38:10.900]   punto número 2
+[00:38:10.900 --> 00:38:11.440]   no solo
+[00:38:11.440 --> 00:38:13.180]   mandéis en ese VPS
+[00:38:13.180 --> 00:38:13.820]   el robot
+[00:38:13.820 --> 00:38:14.740]   que acabáis de crear
+[00:38:14.740 --> 00:38:15.820]   y parchear
+[00:38:15.820 --> 00:38:17.380]   bueno
+[00:38:17.380 --> 00:38:17.920]   lo podéis hacer
+[00:38:17.920 --> 00:38:18.980]   desde el propio VPS
+[00:38:18.980 --> 00:38:19.760]   para no tener que ir
+[00:38:19.760 --> 00:38:20.780]   mandando por correos
+[00:38:20.780 --> 00:38:21.500]   o por Google Drive
+[00:38:21.500 --> 00:38:22.000]   ficheros
+[00:38:22.000 --> 00:38:22.980]   pero que sepáis
+[00:38:22.980 --> 00:38:23.360]   que ahí
+[00:38:23.360 --> 00:38:24.620]   os tenéis que descargar
+[00:38:24.620 --> 00:38:25.260]   vos venís
+[00:38:25.260 --> 00:38:26.460]   a Expert Advisors
+[00:38:26.460 --> 00:38:28.140]   y os descargáis
+[00:38:28.140 --> 00:38:29.020]   el EA Hobby Code
+[00:38:29.020 --> 00:38:29.660]   Copy Trading
+[00:38:29.660 --> 00:38:31.600]   y EA Hobby Code
+[00:38:31.600 --> 00:38:32.460]   News Manager
+[00:38:32.460 --> 00:38:34.080]   cuando le dais a descargar
+[00:38:34.080 --> 00:38:34.860]   vosotros no veis esto
+[00:38:34.860 --> 00:38:35.340]   esto lo veo yo
+[00:38:35.340 --> 00:38:35.860]   porque soy admin
+[00:38:35.860 --> 00:38:36.040]   ¿vale?
+[00:38:36.080 --> 00:38:36.760]   lo de editar
+[00:38:36.760 --> 00:38:38.360]   esto os va a llevar
+[00:38:38.360 --> 00:38:39.740]   a un
+[00:38:39.740 --> 00:38:42.520]   a un Google Drive
+[00:38:42.520 --> 00:38:43.860]   este Google Drive
+[00:38:43.860 --> 00:38:44.660]   es público
+[00:38:44.660 --> 00:38:46.140]   aquí tenéis
+[00:38:46.140 --> 00:38:46.980]   Copy Trading
+[00:38:46.980 --> 00:38:47.800]   el Master
+[00:38:47.800 --> 00:38:49.080]   y el Slave
+[00:38:49.080 --> 00:38:51.840]   el Master
+[00:38:51.840 --> 00:38:52.640]   va a ser
+[00:38:52.640 --> 00:38:53.840]   el Expert Advisor
+[00:38:53.840 --> 00:38:54.540]   que vamos a meter
+[00:38:54.540 --> 00:38:56.120]   en la primera cuenta
+[00:38:56.120 --> 00:38:56.800]   de evaluación
+[00:38:56.800 --> 00:38:58.360]   y el Slave
+[00:38:58.360 --> 00:38:59.320]   será el Expert Advisor
+[00:38:59.320 --> 00:39:00.080]   que vamos a conectar
+[00:39:00.080 --> 00:39:01.280]   en la segunda cuenta
+[00:39:01.280 --> 00:39:01.900]   de evaluación
+[00:39:01.900 --> 00:39:02.260]   ¿vale?
+[00:39:02.260 --> 00:39:02.700]   la segunda cuenta
+[00:39:02.700 --> 00:39:03.480]   que os habéis comprado
+[00:39:03.480 --> 00:39:04.980]   y este pedazo
+[00:39:04.980 --> 00:39:05.520]   de PDF
+[00:39:05.520 --> 00:39:06.680]   os lo tenéis
+[00:39:06.680 --> 00:39:07.800]   que imprimir
+[00:39:07.800 --> 00:39:08.920]   ¿vale?
+[00:39:08.960 --> 00:39:09.260]   porque
+[00:39:09.260 --> 00:39:11.320]   son las instrucciones
+[00:39:11.320 --> 00:39:13.000]   de cómo
+[00:39:13.000 --> 00:39:14.680]   de cómo funciona
+[00:39:14.680 --> 00:39:15.440]   tanto el Master
+[00:39:15.440 --> 00:39:16.040]   como el Slave
+[00:39:16.040 --> 00:39:17.080]   para que sirve
+[00:39:17.080 --> 00:39:17.660]   cada parámetro
+[00:39:17.660 --> 00:39:18.400]   yo os lo voy a explicar
+[00:39:18.400 --> 00:39:19.060]   ahora todo
+[00:39:19.060 --> 00:39:20.000]   de hecho yo tendré
+[00:39:20.000 --> 00:39:20.720]   que revisar
+[00:39:20.720 --> 00:39:21.840]   este documento también
+[00:39:21.840 --> 00:39:22.360]   porque ya os digo
+[00:39:22.360 --> 00:39:23.140]   me lo leí ayer
+[00:39:23.140 --> 00:39:24.180]   lo he tenido esta semana
+[00:39:24.180 --> 00:39:25.100]   este juguetito nuevo
+[00:39:25.100 --> 00:39:26.620]   y no me lo sé de memoria
+[00:39:26.620 --> 00:39:26.800]   ¿vale?
+[00:39:27.740 --> 00:39:28.680]   todo cómo funciona el Master
+[00:39:28.680 --> 00:39:29.780]   cómo funciona el Slave
+[00:39:29.780 --> 00:39:31.680]   modos de operación
+[00:39:31.680 --> 00:39:32.180]   lo que hace
+[00:39:32.180 --> 00:39:32.740]   lo que no hace
+[00:39:32.740 --> 00:39:33.500]   ejemplos
+[00:39:33.500 --> 00:39:37.500]   multiplicador de riesgo
+[00:39:37.500 --> 00:39:38.400]   bueno esto ya es Masteki
+[00:39:38.400 --> 00:39:40.180]   guía de instalación
+[00:39:40.180 --> 00:39:41.320]   esto es muy importante
+[00:39:41.320 --> 00:39:42.360]   la guía de instalación
+[00:39:42.360 --> 00:39:43.000]   de estas
+[00:39:43.000 --> 00:39:45.320]   de estos ficheros
+[00:39:45.320 --> 00:39:46.380]   de estos Expert Advisor
+[00:39:46.380 --> 00:39:47.440]   esto es muy importante
+[00:39:47.440 --> 00:39:48.600]   y luego
+[00:39:48.600 --> 00:39:49.440]   cómo se configura
+[00:39:49.440 --> 00:39:49.760]   el modo
+[00:39:49.760 --> 00:39:51.000]   cuentas de fondeo
+[00:39:51.000 --> 00:39:52.220]   bien
+[00:39:52.220 --> 00:39:52.760]   porque el copiador
+[00:39:52.760 --> 00:39:53.280]   sirve también
+[00:39:53.280 --> 00:39:53.920]   para copiaros
+[00:39:53.920 --> 00:39:54.680]   yo qué sé
+[00:39:54.680 --> 00:39:55.780]   si os queréis copiar
+[00:39:55.780 --> 00:39:56.160]   de una cuenta
+[00:39:56.160 --> 00:39:56.420]   de alguna
+[00:39:56.420 --> 00:39:56.800]   de otra
+[00:39:56.800 --> 00:39:57.660]   lo podéis hacer
+[00:39:57.660 --> 00:39:58.640]   pero luego
+[00:39:58.640 --> 00:39:59.260]   hay un momento
+[00:39:59.260 --> 00:39:59.960]   en el cual podéis
+[00:39:59.960 --> 00:40:00.520]   activar el modo
+[00:40:00.520 --> 00:40:01.140]   Profim
+[00:40:01.140 --> 00:40:04.520]   que básicamente
+[00:40:04.520 --> 00:40:04.980]   lo que hace
+[00:40:04.980 --> 00:40:05.560]   el modo Profim
+[00:40:05.560 --> 00:40:06.520]   es como un guardián
+[00:40:06.520 --> 00:40:07.600]   o sea
+[00:40:07.600 --> 00:40:08.400]   va vigilando
+[00:40:08.400 --> 00:40:09.020]   el límite diario
+[00:40:09.020 --> 00:40:09.520]   de pérdida
+[00:40:09.520 --> 00:40:10.060]   el límite diario
+[00:40:10.060 --> 00:40:10.620]   de ganancia
+[00:40:10.620 --> 00:40:12.640]   el límite total
+[00:40:12.640 --> 00:40:13.540]   que queréis acumulado
+[00:40:13.540 --> 00:40:14.060]   de la cuenta
+[00:40:14.060 --> 00:40:14.860]   el límite total
+[00:40:14.860 --> 00:40:15.340]   de ganancia
+[00:40:15.340 --> 00:40:15.840]   también
+[00:40:15.840 --> 00:40:18.940]   más tres por día
+[00:40:18.940 --> 00:40:20.160]   más tres simultáneos
+[00:40:20.160 --> 00:40:20.840]   bueno
+[00:40:20.840 --> 00:40:21.460]   máximo de tres
+[00:40:21.460 --> 00:40:22.040]   que queréis por día
+[00:40:22.040 --> 00:40:22.660]   aunque esto se puede
+[00:40:22.660 --> 00:40:23.380]   poner en el robot
+[00:40:23.380 --> 00:40:24.800]   cuántos tres queréis
+[00:40:24.800 --> 00:40:26.020]   por día
+[00:40:26.020 --> 00:40:27.140]   también lo podéis
+[00:40:27.140 --> 00:40:27.740]   limitar aquí
+[00:40:27.740 --> 00:40:28.900]   y simultáneos
+[00:40:28.900 --> 00:40:29.280]   también
+[00:40:29.280 --> 00:40:30.420]   si queréis hacer
+[00:40:30.420 --> 00:40:31.020]   más de una
+[00:40:31.020 --> 00:40:31.700]   de una operación
+[00:40:31.700 --> 00:40:32.300]   simultánea
+[00:40:32.300 --> 00:40:33.980]   máximo de ganancias
+[00:40:33.980 --> 00:40:34.740]   consecutivas
+[00:40:34.740 --> 00:40:35.680]   máximo de pérdidas
+[00:40:35.680 --> 00:40:36.240]   consecutivas
+[00:40:36.240 --> 00:40:36.820]   bueno
+[00:40:36.820 --> 00:40:40.080]   y protecciones
+[00:40:40.080 --> 00:40:41.160]   también de horarios
+[00:40:41.160 --> 00:40:41.900]   ¿vale?
+[00:40:43.180 --> 00:40:44.520]   algunos ejemplos
+[00:40:44.520 --> 00:40:45.860]   y un panel visual
+[00:40:45.860 --> 00:40:46.760]   que está bastante guapo
+[00:40:46.760 --> 00:40:47.500]   también el panel visual
+[00:40:47.500 --> 00:40:48.460]   que sale en MetaTrader
+[00:40:48.460 --> 00:40:51.940]   claro
+[00:40:51.940 --> 00:40:52.580]   aquí dice
+[00:40:52.580 --> 00:40:53.840]   si quieres
+[00:40:53.840 --> 00:40:54.340]   bueno
+[00:40:54.340 --> 00:40:56.560]   aquí te dice
+[00:40:56.560 --> 00:40:57.200]   cómo lo tienes
+[00:40:57.200 --> 00:40:57.780]   integración
+[00:40:57.780 --> 00:40:58.540]   del experta
+[00:40:58.540 --> 00:40:58.740]   para eso
+[00:40:58.740 --> 00:40:59.260]   de Strategic One
+[00:40:59.260 --> 00:40:59.900]   que tienes que ir
+[00:40:59.900 --> 00:41:00.440]   a la sección
+[00:41:00.440 --> 00:41:01.020]   de copy trading
+[00:41:01.020 --> 00:41:01.680]   en el dashboard
+[00:41:01.680 --> 00:41:03.140]   tenéis que pasar
+[00:41:03.140 --> 00:41:04.440]   el vuestro fichero
+[00:41:04.440 --> 00:41:04.900]   lo que hemos hecho
+[00:41:04.900 --> 00:41:05.200]   ahora
+[00:41:05.200 --> 00:41:06.380]   por la herramienta
+[00:41:06.380 --> 00:41:07.000]   del parcheador
+[00:41:07.000 --> 00:41:08.060]   descargar la versión
+[00:41:08.060 --> 00:41:08.580]   parcheada
+[00:41:08.580 --> 00:41:10.220]   compilar el archivo
+[00:41:10.220 --> 00:41:10.680]   parcheado
+[00:41:10.680 --> 00:41:11.500]   de MetaEditor
+[00:41:11.500 --> 00:41:13.720]   y usar ese
+[00:41:13.720 --> 00:41:14.200]   en lugar
+[00:41:14.200 --> 00:41:15.200]   del original
+[00:41:15.200 --> 00:41:15.840]   ¿de acuerdo?
+[00:41:17.280 --> 00:41:17.820]   aquí un poquito
+[00:41:17.820 --> 00:41:18.360]   un resumen
+[00:41:18.360 --> 00:41:19.420]   seguridad
+[00:41:19.420 --> 00:41:20.680]   temas de seguridad
+[00:41:20.680 --> 00:41:21.480]   esto es importante
+[00:41:21.480 --> 00:41:22.280]   que lo entendáis
+[00:41:22.280 --> 00:41:24.280]   porque esto es lo que
+[00:41:24.280 --> 00:41:24.820]   hemos puesto
+[00:41:24.820 --> 00:41:29.560]   Store Expert
+[00:41:29.560 --> 00:41:30.580]   que os descargáis
+[00:41:30.580 --> 00:41:30.900]   de aquí
+[00:41:30.900 --> 00:41:33.960]   obviamente
+[00:41:33.960 --> 00:41:34.880]   es libre
+[00:41:34.880 --> 00:41:35.260]   es decir
+[00:41:35.260 --> 00:41:36.280]   aquí
+[00:41:36.280 --> 00:41:36.900]   vais aquí
+[00:41:36.900 --> 00:41:37.520]   lo descargáis
+[00:41:37.520 --> 00:41:37.960]   y es vuestro
+[00:41:37.960 --> 00:41:38.240]   de hecho
+[00:41:38.240 --> 00:41:39.020]   lo podéis revender
+[00:41:39.020 --> 00:41:39.480]   lo podéis
+[00:41:39.480 --> 00:41:40.840]   dar a cualquiera
+[00:41:40.840 --> 00:41:41.580]   comunidades
+[00:41:41.580 --> 00:41:42.380]   etcétera
+[00:41:42.380 --> 00:41:42.640]   etcétera
+[00:41:42.640 --> 00:41:42.900]   etcétera
+[00:41:42.900 --> 00:41:43.320]   ¿qué pasa?
+[00:41:44.060 --> 00:41:44.820]   que aquí dentro
+[00:41:44.820 --> 00:41:45.780]   os vamos a pedir
+[00:41:45.780 --> 00:41:46.860]   las credenciales
+[00:41:46.860 --> 00:41:47.120]   de
+[00:41:47.120 --> 00:41:48.720]   de entrar
+[00:41:48.720 --> 00:41:49.500]   en Akademe Jobico
+[00:41:49.500 --> 00:41:49.980]   de la web
+[00:41:49.980 --> 00:41:50.200]   ¿vale?
+[00:41:50.560 --> 00:41:51.520]   la misma credencial
+[00:41:51.520 --> 00:41:52.040]   que tenéis
+[00:41:52.040 --> 00:41:52.780]   vuestro correo
+[00:41:52.780 --> 00:41:54.760]   y vuestra contraseña
+[00:41:54.760 --> 00:41:57.220]   es la misma credencial
+[00:41:57.220 --> 00:41:58.080]   que os vamos a pedir
+[00:41:58.080 --> 00:41:58.720]   en cada uno
+[00:41:58.720 --> 00:41:59.740]   de los Expert Advisors
+[00:41:59.740 --> 00:42:00.220]   ¿por qué?
+[00:42:01.140 --> 00:42:01.780]   primero de todo
+[00:42:01.780 --> 00:42:02.540]   para que esto
+[00:42:02.540 --> 00:42:03.320]   no se distribuya
+[00:42:03.320 --> 00:42:04.540]   fuera
+[00:42:04.540 --> 00:42:07.380]   pero si yo doy
+[00:42:07.380 --> 00:42:08.100]   mi usuario
+[00:42:08.100 --> 00:42:09.640]   y mi contraseña
+[00:42:09.640 --> 00:42:10.500]   a todo el mundo
+[00:42:10.500 --> 00:42:10.900]   todo el mundo
+[00:42:10.900 --> 00:42:11.160]   va a entrar
+[00:42:11.160 --> 00:42:11.500]   con mi usuario
+[00:42:11.500 --> 00:42:12.120]   y mi contraseña
+[00:42:12.120 --> 00:42:12.940]   no
+[00:42:12.940 --> 00:42:14.620]   hay un rate limit
+[00:42:14.620 --> 00:42:15.500]   hay unas peticiones
+[00:42:15.500 --> 00:42:16.060]   límites
+[00:42:16.060 --> 00:42:18.220]   si el servidor
+[00:42:18.220 --> 00:42:18.780]   detecta
+[00:42:18.780 --> 00:42:20.360]   que más de 5 IPs
+[00:42:20.360 --> 00:42:20.880]   diferentes
+[00:42:20.880 --> 00:42:22.200]   en 24 horas
+[00:42:22.200 --> 00:42:23.640]   se están conectando
+[00:42:23.640 --> 00:42:25.400]   porque hacen pins
+[00:42:25.400 --> 00:42:26.360]   cada cierto tiempo
+[00:42:26.360 --> 00:42:28.620]   bloquea temporalmente
+[00:42:28.620 --> 00:42:29.100]   la cuenta
+[00:42:29.100 --> 00:42:31.000]   la cuenta
+[00:42:31.000 --> 00:42:31.540]   básicamente
+[00:42:31.540 --> 00:42:32.680]   el Expert Advisor
+[00:42:32.680 --> 00:42:33.940]   deja de funcionar
+[00:42:33.940 --> 00:42:35.040]   ¿de acuerdo?
+[00:42:36.200 --> 00:42:37.220]   podéis tener
+[00:42:37.220 --> 00:42:38.620]   con el mismo usuario
+[00:42:38.620 --> 00:42:39.680]   en 5 VPS
+[00:42:39.680 --> 00:42:40.400]   distintas
+[00:42:40.400 --> 00:42:41.060]   va más
+[00:42:41.060 --> 00:42:42.520]   más que de sobras
+[00:42:42.520 --> 00:42:43.500]   de hecho
+[00:42:43.500 --> 00:42:44.040]   podéis meter
+[00:42:44.040 --> 00:42:44.960]   varias cuentas
+[00:42:44.960 --> 00:42:46.080]   dentro del mismo VPS
+[00:42:46.080 --> 00:42:47.040]   que es la misma IP
+[00:42:47.040 --> 00:42:47.980]   por lo tanto
+[00:42:47.980 --> 00:42:49.160]   vais de sobras
+[00:42:49.160 --> 00:42:50.580]   esto es para que no
+[00:42:50.580 --> 00:42:51.320]   se distribuya
+[00:42:51.320 --> 00:42:52.320]   de forma masiva
+[00:42:52.320 --> 00:42:53.080]   ¿de acuerdo?
+[00:42:53.580 --> 00:42:54.880]   tanto va a ser bloqueado
+[00:42:54.880 --> 00:42:56.120]   todas las cuentas
+[00:42:56.120 --> 00:42:56.900]   que se hayan dado
+[00:42:56.900 --> 00:42:57.480]   como también
+[00:42:57.480 --> 00:42:58.100]   el propio
+[00:42:58.100 --> 00:42:59.480]   alumno o alumna
+[00:42:59.480 --> 00:43:01.780]   bueno
+[00:43:01.780 --> 00:43:03.120]   os ponemos aquí
+[00:43:03.120 --> 00:43:03.560]   un poco
+[00:43:03.560 --> 00:43:04.240]   toda la información
+[00:43:04.240 --> 00:43:05.600]   de cómo está hecha
+[00:43:05.600 --> 00:43:07.140]   la seguridad
+[00:43:07.140 --> 00:43:07.560]   para
+[00:43:07.560 --> 00:43:08.000]   bueno
+[00:43:08.000 --> 00:43:08.560]   para que tengáis
+[00:43:08.560 --> 00:43:08.900]   una idea
+[00:43:08.900 --> 00:43:10.740]   de lo que hemos hecho
+[00:43:10.740 --> 00:43:11.040]   ¿de acuerdo?
+[00:43:13.400 --> 00:43:13.980]   y nada
+[00:43:13.980 --> 00:43:14.140]   bueno
+[00:43:14.140 --> 00:43:14.340]   esto
+[00:43:14.340 --> 00:43:14.780]   ya os digo
+[00:43:14.780 --> 00:43:15.360]   os lo imprimís
+[00:43:15.360 --> 00:43:16.860]   os lo descargáis
+[00:43:16.860 --> 00:43:17.420]   lo que queráis
+[00:43:17.420 --> 00:43:18.840]   yo lo tengo por aquí
+[00:43:18.840 --> 00:43:19.840]   que luego lo abriré
+[00:43:19.840 --> 00:43:20.160]   seguramente
+[00:43:20.160 --> 00:43:21.360]   para repasar conceptos
+[00:43:21.360 --> 00:43:22.800]   os descargáis estos dos
+[00:43:22.800 --> 00:43:23.220]   luego iremos
+[00:43:23.220 --> 00:43:23.820]   al siguiente A
+[00:43:23.820 --> 00:43:24.920]   que es el de noticias
+[00:43:24.920 --> 00:43:25.180]   ¿vale?
+[00:43:27.000 --> 00:43:27.420]   por tanto
+[00:43:27.420 --> 00:43:27.720]   tenemos
+[00:43:27.720 --> 00:43:28.300]   este
+[00:43:28.300 --> 00:43:28.940]   este
+[00:43:28.940 --> 00:43:29.840]   y vuestro
+[00:43:29.840 --> 00:43:30.540]   Expert Advisor
+[00:43:30.540 --> 00:43:32.120]   me vuelvo de nuevo
+[00:43:32.120 --> 00:43:32.620]   al VPS
+[00:43:32.620 --> 00:43:36.300]   yo ahora aquí
+[00:43:36.300 --> 00:43:37.620]   haré como si no tuviera
+[00:43:37.620 --> 00:43:38.320]   nada encendido
+[00:43:38.320 --> 00:43:39.080]   lo voy a minimizar
+[00:43:39.080 --> 00:43:39.480]   todo
+[00:43:39.480 --> 00:43:40.040]   ¿de acuerdo?
+[00:43:40.520 --> 00:43:40.760]   y
+[00:43:40.760 --> 00:43:42.140]   esperaros que no sé
+[00:43:42.140 --> 00:43:42.420]   qué meta
+[00:43:42.420 --> 00:43:43.560]   1, 2, 3, 4
+[00:43:43.560 --> 00:43:44.120]   voy a abrir
+[00:43:44.120 --> 00:43:45.340]   el MetaTrader 5
+[00:43:45.340 --> 00:43:46.500]   ¿de acuerdo?
+[00:43:46.580 --> 00:43:47.440]   voy a abrir el 5
+[00:43:47.440 --> 00:43:53.100]   a ver
+[00:43:53.100 --> 00:43:56.760]   tarde un rato
+[00:43:56.760 --> 00:43:57.320]   la primera vez
+[00:43:57.320 --> 00:44:00.100]   bien
+[00:44:00.100 --> 00:44:02.680]   ¿qué cuenta
+[00:44:02.680 --> 00:44:03.320]   vamos a poner aquí?
+[00:44:03.420 --> 00:44:03.740]   la cuenta
+[00:44:03.740 --> 00:44:04.180]   número 1
+[00:44:04.180 --> 00:44:05.060]   que nos hemos
+[00:44:05.060 --> 00:44:06.480]   que habéis comprado
+[00:44:06.480 --> 00:44:06.700]   ¿vale?
+[00:44:06.780 --> 00:44:07.060]   yo
+[00:44:07.060 --> 00:44:10.940]   la voy a poner
+[00:44:10.940 --> 00:44:11.940]   ni la
+[00:44:11.940 --> 00:44:13.640]   ni la he conectado
+[00:44:13.640 --> 00:44:14.820]   espera
+[00:44:14.820 --> 00:44:15.360]   el servidor
+[00:44:15.360 --> 00:44:15.940]   voy a poner
+[00:44:15.940 --> 00:44:16.760]   Elephant and Nets
+[00:44:16.760 --> 00:44:19.860]   perfecto
+[00:44:19.860 --> 00:44:36.540]   cuenta de 100.000
+[00:44:36.540 --> 00:44:38.980]   y
+[00:44:38.980 --> 00:44:41.260]   ahora que no me había dicho
+[00:44:41.260 --> 00:44:41.800]   no me había dicho
+[00:44:41.800 --> 00:44:42.320]   iniciar
+[00:44:42.320 --> 00:44:42.940]   voy a
+[00:44:42.940 --> 00:44:43.480]   MetaTrader
+[00:44:43.480 --> 00:44:44.700]   006
+[00:44:44.700 --> 00:44:47.360]   y voy a poner
+[00:44:47.360 --> 00:44:48.500]   la segunda cuenta
+[00:44:48.500 --> 00:44:49.200]   que ahí
+[00:44:49.200 --> 00:44:50.560]   la tengo
+[00:44:50.560 --> 00:44:51.020]   que
+[00:44:51.020 --> 00:44:53.760]   en TheFifers
+[00:44:53.760 --> 00:44:54.340]   la tengo que
+[00:44:54.340 --> 00:44:54.800]   buscar
+[00:44:54.800 --> 00:44:55.760]   en el panel
+[00:44:55.760 --> 00:44:56.940]   no sé si ya
+[00:44:56.940 --> 00:44:57.700]   se me ha sacado
+[00:44:57.700 --> 00:45:05.780]   lo estoy buscando
+[00:45:05.780 --> 00:45:06.660]   en otra pantalla
+[00:45:06.660 --> 00:45:07.100]   que no veis
+[00:45:07.100 --> 00:45:11.660]   vale
+[00:45:11.660 --> 00:45:12.680]   credenciales
+[00:45:12.680 --> 00:45:13.420]   ya las tengo aquí
+[00:45:13.420 --> 00:45:35.080]   se me ha conectado
+[00:45:35.080 --> 00:45:38.780]   cuenta de 100.000
+[00:45:38.780 --> 00:45:39.060]   también
+[00:45:39.060 --> 00:45:39.420]   vale
+[00:45:39.420 --> 00:45:40.560]   tengo dos
+[00:45:40.560 --> 00:45:41.540]   es importante
+[00:45:41.540 --> 00:45:42.320]   que esto esté
+[00:45:42.320 --> 00:45:43.240]   en el mismo
+[00:45:43.240 --> 00:45:43.860]   VPS
+[00:45:43.860 --> 00:45:45.140]   el copiador
+[00:45:45.140 --> 00:45:45.680]   funciona
+[00:45:45.680 --> 00:45:46.500]   en el mismo
+[00:45:46.500 --> 00:45:47.180]   VPS
+[00:45:47.180 --> 00:45:47.640]   no pongáis
+[00:45:47.640 --> 00:45:47.980]   una cuenta
+[00:45:47.980 --> 00:45:48.420]   en un sitio
+[00:45:48.420 --> 00:45:48.900]   y una cuenta
+[00:45:48.900 --> 00:45:49.420]   en otro VPS
+[00:45:49.420 --> 00:45:50.300]   tiene que ser
+[00:45:50.300 --> 00:45:50.840]   en el mismo
+[00:45:50.840 --> 00:45:51.320]   VPS
+[00:45:51.320 --> 00:45:51.780]   ¿de acuerdo?
+[00:45:52.540 --> 00:45:53.300]   las actualizaciones
+[00:45:53.300 --> 00:45:54.080]   de MetaTrader 5
+[00:45:54.080 --> 00:45:55.400]   siempre ocurren
+[00:45:55.400 --> 00:45:58.280]   vamos a reiniciar
+[00:45:58.280 --> 00:45:58.880]   por si acaso
+[00:45:58.880 --> 00:45:59.940]   y este también
+[00:45:59.940 --> 00:46:00.580]   van a reiniciar
+[00:46:00.580 --> 00:46:01.100]   ahora los dos
+[00:46:01.100 --> 00:46:02.940]   bien
+[00:46:02.940 --> 00:46:03.880]   yo de mientras
+[00:46:03.880 --> 00:46:05.800]   en descargas
+[00:46:05.800 --> 00:46:06.940]   tengo descargado
+[00:46:06.940 --> 00:46:10.000]   bueno
+[00:46:10.000 --> 00:46:11.040]   tengo descargado
+[00:46:11.040 --> 00:46:11.640]   lo tendré por aquí
+[00:46:11.640 --> 00:46:12.280]   seguramente
+[00:46:12.280 --> 00:46:16.180]   me lo voy a copiar
+[00:46:16.180 --> 00:46:16.360]   ¿vale?
+[00:46:16.360 --> 00:46:17.420]   el robot que voy a utilizar
+[00:46:17.420 --> 00:46:20.880]   bueno
+[00:46:20.880 --> 00:46:34.560]   me voy a copiar
+[00:46:34.560 --> 00:46:35.080]   todo esto
+[00:46:35.080 --> 00:46:35.680]   recordad
+[00:46:35.680 --> 00:46:36.480]   vuestro robot
+[00:46:36.480 --> 00:46:37.300]   recordad
+[00:46:37.300 --> 00:46:37.680]   que lo tenéis
+[00:46:37.680 --> 00:46:38.380]   que compilar
+[00:46:38.380 --> 00:46:38.840]   ¿de acuerdo?
+[00:46:39.020 --> 00:46:39.720]   en el propio
+[00:46:39.720 --> 00:46:40.400]   MetaEditor
+[00:46:40.400 --> 00:46:41.160]   os vais a ID
+[00:46:41.160 --> 00:46:43.360]   vuestro robot
+[00:46:43.360 --> 00:46:44.080]   ya pasado
+[00:46:44.080 --> 00:46:45.480]   por el parcheador
+[00:46:45.480 --> 00:46:46.520]   le dais
+[00:46:46.520 --> 00:46:47.060]   botón derecho
+[00:46:47.060 --> 00:46:47.680]   a Experts
+[00:46:47.680 --> 00:46:48.840]   abrir carpeta
+[00:46:48.840 --> 00:46:50.820]   lo metéis aquí
+[00:46:50.820 --> 00:46:52.080]   y
+[00:46:52.080 --> 00:46:53.000]   una vez
+[00:46:53.000 --> 00:46:53.820]   abierto
+[00:46:53.820 --> 00:46:54.500]   aquí dentro
+[00:46:54.500 --> 00:46:54.800]   por ejemplo
+[00:46:54.800 --> 00:46:55.420]   esto no es el robot
+[00:46:55.420 --> 00:46:55.940]   pero le dais
+[00:46:55.940 --> 00:46:56.900]   al botón compilar
+[00:46:56.900 --> 00:46:57.300]   ¿de acuerdo?
+[00:46:58.120 --> 00:46:58.740]   de esta forma
+[00:46:58.740 --> 00:46:59.600]   se os generará
+[00:46:59.600 --> 00:47:01.060]   el fichero
+[00:47:01.060 --> 00:47:02.200]   .ex5
+[00:47:02.200 --> 00:47:02.540]   que es el
+[00:47:02.540 --> 00:47:03.560]   que realmente es el robot
+[00:47:03.560 --> 00:47:04.400]   esto es lo que habéis aprendido
+[00:47:04.400 --> 00:47:05.200]   en el programa de Mentoría
+[00:47:05.200 --> 00:47:05.440]   o sea
+[00:47:05.440 --> 00:47:06.940]   no es nada nuevo
+[00:47:06.940 --> 00:47:07.140]   ¿vale?
+[00:47:08.020 --> 00:47:08.540]   yo lo que voy a hacer
+[00:47:08.540 --> 00:47:09.180]   es que voy a copiarme
+[00:47:09.180 --> 00:47:09.660]   todo esto
+[00:47:09.660 --> 00:47:11.880]   en la nueva cuenta
+[00:47:11.880 --> 00:47:15.400]   se me ha abierto
+[00:47:15.400 --> 00:47:15.820]   de nuevo
+[00:47:15.820 --> 00:47:17.000]   vale
+[00:47:17.000 --> 00:47:17.900]   esta es la de
+[00:47:17.900 --> 00:47:20.320]   la de
+[00:47:20.320 --> 00:47:20.780]   de Fiver
+[00:47:20.780 --> 00:47:21.500]   y esta es la de
+[00:47:21.500 --> 00:47:22.080]   Funded Nets
+[00:47:22.080 --> 00:47:23.060]   vale
+[00:47:23.060 --> 00:47:23.640]   voy a abrir
+[00:47:23.640 --> 00:47:26.060]   voy a abrir
+[00:47:26.060 --> 00:47:26.720]   las carpetas
+[00:47:26.720 --> 00:47:27.500]   de Funded Nets
+[00:47:27.500 --> 00:47:31.140]   me huele
+[00:47:31.140 --> 00:47:32.020]   5 Experts
+[00:47:32.020 --> 00:47:32.380]   aquí
+[00:47:32.380 --> 00:47:33.220]   le voy a pegar
+[00:47:33.220 --> 00:47:33.680]   bueno
+[00:47:33.680 --> 00:47:34.260]   dentro de
+[00:47:34.260 --> 00:47:34.740]   en Advisors
+[00:47:34.740 --> 00:47:35.540]   aquí le voy a pegar
+[00:47:35.540 --> 00:47:37.080]   evaluaciones
+[00:47:37.080 --> 00:47:38.000]   que es donde tengo
+[00:47:38.000 --> 00:47:38.300]   el
+[00:47:38.300 --> 00:47:39.080]   Master
+[00:47:39.080 --> 00:47:39.820]   bueno
+[00:47:39.820 --> 00:47:40.200]   esto luego
+[00:47:40.200 --> 00:47:40.760]   os lo explicaré
+[00:47:40.760 --> 00:47:41.300]   el News Manager
+[00:47:41.300 --> 00:47:41.540]   vale
+[00:47:41.540 --> 00:47:43.280]   en la primera cuenta
+[00:47:43.280 --> 00:47:43.960]   vais a poner
+[00:47:43.960 --> 00:47:44.860]   el
+[00:47:44.860 --> 00:47:46.660]   el robot en sí
+[00:47:46.660 --> 00:47:47.760]   la estrategia
+[00:47:47.760 --> 00:47:48.640]   más
+[00:47:48.640 --> 00:47:49.660]   el Master
+[00:47:49.660 --> 00:47:50.820]   el copiador
+[00:47:50.820 --> 00:47:51.640]   Master
+[00:47:51.640 --> 00:47:54.640]   y luego
+[00:47:54.640 --> 00:47:56.420]   en la segunda cuenta
+[00:47:56.420 --> 00:47:59.560]   en la segunda cuenta
+[00:47:59.560 --> 00:48:00.560]   que esta es
+[00:48:00.560 --> 00:48:01.920]   la de
+[00:48:01.920 --> 00:48:02.520]   5%
+[00:48:02.520 --> 00:48:03.180]   la de
+[00:48:03.180 --> 00:48:06.020]   5%
+[00:48:06.020 --> 00:48:08.000]   MQL5
+[00:48:08.000 --> 00:48:09.080]   en Experts
+[00:48:09.080 --> 00:48:09.960]   Advisors
+[00:48:09.960 --> 00:48:11.220]   aquí vais a pegar
+[00:48:11.220 --> 00:48:12.060]   el Slave
+[00:48:12.060 --> 00:48:13.120]   ¿vale?
+[00:48:13.260 --> 00:48:13.920]   el Slave
+[00:48:13.920 --> 00:48:15.320]   que no me he entendido
+[00:48:15.320 --> 00:48:16.940]   que yo lo tendré
+[00:48:16.940 --> 00:48:17.360]   por aquí
+[00:48:17.360 --> 00:48:18.240]   a ver
+[00:48:18.240 --> 00:48:27.580]   yo lo tengo aquí
+[00:48:27.580 --> 00:48:27.720]   ¿vale?
+[00:48:27.720 --> 00:48:28.220]   el Slave
+[00:48:28.220 --> 00:48:29.100]   yo creo
+[00:48:29.100 --> 00:48:30.000]   lo tengo
+[00:48:30.000 --> 00:48:30.620]   en esta carpeta
+[00:48:30.620 --> 00:48:30.960]   ya está
+[00:48:30.960 --> 00:48:36.460]   pegar
+[00:48:36.460 --> 00:48:37.440]   ¿de acuerdo?
+[00:48:37.660 --> 00:48:38.020]   genial
+[00:48:38.020 --> 00:48:39.760]   ahora me voy a centrar
+[00:48:39.760 --> 00:48:40.840]   en estas dos cuentas
+[00:48:40.840 --> 00:48:41.140]   ya sí
+[00:48:41.140 --> 00:48:41.520]   voy a poner
+[00:48:41.520 --> 00:48:42.140]   el botón derecho
+[00:48:42.140 --> 00:48:42.780]   en el aspecto
+[00:48:42.780 --> 00:48:43.400]   de actualizar
+[00:48:43.400 --> 00:48:44.620]   puedo ver
+[00:48:44.620 --> 00:48:45.300]   que en Advisors
+[00:48:45.300 --> 00:48:45.860]   y en Evaluaciones
+[00:48:45.860 --> 00:48:46.260]   tengo
+[00:48:46.260 --> 00:48:47.380]   mi estrategia
+[00:48:47.380 --> 00:48:48.160]   y el Master
+[00:48:48.160 --> 00:48:50.760]   y en la segunda
+[00:48:50.760 --> 00:48:52.660]   en el aspecto
+[00:48:52.660 --> 00:48:53.260]   de actualizar
+[00:48:53.260 --> 00:48:53.920]   tengo
+[00:48:53.920 --> 00:48:54.840]   Advisors
+[00:48:54.840 --> 00:48:55.460]   Evaluaciones
+[00:48:55.460 --> 00:48:56.200]   el Slave
+[00:48:56.200 --> 00:48:57.320]   genial
+[00:48:57.320 --> 00:48:59.800]   vamos a configurar
+[00:48:59.800 --> 00:49:00.420]   estos
+[00:49:00.420 --> 00:49:01.420]   estos
+[00:49:01.420 --> 00:49:02.180]   Expert Advisors
+[00:49:02.180 --> 00:49:03.340]   voy a hacer un parón
+[00:49:03.340 --> 00:49:04.860]   y voy a resolver
+[00:49:04.860 --> 00:49:06.320]   dudas que tengáis
+[00:49:06.320 --> 00:49:06.920]   hasta el momento
+[00:49:06.920 --> 00:49:07.100]   ¿vale?
+[00:49:07.100 --> 00:49:08.440]   ahora viene la configuración
+[00:49:08.440 --> 00:49:09.660]   de cómo funciona
+[00:49:09.660 --> 00:49:10.240]   cada una de estas
+[00:49:10.240 --> 00:49:11.520]   Expert Advisors
+[00:49:11.520 --> 00:49:13.200]   parámetro
+[00:49:13.200 --> 00:49:13.700]   por parámetro
+[00:49:13.700 --> 00:49:14.000]   pero
+[00:49:14.000 --> 00:49:15.420]   resuelvo dudas
+[00:49:15.420 --> 00:49:16.100]   para que no vengan
+[00:49:16.100 --> 00:49:16.680]   todas al final
+[00:49:16.680 --> 00:49:23.900]   voy a abrir el chat
+[00:49:23.900 --> 00:49:29.760]   y Manuel
+[00:49:29.760 --> 00:49:30.440]   nos dice
+[00:49:30.440 --> 00:49:32.440]   ¿y qué hacemos
+[00:49:32.440 --> 00:49:33.240]   con las empresas
+[00:49:33.240 --> 00:49:34.120]   que tienen la regla
+[00:49:34.120 --> 00:49:34.680]   de un mínimo
+[00:49:34.680 --> 00:49:35.520]   de días rentables
+[00:49:35.520 --> 00:49:37.360]   arriba del 0,5%
+[00:49:37.360 --> 00:49:37.880]   para la prueba
+[00:49:37.880 --> 00:49:38.260]   anterior día
+[00:49:38.260 --> 00:49:38.640]   no funciona
+[00:49:38.640 --> 00:49:39.520]   si te piden 4 días
+[00:49:39.520 --> 00:49:39.920]   4 días
+[00:49:39.920 --> 00:49:40.480]   no te lo piden
+[00:49:40.480 --> 00:49:41.880]   te piden 3
+[00:49:41.880 --> 00:49:42.800]   generalmente
+[00:49:42.800 --> 00:49:44.960]   si tú pasas
+[00:49:44.960 --> 00:49:45.680]   si tú haces
+[00:49:45.680 --> 00:49:46.720]   da la casualidad
+[00:49:46.720 --> 00:49:47.140]   que un día
+[00:49:47.140 --> 00:49:47.740]   haces más 4
+[00:49:47.740 --> 00:49:48.280]   y el segundo día
+[00:49:48.280 --> 00:49:49.060]   haces más 4
+[00:49:49.060 --> 00:49:50.440]   el tercer día
+[00:49:50.440 --> 00:49:51.500]   baja riesgo
+[00:49:51.500 --> 00:49:52.900]   y pon 0,6
+[00:49:52.900 --> 00:49:56.480]   que pierdes
+[00:49:56.480 --> 00:49:58.180]   al día siguiente
+[00:49:58.180 --> 00:50:00.300]   vuelva a poner 0,6
+[00:50:00.300 --> 00:50:01.080]   para recuperarlo
+[00:50:01.080 --> 00:50:01.800]   que pierdes
+[00:50:01.800 --> 00:50:02.420]   al día siguiente
+[00:50:02.420 --> 00:50:03.640]   pones 1,2
+[00:50:03.640 --> 00:50:05.680]   para que en la próxima
+[00:50:05.680 --> 00:50:06.100]   ya sí
+[00:50:06.100 --> 00:50:07.200]   que pierdes
+[00:50:07.200 --> 00:50:07.700]   al día siguiente
+[00:50:07.700 --> 00:50:09.020]   pones 2,4
+[00:50:09.020 --> 00:50:10.900]   muy improbable
+[00:50:10.900 --> 00:50:11.820]   que tantos días seguidos
+[00:50:11.820 --> 00:50:13.080]   en la misma cuenta
+[00:50:13.080 --> 00:50:14.820]   te estén perdiendo tanto
+[00:50:14.820 --> 00:50:15.200]   pero bueno
+[00:50:15.200 --> 00:50:16.580]   si esa la va bajando
+[00:50:16.580 --> 00:50:17.280]   la otra te va subiendo
+[00:50:17.280 --> 00:50:17.640]   también
+[00:50:17.640 --> 00:50:21.460]   ahora voy al chat
+[00:50:21.460 --> 00:50:22.300]   y luego voy a
+[00:50:22.300 --> 00:50:23.340]   las que me levanto
+[00:50:23.340 --> 00:50:23.560]   la mano
+[00:50:23.560 --> 00:50:26.700]   bueno Ramón
+[00:50:26.700 --> 00:50:27.120]   también funciona
+[00:50:27.120 --> 00:50:27.580]   si las cuentas
+[00:50:27.580 --> 00:50:28.360]   son de distinto valor
+[00:50:28.360 --> 00:50:29.500]   sí
+[00:50:29.500 --> 00:50:29.860]   lo que pasa
+[00:50:29.860 --> 00:50:30.280]   es que ahí debéis
+[00:50:30.280 --> 00:50:31.220]   de poner un multiplicador
+[00:50:31.220 --> 00:50:33.060]   sí
+[00:50:33.060 --> 00:50:33.900]   debéis de poner
+[00:50:33.900 --> 00:50:34.440]   un multiplicador
+[00:50:34.440 --> 00:50:34.900]   porque lo tenéis
+[00:50:34.900 --> 00:50:35.620]   que hacer proporcional
+[00:50:35.620 --> 00:50:38.480]   lo que pasa
+[00:50:38.480 --> 00:50:38.720]   es que ahí
+[00:50:38.720 --> 00:50:39.560]   tenéis menos control
+[00:50:39.560 --> 00:50:40.500]   pero bueno
+[00:50:40.500 --> 00:50:42.300]   limita el tiempo
+[00:50:42.300 --> 00:50:43.160]   que hay de cierre
+[00:50:43.160 --> 00:50:44.080]   de un trade
+[00:50:44.080 --> 00:50:44.560]   y apertura
+[00:50:44.560 --> 00:50:44.960]   de otro
+[00:50:44.960 --> 00:50:45.780]   trade
+[00:50:45.780 --> 00:50:46.360]   de una misma idea
+[00:50:46.360 --> 00:50:46.760]   de trading
+[00:50:46.760 --> 00:50:47.920]   a ver
+[00:50:47.920 --> 00:50:50.460]   desde el momento
+[00:50:50.460 --> 00:50:51.240]   que el trade
+[00:50:51.240 --> 00:50:53.840]   no lo limita
+[00:50:53.840 --> 00:50:54.060]   Godoy
+[00:50:54.060 --> 00:50:54.500]   pero esto tiene
+[00:50:54.500 --> 00:50:54.760]   que venir
+[00:50:54.760 --> 00:50:55.540]   de tu estrategia
+[00:50:55.540 --> 00:50:57.380]   no hago una estrategia
+[00:50:57.380 --> 00:50:57.940]   que cada vela
+[00:50:57.940 --> 00:50:58.600]   dé una señal
+[00:50:58.600 --> 00:50:59.660]   que al menos dé
+[00:50:59.660 --> 00:51:00.600]   una, dos, tres señales
+[00:51:00.600 --> 00:51:01.280]   a lo largo del día
+[00:51:01.280 --> 00:51:01.680]   ya está
+[00:51:01.680 --> 00:51:03.100]   esto tiene que venir
+[00:51:03.100 --> 00:51:04.160]   dado de tu estrategia
+[00:51:04.160 --> 00:51:06.580]   pues no puede utilizar
+[00:51:06.580 --> 00:51:07.540]   VPN durante trading
+[00:51:07.540 --> 00:51:08.240]   VPN
+[00:51:08.240 --> 00:51:08.900]   yo no utilizo
+[00:51:08.900 --> 00:51:10.960]   yo utilizo
+[00:51:10.960 --> 00:51:11.360]   VPS
+[00:51:11.360 --> 00:51:14.720]   pero no hay ningún problema
+[00:51:14.720 --> 00:51:16.160]   siempre lo hemos hecho así
+[00:51:16.160 --> 00:51:18.780]   sacaremos estrategias
+[00:51:18.780 --> 00:51:19.260]   del builder
+[00:51:19.260 --> 00:51:20.500]   no, no, no
+[00:51:20.500 --> 00:51:21.260]   la estrategia
+[00:51:21.260 --> 00:51:21.580]   de ventaja
+[00:51:21.580 --> 00:51:21.920]   del builder
+[00:51:21.920 --> 00:51:22.300]   con la de
+[00:51:22.300 --> 00:51:22.540]   congelar
+[00:51:22.540 --> 00:51:22.940]   que uno se da
+[00:51:22.940 --> 00:51:23.200]   para hacer
+[00:51:23.200 --> 00:51:23.580]   los costes
+[00:51:23.580 --> 00:51:24.040]   no
+[00:51:24.040 --> 00:51:25.180]   no, no
+[00:51:25.180 --> 00:51:26.140]   es totalmente distinto
+[00:51:26.140 --> 00:51:27.040]   esto es
+[00:51:27.040 --> 00:51:29.060]   directamente estrategias
+[00:51:29.060 --> 00:51:29.940]   a ti no te interesa
+[00:51:29.940 --> 00:51:30.420]   que la estrategia
+[00:51:30.420 --> 00:51:30.920]   sea rentable
+[00:51:30.920 --> 00:51:31.480]   a lo largo
+[00:51:31.480 --> 00:51:31.900]   de los años
+[00:51:31.900 --> 00:51:32.700]   es lo que he explicado
+[00:51:32.700 --> 00:51:33.080]   al principio
+[00:51:33.080 --> 00:51:34.920]   por cada master
+[00:51:34.920 --> 00:51:35.480]   solo puede haber
+[00:51:35.480 --> 00:51:36.660]   una cuenta slave conectada
+[00:51:36.660 --> 00:51:37.140]   o puede haber
+[00:51:37.140 --> 00:51:38.960]   puede haber un master
+[00:51:38.960 --> 00:51:39.680]   bien, buena pregunta
+[00:51:39.680 --> 00:51:39.980]   de sacar
+[00:51:39.980 --> 00:51:41.360]   puede haber un master
+[00:51:41.360 --> 00:51:42.880]   y varias slaves
+[00:51:42.880 --> 00:51:46.980]   por tanto
+[00:51:46.980 --> 00:51:47.800]   eso me dice
+[00:51:47.800 --> 00:51:48.760]   hostia
+[00:51:48.760 --> 00:51:49.120]   es verdad
+[00:51:49.120 --> 00:51:50.020]   eso me dice
+[00:51:50.020 --> 00:51:52.280]   que podríamos comprar
+[00:51:52.280 --> 00:51:53.200]   cuatro a la vez
+[00:51:53.200 --> 00:51:54.840]   una tener el master
+[00:51:54.840 --> 00:51:56.160]   y las otras tres
+[00:51:56.160 --> 00:51:56.980]   replicarlas
+[00:51:56.980 --> 00:51:58.360]   es verdad
+[00:51:58.360 --> 00:51:59.300]   no había pensado en esto
+[00:51:59.300 --> 00:52:01.520]   dos en contrario
+[00:52:01.520 --> 00:52:02.020]   y una
+[00:52:02.020 --> 00:52:03.060]   al igual que el master
+[00:52:03.060 --> 00:52:04.040]   no lo había pensado esto
+[00:52:04.040 --> 00:52:06.740]   pero bueno
+[00:52:06.740 --> 00:52:11.600]   consulta
+[00:52:11.600 --> 00:52:12.240]   ¿será una sola cuenta?
+[00:52:12.320 --> 00:52:12.620]   ¿el qué?
+[00:52:12.720 --> 00:52:13.580]   ¿será una sola cuenta?
+[00:52:15.040 --> 00:52:16.540]   doy paso a
+[00:52:16.540 --> 00:52:17.240]   Gonzalo
+[00:52:17.240 --> 00:52:18.120]   que tenía la mano
+[00:52:18.120 --> 00:52:19.340]   levantada
+[00:52:19.340 --> 00:52:21.460]   hola Ramón
+[00:52:21.460 --> 00:52:22.620]   buenas tardes
+[00:52:22.620 --> 00:52:23.560]   buenas tardes
+[00:52:23.560 --> 00:52:24.700]   has comentado
+[00:52:24.700 --> 00:52:25.540]   el tema
+[00:52:25.540 --> 00:52:26.880]   de las comisiones
+[00:52:26.880 --> 00:52:27.520]   que lo tengamos
+[00:52:27.520 --> 00:52:28.100]   en cuenta
+[00:52:28.100 --> 00:52:31.020]   en índices
+[00:52:31.020 --> 00:52:32.960]   si no recuerdo mal
+[00:52:32.960 --> 00:52:33.400]   no me he puesto
+[00:52:33.400 --> 00:52:33.840]   mucho el tema
+[00:52:33.840 --> 00:52:34.400]   de fondeo
+[00:52:34.400 --> 00:52:35.620]   las comisiones
+[00:52:35.620 --> 00:52:36.120]   son nulas
+[00:52:36.120 --> 00:52:36.400]   ¿no?
+[00:52:36.480 --> 00:52:37.440]   en temas de
+[00:52:37.440 --> 00:52:38.100]   fondeo
+[00:52:38.100 --> 00:52:38.480]   o me he colado
+[00:52:38.480 --> 00:52:41.040]   son nulas
+[00:52:41.040 --> 00:52:42.020]   sería interesante
+[00:52:42.020 --> 00:52:43.340]   ¿qué pasa en índices?
+[00:52:45.480 --> 00:52:45.880]   que
+[00:52:45.880 --> 00:52:47.120]   claro
+[00:52:47.120 --> 00:52:48.820]   habría que ver
+[00:52:48.820 --> 00:52:49.720]   lo que
+[00:52:49.720 --> 00:52:50.620]   son más caros
+[00:52:50.620 --> 00:52:51.360]   los índices
+[00:52:51.360 --> 00:52:53.060]   o sea
+[00:52:53.060 --> 00:52:55.540]   tendrías que ver
+[00:52:55.540 --> 00:52:56.500]   si
+[00:52:56.500 --> 00:52:59.660]   seguramente
+[00:52:59.660 --> 00:53:00.120]   el espacio
+[00:53:00.120 --> 00:53:00.520]   es menor
+[00:53:00.520 --> 00:53:01.140]   seguramente
+[00:53:01.140 --> 00:53:01.480]   la operación
+[00:53:01.480 --> 00:53:02.140]   se te cerraría
+[00:53:02.140 --> 00:53:02.740]   antes que un euro
+[00:53:02.740 --> 00:53:03.000]   dólar
+[00:53:03.000 --> 00:53:03.380]   seguro
+[00:53:03.380 --> 00:53:04.580]   porque hay
+[00:53:04.580 --> 00:53:05.480]   mucha más volatilidad
+[00:53:05.480 --> 00:53:06.260]   y los tamaños
+[00:53:06.260 --> 00:53:06.680]   de los contratos
+[00:53:06.680 --> 00:53:07.420]   son superiores
+[00:53:07.420 --> 00:53:07.760]   ya
+[00:53:07.760 --> 00:53:09.580]   por lo tanto
+[00:53:09.580 --> 00:53:10.200]   tendrías que ver
+[00:53:10.200 --> 00:53:10.600]   si
+[00:53:10.600 --> 00:53:11.660]   tienes que dejar
+[00:53:11.660 --> 00:53:12.520]   demasiado poco
+[00:53:12.520 --> 00:53:13.080]   espacio
+[00:53:13.080 --> 00:53:14.580]   bueno
+[00:53:14.580 --> 00:53:15.180]   puedes bajar
+[00:53:15.180 --> 00:53:15.620]   de lotaje
+[00:53:15.620 --> 00:53:16.440]   y dar más espacio
+[00:53:16.440 --> 00:53:18.680]   al final
+[00:53:18.680 --> 00:53:19.380]   tienes que arriesgar
+[00:53:19.380 --> 00:53:20.280]   ese 4%
+[00:53:20.280 --> 00:53:20.860]   de tu cuenta
+[00:53:20.860 --> 00:53:21.520]   tú tienes que arriesgar
+[00:53:21.520 --> 00:53:22.180]   4.000 dólares
+[00:53:22.180 --> 00:53:22.760]   si
+[00:53:22.760 --> 00:53:23.400]   sería una
+[00:53:23.400 --> 00:53:24.020]   una vía
+[00:53:24.020 --> 00:53:24.920]   totalmente válida
+[00:53:24.920 --> 00:53:26.320]   si es
+[00:53:26.320 --> 00:53:27.340]   gratis
+[00:53:27.340 --> 00:53:27.720]   o sea
+[00:53:27.720 --> 00:53:28.300]   si la comisión
+[00:53:28.300 --> 00:53:28.680]   es cero
+[00:53:28.680 --> 00:53:29.400]   es mejor
+[00:53:29.400 --> 00:53:30.000]   ir a índices
+[00:53:30.000 --> 00:53:31.480]   vale
+[00:53:31.480 --> 00:53:31.960]   y luego
+[00:53:31.960 --> 00:53:32.580]   otra duda
+[00:53:32.580 --> 00:53:33.500]   si al final
+[00:53:33.500 --> 00:53:34.460]   vamos a usar
+[00:53:34.460 --> 00:53:35.880]   estrategias
+[00:53:35.880 --> 00:53:36.100]   así
+[00:53:36.100 --> 00:53:36.520]   realmente
+[00:53:36.520 --> 00:53:37.020]   un poco
+[00:53:37.020 --> 00:53:37.660]   chorras
+[00:53:37.660 --> 00:53:38.460]   y sencillas
+[00:53:38.460 --> 00:53:40.420]   con sacarlas
+[00:53:40.420 --> 00:53:41.220]   de las ventajas
+[00:53:41.220 --> 00:53:41.780]   del builder
+[00:53:41.780 --> 00:53:42.260]   sobra
+[00:53:42.260 --> 00:53:42.540]   no
+[00:53:42.540 --> 00:53:45.200]   no sé
+[00:53:45.200 --> 00:53:46.780]   si me explico
+[00:53:46.780 --> 00:53:47.420]   que puede ser
+[00:53:47.420 --> 00:53:48.160]   ventajas
+[00:53:48.160 --> 00:53:48.960]   el tema
+[00:53:48.960 --> 00:53:49.280]   es que
+[00:53:49.280 --> 00:53:51.080]   lo que he dicho
+[00:53:51.080 --> 00:53:51.320]   antes
+[00:53:51.320 --> 00:53:51.920]   te tiene que dar
+[00:53:51.920 --> 00:53:52.260]   señal
+[00:53:52.260 --> 00:53:52.680]   cada día
+[00:53:52.680 --> 00:53:53.300]   varias veces
+[00:53:53.300 --> 00:53:55.580]   y eso
+[00:53:55.580 --> 00:53:55.960]   es que
+[00:53:55.960 --> 00:53:56.580]   hacemos nosotros
+[00:53:56.580 --> 00:53:57.100]   H1
+[00:53:57.100 --> 00:53:57.440]   no da
+[00:53:57.440 --> 00:53:57.920]   cada día
+[00:53:57.920 --> 00:53:58.220]   de hecho
+[00:53:58.220 --> 00:53:58.800]   si el activo
+[00:53:58.800 --> 00:53:59.240]   está cayendo
+[00:53:59.240 --> 00:53:59.540]   y tú estás
+[00:53:59.540 --> 00:54:00.180]   buscando compras
+[00:54:00.180 --> 00:54:00.880]   pues
+[00:54:00.880 --> 00:54:01.940]   ojalá que no
+[00:54:01.940 --> 00:54:02.280]   compres
+[00:54:02.280 --> 00:54:03.540]   pero yo
+[00:54:03.540 --> 00:54:03.940]   me refiero
+[00:54:03.940 --> 00:54:04.460]   si yo
+[00:54:04.460 --> 00:54:05.200]   buildeo
+[00:54:05.200 --> 00:54:06.080]   ventajas
+[00:54:06.080 --> 00:54:07.020]   en M5
+[00:54:07.020 --> 00:54:08.320]   y pongo
+[00:54:08.320 --> 00:54:08.960]   que me haga
+[00:54:08.960 --> 00:54:09.920]   un puñado
+[00:54:09.920 --> 00:54:10.720]   de operaciones
+[00:54:10.720 --> 00:54:11.300]   al final
+[00:54:11.300 --> 00:54:11.700]   ahí
+[00:54:11.700 --> 00:54:12.660]   no se puede
+[00:54:12.660 --> 00:54:15.320]   hacer una especie
+[00:54:15.320 --> 00:54:15.760]   de promedio
+[00:54:15.760 --> 00:54:16.420]   si me explico
+[00:54:16.420 --> 00:54:17.060]   si yo buildeo
+[00:54:17.060 --> 00:54:18.800]   si lo que he dicho
+[00:54:18.800 --> 00:54:18.980]   antes
+[00:54:18.980 --> 00:54:19.540]   lo podéis hacer
+[00:54:19.540 --> 00:54:20.060]   o diseñando
+[00:54:20.060 --> 00:54:20.600]   tú como lo he hecho
+[00:54:20.600 --> 00:54:20.860]   yo
+[00:54:20.860 --> 00:54:23.180]   o buscando
+[00:54:23.180 --> 00:54:23.720]   ventajas
+[00:54:23.720 --> 00:54:24.280]   en el builder
+[00:54:24.280 --> 00:54:25.520]   y haciendo el proceso
+[00:54:25.520 --> 00:54:26.300]   pero
+[00:54:26.300 --> 00:54:27.400]   no os matéis
+[00:54:27.400 --> 00:54:28.380]   ni hacer retes
+[00:54:28.380 --> 00:54:28.800]   ni nada
+[00:54:28.800 --> 00:54:29.280]   directamente
+[00:54:29.280 --> 00:54:29.860]   el builder
+[00:54:29.860 --> 00:54:31.060]   a exportar
+[00:54:31.060 --> 00:54:32.340]   vale
+[00:54:32.340 --> 00:54:32.860]   muchas gracias
+[00:54:32.860 --> 00:54:33.480]   pero
+[00:54:33.480 --> 00:54:34.280]   una cosa así
+[00:54:34.280 --> 00:54:35.240]   id con stop loss
+[00:54:35.240 --> 00:54:35.960]   o sea
+[00:54:35.960 --> 00:54:37.220]   crear la estrategia
+[00:54:37.220 --> 00:54:37.700]   directamente
+[00:54:37.700 --> 00:54:38.680]   no hagáis la separación
+[00:54:38.680 --> 00:54:39.100]   de ventaja
+[00:54:39.100 --> 00:54:40.540]   y luego estrategia
+[00:54:40.540 --> 00:54:43.680]   id con stop loss
+[00:54:43.680 --> 00:54:45.220]   y eso sí
+[00:54:45.220 --> 00:54:45.720]   tiene que ser
+[00:54:45.720 --> 00:54:46.120]   uno a uno
+[00:54:46.120 --> 00:54:47.060]   esto es muy importante
+[00:54:47.060 --> 00:54:48.600]   que sea uno a uno
+[00:54:48.600 --> 00:54:49.760]   eso es muy importante
+[00:54:49.760 --> 00:54:50.260]   porque si uno
+[00:54:50.260 --> 00:54:51.000]   pierde
+[00:54:51.000 --> 00:54:51.860]   el otro tiene que ganar
+[00:54:51.860 --> 00:54:54.700]   lo mismo
+[00:54:54.700 --> 00:54:56.040]   vale
+[00:54:56.040 --> 00:54:58.980]   Diego
+[00:54:58.980 --> 00:55:01.100]   hola Ramón
+[00:55:01.100 --> 00:55:02.180]   muy buenas
+[00:55:02.180 --> 00:55:04.560]   tenía una pregunta
+[00:55:04.560 --> 00:55:05.500]   que ya medio
+[00:55:05.500 --> 00:55:06.460]   me la respondiste
+[00:55:06.460 --> 00:55:07.500]   y es el tema
+[00:55:07.500 --> 00:55:09.040]   de varios
+[00:55:09.040 --> 00:55:09.900]   esclavos
+[00:55:09.900 --> 00:55:10.180]   cierto
+[00:55:10.180 --> 00:55:12.760]   pero entonces
+[00:55:12.760 --> 00:55:13.820]   varios masters
+[00:55:13.820 --> 00:55:14.400]   en la misma
+[00:55:14.400 --> 00:55:15.200]   VPN
+[00:55:15.200 --> 00:55:16.420]   no funcionaría
+[00:55:16.420 --> 00:55:17.540]   no tiene como
+[00:55:17.540 --> 00:55:18.700]   ok
+[00:55:18.700 --> 00:55:21.980]   y cuando tú
+[00:55:21.980 --> 00:55:22.920]   montas varios
+[00:55:22.920 --> 00:55:23.360]   esclavos
+[00:55:23.360 --> 00:55:24.320]   cada esclavo
+[00:55:24.320 --> 00:55:25.780]   lo configurarías
+[00:55:25.780 --> 00:55:26.980]   si quiere ir
+[00:55:26.980 --> 00:55:27.660]   a copiar
+[00:55:27.660 --> 00:55:28.460]   directamente
+[00:55:28.460 --> 00:55:29.520]   o hacer la inversa
+[00:55:29.520 --> 00:55:30.060]   me imagino
+[00:55:30.060 --> 00:55:31.180]   esto lo explicaré
+[00:55:31.180 --> 00:55:31.360]   ahora
+[00:55:31.360 --> 00:55:31.900]   esto viene ahora
+[00:55:31.900 --> 00:55:32.520]   vale
+[00:55:32.520 --> 00:55:34.020]   gracias
+[00:55:34.020 --> 00:55:38.420]   un momento
+[00:55:38.420 --> 00:55:39.260]   voy a por el chat
+[00:55:39.260 --> 00:55:40.140]   para evaluaciones
+[00:55:40.140 --> 00:55:40.840]   que time frame
+[00:55:40.840 --> 00:55:42.120]   recomiendas
+[00:55:42.120 --> 00:55:42.360]   que hagamos
+[00:55:42.360 --> 00:55:42.780]   estrategias
+[00:55:42.780 --> 00:55:43.240]   yo por ahora
+[00:55:43.240 --> 00:55:44.420]   no llevo
+[00:55:44.420 --> 00:55:45.560]   un gran historial
+[00:55:45.560 --> 00:55:46.620]   pero lo hemos hecho
+[00:55:46.620 --> 00:55:47.200]   creo que hasta ahora
+[00:55:47.200 --> 00:55:47.920]   M5
+[00:55:47.920 --> 00:55:48.720]   todo lo que hemos hecho
+[00:55:48.720 --> 00:55:49.180]   hasta ahora
+[00:55:49.180 --> 00:55:53.120]   y solo un año
+[00:55:53.120 --> 00:55:53.980]   buscar solo un año
+[00:55:53.980 --> 00:55:56.840]   ¿se podría poner una estrategia
+[00:55:56.840 --> 00:55:57.260]   con el video
+[00:55:57.260 --> 00:55:58.340]   que te dé muchos trades
+[00:55:58.340 --> 00:55:59.460]   y también una condición
+[00:55:59.460 --> 00:56:00.320]   para rachas largas
+[00:56:00.320 --> 00:56:00.480]   ¿no?
+[00:56:00.540 --> 00:56:00.740]   sí
+[00:56:00.740 --> 00:56:01.400]   sí sí sí
+[00:56:01.400 --> 00:56:02.200]   podéis ir a buscar
+[00:56:02.200 --> 00:56:03.240]   adredes rachas largas
+[00:56:03.240 --> 00:56:04.200]   sí sí
+[00:56:04.200 --> 00:56:08.100]   bueno
+[00:56:08.100 --> 00:56:08.700]   soy nuevo
+[00:56:08.700 --> 00:56:09.620]   estamos gastando
+[00:56:09.620 --> 00:56:10.320]   500 euros
+[00:56:10.320 --> 00:56:11.500]   y ponemos una estrategia
+[00:56:11.500 --> 00:56:11.840]   chorra
+[00:56:11.840 --> 00:56:12.380]   para pasar
+[00:56:12.380 --> 00:56:14.380]   la cuenta de fondeo
+[00:56:14.380 --> 00:56:14.980]   bueno
+[00:56:14.980 --> 00:56:16.040]   yo estoy gastando
+[00:56:16.040 --> 00:56:17.000]   500 euros
+[00:56:17.000 --> 00:56:18.960]   cada uno
+[00:56:18.960 --> 00:56:19.320]   que gaste
+[00:56:19.320 --> 00:56:20.140]   la cuenta
+[00:56:20.140 --> 00:56:21.120]   que se pueda permitir
+[00:56:21.120 --> 00:56:22.600]   yo de hecho
+[00:56:22.600 --> 00:56:23.260]   gasto 2000
+[00:56:23.260 --> 00:56:27.380]   aquí lo importante
+[00:56:27.380 --> 00:56:27.720]   es
+[00:56:27.720 --> 00:56:29.160]   la gestión
+[00:56:29.160 --> 00:56:29.440]   que hagas
+[00:56:29.440 --> 00:56:29.820]   de todo esto
+[00:56:29.820 --> 00:56:30.260]   que es lo que estoy
+[00:56:30.260 --> 00:56:31.100]   explicando en esta clase
+[00:56:31.100 --> 00:56:33.980]   ¿se podrá utilizar
+[00:56:33.980 --> 00:56:34.740]   una copiadora
+[00:56:34.740 --> 00:56:36.500]   en la nube?
+[00:56:37.040 --> 00:56:37.280]   bueno
+[00:56:37.280 --> 00:56:38.020]   es que el vps
+[00:56:38.020 --> 00:56:38.540]   es la nube
+[00:56:38.540 --> 00:56:39.440]   o sea
+[00:56:39.440 --> 00:56:39.840]   todo esto
+[00:56:39.840 --> 00:56:40.660]   yo lo tengo
+[00:56:40.660 --> 00:56:41.500]   configurado en vps
+[00:56:41.500 --> 00:56:43.380]   claro
+[00:56:43.380 --> 00:56:44.520]   no sé si es la gente
+[00:56:44.520 --> 00:56:45.420]   me hace esta pregunta
+[00:56:45.420 --> 00:56:45.920]   si es gente
+[00:56:45.920 --> 00:56:47.160]   que aún no
+[00:56:47.160 --> 00:56:48.040]   no
+[00:56:48.040 --> 00:56:48.700]   todo el mundo
+[00:56:48.700 --> 00:56:49.840]   debería haber visto
+[00:56:49.840 --> 00:56:50.420]   ya la clase
+[00:56:50.420 --> 00:56:51.080]   de vps
+[00:56:51.080 --> 00:56:51.500]   creo
+[00:56:51.500 --> 00:56:55.700]   sí
+[00:56:55.700 --> 00:56:56.440]   quedará grabada
+[00:56:56.440 --> 00:56:57.460]   Jota Sánchez
+[00:56:57.460 --> 00:56:58.720]   a ver
+[00:56:58.720 --> 00:57:00.740]   oa González
+[00:57:00.740 --> 00:57:01.760]   que tiene la mano levantada
+[00:57:01.760 --> 00:57:03.880]   hola Ramón
+[00:57:03.880 --> 00:57:04.660]   hola a todo el mundo
+[00:57:04.660 --> 00:57:05.380]   buenas
+[00:57:05.380 --> 00:57:07.200]   pregunta rápida
+[00:57:07.200 --> 00:57:08.100]   porque creo que me he perdido
+[00:57:08.100 --> 00:57:09.480]   con la cantidad de cuentas
+[00:57:09.480 --> 00:57:10.480]   y cómo lo vas haciendo
+[00:57:10.480 --> 00:57:11.360]   es decir
+[00:57:11.360 --> 00:57:12.540]   que pones una cuenta
+[00:57:12.540 --> 00:57:13.320]   que has comprado
+[00:57:13.320 --> 00:57:14.120]   contra otra
+[00:57:14.120 --> 00:57:14.740]   trabajando
+[00:57:14.740 --> 00:57:16.280]   a la inversa
+[00:57:16.280 --> 00:57:17.620]   pasas
+[00:57:17.620 --> 00:57:18.500]   la primera fase
+[00:57:18.500 --> 00:57:21.060]   pierdes una de ellas
+[00:57:21.060 --> 00:57:22.240]   la vuelves a recomprar
+[00:57:22.240 --> 00:57:23.480]   y cómo vas enganchando
+[00:57:23.480 --> 00:57:25.040]   con hasta que tiene las cuatro
+[00:57:25.040 --> 00:57:25.380]   es decir
+[00:57:25.380 --> 00:57:27.180]   cuando empiezas a operar
+[00:57:27.180 --> 00:57:28.520]   con la tercera
+[00:57:28.520 --> 00:57:29.060]   y la cuarta
+[00:57:29.060 --> 00:57:30.540]   o no sé si lo vas a explicar
+[00:57:30.540 --> 00:57:31.160]   no claro
+[00:57:31.160 --> 00:57:31.340]   sí
+[00:57:31.340 --> 00:57:32.480]   cuando te ha faltado
+[00:57:32.480 --> 00:57:33.780]   recompras la que has perdido
+[00:57:33.780 --> 00:57:34.780]   y compras una tercera
+[00:57:34.780 --> 00:57:35.520]   sí
+[00:57:35.520 --> 00:57:36.640]   y pones esas dos
+[00:57:36.640 --> 00:57:37.020]   a trabajar
+[00:57:37.020 --> 00:57:38.240]   esas dos las contrarias
+[00:57:38.240 --> 00:57:38.860]   la primera
+[00:57:38.860 --> 00:57:39.620]   la guardas en
+[00:57:39.620 --> 00:57:41.040]   la segunda fase
+[00:57:41.040 --> 00:57:41.880]   la quedas guardadita
+[00:57:41.880 --> 00:57:42.560]   ahí sin tocar
+[00:57:42.560 --> 00:57:44.100]   mientras juegan
+[00:57:44.100 --> 00:57:44.760]   las otras dos
+[00:57:44.760 --> 00:57:45.900]   vale
+[00:57:45.900 --> 00:57:47.300]   una de las dos
+[00:57:47.300 --> 00:57:47.740]   pasa
+[00:57:47.740 --> 00:57:48.520]   o
+[00:57:48.520 --> 00:57:49.620]   esto es
+[00:57:49.620 --> 00:57:50.240]   si quieres jugar
+[00:57:50.240 --> 00:57:51.240]   con tres empresas de fondeo
+[00:57:51.240 --> 00:57:52.460]   si quieres cuatro empresas de fondeo
+[00:57:52.460 --> 00:57:53.540]   puedes hacer las paralelas
+[00:57:53.540 --> 00:57:54.520]   vale
+[00:57:54.520 --> 00:57:55.460]   dos y dos
+[00:57:55.460 --> 00:57:55.980]   sí
+[00:57:55.980 --> 00:57:57.380]   gracias
+[00:57:57.380 --> 00:57:58.320]   esto es por si no queréis
+[00:57:58.320 --> 00:57:59.000]   ir a cuatro empresas
+[00:57:59.000 --> 00:57:59.420]   que por ejemplo
+[00:57:59.420 --> 00:58:00.020]   World State Fund
+[00:58:00.020 --> 00:58:00.400]   ya os digo
+[00:58:00.400 --> 00:58:01.640]   tiene la putada del 2,1
+[00:58:01.640 --> 00:58:02.700]   que eso a mí me tira
+[00:58:02.700 --> 00:58:03.400]   un poco para atrás
+[00:58:03.400 --> 00:58:04.500]   la piqué ayer
+[00:58:04.500 --> 00:58:05.340]   por inercia
+[00:58:05.340 --> 00:58:05.780]   pero
+[00:58:05.780 --> 00:58:08.220]   tira el 2,1
+[00:58:08.220 --> 00:58:08.900]   por idea de trader
+[00:58:08.900 --> 00:58:09.540]   2,2
+[00:58:09.540 --> 00:58:11.480]   vale
+[00:58:11.480 --> 00:58:11.980]   gracias
+[00:58:11.980 --> 00:58:12.660]   más claro
+[00:58:12.660 --> 00:58:13.680]   a ti
+[00:58:13.680 --> 00:58:14.840]   Gonzalo
+[00:58:14.840 --> 00:58:16.940]   sí Ramón
+[00:58:16.940 --> 00:58:18.080]   para aclarar un poco
+[00:58:18.080 --> 00:58:18.440]   también
+[00:58:18.440 --> 00:58:19.240]   el tema
+[00:58:19.240 --> 00:58:20.540]   o sea
+[00:58:20.540 --> 00:58:20.840]   yo
+[00:58:20.840 --> 00:58:22.040]   cojo una cuenta
+[00:58:22.040 --> 00:58:22.640]   la pongo
+[00:58:22.640 --> 00:58:24.320]   en la cuenta 1
+[00:58:24.320 --> 00:58:25.600]   le pongo el copiador
+[00:58:25.600 --> 00:58:27.140]   en otro
+[00:58:27.140 --> 00:58:28.060]   MetaTrader
+[00:58:28.060 --> 00:58:28.820]   pongo
+[00:58:28.820 --> 00:58:30.060]   otra cuenta
+[00:58:30.060 --> 00:58:30.620]   otra empresa
+[00:58:30.620 --> 00:58:31.640]   y le pongo el slave
+[00:58:31.640 --> 00:58:31.860]   ¿no?
+[00:58:32.660 --> 00:58:32.940]   sí
+[00:58:32.940 --> 00:58:33.420]   pero todo esto
+[00:58:33.420 --> 00:58:34.200]   es lo que lo explicaré ahora
+[00:58:34.200 --> 00:58:35.000]   vale
+[00:58:35.000 --> 00:58:35.860]   entonces ya
+[00:58:35.860 --> 00:58:36.900]   gracias
+[00:58:36.900 --> 00:58:39.500]   Vicente
+[00:58:39.500 --> 00:58:41.120]   sí
+[00:58:41.120 --> 00:58:41.880]   buenas tardes
+[00:58:41.880 --> 00:58:43.060]   una pregunta
+[00:58:43.060 --> 00:58:43.900]   igual un poco tonta
+[00:58:43.900 --> 00:58:44.720]   pero bueno
+[00:58:44.720 --> 00:58:45.840]   tú se ponte
+[00:58:45.840 --> 00:58:46.600]   que pasa una cuenta
+[00:58:46.600 --> 00:58:47.200]   de fondeo
+[00:58:47.200 --> 00:58:49.140]   de 5.000 dólares
+[00:58:49.140 --> 00:58:49.340]   ¿no?
+[00:58:50.180 --> 00:58:50.600]   y bueno
+[00:58:50.600 --> 00:58:51.340]   pues con el tiempo
+[00:58:51.340 --> 00:58:52.880]   veo que la cosa va bien
+[00:58:52.880 --> 00:58:53.920]   y quería
+[00:58:53.920 --> 00:58:54.860]   con la misma empresa
+[00:58:54.860 --> 00:58:56.360]   aumentar el capital
+[00:58:56.360 --> 00:58:57.260]   tendría que volver
+[00:58:57.260 --> 00:58:58.500]   a pasar otra vez
+[00:58:58.500 --> 00:58:59.620]   la cuenta de fondeo
+[00:58:59.620 --> 00:59:00.580]   según la capital
+[00:59:00.580 --> 00:59:01.960]   o alguna otra metodología
+[00:59:01.960 --> 00:59:05.020]   pero aumentar el capital
+[00:59:05.020 --> 00:59:05.860]   ¿cómo lo quieres hacer?
+[00:59:06.240 --> 00:59:06.480]   vale
+[00:59:06.480 --> 00:59:07.140]   yo ahora tengo
+[00:59:07.140 --> 00:59:07.900]   una cuenta de fondeo
+[00:59:07.900 --> 00:59:08.660]   de 5.000 dólares
+[00:59:08.660 --> 00:59:10.120]   y al año
+[00:59:10.120 --> 00:59:11.800]   o a los 3 meses
+[00:59:11.800 --> 00:59:12.300]   o los 6 meses
+[00:59:12.300 --> 00:59:12.700]   digo oye
+[00:59:12.700 --> 00:59:13.260]   pues que mira
+[00:59:13.260 --> 00:59:14.500]   que quiero tener
+[00:59:14.500 --> 00:59:15.400]   otra cuenta de fondeo
+[00:59:15.400 --> 00:59:16.140]   con el mismo
+[00:59:16.140 --> 00:59:17.640]   broker que estoy
+[00:59:17.640 --> 00:59:17.920]   digamos
+[00:59:17.920 --> 00:59:18.740]   con la misma empresa
+[00:59:18.740 --> 00:59:20.180]   pero debe de 5.000
+[00:59:20.180 --> 00:59:20.840]   pues ahora quiero una
+[00:59:20.840 --> 00:59:21.400]   de 10.000
+[00:59:21.400 --> 00:59:22.580]   tengo que volver a pasar
+[00:59:22.580 --> 00:59:23.480]   todo el ciclo
+[00:59:23.480 --> 00:59:23.760]   claro
+[00:59:23.760 --> 00:59:24.100]   claro
+[00:59:24.100 --> 00:59:25.020]   sí
+[00:59:25.020 --> 00:59:26.480]   vale
+[00:59:26.480 --> 00:59:27.300]   cualquier cosa
+[00:59:27.300 --> 00:59:27.980]   que te compres nueva
+[00:59:27.980 --> 00:59:29.360]   tienes que pasar el examen
+[00:59:29.360 --> 00:59:29.600]   vale
+[00:59:29.600 --> 00:59:30.060]   que no sabías
+[00:59:30.060 --> 00:59:30.720]   y como ya estás
+[00:59:30.720 --> 00:59:31.340]   digamos con ellos
+[00:59:31.340 --> 00:59:32.520]   ya has pasado un ciclo
+[00:59:32.520 --> 00:59:33.240]   luego tenías alguna
+[00:59:33.240 --> 00:59:33.540]   nada
+[00:59:33.540 --> 00:59:35.440]   siempre hay que pasar
+[00:59:35.440 --> 00:59:35.860]   evaluaciones
+[00:59:35.860 --> 00:59:36.820]   vale
+[00:59:36.820 --> 00:59:37.300]   gracias
+[00:59:37.300 --> 00:59:38.140]   a ti
+[00:59:38.140 --> 00:59:41.120]   miro un poco el chat
+[00:59:41.120 --> 00:59:44.420]   o sea
+[00:59:44.420 --> 00:59:45.300]   la creación del vídeo
+[00:59:45.300 --> 00:59:46.620]   es por porcentaje
+[00:59:46.620 --> 00:59:47.560]   no riesgo fijo
+[00:59:47.560 --> 00:59:48.380]   no
+[00:59:48.380 --> 00:59:49.880]   riesgo fijo
+[00:59:49.880 --> 00:59:51.560]   siempre riesgo fijo
+[00:59:51.560 --> 00:59:53.000]   es decir
+[00:59:53.000 --> 00:59:53.880]   ahora veréis
+[00:59:53.880 --> 00:59:54.800]   como está configurado
+[00:59:54.800 --> 00:59:55.140]   todo
+[00:59:55.140 --> 00:59:56.220]   ahora lo veréis
+[00:59:56.220 --> 00:59:57.280]   como está configurado
+[00:59:57.280 --> 00:59:58.460]   el riesgo fijo
+[00:59:58.460 --> 00:59:59.160]   la estrategia
+[00:59:59.160 --> 00:59:59.960]   el porcentual
+[00:59:59.960 --> 01:00:00.660]   es el guardián
+[01:00:00.660 --> 01:00:01.400]   como lo configuramos
+[01:00:01.400 --> 01:00:01.960]   el copiador
+[01:00:01.960 --> 01:00:03.000]   vale
+[01:00:03.000 --> 01:00:10.620]   si mi presupuesto
+[01:00:10.620 --> 01:00:11.940]   no es para 410.000
+[01:00:11.940 --> 01:00:12.860]   es de 10k
+[01:00:12.860 --> 01:00:13.620]   es igual de rentable
+[01:00:13.620 --> 01:00:14.280]   a esta fondeada
+[01:00:14.280 --> 01:00:14.800]   sí sí sí
+[01:00:14.800 --> 01:00:15.360]   claro claro
+[01:00:15.360 --> 01:00:16.700]   claro claro
+[01:00:16.700 --> 01:00:17.940]   es proporcionalmente
+[01:00:17.940 --> 01:00:18.400]   al capital
+[01:00:18.400 --> 01:00:18.940]   que queráis
+[01:00:18.940 --> 01:00:21.380]   adquirir
+[01:00:21.380 --> 01:00:24.020]   qué 4 empresas
+[01:00:24.020 --> 01:00:24.580]   de fondeo
+[01:00:24.580 --> 01:00:24.980]   recomiendas
+[01:00:24.980 --> 01:00:25.840]   para esta metodología
+[01:00:25.840 --> 01:00:26.160]   a ver
+[01:00:26.160 --> 01:00:27.940]   yo personalmente
+[01:00:27.940 --> 01:00:28.740]   y esto no lo cojáis
+[01:00:28.740 --> 01:00:29.220]   con pizas
+[01:00:29.220 --> 01:00:29.420]   de rabona
+[01:00:29.420 --> 01:00:30.120]   dicho esto tal
+[01:00:30.120 --> 01:00:30.280]   no
+[01:00:30.280 --> 01:00:31.400]   yo trabajo
+[01:00:31.400 --> 01:00:32.360]   con The Trading Pit
+[01:00:32.360 --> 01:00:33.280]   con Funded Nets
+[01:00:33.280 --> 01:00:34.160]   con The Pfeifers
+[01:00:34.160 --> 01:00:35.960]   con Wall Street Funded
+[01:00:35.960 --> 01:00:36.800]   Wall Street Funded
+[01:00:36.800 --> 01:00:37.780]   me tira un poco
+[01:00:37.780 --> 01:00:38.460]   esto de
+[01:00:38.460 --> 01:00:40.600]   del 2,1%
+[01:00:40.600 --> 01:00:45.440]   no sé si
+[01:00:45.440 --> 01:00:46.220]   sustituir
+[01:00:46.220 --> 01:00:46.620]   voy a ver
+[01:00:46.620 --> 01:00:47.280]   a ver qué tal va
+[01:00:47.280 --> 01:00:48.220]   esto del 2,1%
+[01:00:48.220 --> 01:00:49.080]   a ver cómo evoluciona
+[01:00:49.080 --> 01:00:50.080]   ese par
+[01:00:50.080 --> 01:00:50.760]   que conecté ayer
+[01:00:50.760 --> 01:00:52.900]   y si es muy lento
+[01:00:52.900 --> 01:00:53.560]   en pasarlo
+[01:00:53.560 --> 01:00:54.340]   cambiaré por otro
+[01:00:54.340 --> 01:00:54.880]   que pueda arriesgar
+[01:00:54.880 --> 01:00:55.500]   un 4
+[01:00:55.500 --> 01:00:56.780]   podéis poner
+[01:00:56.780 --> 01:00:57.180]   FTMO
+[01:00:57.180 --> 01:00:58.120]   yo estoy baneado
+[01:00:58.120 --> 01:00:58.540]   en FTMO
+[01:00:58.540 --> 01:00:58.820]   de hecho
+[01:00:58.820 --> 01:00:59.620]   me estoy planteando
+[01:00:59.620 --> 01:01:00.660]   que mi mujer
+[01:01:00.660 --> 01:01:01.220]   se abra una cuenta
+[01:01:01.220 --> 01:01:01.700]   en FTMO
+[01:01:01.700 --> 01:01:02.420]   y no sé por qué
+[01:01:02.420 --> 01:01:02.760]   no lo he hecho
+[01:01:02.760 --> 01:01:05.400]   y usar FTMO
+[01:01:05.400 --> 01:01:06.320]   la botada
+[01:01:06.320 --> 01:01:07.160]   de FTMO
+[01:01:07.160 --> 01:01:07.860]   es que la primera fase
+[01:01:07.860 --> 01:01:08.600]   os piden un 10
+[01:01:08.600 --> 01:01:11.520]   os piden un 10
+[01:01:11.520 --> 01:01:11.940]   un 10
+[01:01:11.940 --> 01:01:14.380]   un pelín más
+[01:01:14.380 --> 01:01:14.940]   que las demás
+[01:01:14.940 --> 01:01:19.560]   ¿Tienes publicado
+[01:01:19.560 --> 01:01:20.100]   una configuración
+[01:01:20.100 --> 01:01:20.520]   para el believe
+[01:01:20.520 --> 01:01:20.880]   que arriesgue
+[01:01:20.880 --> 01:01:21.360]   uno a uno
+[01:01:21.360 --> 01:01:22.180]   con stop loss
+[01:01:22.180 --> 01:01:22.660]   de profit
+[01:01:22.660 --> 01:01:24.260]   no sabréis
+[01:01:24.260 --> 01:01:24.940]   cómo arriesgar
+[01:01:24.940 --> 01:01:27.600]   recordadmelo
+[01:01:27.600 --> 01:01:28.080]   luego al final
+[01:01:28.080 --> 01:01:28.480]   ¿vale José?
+[01:01:28.860 --> 01:01:29.660]   recordadmelo al final
+[01:01:29.660 --> 01:01:30.800]   seguiré ahora
+[01:01:30.800 --> 01:01:31.280]   con la explicación
+[01:01:31.280 --> 01:01:31.480]   tal
+[01:01:31.480 --> 01:01:31.960]   y luego al final
+[01:01:31.960 --> 01:01:33.520]   si miraremos
+[01:01:33.520 --> 01:01:33.940]   de hacerlo
+[01:01:33.940 --> 01:01:38.060]   la empresa
+[01:01:38.060 --> 01:01:39.140]   donde podía detectar
+[01:01:39.140 --> 01:01:39.500]   si ya tenemos
+[01:01:39.500 --> 01:01:39.820]   el copiador
+[01:01:39.820 --> 01:01:40.140]   en la puerta
+output_txt: saving output to 'transcripts/mentoria_2_a.txt'
+
+whisper_print_timings:     load time =  1358.23 ms
+whisper_print_timings:     fallbacks =   0 p /   0 h
+whisper_print_timings:      mel time =  1833.52 ms
+whisper_print_timings:   sample time = 88605.11 ms / 92522 runs (     0.96 ms per run)
+whisper_print_timings:   encode time = 499730.00 ms /   147 runs (  3399.52 ms per run)
+whisper_print_timings:   decode time =  2229.87 ms /   228 runs (     9.78 ms per run)
+whisper_print_timings:   batchd time = 257137.94 ms / 91562 runs (     2.81 ms per run)
+whisper_print_timings:   prompt time = 23173.69 ms / 32975 runs (     0.70 ms per run)
+whisper_print_timings:    total time = 882157.38 ms
+ggml_metal_free: deallocating

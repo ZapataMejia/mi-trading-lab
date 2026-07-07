@@ -1,0 +1,3081 @@
+load_backend: loaded BLAS backend from /opt/homebrew/Cellar/ggml/0.13.1/libexec/libggml-blas.so
+ggml_metal_device_init: tensor API disabled for pre-M5 and pre-A19 devices
+ggml_metal_library_init: using embedded metal library
+ggml_metal_library_init: loaded in 0.029 sec
+ggml_metal_rsets_init: creating a residency set collection (keep_alive = 180 s)
+ggml_metal_device_init: GPU name:   MTL0 (Apple M1)
+ggml_metal_device_init: GPU family: MTLGPUFamilyApple7  (1007)
+ggml_metal_device_init: GPU family: MTLGPUFamilyCommon3 (3003)
+ggml_metal_device_init: GPU family: MTLGPUFamilyMetal3  (5001)
+ggml_metal_device_init: simdgroup reduction   = true
+ggml_metal_device_init: simdgroup matrix mul. = true
+ggml_metal_device_init: has unified memory    = true
+ggml_metal_device_init: has bfloat            = true
+ggml_metal_device_init: has tensor            = false
+ggml_metal_device_init: use residency sets    = true
+ggml_metal_device_init: use shared buffers    = true
+ggml_metal_device_init: recommendedMaxWorkingSetSize  = 11453.25 MB
+load_backend: loaded MTL backend from /opt/homebrew/Cellar/ggml/0.13.1/libexec/libggml-metal.so
+load_backend: loaded CPU backend from /opt/homebrew/Cellar/ggml/0.13.1/libexec/libggml-cpu-apple_m1.so
+whisper_init_from_file_with_params_no_state: loading model from '/Users/santiago/whisper-models/ggml-large-v3-turbo.bin'
+whisper_init_with_params_no_state: use gpu    = 1
+whisper_init_with_params_no_state: flash attn = 1
+whisper_init_with_params_no_state: gpu_device = 0
+whisper_init_with_params_no_state: dtw        = 0
+whisper_init_with_params_no_state: devices    = 3
+whisper_init_with_params_no_state: backends   = 3
+whisper_model_load: loading model
+whisper_model_load: n_vocab       = 51866
+whisper_model_load: n_audio_ctx   = 1500
+whisper_model_load: n_audio_state = 1280
+whisper_model_load: n_audio_head  = 20
+whisper_model_load: n_audio_layer = 32
+whisper_model_load: n_text_ctx    = 448
+whisper_model_load: n_text_state  = 1280
+whisper_model_load: n_text_head   = 20
+whisper_model_load: n_text_layer  = 4
+whisper_model_load: n_mels        = 128
+whisper_model_load: ftype         = 1
+whisper_model_load: qntvr         = 0
+whisper_model_load: type          = 5 (large v3)
+whisper_model_load: adding 1609 extra tokens
+whisper_model_load: n_langs       = 100
+whisper_model_load:         MTL0 total size =  1623.92 MB
+whisper_model_load: model size    = 1623.92 MB
+whisper_backend_init_gpu: device 0: BLAS (type: 3)
+whisper_backend_init_gpu: device 1: MTL0 (type: 1)
+whisper_backend_init_gpu: found GPU device 1: MTL0 (type: 1, cnt: 0)
+whisper_backend_init_gpu: using MTL0 backend
+ggml_metal_init: allocating
+ggml_metal_init: found device: Apple M1
+ggml_metal_init: picking default device: Apple M1
+ggml_metal_init: use fusion         = true
+ggml_metal_init: use concurrency    = true
+ggml_metal_init: use graph optimize = true
+whisper_backend_init: using BLAS backend
+whisper_init_state: kv self size  =   10.49 MB
+whisper_init_state: kv cross size =   31.46 MB
+whisper_init_state: kv pad  size  =    7.86 MB
+whisper_init_state: compute buffer (conv)   =   37.69 MB
+whisper_init_state: compute buffer (encode) =   67.31 MB
+whisper_init_state: compute buffer (cross)  =   63.03 MB
+whisper_init_state: compute buffer (decode) =  100.04 MB
+
+system_info: n_threads = 6 / 8 | WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | DOTPROD = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | 
+
+main: processing 'transcripts/mentoria_2_b.wav' (58539349 samples, 3658.7 sec), 6 threads, 1 processors, 5 beams + best of 5, lang = es, task = transcribe, timestamps = 1 ...
+
+
+[00:00:00.000 --> 00:00:02.120]   cuenta. ¿La empresa de fondeo podría
+[00:00:02.120 --> 00:00:03.760]   detectar que tenemos el copiador en la cuenta?
+[00:00:03.980 --> 00:00:05.560]   No, porque
+[00:00:05.560 --> 00:00:08.020]   primero de todo, el
+[00:00:08.020 --> 00:00:09.920]   copiador, al el master
+[00:00:09.920 --> 00:00:11.860]   y el slave estar dentro del mismo
+[00:00:11.860 --> 00:00:13.940]   VPS, al estar
+[00:00:13.940 --> 00:00:15.320]   dentro del mismo VPS
+[00:00:15.320 --> 00:00:18.260]   no debemos de hacer una conexión hacia el exterior
+[00:00:18.260 --> 00:00:20.040]   sino que se hablan entre ellos
+[00:00:20.040 --> 00:00:22.020]   directamente, no sale a internet
+[00:00:22.020 --> 00:00:23.280]   digamos, esa
+[00:00:23.280 --> 00:00:25.480]   copia no va a internet
+[00:00:25.480 --> 00:00:27.820]   tanto ya esa señal ya no se puede rastrear
+[00:00:27.820 --> 00:00:30.360]   el master
+[00:00:30.360 --> 00:00:32.680]   lo único que hace es escuchar
+[00:00:32.680 --> 00:00:34.500]   y te hace
+[00:00:34.500 --> 00:00:36.480]   de guardián también, pero eso no es un copiador
+[00:00:36.480 --> 00:00:38.440]   el slave es
+[00:00:38.440 --> 00:00:39.840]   como un expert advisor
+[00:00:39.840 --> 00:00:41.800]   vuestro
+[00:00:41.800 --> 00:00:43.400]   que
+[00:00:43.400 --> 00:00:45.560]   lanza operaciones
+[00:00:45.560 --> 00:00:48.540]   ese slave, es como el de strategy
+[00:00:48.540 --> 00:00:50.580]   one que también lanza operaciones
+[00:00:50.580 --> 00:00:52.240]   a través del código, pues el slave hace
+[00:00:52.240 --> 00:00:54.420]   lo mismo, lanza operaciones
+[00:00:54.420 --> 00:00:56.240]   a tu cuenta de tener exactamente lo mismo
+[00:00:56.240 --> 00:00:58.200]   lo que sí podríamos hacer es
+[00:00:58.200 --> 00:00:59.980]   en la huella que deja
+[00:00:59.980 --> 00:01:01.820]   el slave
+[00:01:01.820 --> 00:01:04.320]   o incluso le podríamos cambiar de nombre
+[00:01:04.320 --> 00:01:05.180]   por si acaso
+[00:01:05.180 --> 00:01:07.020]   nos piden algo
+[00:01:07.020 --> 00:01:07.840]   le cambiar de nombre
+[00:01:07.840 --> 00:01:08.800]   a no sé qué
+[00:01:08.800 --> 00:01:09.280]   crossover
+[00:01:09.280 --> 00:01:10.460]   yo lo tengo en slave
+[00:01:10.460 --> 00:01:11.260]   padre mío
+[00:01:11.260 --> 00:01:12.520]   y en el parámetro
+[00:01:12.520 --> 00:01:13.280]   comments
+[00:01:13.280 --> 00:01:14.100]   que esto también lo
+[00:01:14.100 --> 00:01:14.920]   intentaré cambiar
+[00:01:14.920 --> 00:01:17.900]   hay que cambiar el nombre
+[00:01:17.900 --> 00:01:20.500]   hay que cambiar el nombre de estas cosas
+[00:01:20.500 --> 00:01:22.540]   porque esto a veces deja marca
+[00:01:22.540 --> 00:01:24.640]   en la columnita comentarios
+[00:01:24.640 --> 00:01:26.780]   y esto sí que en el historial de trade
+[00:01:26.780 --> 00:01:28.260]   sí que lo podrían ver las empresas de fondeo
+[00:01:28.260 --> 00:01:28.800]   es lo único
+[00:01:28.800 --> 00:01:32.980]   vale
+[00:01:32.980 --> 00:01:33.760]   la empresa de fondeo
+[00:01:33.760 --> 00:01:34.020]   este
+[00:01:34.020 --> 00:01:35.440]   sí que lo he explicado
+[00:01:35.440 --> 00:01:36.280]   lo he dicho antes
+[00:01:36.280 --> 00:01:36.780]   gracias
+[00:01:36.780 --> 00:01:39.180]   lo he dicho antes
+[00:01:39.180 --> 00:01:39.800]   Juanra
+[00:01:39.800 --> 00:01:44.320]   sí
+[00:01:44.320 --> 00:01:45.520]   la segunda fase se sigue igual
+[00:01:45.520 --> 00:01:46.800]   pero con otra segunda fase
+[00:01:46.800 --> 00:01:48.300]   hay que hacer la contraria
+[00:01:48.300 --> 00:01:49.320]   de la misma fase
+[00:01:49.320 --> 00:01:53.180]   pregunta
+[00:01:53.180 --> 00:01:53.440]   y bueno
+[00:01:53.440 --> 00:01:54.580]   entiendo que van contra las cuentas de fondeo
+[00:01:54.580 --> 00:01:55.280]   si pongo una cuenta
+[00:01:55.280 --> 00:01:56.060]   en nombre de mi esposa
+[00:01:56.060 --> 00:01:57.260]   para que me hagan las operaciones inversas
+[00:01:57.260 --> 00:01:58.000]   de la misma empresa
+[00:01:58.000 --> 00:01:59.640]   yo no
+[00:01:59.640 --> 00:02:00.380]   no hagáis
+[00:02:00.380 --> 00:02:01.220]   no hagáis
+[00:02:01.220 --> 00:02:02.220]   operaciones inversas
+[00:02:02.220 --> 00:02:02.860]   de la misma empresa
+[00:02:02.860 --> 00:02:04.460]   lo pueden detectar
+[00:02:04.460 --> 00:02:05.600]   porque yo estoy en la información
+[00:02:05.600 --> 00:02:06.080]   de las dos
+[00:02:06.080 --> 00:02:06.780]   dice oye
+[00:02:06.780 --> 00:02:07.680]   qué casualidad
+[00:02:07.680 --> 00:02:08.820]   que el 100% de las operaciones
+[00:02:08.820 --> 00:02:09.620]   de estas dos cuentas
+[00:02:09.620 --> 00:02:10.300]   son contrarias
+[00:02:10.300 --> 00:02:11.120]   esto lo pueden hacer
+[00:02:11.120 --> 00:02:12.300]   eso sí que lo pueden hacer
+[00:02:12.300 --> 00:02:16.440]   noctorial
+[00:02:16.440 --> 00:02:16.900]   yo no
+[00:02:16.900 --> 00:02:17.800]   noctorial
+[00:02:17.800 --> 00:02:17.800]   noctorial
+[00:02:17.800 --> 00:02:19.880]   me gusta
+[00:02:19.880 --> 00:02:22.220]   me equivoco en un momento
+[00:02:22.220 --> 00:02:22.860]   que sí pero no
+[00:02:22.860 --> 00:02:23.780]   vale
+[00:02:23.780 --> 00:02:24.940]   se terminaron las preguntas
+[00:02:24.940 --> 00:02:25.660]   sigo
+[00:02:25.660 --> 00:02:26.400]   ahora mismo
+[00:02:26.400 --> 00:02:27.720]   ahora sigo con la configuración
+[00:02:27.720 --> 00:02:27.920]   vale
+[00:02:27.920 --> 00:02:31.980]   vale
+[00:02:31.980 --> 00:02:32.560]   estoy en la cuenta
+[00:02:32.560 --> 00:02:35.100]   no estoy en la cuenta
+[00:02:35.100 --> 00:02:35.320]   B
+[00:02:35.320 --> 00:02:36.300]   la cuenta
+[00:02:36.300 --> 00:02:38.360]   pongo esto en grande
+[00:02:38.360 --> 00:02:42.300]   voy a poner
+[00:02:42.300 --> 00:02:45.640]   voy a poner
+[00:02:45.640 --> 00:02:46.800]   la misma estrategia
+[00:02:46.800 --> 00:02:48.540]   que en la otra cuenta
+[00:02:48.540 --> 00:02:50.180]   por tanto
+[00:02:50.180 --> 00:02:50.580]   voy a utilizar
+[00:02:50.580 --> 00:02:50.900]   el mismo
+[00:02:50.900 --> 00:02:51.480]   expert advisor
+[00:02:51.480 --> 00:02:53.980]   y es que a mí me gusta
+[00:02:53.980 --> 00:02:54.940]   ver estas cosas
+[00:02:54.940 --> 00:02:58.380]   a mí manera
+[00:02:58.380 --> 00:03:05.900]   vale
+[00:03:05.900 --> 00:03:07.520]   bien
+[00:03:07.520 --> 00:03:09.520]   vamos a
+[00:03:09.520 --> 00:03:10.300]   vamos a tener
+[00:03:10.300 --> 00:03:11.140]   dos pestañas
+[00:03:11.140 --> 00:03:11.660]   ¿de acuerdo?
+[00:03:13.000 --> 00:03:13.560]   vamos a tener
+[00:03:13.560 --> 00:03:14.460]   dos pestañas
+[00:03:14.460 --> 00:03:18.380]   esta de aquí
+[00:03:18.380 --> 00:03:19.260]   y voy a poner
+[00:03:19.260 --> 00:03:20.020]   el mismo
+[00:03:20.020 --> 00:03:21.260]   la misma movida
+[00:03:21.260 --> 00:03:28.980]   una es para conectar
+[00:03:28.980 --> 00:03:30.520]   nuestro robot
+[00:03:30.520 --> 00:03:31.520]   y la otra es para conectar
+[00:03:31.520 --> 00:03:31.960]   el copiador
+[00:03:31.960 --> 00:03:33.000]   primero
+[00:03:33.000 --> 00:03:34.020]   hay que conectar
+[00:03:34.020 --> 00:03:34.900]   el copiador
+[00:03:34.900 --> 00:03:36.100]   lo primero que hay que hacer
+[00:03:36.100 --> 00:03:37.280]   es conectar el copiador
+[00:03:37.280 --> 00:03:37.700]   bien
+[00:03:37.700 --> 00:03:40.700]   trading algorítmico
+[00:03:40.700 --> 00:03:42.200]   antes de arrastrar el copiador
+[00:03:42.200 --> 00:03:43.360]   trading algorítmico
+[00:03:43.360 --> 00:03:44.240]   en verde
+[00:03:44.240 --> 00:03:45.820]   punto número dos
+[00:03:45.820 --> 00:03:47.640]   nos vamos a ver herramientas
+[00:03:47.640 --> 00:03:48.620]   opciones
+[00:03:48.620 --> 00:03:51.340]   en asesores expertos
+[00:03:51.340 --> 00:03:53.380]   aquí hay que seleccionar
+[00:03:53.380 --> 00:03:55.360]   permitir importación de DLLs
+[00:03:55.360 --> 00:03:56.560]   porque utiliza librerías
+[00:03:56.560 --> 00:03:58.580]   el código
+[00:03:58.580 --> 00:04:00.980]   y permitir web request
+[00:04:00.980 --> 00:04:01.920]   de acuerdo
+[00:04:01.920 --> 00:04:03.200]   si no nos va a funcionar
+[00:04:03.200 --> 00:04:04.740]   esto es para conectarse
+[00:04:04.740 --> 00:04:05.840]   a nuestra base de datos
+[00:04:05.840 --> 00:04:06.820]   para el tema del login
+[00:04:06.820 --> 00:04:07.200]   y demás
+[00:04:07.200 --> 00:04:08.380]   si no nos va a hacer login
+[00:04:08.380 --> 00:04:08.560]   ¿vale?
+[00:04:09.020 --> 00:04:10.640]   ¿qué url tenemos que poner aquí?
+[00:04:10.960 --> 00:04:11.840]   es la que os pone
+[00:04:11.840 --> 00:04:15.740]   la que os pone
+[00:04:15.740 --> 00:04:17.000]   en el manual de instrucciones
+[00:04:17.000 --> 00:04:17.280]   ¿vale?
+[00:04:18.340 --> 00:04:19.300]   de hecho lo voy a abrir
+[00:04:19.300 --> 00:04:28.600]   guía de instalación
+[00:04:28.600 --> 00:04:29.560]   abrimiento de DLLs 5
+[00:04:29.560 --> 00:04:30.740]   herramientas de opciones
+[00:04:30.740 --> 00:04:32.520]   expert advisors
+[00:04:32.520 --> 00:04:35.080]   y meter este link
+[00:04:35.080 --> 00:04:45.080]   bien
+[00:04:45.080 --> 00:04:47.280]   mtacademiajoico.com
+[00:04:47.280 --> 00:04:49.400]   le vamos a aceptar
+[00:04:49.400 --> 00:04:50.200]   ¿de acuerdo?
+[00:04:50.740 --> 00:04:51.340]   yo os recomiendo
+[00:04:51.340 --> 00:04:51.780]   que aquí abajo
+[00:04:51.780 --> 00:04:52.780]   siempre tengáis la pestaña
+[00:04:52.780 --> 00:04:53.800]   expertos abierta
+[00:04:53.800 --> 00:04:54.940]   porque es la que os va a dar
+[00:04:54.940 --> 00:04:56.080]   logs a partir de ahora
+[00:04:56.080 --> 00:04:57.340]   si algo funciona mal o bien
+[00:04:57.340 --> 00:04:58.360]   primero de todo
+[00:04:58.360 --> 00:04:59.320]   vamos a poner el master
+[00:04:59.320 --> 00:05:00.260]   lo arrastro
+[00:05:00.260 --> 00:05:03.020]   en esta
+[00:05:03.020 --> 00:05:03.500]   en este
+[00:05:03.500 --> 00:05:04.460]   da igual en qué
+[00:05:04.460 --> 00:05:05.980]   activo esté el gráfico
+[00:05:05.980 --> 00:05:07.180]   da igual qué temporalidad
+[00:05:07.180 --> 00:05:08.160]   da igual el master
+[00:05:08.160 --> 00:05:08.420]   ¿vale?
+[00:05:08.480 --> 00:05:09.620]   lo que importa es la estrategia
+[00:05:09.620 --> 00:05:10.400]   bien
+[00:05:10.400 --> 00:05:13.420]   hacer grande esto
+[00:05:13.420 --> 00:05:15.700]   y vamos paso por paso
+[00:05:15.700 --> 00:05:16.520]   primero de todo
+[00:05:16.520 --> 00:05:17.680]   vuestro usuario
+[00:05:17.680 --> 00:05:18.600]   y password
+[00:05:18.600 --> 00:05:19.680]   de
+[00:05:19.680 --> 00:05:21.820]   poner symbol stats
+[00:05:21.820 --> 00:05:23.340]   pero esto hay que cambiarlo
+[00:05:23.340 --> 00:05:24.320]   esto tiene que poner
+[00:05:24.320 --> 00:05:26.160]   academiajoico
+[00:05:26.160 --> 00:05:27.160]   porque hemos cambiado el nombre
+[00:05:27.160 --> 00:05:29.780]   vale
+[00:05:29.780 --> 00:05:30.360]   ya lo cambiaré yo
+[00:05:30.360 --> 00:05:32.840]   más que nada
+[00:05:32.840 --> 00:05:33.780]   simplemente nomenclatura
+[00:05:33.780 --> 00:05:34.460]   para vosotros
+[00:05:34.460 --> 00:05:34.960]   da igual
+[00:05:34.960 --> 00:05:37.300]   aquí pone vuestro correo
+[00:05:37.300 --> 00:05:39.120]   no sé qué
+[00:05:39.120 --> 00:05:39.500]   arroba
+[00:05:39.500 --> 00:05:40.220]   gemel.com
+[00:05:40.220 --> 00:05:41.800]   y vuestra contraseña
+[00:05:41.800 --> 00:05:43.020]   que accedéis
+[00:05:43.020 --> 00:05:44.140]   a nuestra web
+[00:05:44.140 --> 00:05:45.200]   de academiajoico.com
+[00:05:45.200 --> 00:05:45.720]   o símbolo stats
+[00:05:45.720 --> 00:05:46.460]   que se llamaba antes
+[00:05:46.460 --> 00:05:46.740]   bien
+[00:05:46.740 --> 00:05:48.880]   símbolos a replicar
+[00:05:48.880 --> 00:05:50.280]   es decir
+[00:05:50.280 --> 00:05:52.060]   imaginaros
+[00:05:52.060 --> 00:05:53.600]   que vosotros
+[00:05:53.600 --> 00:05:54.140]   queréis hacer
+[00:05:54.140 --> 00:05:55.000]   trading manual
+[00:05:55.000 --> 00:05:56.160]   me invento
+[00:05:56.160 --> 00:05:57.320]   en el oro
+[00:05:57.320 --> 00:05:58.760]   pero en forex
+[00:05:58.760 --> 00:05:59.340]   metéis
+[00:05:59.340 --> 00:06:01.740]   la estrategia
+[00:06:01.740 --> 00:06:02.520]   que queréis
+[00:06:02.520 --> 00:06:03.100]   que replique
+[00:06:03.100 --> 00:06:04.780]   aquí podríais poner
+[00:06:04.780 --> 00:06:06.800]   como bien pone
+[00:06:06.800 --> 00:06:07.620]   euro dólar
+[00:06:07.620 --> 00:06:09.020]   euro usd
+[00:06:09.020 --> 00:06:09.700]   coma
+[00:06:09.700 --> 00:06:10.860]   usd
+[00:06:10.860 --> 00:06:11.520]   jpi
+[00:06:11.520 --> 00:06:12.300]   coma
+[00:06:12.300 --> 00:06:13.560]   gbp
+[00:06:13.560 --> 00:06:14.200]   usd
+[00:06:14.200 --> 00:06:15.340]   si yo pongo esto
+[00:06:15.340 --> 00:06:16.240]   únicamente
+[00:06:16.240 --> 00:06:17.160]   el copiador
+[00:06:17.160 --> 00:06:17.840]   va a copiar
+[00:06:17.840 --> 00:06:18.720]   las operaciones
+[00:06:18.720 --> 00:06:19.080]   que se abran
+[00:06:19.080 --> 00:06:20.120]   estos tres activos
+[00:06:20.120 --> 00:06:22.200]   vale
+[00:06:22.200 --> 00:06:23.800]   únicamente
+[00:06:23.800 --> 00:06:24.840]   los de estos tres activos
+[00:06:24.840 --> 00:06:25.520]   si yo lo dejo
+[00:06:25.520 --> 00:06:26.660]   en blanco
+[00:06:26.660 --> 00:06:30.560]   si yo lo dejo
+[00:06:30.560 --> 00:06:30.980]   en blanco
+[00:06:30.980 --> 00:06:32.500]   se va a copiar
+[00:06:32.500 --> 00:06:33.040]   todo lo que haga
+[00:06:33.040 --> 00:06:33.480]   en la cuenta
+[00:06:33.480 --> 00:06:35.760]   de acuerdo
+[00:06:35.760 --> 00:06:36.940]   recordad que
+[00:06:36.940 --> 00:06:37.520]   tiene que ser
+[00:06:37.520 --> 00:06:38.260]   el mismo nombre
+[00:06:38.260 --> 00:06:38.720]   que os aparece
+[00:06:38.720 --> 00:06:40.320]   aquí a la izquierda
+[00:06:40.320 --> 00:06:40.560]   ok
+[00:06:40.560 --> 00:06:43.340]   nombre del archivo
+[00:06:43.340 --> 00:06:44.160]   como se
+[00:06:44.160 --> 00:06:44.840]   como se
+[00:06:44.840 --> 00:06:47.520]   como se
+[00:06:47.520 --> 00:06:47.780]   como se leen
+[00:06:47.780 --> 00:06:48.540]   los copiadores
+[00:06:48.540 --> 00:06:49.980]   a través de un fichero
+[00:06:49.980 --> 00:06:50.980]   que será guardado
+[00:06:50.980 --> 00:06:52.100]   en vuestras carpetas
+[00:06:52.100 --> 00:06:52.600]   vale
+[00:06:52.600 --> 00:06:54.700]   el fichero
+[00:06:54.700 --> 00:06:57.140]   se va a guardar
+[00:06:57.140 --> 00:06:57.600]   en una carpeta
+[00:06:57.600 --> 00:06:57.960]   que pone
+[00:06:57.960 --> 00:06:58.460]   common
+[00:06:58.460 --> 00:06:59.180]   barra
+[00:06:59.180 --> 00:06:59.760]   files
+[00:06:59.760 --> 00:07:00.180]   barra
+[00:07:00.180 --> 00:07:00.860]   copytrading
+[00:07:00.860 --> 00:07:01.500]   y el nombre del fichero
+[00:07:01.500 --> 00:07:02.760]   es master.json
+[00:07:02.760 --> 00:07:04.160]   esto no lo debéis
+[00:07:04.160 --> 00:07:04.960]   tocar para nada
+[00:07:04.960 --> 00:07:05.700]   si no queréis
+[00:07:05.700 --> 00:07:06.160]   de líos
+[00:07:06.160 --> 00:07:07.760]   lo dejáis tal cual
+[00:07:07.760 --> 00:07:08.360]   así como está
+[00:07:08.360 --> 00:07:09.580]   y lo que va a hacer
+[00:07:09.580 --> 00:07:10.080]   esto es
+[00:07:10.080 --> 00:07:11.040]   cuando se copien
+[00:07:11.040 --> 00:07:12.360]   esto va guardando
+[00:07:12.360 --> 00:07:12.940]   un fichero
+[00:07:12.940 --> 00:07:14.940]   a ver si
+[00:07:14.940 --> 00:07:16.140]   con la carpeta
+[00:07:16.140 --> 00:07:17.140]   a ver si lo podré
+[00:07:17.140 --> 00:07:17.740]   encontrar o no
+[00:07:17.740 --> 00:07:18.220]   pero esto
+[00:07:18.220 --> 00:07:19.120]   se va a hacer
+[00:07:19.120 --> 00:07:23.380]   creo que
+[00:07:23.380 --> 00:07:23.940]   el common file
+[00:07:23.940 --> 00:07:24.840]   no es
+[00:07:24.840 --> 00:07:31.200]   no sé si es common
+[00:07:31.200 --> 00:07:33.800]   no
+[00:07:33.800 --> 00:07:34.280]   el common
+[00:07:34.280 --> 00:07:35.000]   estará
+[00:07:35.000 --> 00:07:37.840]   aquí
+[00:07:37.840 --> 00:07:39.780]   no sé si será
+[00:07:39.780 --> 00:07:40.600]   el x86
+[00:07:40.600 --> 00:07:41.320]   o no
+[00:07:41.320 --> 00:07:44.260]   pero bueno
+[00:07:44.260 --> 00:07:44.920]   será una carpeta
+[00:07:44.920 --> 00:07:45.360]   de estas
+[00:07:45.360 --> 00:07:46.960]   no
+[00:07:46.960 --> 00:07:47.440]   perdonad
+[00:07:47.440 --> 00:07:47.780]   perdonad
+[00:07:47.780 --> 00:07:48.200]   ya me acuerdo
+[00:07:48.200 --> 00:07:48.580]   ya me acuerdo
+[00:07:48.580 --> 00:07:49.300]   donde se copia esto
+[00:07:49.300 --> 00:07:49.860]   esto se guarda
+[00:07:49.860 --> 00:07:50.580]   en una carpeta
+[00:07:50.580 --> 00:07:51.840]   del propio metatrader
+[00:07:51.840 --> 00:07:58.520]   aquí dentro
+[00:07:58.520 --> 00:07:58.920]   creo que se
+[00:07:58.920 --> 00:07:59.720]   creo que se
+[00:07:59.720 --> 00:08:01.180]   se realiza
+[00:08:01.180 --> 00:08:01.540]   aquí dentro
+[00:08:01.540 --> 00:08:01.880]   de acuerdo
+[00:08:01.880 --> 00:08:02.860]   vosotros esto
+[00:08:02.860 --> 00:08:03.460]   no lo toquéis
+[00:08:03.460 --> 00:08:04.780]   no lo toquéis
+[00:08:04.780 --> 00:08:05.900]   porque ya viene
+[00:08:05.900 --> 00:08:06.580]   por defecto así
+[00:08:06.580 --> 00:08:09.220]   ruta personalizada
+[00:08:09.220 --> 00:08:09.980]   lo tenéis que dejar
+[00:08:09.980 --> 00:08:10.400]   vacío
+[00:08:10.400 --> 00:08:11.040]   esto es por si
+[00:08:11.040 --> 00:08:11.600]   queréis hacer
+[00:08:11.600 --> 00:08:12.620]   queréis colocarlo
+[00:08:12.620 --> 00:08:13.360]   en otra carpeta
+[00:08:13.360 --> 00:08:14.040]   que no sea la que
+[00:08:14.040 --> 00:08:14.700]   nosotros venimos
+[00:08:14.700 --> 00:08:15.260]   por defecto
+[00:08:15.260 --> 00:08:15.420]   vale
+[00:08:15.420 --> 00:08:16.220]   si queréis
+[00:08:16.220 --> 00:08:17.700]   queréis crear
+[00:08:17.700 --> 00:08:18.380]   nuevas carpetas
+[00:08:18.380 --> 00:08:19.380]   dentro de la ubicación
+[00:08:19.380 --> 00:08:19.800]   raíz
+[00:08:19.800 --> 00:08:21.400]   podéis crear
+[00:08:21.400 --> 00:08:21.640]   pero
+[00:08:21.640 --> 00:08:22.860]   estas dos de aquí
+[00:08:22.860 --> 00:08:23.840]   no las deberíais tocar
+[00:08:23.840 --> 00:08:24.380]   para nada
+[00:08:24.380 --> 00:08:25.820]   vale
+[00:08:25.820 --> 00:08:27.660]   las dejáis así
+[00:08:27.660 --> 00:08:28.080]   como están
+[00:08:28.080 --> 00:08:31.660]   modo cuentas
+[00:08:31.660 --> 00:08:32.300]   de fondeo
+[00:08:32.300 --> 00:08:34.600]   a partir de aquí
+[00:08:34.600 --> 00:08:35.220]   hasta aquí
+[00:08:35.220 --> 00:08:35.700]   es simplemente
+[00:08:35.700 --> 00:08:36.860]   un replicador
+[00:08:36.860 --> 00:08:37.520]   de operaciones
+[00:08:37.520 --> 00:08:38.740]   ahora viene
+[00:08:38.740 --> 00:08:39.780]   el modo cuentas
+[00:08:39.780 --> 00:08:40.420]   de fondeo
+[00:08:40.420 --> 00:08:41.440]   esto
+[00:08:41.440 --> 00:08:42.980]   si estamos en
+[00:08:42.980 --> 00:08:43.840]   evaluaciones de fondeo
+[00:08:43.840 --> 00:08:44.680]   le vais a dar
+[00:08:44.680 --> 00:08:45.380]   a true
+[00:08:45.380 --> 00:08:46.180]   doble clic
+[00:08:46.180 --> 00:08:47.080]   lo ponéis en true
+[00:08:47.080 --> 00:08:48.920]   en verdadero
+[00:08:48.920 --> 00:08:50.800]   bien
+[00:08:50.800 --> 00:08:54.840]   todo esto de aquí
+[00:08:54.840 --> 00:08:55.480]   que sepáis
+[00:08:55.480 --> 00:08:56.620]   que se explica
+[00:08:56.620 --> 00:08:58.320]   a partir de aquí
+[00:08:58.320 --> 00:09:00.660]   sin profit more
+[00:09:00.660 --> 00:09:02.680]   con profit mode
+[00:09:02.680 --> 00:09:03.280]   que es lo que acabo
+[00:09:03.280 --> 00:09:03.900]   de activar ahora
+[00:09:03.900 --> 00:09:05.060]   que es lo que hace
+[00:09:05.060 --> 00:09:05.640]   este modio
+[00:09:05.640 --> 00:09:06.600]   vigila
+[00:09:06.600 --> 00:09:07.480]   tu equity
+[00:09:07.480 --> 00:09:08.460]   cada segundo
+[00:09:08.460 --> 00:09:09.500]   cada segundo
+[00:09:09.500 --> 00:09:11.440]   mira que
+[00:09:11.440 --> 00:09:12.180]   bueno
+[00:09:12.180 --> 00:09:13.120]   donde está tu
+[00:09:13.120 --> 00:09:14.000]   máximo drawdown
+[00:09:14.000 --> 00:09:14.920]   o
+[00:09:14.920 --> 00:09:15.620]   la ganancia
+[00:09:15.620 --> 00:09:15.960]   la tende
+[00:09:15.960 --> 00:09:16.560]   que estás ganando
+[00:09:16.560 --> 00:09:17.300]   por si tiene que cerrar
+[00:09:17.300 --> 00:09:19.080]   cuenta tus operaciones
+[00:09:19.080 --> 00:09:19.720]   que realizas
+[00:09:19.720 --> 00:09:20.400]   durante el día
+[00:09:20.400 --> 00:09:22.740]   detecta
+[00:09:22.740 --> 00:09:23.580]   si alcanzas
+[00:09:23.580 --> 00:09:24.640]   algún límite
+[00:09:24.640 --> 00:09:25.620]   configurado
+[00:09:25.620 --> 00:09:26.520]   que hayas puesto
+[00:09:26.520 --> 00:09:27.780]   cierra
+[00:09:27.780 --> 00:09:28.620]   todas las posiciones
+[00:09:28.620 --> 00:09:29.160]   automáticamente
+[00:09:29.160 --> 00:09:29.660]   si obviamente
+[00:09:29.660 --> 00:09:30.500]   ese límite
+[00:09:30.500 --> 00:09:31.760]   se arrebasa
+[00:09:31.760 --> 00:09:33.760]   incluso bloquea
+[00:09:33.760 --> 00:09:34.880]   nuevas operaciones
+[00:09:34.880 --> 00:09:36.600]   hasta reseteo
+[00:09:36.600 --> 00:09:39.120]   bien
+[00:09:39.120 --> 00:09:40.100]   es decir
+[00:09:40.100 --> 00:09:41.460]   tenemos límites
+[00:09:41.460 --> 00:09:42.240]   que al día
+[00:09:42.240 --> 00:09:42.780]   siguiente
+[00:09:42.780 --> 00:09:43.800]   se reinician
+[00:09:43.800 --> 00:09:45.740]   y tenemos
+[00:09:45.740 --> 00:09:46.400]   límites
+[00:09:46.400 --> 00:09:47.380]   que ya no vuelve
+[00:09:47.380 --> 00:09:47.540]   a abrir
+[00:09:47.540 --> 00:09:48.460]   ninguna operación
+[00:09:48.460 --> 00:09:50.640]   límites
+[00:09:50.640 --> 00:09:50.980]   que queréis
+[00:09:50.980 --> 00:09:51.820]   poner vosotros
+[00:09:51.820 --> 00:09:53.160]   vale
+[00:09:53.160 --> 00:09:59.660]   y si no recuerdo mal
+[00:09:59.660 --> 00:10:03.700]   este de aquí
+[00:10:03.700 --> 00:10:07.480]   en el caso
+[00:10:07.480 --> 00:10:09.340]   de que se os bloquee
+[00:10:09.340 --> 00:10:10.400]   indefinidamente
+[00:10:10.400 --> 00:10:12.020]   el abrir operaciones
+[00:10:12.020 --> 00:10:13.960]   cuando volváis a poner
+[00:10:13.960 --> 00:10:15.000]   este robot
+[00:10:15.000 --> 00:10:16.320]   tenéis que poner esto
+[00:10:16.320 --> 00:10:16.720]   en true
+[00:10:16.720 --> 00:10:17.820]   para que se olvide
+[00:10:17.820 --> 00:10:18.800]   del bloqueo anterior
+[00:10:18.800 --> 00:10:20.040]   vale
+[00:10:20.040 --> 00:10:21.060]   por eso está
+[00:10:21.060 --> 00:10:21.660]   este parámetro
+[00:10:21.660 --> 00:10:25.980]   para que se olvide
+[00:10:25.980 --> 00:10:27.780]   si en el caso
+[00:10:27.780 --> 00:10:28.640]   de haber llegado
+[00:10:28.640 --> 00:10:29.720]   en un bloqueo
+[00:10:29.720 --> 00:10:31.540]   de cuenta
+[00:10:31.540 --> 00:10:31.820]   vale
+[00:10:31.820 --> 00:10:33.600]   ahora vamos a ver
+[00:10:33.600 --> 00:10:35.680]   límites de equity
+[00:10:35.680 --> 00:10:37.060]   cuánto
+[00:10:37.060 --> 00:10:38.000]   cuánto quieres ganar
+[00:10:38.000 --> 00:10:38.300]   al día
+[00:10:38.300 --> 00:10:40.860]   si no queréis
+[00:10:40.860 --> 00:10:41.400]   un límite
+[00:10:41.400 --> 00:10:41.920]   que estos
+[00:10:41.920 --> 00:10:43.820]   si esto lo controláis
+[00:10:43.820 --> 00:10:44.760]   si vosotros
+[00:10:44.760 --> 00:10:45.080]   por ejemplo
+[00:10:45.080 --> 00:10:45.460]   ponéis
+[00:10:45.460 --> 00:10:46.980]   yo solo me va a abrir
+[00:10:46.980 --> 00:10:47.860]   una operación al día
+[00:10:47.860 --> 00:10:50.360]   y me va a cerrar
+[00:10:50.360 --> 00:10:51.240]   cuando
+[00:10:51.240 --> 00:10:52.240]   bueno
+[00:10:52.240 --> 00:10:52.720]   cuando llega
+[00:10:52.720 --> 00:10:53.300]   el take profit
+[00:10:53.300 --> 00:10:54.080]   yo sé que esa operación
+[00:10:54.080 --> 00:10:54.860]   me va a ganar
+[00:10:54.860 --> 00:10:56.060]   un 4,2%
+[00:10:56.060 --> 00:10:57.800]   esto lo podéis poner
+[00:10:57.800 --> 00:10:58.480]   al 10%
+[00:10:58.480 --> 00:10:58.920]   si queréis
+[00:10:58.920 --> 00:11:01.300]   no lo utilizaréis
+[00:11:01.300 --> 00:11:01.700]   a lo mejor
+[00:11:01.700 --> 00:11:04.900]   cuando es que se utiliza
+[00:11:04.900 --> 00:11:05.160]   esto
+[00:11:05.160 --> 00:11:05.760]   el límite diario
+[00:11:05.760 --> 00:11:06.180]   de ganancia
+[00:11:06.180 --> 00:11:07.200]   imaginaros que estáis
+[00:11:07.200 --> 00:11:08.680]   al 7,5%
+[00:11:08.680 --> 00:11:09.240]   de profit
+[00:11:09.240 --> 00:11:10.000]   de la cuenta
+[00:11:10.000 --> 00:11:11.720]   se os abre
+[00:11:11.720 --> 00:11:12.280]   una operación
+[00:11:12.280 --> 00:11:13.240]   al 4%
+[00:11:13.240 --> 00:11:13.820]   de riesgo
+[00:11:13.820 --> 00:11:16.580]   y a la mínima
+[00:11:16.580 --> 00:11:18.400]   que vaya hacia arriba
+[00:11:18.400 --> 00:11:19.220]   la queréis cerrar
+[00:11:19.220 --> 00:11:19.700]   pero no queréis
+[00:11:19.700 --> 00:11:20.660]   tocar la estrategia
+[00:11:20.660 --> 00:11:21.260]   porque la estrategia
+[00:11:21.260 --> 00:11:21.820]   viene definida
+[00:11:21.820 --> 00:11:22.380]   con un take profit
+[00:11:22.380 --> 00:11:22.940]   y un stop loss
+[00:11:22.940 --> 00:11:24.000]   por lo tanto
+[00:11:24.000 --> 00:11:24.440]   si os queda
+[00:11:24.440 --> 00:11:25.760]   solo un 0,5%
+[00:11:25.760 --> 00:11:26.600]   le ponéis aquí
+[00:11:26.600 --> 00:11:27.540]   0,5%
+[00:11:27.540 --> 00:11:28.540]   y cuando lo tenga ganado
+[00:11:28.540 --> 00:11:29.020]   cierra
+[00:11:29.020 --> 00:11:31.120]   ¿vale?
+[00:11:31.480 --> 00:11:32.860]   o también podéis poner
+[00:11:32.860 --> 00:11:34.160]   que es lo más común
+[00:11:34.160 --> 00:11:35.600]   lo siguiente
+[00:11:35.600 --> 00:11:36.920]   límite total
+[00:11:36.920 --> 00:11:37.480]   de ganancia
+[00:11:37.480 --> 00:11:38.020]   no es lo mismo
+[00:11:38.020 --> 00:11:38.640]   el límite diario
+[00:11:38.640 --> 00:11:39.160]   de ganancia
+[00:11:39.160 --> 00:11:40.360]   yo creo que el límite
+[00:11:40.360 --> 00:11:40.920]   diario de ganancia
+[00:11:40.920 --> 00:11:41.680]   no lo vais a utilizar
+[00:11:41.680 --> 00:11:42.220]   demasiado
+[00:11:42.220 --> 00:11:43.520]   este sí
+[00:11:43.520 --> 00:11:44.140]   límite total
+[00:11:44.140 --> 00:11:45.160]   cuando yo llegue
+[00:11:45.160 --> 00:11:46.000]   al 8%
+[00:11:46.000 --> 00:11:46.920]   intentad poner
+[00:11:46.920 --> 00:11:47.800]   siempre un 8,1
+[00:11:47.800 --> 00:11:48.720]   un 8,05
+[00:11:48.720 --> 00:11:50.940]   cuando el total
+[00:11:50.940 --> 00:11:51.300]   de ganancia
+[00:11:51.300 --> 00:11:52.020]   llega al 8%
+[00:11:52.020 --> 00:11:53.060]   me corta todo
+[00:11:53.060 --> 00:11:55.720]   y este límite
+[00:11:55.720 --> 00:11:56.220]   total
+[00:11:56.220 --> 00:11:57.660]   este límite
+[00:11:57.660 --> 00:11:58.060]   total
+[00:11:58.060 --> 00:12:00.800]   sí que lo bloquea
+[00:12:00.800 --> 00:12:02.140]   los totales
+[00:12:02.140 --> 00:12:03.720]   lo bloquea
+[00:12:03.720 --> 00:12:04.060]   ¿vale?
+[00:12:04.120 --> 00:12:04.720]   estaríamos
+[00:12:04.720 --> 00:12:12.600]   cierra todo
+[00:12:12.600 --> 00:12:13.060]   bueno
+[00:12:13.060 --> 00:12:13.580]   límite total
+[00:12:13.580 --> 00:12:14.120]   de ganancia
+[00:12:14.120 --> 00:12:14.680]   cierra todo
+[00:12:14.680 --> 00:12:15.120]   si ganas
+[00:12:15.120 --> 00:12:15.760]   x%
+[00:12:15.760 --> 00:12:16.440]   del capital
+[00:12:16.440 --> 00:12:17.040]   inicial
+[00:12:17.040 --> 00:12:18.580]   dando un 8%
+[00:12:18.580 --> 00:12:19.260]   subes a
+[00:12:19.260 --> 00:12:19.920]   1800
+[00:12:19.920 --> 00:12:20.940]   siempre mira
+[00:12:20.940 --> 00:12:22.160]   el porcentual
+[00:12:22.160 --> 00:12:23.000]   respecto al capital
+[00:12:23.000 --> 00:12:23.380]   inicial
+[00:12:23.380 --> 00:12:24.100]   no
+[00:12:24.100 --> 00:12:25.820]   del día anterior
+[00:12:25.820 --> 00:12:26.960]   eso es lo que nos interesa
+[00:12:26.960 --> 00:12:27.260]   a nosotros
+[00:12:27.260 --> 00:12:28.020]   respecto al
+[00:12:28.020 --> 00:12:29.320]   siempre los porcentuales
+[00:12:29.320 --> 00:12:29.520]   van
+[00:12:29.520 --> 00:12:30.640]   estés donde estés
+[00:12:30.640 --> 00:12:31.460]   del capital
+[00:12:31.460 --> 00:12:31.940]   inicial
+[00:12:31.940 --> 00:12:33.240]   no del capital
+[00:12:33.240 --> 00:12:33.800]   que tú tengas
+[00:12:33.800 --> 00:12:34.200]   en balance
+[00:12:34.200 --> 00:12:34.500]   ¿vale?
+[00:12:39.060 --> 00:12:40.720]   y esto al revés
+[00:12:40.720 --> 00:12:41.620]   pues diario de pérdida
+[00:12:41.620 --> 00:12:43.600]   realmente
+[00:12:43.600 --> 00:12:45.060]   el diario de pérdida
+[00:12:45.060 --> 00:12:46.180]   sí que lo tendría puesto
+[00:12:46.180 --> 00:12:47.200]   si vosotros tenéis puestos
+[00:12:47.200 --> 00:12:48.400]   que vuestro trade
+[00:12:48.400 --> 00:12:49.000]   va a arriesgar
+[00:12:49.000 --> 00:12:50.360]   un 4,1%
+[00:12:50.360 --> 00:12:51.640]   aquí poned
+[00:12:51.640 --> 00:12:53.420]   un 4,5%
+[00:12:53.420 --> 00:12:55.120]   ¿por qué?
+[00:12:56.980 --> 00:12:58.040]   y si hay deslizamiento
+[00:12:58.040 --> 00:12:59.220]   si ha pasado algo
+[00:12:59.220 --> 00:13:00.000]   con la
+[00:13:00.000 --> 00:13:00.160]   con la
+[00:13:00.160 --> 00:13:00.800]   con la
+[00:13:00.800 --> 00:13:01.480]   con la estrategia
+[00:13:01.480 --> 00:13:03.180]   si pasa algo
+[00:13:03.180 --> 00:13:03.780]   que no cierra
+[00:13:03.780 --> 00:13:04.920]   lo que sea
+[00:13:04.920 --> 00:13:07.200]   que pase algo
+[00:13:07.200 --> 00:13:07.740]   con los lotajes
+[00:13:07.740 --> 00:13:08.600]   lo que me pasó
+[00:13:08.600 --> 00:13:09.100]   en HXL
+[00:13:09.100 --> 00:13:10.680]   que baje de la cuenta
+[00:13:10.680 --> 00:13:11.000]   de un millón
+[00:13:11.000 --> 00:13:11.580]   por no poner
+[00:13:11.580 --> 00:13:13.500]   el mínimo lotaje
+[00:13:13.500 --> 00:13:15.060]   correctamente
+[00:13:15.060 --> 00:13:15.780]   perdona
+[00:13:15.780 --> 00:13:17.240]   no poner el lote
+[00:13:17.240 --> 00:13:17.820]   correctamente
+[00:13:17.820 --> 00:13:18.240]   en el caso
+[00:13:18.240 --> 00:13:19.120]   de que no pueda calcular
+[00:13:19.120 --> 00:13:20.220]   esto
+[00:13:20.220 --> 00:13:21.280]   es un segundo
+[00:13:21.280 --> 00:13:22.080]   para caídas
+[00:13:22.080 --> 00:13:23.220]   por tanto
+[00:13:23.220 --> 00:13:23.740]   los límites
+[00:13:23.740 --> 00:13:24.100]   de pérdida
+[00:13:24.100 --> 00:13:24.400]   sí
+[00:13:24.400 --> 00:13:25.000]   los debéis
+[00:13:25.000 --> 00:13:25.620]   de configurar bien
+[00:13:25.620 --> 00:13:25.980]   yo voy a poner
+[00:13:25.980 --> 00:13:26.640]   4,5
+[00:13:26.640 --> 00:13:27.900]   para que no
+[00:13:27.900 --> 00:13:29.280]   pues pasa algo
+[00:13:29.280 --> 00:13:29.440]   ¿vale?
+[00:13:29.900 --> 00:13:31.160]   durante el día
+[00:13:31.480 --> 00:13:36.420]   límite diario
+[00:13:36.420 --> 00:13:37.000]   de ganancia
+[00:13:37.000 --> 00:13:38.060]   aquí lo voy a poner
+[00:13:38.060 --> 00:13:38.740]   el 10%
+[00:13:38.740 --> 00:13:39.620]   porque no me interesa
+[00:13:39.620 --> 00:13:40.360]   limitar
+[00:13:40.360 --> 00:13:42.200]   límite total
+[00:13:42.200 --> 00:13:42.840]   de ganancia
+[00:13:42.840 --> 00:13:44.100]   acumulado
+[00:13:44.100 --> 00:13:44.560]   voy a poner
+[00:13:44.560 --> 00:13:48.720]   un 8,05%
+[00:13:48.720 --> 00:13:50.780]   esto
+[00:13:50.780 --> 00:13:52.340]   en principio
+[00:13:52.340 --> 00:13:52.640]   esto
+[00:13:52.640 --> 00:13:53.580]   está contado ya
+[00:13:53.580 --> 00:13:54.300]   sin contar
+[00:13:54.300 --> 00:13:54.640]   es decir
+[00:13:54.640 --> 00:13:55.360]   habiendo restado
+[00:13:55.360 --> 00:13:55.880]   comisiones
+[00:13:55.880 --> 00:13:58.400]   y límite
+[00:13:58.400 --> 00:13:58.720]   total
+[00:13:58.720 --> 00:13:59.440]   de pérdida
+[00:13:59.440 --> 00:14:00.820]   pues
+[00:14:00.820 --> 00:14:01.500]   ahí voy a poner
+[00:14:01.500 --> 00:14:02.780]   un 9,9%
+[00:14:02.780 --> 00:14:04.260]   porque sé
+[00:14:04.260 --> 00:14:04.900]   que puedo caer
+[00:14:04.900 --> 00:14:05.340]   hasta 10
+[00:14:05.340 --> 00:14:05.700]   ¿vale?
+[00:14:06.480 --> 00:14:06.920]   pero bueno
+[00:14:06.920 --> 00:14:07.200]   da igual
+[00:14:07.200 --> 00:14:07.720]   es que pierdo
+[00:14:07.720 --> 00:14:08.000]   la cuenta
+[00:14:08.000 --> 00:14:08.420]   y ya está
+[00:14:08.420 --> 00:14:10.080]   no pasa nada
+[00:14:10.080 --> 00:14:10.780]   ¿vale?
+[00:14:11.700 --> 00:14:12.480]   es un poco
+[00:14:12.480 --> 00:14:13.740]   redundante
+[00:14:13.740 --> 00:14:13.960]   esta
+[00:14:13.960 --> 00:14:14.380]   pero bueno
+[00:14:14.380 --> 00:14:15.240]   por si en algo
+[00:14:15.240 --> 00:14:15.600]   yo que sé
+[00:14:15.600 --> 00:14:16.360]   en alguna casualista
+[00:14:16.360 --> 00:14:17.380]   la casualística
+[00:14:17.380 --> 00:14:18.060]   lo necesitáis
+[00:14:18.060 --> 00:14:20.140]   ahí lo tenéis
+[00:14:20.140 --> 00:14:21.980]   Ramón
+[00:14:21.980 --> 00:14:23.100]   si estás duplicando
+[00:14:23.100 --> 00:14:23.860]   en el slave
+[00:14:23.860 --> 00:14:25.160]   el límite de pérdida
+[00:14:25.160 --> 00:14:26.020]   tiene que ser también
+[00:14:26.020 --> 00:14:27.080]   10,05
+[00:14:27.080 --> 00:14:27.840]   o 8
+[00:14:27.840 --> 00:14:28.340]   ah o no
+[00:14:28.340 --> 00:14:28.860]   perdona
+[00:14:28.860 --> 00:14:29.360]   9,9%
+[00:14:29.360 --> 00:14:29.840]   no está bien
+[00:14:29.840 --> 00:14:30.580]   porque está por encima
+[00:14:30.580 --> 00:14:30.900]   del 8
+[00:14:30.900 --> 00:14:31.400]   nada, nada
+[00:14:31.400 --> 00:14:31.880]   me callo
+[00:14:31.880 --> 00:14:33.000]   pero ten en cuenta
+[00:14:33.000 --> 00:14:33.680]   que esto también
+[00:14:33.680 --> 00:14:34.540]   va a ser lo contrario
+[00:14:34.540 --> 00:14:35.080]   en el slave
+[00:14:35.080 --> 00:14:35.420]   o sea
+[00:14:35.420 --> 00:14:37.400]   tienes que configurar
+[00:14:37.400 --> 00:14:38.140]   yo pondría
+[00:14:38.140 --> 00:14:39.060]   8,05
+[00:14:39.060 --> 00:14:39.980]   porque en este caso
+[00:14:39.980 --> 00:14:41.020]   ya se para la operativa
+[00:14:41.020 --> 00:14:41.580]   en el slave
+[00:14:41.580 --> 00:14:42.800]   ya no tiene que continuar
+[00:14:42.800 --> 00:14:43.160]   o sea
+[00:14:43.160 --> 00:14:44.100]   también lo podrías poner
+[00:14:44.100 --> 00:14:44.980]   más bajo si quieres
+[00:14:44.980 --> 00:14:48.400]   no
+[00:14:48.400 --> 00:14:49.100]   porque
+[00:14:49.100 --> 00:14:51.800]   la cuenta
+[00:14:51.800 --> 00:14:53.400]   si tú una cuenta
+[00:14:53.400 --> 00:14:54.540]   la llegas al 8%
+[00:14:54.540 --> 00:14:55.100]   en profit
+[00:14:55.100 --> 00:14:56.300]   la otra no estará
+[00:14:56.300 --> 00:14:56.820]   en menos 8
+[00:14:56.820 --> 00:14:58.400]   la otra probablemente
+[00:14:58.400 --> 00:14:59.100]   esté en menos 9
+[00:14:59.100 --> 00:15:00.060]   por el tema
+[00:15:00.060 --> 00:15:01.220]   de las comisiones
+[00:15:01.220 --> 00:15:03.600]   vale, vale, vale
+[00:15:03.600 --> 00:15:04.240]   perdona, perdona
+[00:15:04.240 --> 00:15:04.640]   te dejo
+[00:15:04.640 --> 00:15:05.000]   gracias
+[00:15:05.000 --> 00:15:06.020]   si te pones aquí
+[00:15:06.020 --> 00:15:07.440]   un 8 acumulado
+[00:15:07.440 --> 00:15:08.600]   es posible
+[00:15:08.600 --> 00:15:09.500]   que se te corten
+[00:15:09.500 --> 00:15:10.020]   en el slave
+[00:15:10.020 --> 00:15:11.040]   antes de que
+[00:15:11.040 --> 00:15:11.580]   en la master
+[00:15:11.580 --> 00:15:12.420]   te llegue el take profit
+[00:15:12.420 --> 00:15:13.900]   por tanto
+[00:15:13.900 --> 00:15:14.920]   ahí ese 2%
+[00:15:14.920 --> 00:15:15.460]   nos va bien
+[00:15:15.460 --> 00:15:16.420]   que haya ese margen
+[00:15:16.420 --> 00:15:17.100]   que nos den ese margen
+[00:15:17.100 --> 00:15:17.780]   hasta el menos 10
+[00:15:17.780 --> 00:15:18.680]   por el tema
+[00:15:18.680 --> 00:15:19.280]   de las comisiones
+[00:15:19.280 --> 00:15:19.680]   de la cuenta
+[00:15:19.680 --> 00:15:20.300]   que está perdiendo
+[00:15:20.300 --> 00:15:23.580]   vale, vale
+[00:15:23.580 --> 00:15:23.840]   gracias
+[00:15:23.840 --> 00:15:24.320]   perdona
+[00:15:24.320 --> 00:15:26.820]   nos dice
+[00:15:26.820 --> 00:15:27.360]   el límite diario
+[00:15:27.360 --> 00:15:28.200]   sí que habría que dejarlo
+[00:15:28.200 --> 00:15:28.660]   en 4
+[00:15:28.660 --> 00:15:29.520]   no, ¿por qué?
+[00:15:31.900 --> 00:15:32.300]   recordad
+[00:15:32.300 --> 00:15:33.560]   que esto
+[00:15:33.560 --> 00:15:34.580]   no es el riesgo
+[00:15:34.580 --> 00:15:35.040]   que yo pongo
+[00:15:35.040 --> 00:15:35.740]   por operación
+[00:15:35.740 --> 00:15:37.220]   estos son guardianes
+[00:15:37.220 --> 00:15:39.560]   estos son guardianes
+[00:15:39.560 --> 00:15:40.780]   son los segundos
+[00:15:40.780 --> 00:15:41.540]   para caídas
+[00:15:41.540 --> 00:15:42.480]   la estrategia
+[00:15:42.480 --> 00:15:43.500]   aún no la he configurado
+[00:15:43.500 --> 00:15:44.720]   en el expert
+[00:15:44.720 --> 00:15:45.080]   a ver, vale
+[00:15:45.080 --> 00:15:45.960]   estos son guardianes
+[00:15:45.960 --> 00:15:46.700]   un paracaídas
+[00:15:46.700 --> 00:15:47.340]   un segundo
+[00:15:47.340 --> 00:15:48.000]   para caídas
+[00:15:48.000 --> 00:15:49.500]   tipo, oye
+[00:15:49.500 --> 00:15:50.020]   que si llegas
+[00:15:50.020 --> 00:15:51.080]   al 4,5%
+[00:15:51.080 --> 00:15:51.820]   que no deberías
+[00:15:51.820 --> 00:15:52.160]   de llegar
+[00:15:52.160 --> 00:15:52.740]   porque yo te voy
+[00:15:52.740 --> 00:15:53.420]   a poner la estrategia
+[00:15:53.420 --> 00:15:54.140]   al 4,1
+[00:15:54.140 --> 00:15:55.740]   no deberías
+[00:15:55.740 --> 00:15:56.040]   de llegar
+[00:15:56.040 --> 00:15:57.240]   al 4,5%
+[00:15:57.240 --> 00:15:59.040]   pero si ves
+[00:15:59.040 --> 00:15:59.560]   que llega
+[00:15:59.560 --> 00:16:00.360]   guardian
+[00:16:00.360 --> 00:16:01.160]   córtame
+[00:16:01.160 --> 00:16:02.440]   ¿entendéis?
+[00:16:02.600 --> 00:16:03.080]   córtalo
+[00:16:03.080 --> 00:16:05.540]   es que habrá pasado
+[00:16:05.540 --> 00:16:06.440]   luego con la estrategia
+[00:16:06.440 --> 00:16:06.860]   ¿entendéis?
+[00:16:09.780 --> 00:16:10.940]   bien, máxima de operaciones
+[00:16:10.940 --> 00:16:11.320]   que queréis
+[00:16:11.320 --> 00:16:12.000]   simultáneas
+[00:16:12.000 --> 00:16:13.040]   bueno, yo siempre
+[00:16:13.040 --> 00:16:13.480]   pongo una
+[00:16:13.480 --> 00:16:14.740]   no sé
+[00:16:14.740 --> 00:16:15.420]   porque podríamos
+[00:16:15.420 --> 00:16:15.880]   poner dos
+[00:16:15.880 --> 00:16:16.280]   pero yo siempre
+[00:16:16.280 --> 00:16:16.760]   voy una
+[00:16:16.760 --> 00:16:18.020]   si tienes una estrategia
+[00:16:18.020 --> 00:16:18.380]   que te da
+[00:16:18.380 --> 00:16:18.960]   varias señales
+[00:16:18.960 --> 00:16:19.520]   durante el día
+[00:16:19.520 --> 00:16:21.440]   con una es suficiente
+[00:16:21.440 --> 00:16:23.340]   porque ya os digo
+[00:16:23.340 --> 00:16:24.120]   vamos a ir a un trade
+[00:16:24.120 --> 00:16:24.440]   al día
+[00:16:24.440 --> 00:16:25.020]   o como mucho
+[00:16:25.020 --> 00:16:25.600]   dos al día
+[00:16:25.600 --> 00:16:28.380]   máxima de ganancias
+[00:16:28.380 --> 00:16:29.080]   consecutivas
+[00:16:29.080 --> 00:16:30.560]   por día
+[00:16:30.560 --> 00:16:32.340]   por si queréis
+[00:16:32.340 --> 00:16:33.380]   tener este límite
+[00:16:33.380 --> 00:16:33.920]   no sé si creo
+[00:16:33.920 --> 00:16:34.460]   en algún momento
+[00:16:34.460 --> 00:16:35.480]   sí que lo tuvimos
+[00:16:35.480 --> 00:16:36.980]   pero ya no necesito
+[00:16:36.980 --> 00:16:38.880]   máxima pérdidas
+[00:16:38.880 --> 00:16:39.540]   consecutivas
+[00:16:39.540 --> 00:16:39.980]   al día
+[00:16:39.980 --> 00:16:40.860]   lo tenéis
+[00:16:40.860 --> 00:16:41.400]   ahí al límite
+[00:16:41.400 --> 00:16:41.580]   ¿vale?
+[00:16:41.940 --> 00:16:42.620]   cuando toquen
+[00:16:42.620 --> 00:16:43.540]   estos límites
+[00:16:43.540 --> 00:16:45.600]   esto es por día
+[00:16:45.600 --> 00:16:46.720]   bueno, excepto
+[00:16:46.720 --> 00:16:47.040]   el primero
+[00:16:47.040 --> 00:16:48.120]   son por día
+[00:16:48.120 --> 00:16:49.240]   al día siguiente
+[00:16:49.240 --> 00:16:50.200]   se va a reiniciar
+[00:16:50.200 --> 00:16:50.540]   ¿vale?
+[00:16:52.620 --> 00:16:53.560]   limitar aperturas
+[00:16:53.560 --> 00:16:54.520]   en horario específico
+[00:16:54.520 --> 00:16:55.040]   yo esto lo hago
+[00:16:55.040 --> 00:16:55.960]   desde la estrategia
+[00:16:55.960 --> 00:16:56.460]   por tanto aquí
+[00:16:56.460 --> 00:16:57.260]   lo pongo en false
+[00:16:57.260 --> 00:16:57.800]   en false
+[00:16:57.800 --> 00:16:59.620]   espera, máximo de tres
+[00:16:59.620 --> 00:16:59.920]   por día
+[00:16:59.920 --> 00:17:00.440]   voy a poner uno
+[00:17:00.440 --> 00:17:00.840]   perdonad
+[00:17:00.840 --> 00:17:02.340]   claro, es que esto
+[00:17:02.340 --> 00:17:03.960]   lo tengo que configurar
+[00:17:03.960 --> 00:17:04.320]   para mí
+[00:17:04.320 --> 00:17:04.460]   ¿vale?
+[00:17:04.460 --> 00:17:04.980]   no se lo explico
+[00:17:04.980 --> 00:17:05.560]   ahora a vosotros
+[00:17:05.560 --> 00:17:05.760]   ¿vale?
+[00:17:06.120 --> 00:17:06.960]   esto lo dejo en uno
+[00:17:06.960 --> 00:17:10.300]   en uno
+[00:17:10.300 --> 00:17:13.400]   vale
+[00:17:13.400 --> 00:17:16.200]   no voy a poner
+[00:17:16.200 --> 00:17:18.540]   un horario específico
+[00:17:18.540 --> 00:17:19.640]   porque ya lo pondré
+[00:17:19.640 --> 00:17:20.640]   en el Expert Advisor
+[00:17:20.640 --> 00:17:20.940]   ¿vale?
+[00:17:21.420 --> 00:17:22.480]   pero lo podréis poner aquí
+[00:17:22.480 --> 00:17:23.480]   directamente si queréis
+[00:17:23.480 --> 00:17:27.860]   al estar esto en falso
+[00:17:27.860 --> 00:17:28.680]   todo esto de aquí
+[00:17:28.680 --> 00:17:29.260]   ya no
+[00:17:29.260 --> 00:17:29.420]   no
+[00:17:29.420 --> 00:17:31.240]   no lo tiene en cuenta
+[00:17:31.240 --> 00:17:31.460]   ¿vale?
+[00:17:32.660 --> 00:17:33.400]   hora inicio trading
+[00:17:33.400 --> 00:17:34.440]   minuto inicio trading
+[00:17:34.440 --> 00:17:35.400]   hora fin de trading
+[00:17:35.400 --> 00:17:36.220]   minuto fin de trading
+[00:17:36.220 --> 00:17:37.040]   en este caso
+[00:17:37.040 --> 00:17:37.260]   en este caso iría
+[00:17:37.260 --> 00:17:38.220]   de las 6 de la madrugada
+[00:17:38.220 --> 00:17:39.400]   hora del broker
+[00:17:39.400 --> 00:17:41.200]   que es la hora que os aparece
+[00:17:41.200 --> 00:17:42.660]   en el gráfico
+[00:17:42.660 --> 00:17:43.800]   y la hora de cierre
+[00:17:43.800 --> 00:17:46.180]   y si queréis
+[00:17:46.180 --> 00:17:47.540]   forzar
+[00:17:47.540 --> 00:17:48.760]   un cierre
+[00:17:48.760 --> 00:17:49.960]   en una hora determinada
+[00:17:49.960 --> 00:17:50.280]   es decir
+[00:17:50.280 --> 00:17:51.760]   si en este franco horario
+[00:17:51.760 --> 00:17:52.860]   se os ha abierto una operación
+[00:17:52.860 --> 00:17:53.840]   pero aún no se ha cerrado
+[00:17:53.840 --> 00:17:59.980]   forzar que se cierre a las 22.00
+[00:17:59.980 --> 00:18:01.960]   en este caso están las 22.00
+[00:18:01.960 --> 00:18:03.360]   luego
+[00:18:03.360 --> 00:18:06.400]   algo muy importante
+[00:18:06.400 --> 00:18:07.160]   los dos últimos
+[00:18:07.160 --> 00:18:08.920]   horas de reseteo
+[00:18:08.920 --> 00:18:11.780]   horas de reseteo
+[00:18:11.780 --> 00:18:14.360]   a veces
+[00:18:14.360 --> 00:18:15.480]   hay cuentas de
+[00:18:15.480 --> 00:18:16.860]   empresas de fondeo
+[00:18:16.860 --> 00:18:18.820]   que el reset
+[00:18:18.820 --> 00:18:20.040]   en lugar de hacerse
+[00:18:20.040 --> 00:18:21.420]   a las 12 de la noche
+[00:18:21.420 --> 00:18:22.300]   hora broker
+[00:18:22.300 --> 00:18:25.760]   se hace a las 23.00
+[00:18:25.760 --> 00:18:26.860]   me refiero
+[00:18:26.860 --> 00:18:27.240]   al reset
+[00:18:27.240 --> 00:18:27.820]   en el reset
+[00:18:27.820 --> 00:18:29.360]   de pérdida máxima diaria
+[00:18:29.360 --> 00:18:30.980]   si entráis en un panel
+[00:18:30.980 --> 00:18:31.660]   a ver si os pueden tener
+[00:18:31.660 --> 00:18:32.400]   algún panel por aquí
+[00:18:32.400 --> 00:18:37.300]   que lo ponga
+[00:18:37.300 --> 00:18:38.880]   hay algunos
+[00:18:38.880 --> 00:18:39.880]   que lo ponen
+[00:18:39.880 --> 00:18:41.040]   a ver
+[00:18:41.040 --> 00:18:43.560]   the five first
+[00:18:43.560 --> 00:18:44.420]   no lo pone
+[00:18:44.420 --> 00:18:47.740]   and the nets
+[00:18:47.740 --> 00:18:53.000]   and the nets
+[00:18:53.000 --> 00:18:53.000]   and the nets
+[00:18:53.000 --> 00:18:56.120]   si
+[00:18:56.120 --> 00:18:59.560]   mirad
+[00:18:59.560 --> 00:19:01.320]   and the nets
+[00:19:01.320 --> 00:19:02.520]   fijaros aquí
+[00:19:02.520 --> 00:19:04.440]   hoy se va a resetear
+[00:19:04.440 --> 00:19:05.740]   en 4 horas
+[00:19:05.740 --> 00:19:06.660]   GMT más 2
+[00:19:06.660 --> 00:19:06.880]   vale
+[00:19:06.880 --> 00:19:07.880]   en 4 horas
+[00:19:07.880 --> 00:19:09.420]   en España serían
+[00:19:09.420 --> 00:19:10.100]   las 12
+[00:19:10.100 --> 00:19:10.740]   4 horas y media
+[00:19:10.740 --> 00:19:11.540]   serían la 1
+[00:19:11.540 --> 00:19:12.800]   de la madrugada
+[00:19:12.800 --> 00:19:13.360]   no no no
+[00:19:13.360 --> 00:19:13.900]   que digo yo
+[00:19:13.900 --> 00:19:18.020]   sería a las 22
+[00:19:18.020 --> 00:19:18.560]   24
+[00:19:18.560 --> 00:19:19.440]   a las 23
+[00:19:19.440 --> 00:19:20.040]   de España
+[00:19:20.040 --> 00:19:22.800]   a las 23
+[00:19:22.800 --> 00:19:23.320]   de España
+[00:19:23.320 --> 00:19:24.320]   o sea en 4 horas y media
+[00:19:24.320 --> 00:19:27.320]   y ahora mismo
+[00:19:27.320 --> 00:19:27.640]   está
+[00:19:27.640 --> 00:19:28.300]   tendría que ver
+[00:19:28.300 --> 00:19:28.480]   ahora
+[00:19:28.480 --> 00:19:29.740]   creo que esto es
+[00:19:29.740 --> 00:19:31.300]   a las 23
+[00:19:31.300 --> 00:19:31.780]   de España
+[00:19:31.780 --> 00:19:32.380]   creo que esto es
+[00:19:32.380 --> 00:19:32.720]   a las
+[00:19:32.720 --> 00:19:35.300]   20
+[00:19:35.300 --> 00:19:36.360]   a las
+[00:19:36.360 --> 00:19:36.840]   a las 0
+[00:19:36.840 --> 00:19:38.200]   en el broker
+[00:19:38.200 --> 00:19:38.580]   vale
+[00:19:38.580 --> 00:19:41.300]   a las
+[00:19:41.300 --> 00:19:41.580]   00
+[00:19:41.580 --> 00:19:42.020]   en el broker
+[00:19:42.020 --> 00:19:42.500]   vale
+[00:19:42.500 --> 00:19:43.620]   me ha costado ahora
+[00:19:43.620 --> 00:19:44.700]   donde está 00
+[00:19:44.700 --> 00:19:46.120]   vale
+[00:19:46.120 --> 00:19:47.240]   pero miradlo bien
+[00:19:47.240 --> 00:19:47.960]   que en alguna empresa
+[00:19:47.960 --> 00:19:48.460]   pues a lo mejor
+[00:19:48.460 --> 00:19:49.460]   se resete a las 11
+[00:19:49.460 --> 00:19:49.860]   de la noche
+[00:19:49.860 --> 00:19:50.960]   del horario broker
+[00:19:50.960 --> 00:19:51.380]   de acuerdo
+[00:19:51.380 --> 00:19:52.600]   generalmente todas
+[00:19:52.600 --> 00:19:53.440]   desde las 00
+[00:19:53.440 --> 00:19:54.280]   horario broker
+[00:19:54.280 --> 00:19:54.820]   pero bueno
+[00:19:54.820 --> 00:19:56.060]   por tanto
+[00:19:56.060 --> 00:19:56.680]   ya quedaría
+[00:19:56.680 --> 00:19:58.100]   configurado esto
+[00:19:58.100 --> 00:19:59.800]   le doy
+[00:19:59.800 --> 00:20:00.800]   a aceptar
+[00:20:00.800 --> 00:20:03.800]   importante
+[00:20:03.800 --> 00:20:06.920]   vale
+[00:20:06.920 --> 00:20:07.920]   no me ha funcionado
+[00:20:07.920 --> 00:20:08.320]   porque
+[00:20:08.320 --> 00:20:09.800]   el correo
+[00:20:09.800 --> 00:20:10.700]   es requerido
+[00:20:10.700 --> 00:20:11.640]   por tanto
+[00:20:11.640 --> 00:20:12.420]   se me ha detenido
+[00:20:12.420 --> 00:20:12.800]   el expert
+[00:20:12.800 --> 00:20:13.360]   apaisos
+[00:20:13.360 --> 00:20:14.020]   claro
+[00:20:14.020 --> 00:20:14.360]   no he puesto
+[00:20:14.360 --> 00:20:15.420]   mi login
+[00:20:15.420 --> 00:20:15.760]   esto pasa
+[00:20:15.760 --> 00:20:16.240]   cuando lo ponéis
+[00:20:16.240 --> 00:20:16.780]   vuestro login
+[00:20:16.780 --> 00:20:18.760]   vuelvo a configurar
+[00:20:18.760 --> 00:20:19.020]   todo esto
+[00:20:19.020 --> 00:20:19.560]   como estaba
+[00:20:19.560 --> 00:20:21.020]   límite de ganancia
+[00:20:21.020 --> 00:20:22.620]   al 10%
+[00:20:22.620 --> 00:20:24.200]   activar
+[00:20:24.200 --> 00:20:25.180]   quiero activarlo
+[00:20:25.180 --> 00:20:28.880]   límite diario
+[00:20:28.880 --> 00:20:29.360]   de pérdida
+[00:20:29.360 --> 00:20:30.580]   4,5
+[00:20:30.580 --> 00:20:31.960]   total de ganancia
+[00:20:31.960 --> 00:20:33.540]   8,05
+[00:20:33.540 --> 00:20:36.400]   8,05
+[00:20:36.400 --> 00:20:38.080]   total de pérdida
+[00:20:38.080 --> 00:20:38.900]   9,1
+[00:20:38.900 --> 00:20:40.240]   match 1
+[00:20:40.240 --> 00:20:41.000]   1
+[00:20:41.000 --> 00:20:45.440]   y
+[00:20:45.440 --> 00:20:50.140]   esto lo dejo
+[00:20:50.140 --> 00:20:50.560]   porque lo haré
+[00:20:50.560 --> 00:20:51.560]   desde el expert
+[00:20:51.560 --> 00:20:51.840]   vale
+[00:20:51.840 --> 00:20:52.880]   voy a poner
+[00:20:52.880 --> 00:20:53.580]   mi
+[00:20:53.580 --> 00:20:55.880]   si me lo
+[00:20:55.880 --> 00:20:56.420]   permitís
+[00:20:56.420 --> 00:20:58.420]   voy a poner
+[00:20:58.420 --> 00:21:00.980]   las credenciales
+[00:21:00.980 --> 00:21:02.000]   en otra pantalla
+[00:21:02.000 --> 00:21:27.460]   ahora lo enseño
+[00:21:27.460 --> 00:21:35.520]   vale
+[00:21:35.520 --> 00:21:35.640]   vale
+[00:21:35.640 --> 00:21:36.120]   ya lo he puesto
+[00:21:36.120 --> 00:21:36.680]   de acuerdo
+[00:21:36.680 --> 00:21:37.380]   ya se me ha puesto
+[00:21:37.380 --> 00:21:38.780]   copy trading master
+[00:21:38.780 --> 00:21:39.720]   ea iniciado
+[00:21:39.720 --> 00:21:42.560]   iniciado
+[00:21:42.560 --> 00:21:43.260]   profit mode
+[00:21:43.260 --> 00:21:44.000]   activado
+[00:21:44.000 --> 00:21:44.600]   fijaros en
+[00:21:44.600 --> 00:21:45.800]   la pestaña
+[00:21:45.800 --> 00:21:46.220]   expertos
+[00:21:46.220 --> 00:21:46.860]   que os dice todo
+[00:21:46.860 --> 00:21:47.900]   equity inicial
+[00:21:47.900 --> 00:21:48.560]   100,000
+[00:21:48.560 --> 00:21:51.140]   límite diario
+[00:21:51.140 --> 00:21:52.200]   hasta 95,000
+[00:21:52.200 --> 00:21:53.180]   límite total
+[00:21:53.180 --> 00:21:54.060]   hasta 90,100
+[00:21:54.060 --> 00:21:56.480]   próximo reseteo
+[00:21:56.480 --> 00:21:57.120]   a las 00
+[00:21:57.120 --> 00:21:58.520]   a las 21
+[00:21:58.520 --> 00:21:59.940]   de día 21
+[00:21:59.940 --> 00:22:00.500]   de 02
+[00:22:00.500 --> 00:22:01.700]   3 abiertos
+[00:22:01.700 --> 00:22:02.200]   hoy 0
+[00:22:02.200 --> 00:22:03.740]   3 paralelos 0
+[00:22:03.740 --> 00:22:04.240]   ganancias
+[00:22:04.240 --> 00:22:05.000]   bla bla bla
+[00:22:05.000 --> 00:22:06.640]   y el ficherito
+[00:22:06.640 --> 00:22:07.440]   está guardado
+[00:22:07.440 --> 00:22:07.940]   en esta ruta
+[00:22:07.940 --> 00:22:08.540]   que esto es importante
+[00:22:08.540 --> 00:22:09.040]   también
+[00:22:09.040 --> 00:22:09.220]   vale
+[00:22:09.220 --> 00:22:11.120]   fijaros que aquí
+[00:22:11.120 --> 00:22:11.720]   se nos ha abierto
+[00:22:11.720 --> 00:22:12.320]   un panel
+[00:22:12.320 --> 00:22:15.320]   un panel
+[00:22:15.320 --> 00:22:20.660]   copy trading master
+[00:22:20.660 --> 00:22:22.220]   email
+[00:22:22.220 --> 00:22:23.020]   me pensaba
+[00:22:23.020 --> 00:22:23.760]   me pensaba
+[00:22:23.760 --> 00:22:24.180]   pondría aquí
+[00:22:24.180 --> 00:22:24.740]   la contraseña
+[00:22:24.740 --> 00:22:25.360]   digo no creo
+[00:22:25.360 --> 00:22:26.000]   vale
+[00:22:26.000 --> 00:22:26.800]   este es mi correo
+[00:22:26.800 --> 00:22:28.020]   símbolos todos
+[00:22:28.020 --> 00:22:29.080]   0 posiciones
+[00:22:29.080 --> 00:22:30.440]   bla bla
+[00:22:30.440 --> 00:22:31.160]   habilitado
+[00:22:31.160 --> 00:22:32.360]   y aquí os va calculando
+[00:22:32.360 --> 00:22:32.700]   un poco
+[00:22:32.700 --> 00:22:33.240]   lo que llevas
+[00:22:33.240 --> 00:22:33.920]   equity diario
+[00:22:33.920 --> 00:22:34.540]   equity total
+[00:22:34.540 --> 00:22:36.020]   como va calculando
+[00:22:36.020 --> 00:22:36.360]   el expert
+[00:22:36.360 --> 00:22:37.500]   para que tengáis aquí
+[00:22:37.500 --> 00:22:38.660]   los datos
+[00:22:38.660 --> 00:22:41.600]   próximo reseteo
+[00:22:41.600 --> 00:22:41.800]   mira
+[00:22:41.800 --> 00:22:42.360]   también tenemos
+[00:22:42.360 --> 00:22:43.040]   próximos eventos
+[00:22:43.040 --> 00:22:44.060]   reseteo
+[00:22:44.060 --> 00:22:44.760]   4 horas y media
+[00:22:44.760 --> 00:22:45.120]   por lo tanto
+[00:22:45.120 --> 00:22:45.660]   va bien
+[00:22:45.660 --> 00:22:46.480]   va genial
+[00:22:46.480 --> 00:22:46.900]   vale
+[00:22:46.900 --> 00:22:48.680]   bien
+[00:22:48.680 --> 00:22:49.340]   tenemos el master
+[00:22:49.340 --> 00:22:49.780]   puesto
+[00:22:49.780 --> 00:22:51.540]   y ahora nos vamos
+[00:22:51.540 --> 00:22:52.120]   al slave
+[00:22:52.120 --> 00:22:56.020]   y luego pondremos
+[00:22:56.020 --> 00:22:56.440]   la estrategia
+[00:22:56.440 --> 00:22:56.840]   y ya estará
+[00:22:56.840 --> 00:22:56.980]   vale
+[00:22:56.980 --> 00:22:59.000]   es que hay que ir
+[00:22:59.000 --> 00:22:59.840]   con mucho cuidado
+[00:22:59.840 --> 00:23:00.420]   al principio
+[00:23:00.420 --> 00:23:00.920]   poco a poco
+[00:23:00.920 --> 00:23:01.460]   yo ayer me tiré
+[00:23:01.460 --> 00:23:02.100]   bastante tiempo
+[00:23:02.100 --> 00:23:03.040]   que es el tiempo
+[00:23:03.040 --> 00:23:03.620]   que me estoy tirando
+[00:23:03.620 --> 00:23:03.900]   hoy
+[00:23:03.900 --> 00:23:08.200]   vale
+[00:23:08.200 --> 00:23:12.840]   bien
+[00:23:12.840 --> 00:23:13.360]   aquí voy a tirar
+[00:23:13.360 --> 00:23:13.940]   el slave
+[00:23:13.940 --> 00:23:16.500]   bueno
+[00:23:16.500 --> 00:23:17.060]   primero de todo
+[00:23:17.060 --> 00:23:17.800]   lo mismo
+[00:23:17.800 --> 00:23:18.740]   en la segunda cuenta
+[00:23:18.740 --> 00:23:19.180]   lo mismo
+[00:23:19.180 --> 00:23:20.020]   trading algorítmico
+[00:23:20.020 --> 00:23:20.420]   activado
+[00:23:20.420 --> 00:23:21.160]   herramientas
+[00:23:21.160 --> 00:23:22.400]   opciones
+[00:23:22.400 --> 00:23:23.640]   expert advisor
+[00:23:23.640 --> 00:23:24.640]   permitir importación
+[00:23:24.640 --> 00:23:25.020]   de DLL
+[00:23:25.020 --> 00:23:26.180]   y web request
+[00:23:26.180 --> 00:23:27.340]   que esto es
+[00:23:27.340 --> 00:23:29.920]   el enlace
+[00:23:29.920 --> 00:23:31.120]   yo lo pongo aquí
+[00:23:31.120 --> 00:23:36.200]   tar
+[00:23:36.200 --> 00:23:39.700]   y ahora si le doy aquí
+[00:23:39.700 --> 00:23:43.760]   aquí hay menos
+[00:23:43.760 --> 00:23:44.400]   que configurar
+[00:23:44.400 --> 00:23:45.780]   email y password
+[00:23:45.780 --> 00:23:46.400]   que ahora lo pondré
+[00:23:46.400 --> 00:23:47.380]   fuera de cámaras
+[00:23:47.380 --> 00:23:48.860]   ruta personalizada
+[00:23:48.860 --> 00:23:49.400]   del fichero
+[00:23:49.400 --> 00:23:50.280]   lo tenéis que dejar
+[00:23:50.280 --> 00:23:51.000]   exactamente lo mismo
+[00:23:51.000 --> 00:23:51.940]   que tiene el otro
+[00:23:51.940 --> 00:23:53.420]   para que sepa
+[00:23:53.420 --> 00:23:54.140]   dónde ir
+[00:23:54.140 --> 00:23:56.940]   modo de copia
+[00:23:56.940 --> 00:23:58.460]   bien
+[00:23:58.460 --> 00:24:01.340]   aquí hay
+[00:24:01.340 --> 00:24:02.280]   dos tipos
+[00:24:02.280 --> 00:24:03.020]   de copias
+[00:24:03.020 --> 00:24:04.300]   el normal
+[00:24:04.300 --> 00:24:04.760]   es decir
+[00:24:04.760 --> 00:24:05.440]   replica todo
+[00:24:05.440 --> 00:24:07.280]   eso sí
+[00:24:07.280 --> 00:24:08.380]   órdenes en buy stop
+[00:24:08.380 --> 00:24:08.620]   no
+[00:24:08.620 --> 00:24:10.140]   lo hace a mercado
+[00:24:10.140 --> 00:24:10.420]   todo
+[00:24:10.420 --> 00:24:12.700]   o sea
+[00:24:12.700 --> 00:24:14.000]   si vosotros tenéis un buy stop
+[00:24:14.000 --> 00:24:14.700]   en la master
+[00:24:14.700 --> 00:24:16.520]   cuando entre a mercado
+[00:24:16.520 --> 00:24:17.540]   es cuando se va a replicar
+[00:24:17.540 --> 00:24:18.200]   en la segunda
+[00:24:18.200 --> 00:24:19.000]   no se va a replicar
+[00:24:19.000 --> 00:24:19.460]   la buy stop
+[00:24:19.460 --> 00:24:23.160]   normal
+[00:24:23.160 --> 00:24:24.240]   y te coge
+[00:24:24.240 --> 00:24:25.320]   te coge el stop loss
+[00:24:25.320 --> 00:24:26.260]   el take profit
+[00:24:26.260 --> 00:24:28.080]   el cierre de operaciones
+[00:24:28.080 --> 00:24:29.300]   modificaciones
+[00:24:29.300 --> 00:24:29.880]   de operaciones
+[00:24:29.880 --> 00:24:30.160]   también
+[00:24:30.160 --> 00:24:30.680]   que modifiques
+[00:24:30.680 --> 00:24:32.120]   tengas un trailing stop
+[00:24:32.120 --> 00:24:32.500]   o algo
+[00:24:32.500 --> 00:24:33.400]   te lo modifica todo
+[00:24:33.400 --> 00:24:34.080]   te lo hace
+[00:24:34.080 --> 00:24:35.700]   y aperturas
+[00:24:35.700 --> 00:24:37.020]   modo incógnito
+[00:24:37.020 --> 00:24:38.680]   esto lo he puesto
+[00:24:38.680 --> 00:24:39.940]   porque puede ser interesante
+[00:24:39.940 --> 00:24:41.140]   no lo necesitamos realmente
+[00:24:41.140 --> 00:24:42.140]   ahora para este caso
+[00:24:42.140 --> 00:24:42.640]   de evaluaciones
+[00:24:42.640 --> 00:24:45.020]   pero puede ser interesante
+[00:24:45.020 --> 00:24:45.700]   esto es
+[00:24:45.700 --> 00:24:46.620]   que te abre la operación
+[00:24:46.620 --> 00:24:48.340]   y cuando cierra
+[00:24:48.340 --> 00:24:49.740]   independientemente
+[00:24:49.740 --> 00:24:50.940]   si es porque ha tocado
+[00:24:50.940 --> 00:24:51.460]   take profit
+[00:24:51.460 --> 00:24:52.080]   stop loss
+[00:24:52.080 --> 00:24:53.000]   o un trailing stop
+[00:24:53.000 --> 00:24:53.440]   lo que sea
+[00:24:53.440 --> 00:24:54.200]   en la cuenta master
+[00:24:54.200 --> 00:24:55.980]   en el slave
+[00:24:55.980 --> 00:24:56.500]   no va a haber
+[00:24:56.500 --> 00:24:57.240]   ni take profit
+[00:24:57.240 --> 00:24:57.920]   ni stop loss
+[00:24:57.920 --> 00:24:58.880]   va a haber una operación
+[00:24:58.880 --> 00:25:00.820]   no se va a ver
+[00:25:00.820 --> 00:25:01.720]   los niveles de stop loss
+[00:25:01.720 --> 00:25:01.940]   ahí
+[00:25:01.940 --> 00:25:03.680]   se cierra
+[00:25:03.680 --> 00:25:04.100]   ¿vale?
+[00:25:04.100 --> 00:25:04.740]   cuando se cierra la A
+[00:25:04.740 --> 00:25:05.260]   se cierra la B
+[00:25:05.260 --> 00:25:06.040]   únicamente hace
+[00:25:06.040 --> 00:25:07.100]   apertura y cierre
+[00:25:07.100 --> 00:25:08.340]   por eso lo llamamos
+[00:25:08.340 --> 00:25:09.260]   modo incógnito
+[00:25:09.260 --> 00:25:14.000]   vamos a ponerlo normal
+[00:25:14.000 --> 00:25:14.260]   ¿vale?
+[00:25:14.260 --> 00:25:14.860]   en cuentas de mondeo
+[00:25:14.860 --> 00:25:15.340]   lo incógnito
+[00:25:15.340 --> 00:25:16.900]   para gente que le interese
+[00:25:16.900 --> 00:25:17.480]   lo tiene ahí
+[00:25:17.480 --> 00:25:19.460]   lo importante
+[00:25:19.460 --> 00:25:20.540]   modo inverso
+[00:25:20.540 --> 00:25:21.520]   sí
+[00:25:21.520 --> 00:25:22.760]   vamos a hacer
+[00:25:22.760 --> 00:25:23.840]   la inversa
+[00:25:23.840 --> 00:25:24.300]   y lo vamos a poner
+[00:25:24.300 --> 00:25:24.840]   en true
+[00:25:24.840 --> 00:25:25.720]   ¿de acuerdo?
+[00:25:27.000 --> 00:25:27.440]   multiplicador
+[00:25:27.440 --> 00:25:28.440]   y aquí me preguntaba
+[00:25:28.440 --> 00:25:28.920]   oye Ramón
+[00:25:28.920 --> 00:25:29.340]   si hacéis
+[00:25:29.340 --> 00:25:29.760]   si hacemos
+[00:25:29.760 --> 00:25:31.340]   cuentas
+[00:25:31.340 --> 00:25:32.600]   de diferente capital
+[00:25:32.600 --> 00:25:33.620]   pues si en la primera
+[00:25:33.620 --> 00:25:35.400]   tenéis una cuenta
+[00:25:35.400 --> 00:25:36.280]   de 50.000
+[00:25:36.280 --> 00:25:36.680]   y la segunda
+[00:25:36.680 --> 00:25:37.180]   de 100.000
+[00:25:37.180 --> 00:25:38.220]   podéis poner
+[00:25:38.220 --> 00:25:38.920]   un multiplicador
+[00:25:38.920 --> 00:25:39.720]   de por 2
+[00:25:39.720 --> 00:25:41.740]   ¿de acuerdo?
+[00:25:41.840 --> 00:25:42.440]   yo lo dejo en 1
+[00:25:42.440 --> 00:25:43.600]   porque las 2 son de 100.000
+[00:25:43.600 --> 00:25:44.520]   que es lo más habitual
+[00:25:44.520 --> 00:25:46.340]   sleep page
+[00:25:46.340 --> 00:25:47.080]   esto es
+[00:25:47.080 --> 00:25:47.720]   en el caso
+[00:25:47.720 --> 00:25:49.080]   de que haya deslizamiento
+[00:25:49.080 --> 00:25:50.380]   de una operación
+[00:25:50.380 --> 00:25:51.200]   de la que abres
+[00:25:51.200 --> 00:25:52.220]   a la que vas a abrir
+[00:25:52.220 --> 00:25:53.800]   si hay mucha diferencia
+[00:25:53.800 --> 00:25:55.600]   decidir no abrirla
+[00:25:55.600 --> 00:25:56.840]   ¿vale?
+[00:25:56.920 --> 00:25:57.860]   ¿cuántos puntos
+[00:25:57.860 --> 00:25:59.580]   queréis poner de margen
+[00:25:59.580 --> 00:26:01.040]   de las cuales van a abrir?
+[00:26:02.460 --> 00:26:02.940]   esto es
+[00:26:02.940 --> 00:26:04.300]   yo lo pongo
+[00:26:04.300 --> 00:26:04.960]   holgado
+[00:26:04.960 --> 00:26:05.380]   ¿vale?
+[00:26:05.640 --> 00:26:06.060]   o sea lo pongo
+[00:26:06.060 --> 00:26:06.900]   bastante holgado
+[00:26:06.900 --> 00:26:09.720]   esto es por si alguien
+[00:26:09.720 --> 00:26:10.380]   quiere tiquismiqui
+[00:26:10.380 --> 00:26:11.060]   que sé que esta opción
+[00:26:11.060 --> 00:26:11.620]   se puede también
+[00:26:11.620 --> 00:26:12.060]   en algunos
+[00:26:12.060 --> 00:26:12.660]   expert advisors
+[00:26:12.660 --> 00:26:13.940]   la habilité ahí
+[00:26:13.940 --> 00:26:15.760]   y el magic number
+[00:26:15.760 --> 00:26:16.860]   dejad este magic number
+[00:26:16.860 --> 00:26:17.580]   aquí mismo
+[00:26:17.580 --> 00:26:20.560]   os tengo que preguntar
+[00:26:20.560 --> 00:26:22.400]   si hay diferentes
+[00:26:22.400 --> 00:26:23.000]   slaves
+[00:26:23.000 --> 00:26:24.340]   bueno no no no
+[00:26:24.340 --> 00:26:24.720]   no no no
+[00:26:24.720 --> 00:26:25.000]   da igual
+[00:26:25.000 --> 00:26:25.460]   no no
+[00:26:25.460 --> 00:26:25.920]   magic number
+[00:26:25.920 --> 00:26:26.280]   da igual
+[00:26:26.280 --> 00:26:27.060]   este mismo está bien
+[00:26:27.060 --> 00:26:28.420]   sí porque magic number
+[00:26:28.420 --> 00:26:29.440]   va por metatrader
+[00:26:29.440 --> 00:26:30.280]   da igual
+[00:26:30.280 --> 00:26:32.360]   este está bien así
+[00:26:32.460 --> 00:26:33.240]   vale pues yo voy a poner
+[00:26:33.240 --> 00:26:33.880]   mi usuario
+[00:26:33.880 --> 00:26:34.460]   de acuerdo
+[00:26:34.460 --> 00:26:35.760]   de nuevo
+[00:26:35.760 --> 00:27:05.740]   y luego de nuevo
+[00:27:05.760 --> 00:27:07.100]   y esperad
+[00:27:07.100 --> 00:27:07.620]   voy a abrir
+[00:27:07.620 --> 00:27:08.400]   la
+[00:27:08.400 --> 00:27:13.680]   voy a abrir la pestaña expertos
+[00:27:13.680 --> 00:27:14.460]   y veis aquí
+[00:27:14.460 --> 00:27:16.380]   autenticación exitosa
+[00:27:16.380 --> 00:27:17.160]   modo normal
+[00:27:17.160 --> 00:27:18.580]   modo inverso activado
+[00:27:18.580 --> 00:27:20.260]   multiplicador 1.0
+[00:27:20.260 --> 00:27:21.780]   copy training slave
+[00:27:21.780 --> 00:27:22.000]   EA
+[00:27:22.000 --> 00:27:22.680]   iniciado
+[00:27:22.680 --> 00:27:23.160]   bien
+[00:27:23.160 --> 00:27:24.480]   por tanto
+[00:27:24.480 --> 00:27:26.800]   ya tenemos activado
+[00:27:26.800 --> 00:27:27.260]   el master
+[00:27:27.260 --> 00:27:27.920]   ya tenemos activado
+[00:27:27.920 --> 00:27:28.360]   el slave
+[00:27:28.360 --> 00:27:29.280]   y ahora vamos a poner
+[00:27:29.280 --> 00:27:30.360]   la estrategia
+[00:27:30.360 --> 00:27:34.060]   y me voy
+[00:27:34.060 --> 00:27:35.180]   a la primera cuenta
+[00:27:35.180 --> 00:27:35.960]   que es esta de aquí
+[00:27:35.960 --> 00:27:37.620]   me voy
+[00:27:37.620 --> 00:27:38.640]   ahora sí
+[00:27:38.640 --> 00:27:39.800]   ¿dónde va a operar
+[00:27:39.800 --> 00:27:40.300]   esa estrategia?
+[00:27:40.400 --> 00:27:40.560]   pues
+[00:27:40.560 --> 00:27:42.080]   en el euro dólar
+[00:27:42.080 --> 00:27:43.460]   ¿por qué?
+[00:27:43.520 --> 00:27:44.000]   porque el spread
+[00:27:44.000 --> 00:27:44.600]   es bajísimo
+[00:27:44.600 --> 00:27:45.060]   en el euro dólar
+[00:27:45.060 --> 00:27:45.940]   es verdad que hay comisión
+[00:27:45.940 --> 00:27:47.700]   y miraré lo de
+[00:27:47.700 --> 00:27:48.500]   hacerlo en índices
+[00:27:48.500 --> 00:27:49.400]   que esto no había caído
+[00:27:49.400 --> 00:27:50.160]   esta semana en hacerlo
+[00:27:50.160 --> 00:27:51.660]   pero
+[00:27:51.660 --> 00:27:52.360]   por ahora
+[00:27:52.360 --> 00:27:53.140]   como que no he probado
+[00:27:53.140 --> 00:27:53.520]   la estrategia
+[00:27:53.520 --> 00:27:54.080]   en los índices
+[00:27:54.080 --> 00:27:54.640]   no quiero tampoco
+[00:27:54.640 --> 00:27:55.600]   perder mucho más tiempo
+[00:27:55.600 --> 00:27:56.840]   como que sé que el euro dólar
+[00:27:56.840 --> 00:27:57.420]   tiene un spread
+[00:27:57.420 --> 00:27:58.060]   muy bajo
+[00:27:58.060 --> 00:27:58.780]   porque ya sabéis
+[00:27:58.780 --> 00:27:59.460]   que aquí vamos
+[00:27:59.460 --> 00:28:01.200]   con distancias bajas
+[00:28:01.200 --> 00:28:01.680]   nos interesa
+[00:28:01.680 --> 00:28:02.320]   que el mismo día
+[00:28:02.320 --> 00:28:02.740]   haya abierto
+[00:28:02.740 --> 00:28:03.280]   y haya cerrado
+[00:28:03.280 --> 00:28:04.240]   eso es lo importante
+[00:28:04.240 --> 00:28:05.560]   que el mismo día
+[00:28:05.560 --> 00:28:06.280]   abra y cierra
+[00:28:06.280 --> 00:28:07.860]   tanto no pongas
+[00:28:07.860 --> 00:28:08.240]   estrategias
+[00:28:08.240 --> 00:28:08.760]   con stop loss
+[00:28:08.760 --> 00:28:10.040]   muy anchos
+[00:28:10.040 --> 00:28:10.700]   que sean
+[00:28:10.700 --> 00:28:11.160]   sweet trading
+[00:28:11.160 --> 00:28:11.600]   que sean
+[00:28:11.600 --> 00:28:12.120]   day trading
+[00:28:12.120 --> 00:28:12.580]   por eso
+[00:28:12.580 --> 00:28:13.680]   o scalping
+[00:28:13.680 --> 00:28:14.280]   a poder ser
+[00:28:14.280 --> 00:28:16.180]   por eso
+[00:28:16.180 --> 00:28:16.980]   hay que ver
+[00:28:16.980 --> 00:28:17.640]   si en los índices
+[00:28:17.640 --> 00:28:18.220]   el spread
+[00:28:18.220 --> 00:28:19.080]   ocupa mucho
+[00:28:19.080 --> 00:28:19.700]   por el espacio
+[00:28:19.700 --> 00:28:20.500]   que vayamos a dejar
+[00:28:20.500 --> 00:28:20.940]   ¿de acuerdo?
+[00:28:22.800 --> 00:28:23.080]   vale
+[00:28:23.080 --> 00:28:26.160]   esta es mi estrategia
+[00:28:26.160 --> 00:28:27.040]   que en vuestro caso
+[00:28:27.040 --> 00:28:27.900]   será barra baja
+[00:28:27.900 --> 00:28:28.600]   copy trading
+[00:28:28.600 --> 00:28:28.940]   ¿de acuerdo?
+[00:28:29.240 --> 00:28:30.180]   luego terminaré
+[00:28:30.180 --> 00:28:31.240]   ya estoy a punto de terminar
+[00:28:31.240 --> 00:28:35.300]   arrastro
+[00:28:35.300 --> 00:28:37.580]   y esto ya es
+[00:28:37.580 --> 00:28:38.380]   la estrategia
+[00:28:38.380 --> 00:28:39.140]   aquí no veis
+[00:28:39.140 --> 00:28:39.900]   nada distinto
+[00:28:39.900 --> 00:28:41.580]   magic number
+[00:28:41.580 --> 00:28:44.400]   el que sea
+[00:28:44.400 --> 00:28:46.300]   creo que lo podéis
+[00:28:46.300 --> 00:28:46.840]   dejar uno a uno
+[00:28:46.840 --> 00:28:47.660]   no habría problema
+[00:28:47.660 --> 00:28:49.120]   money management
+[00:28:49.120 --> 00:28:49.700]   fijaros
+[00:28:49.700 --> 00:28:50.460]   risk money
+[00:28:50.460 --> 00:28:50.920]   siempre
+[00:28:50.920 --> 00:28:51.660]   bueno esto
+[00:28:51.660 --> 00:28:52.300]   cada uno lo que quiera
+[00:28:52.300 --> 00:28:53.500]   pero lo mejor
+[00:28:53.500 --> 00:28:53.840]   que va
+[00:28:53.840 --> 00:28:54.700]   en esta combinación
+[00:28:54.700 --> 00:28:55.560]   es que aquí pongáis
+[00:28:55.560 --> 00:28:56.360]   riesgo fijo
+[00:28:56.360 --> 00:28:56.940]   ¿vale?
+[00:28:57.380 --> 00:28:58.460]   porque así controláis
+[00:28:58.460 --> 00:28:59.060]   porque nosotros
+[00:28:59.060 --> 00:28:59.960]   no necesitamos
+[00:28:59.960 --> 00:29:02.100]   no debéis de hacer
+[00:29:02.100 --> 00:29:02.980]   riesgo variable
+[00:29:02.980 --> 00:29:03.360]   porque
+[00:29:03.360 --> 00:29:04.960]   no tenéis que calcular
+[00:29:04.960 --> 00:29:05.480]   sobre el balance
+[00:29:05.480 --> 00:29:06.460]   que tenéis del día anterior
+[00:29:06.460 --> 00:29:07.060]   tenéis que calcular
+[00:29:07.060 --> 00:29:07.960]   sobre el capital inicial
+[00:29:07.960 --> 00:29:08.240]   por lo tanto
+[00:29:08.240 --> 00:29:09.000]   es un riesgo fijo
+[00:29:09.000 --> 00:29:10.540]   yo voy a arriesgar
+[00:29:10.540 --> 00:29:12.440]   4100 dólares
+[00:29:12.440 --> 00:29:15.640]   decimales de lotes
+[00:29:15.640 --> 00:29:15.960]   dos
+[00:29:15.960 --> 00:29:16.640]   para que te lo pueda
+[00:29:16.640 --> 00:29:17.300]   calcular bien
+[00:29:17.300 --> 00:29:19.500]   cálculo de lotes
+[00:29:19.500 --> 00:29:20.220]   si no es capaz
+[00:29:20.220 --> 00:29:21.300]   de calcular el lotaje
+[00:29:21.300 --> 00:29:22.120]   cuidado
+[00:29:22.120 --> 00:29:23.420]   que a mí me han pasado
+[00:29:23.420 --> 00:29:24.760]   cosas muy
+[00:29:24.760 --> 00:29:25.320]   muy feas
+[00:29:25.320 --> 00:29:26.420]   por no configurar
+[00:29:26.420 --> 00:29:26.840]   esto bien
+[00:29:26.840 --> 00:29:28.600]   si no es capaz
+[00:29:28.600 --> 00:29:29.520]   de calcularlo
+[00:29:29.520 --> 00:29:30.760]   dejad en lo mínimo
+[00:29:30.760 --> 00:29:31.440]   0,01
+[00:29:31.440 --> 00:29:32.260]   no pongáis uno
+[00:29:32.260 --> 00:29:33.040]   como lo hice yo
+[00:29:33.040 --> 00:29:33.320]   en Atsi
+[00:29:33.320 --> 00:29:33.720]   sin querer
+[00:29:33.720 --> 00:29:36.220]   y máximo de lotes
+[00:29:36.220 --> 00:29:37.500]   no creo que
+[00:29:37.500 --> 00:29:38.300]   llegue a 500
+[00:29:38.300 --> 00:29:38.720]   pero bueno
+[00:29:38.720 --> 00:29:39.160]   poned ahí
+[00:29:39.160 --> 00:29:40.000]   una barrera
+[00:29:40.000 --> 00:29:40.540]   muy elevada
+[00:29:40.540 --> 00:29:40.720]   ¿vale?
+[00:29:41.720 --> 00:29:42.620]   y este 0,01
+[00:29:42.620 --> 00:29:43.300]   esto que se queda así
+[00:29:43.300 --> 00:29:43.500]   ¿vale?
+[00:29:44.620 --> 00:29:45.020]   bien
+[00:29:45.020 --> 00:29:47.340]   yo en esta estrategia
+[00:29:47.340 --> 00:29:48.520]   esto ya viene hecho
+[00:29:48.520 --> 00:29:49.300]   de Strategy 1
+[00:29:49.300 --> 00:29:50.700]   le tengo limitado
+[00:29:50.700 --> 00:29:51.580]   de las 9 de la mañana
+[00:29:51.580 --> 00:29:52.720]   que serían las 8 en España
+[00:29:52.720 --> 00:29:54.400]   hasta las 10 y media
+[00:29:54.400 --> 00:29:55.520]   en España
+[00:29:55.520 --> 00:29:58.760]   sesión europea
+[00:29:58.760 --> 00:30:00.940]   sesión americana
+[00:30:00.940 --> 00:30:01.360]   ¿por qué?
+[00:30:01.520 --> 00:30:02.820]   ¿por qué estoy eliminando
+[00:30:02.820 --> 00:30:03.200]   la asiática?
+[00:30:03.320 --> 00:30:04.160]   porque el spread
+[00:30:04.160 --> 00:30:05.180]   es demasiado elevado
+[00:30:05.180 --> 00:30:07.640]   porque el spread
+[00:30:07.640 --> 00:30:08.620]   respecto a lo que se mueve
+[00:30:08.620 --> 00:30:08.900]   el precio
+[00:30:08.900 --> 00:30:09.780]   es demasiado elevado
+[00:30:09.780 --> 00:30:11.260]   por lo tanto
+[00:30:11.260 --> 00:30:12.220]   hay que intentar
+[00:30:12.220 --> 00:30:13.460]   que los costes
+[00:30:13.460 --> 00:30:14.600]   sean los mínimos
+[00:30:14.600 --> 00:30:15.720]   para que no nos merme tanto
+[00:30:15.720 --> 00:30:20.360]   y que al finalizar el día
+[00:30:20.360 --> 00:30:21.600]   si tengo una operación abierta
+[00:30:21.600 --> 00:30:22.040]   y no haya tocado
+[00:30:22.040 --> 00:30:22.580]   ni Take Profit
+[00:30:22.580 --> 00:30:23.120]   ni Tristoblos
+[00:30:23.120 --> 00:30:24.080]   me la cierre
+[00:30:24.080 --> 00:30:25.300]   ¿vale?
+[00:30:25.380 --> 00:30:26.200]   me lo cierre
+[00:30:26.200 --> 00:30:28.720]   para que no se me aguante
+[00:30:28.720 --> 00:30:29.200]   hasta el día siguiente
+[00:30:29.200 --> 00:30:30.020]   y no me coma un swap
+[00:30:30.020 --> 00:30:30.860]   si no ha llegado
+[00:30:30.860 --> 00:30:31.160]   da igual
+[00:30:31.160 --> 00:30:32.040]   pues a lo mejor
+[00:30:32.040 --> 00:30:32.980]   habré ganado un 2%
+[00:30:32.980 --> 00:30:33.600]   al día siguiente
+[00:30:33.600 --> 00:30:34.140]   ya ganaré
+[00:30:34.140 --> 00:30:35.540]   el 4 que me toque
+[00:30:35.540 --> 00:30:37.800]   todo lo demás
+[00:30:37.800 --> 00:30:40.200]   use
+[00:30:40.200 --> 00:30:42.140]   yo esto siempre lo activo
+[00:30:42.140 --> 00:30:43.360]   que se utilice
+[00:30:43.360 --> 00:30:43.940]   el pip size
+[00:30:43.940 --> 00:30:44.800]   que hemos configurado
+[00:30:44.800 --> 00:30:45.580]   en Strategic One
+[00:30:45.580 --> 00:30:46.560]   siempre lo tengo
+[00:30:46.560 --> 00:30:47.880]   lo intento poner en activo
+[00:30:47.880 --> 00:30:48.460]   en Forex
+[00:30:48.460 --> 00:30:49.760]   no hay mucha diferencia
+[00:30:49.760 --> 00:30:50.240]   pero en índices
+[00:30:50.240 --> 00:30:51.020]   a veces sí
+[00:30:51.020 --> 00:30:52.100]   por lo tanto
+[00:30:52.100 --> 00:30:52.800]   siempre pone True
+[00:30:52.800 --> 00:30:53.620]   porque así el robot
+[00:30:53.620 --> 00:30:54.080]   se ha creado
+[00:30:54.080 --> 00:30:55.140]   con esas configuraciones
+[00:30:55.140 --> 00:30:56.720]   yo siempre lo dejaría en True
+[00:30:56.720 --> 00:30:59.840]   y creo que ya está
+[00:30:59.840 --> 00:31:00.720]   y esto pues ya
+[00:31:00.720 --> 00:31:01.940]   pues le doy a aceptar
+[00:31:02.600 --> 00:31:05.280]   abajo veo
+[00:31:05.280 --> 00:31:06.060]   bueno
+[00:31:06.060 --> 00:31:07.400]   el típico log de Strategic One
+[00:31:07.400 --> 00:31:07.860]   Starting
+[00:31:07.860 --> 00:31:08.680]   de Expert Advisor
+[00:31:08.680 --> 00:31:09.900]   y ya está
+[00:31:09.900 --> 00:31:12.020]   Expert Advisor
+[00:31:12.020 --> 00:31:12.740]   funcionando
+[00:31:12.740 --> 00:31:13.540]   ¿de acuerdo?
+[00:31:13.620 --> 00:31:13.880]   por lo tanto
+[00:31:13.880 --> 00:31:14.260]   ahora
+[00:31:14.260 --> 00:31:16.020]   cuando en un
+[00:31:16.020 --> 00:31:16.760]   en un
+[00:31:16.760 --> 00:31:17.800]   ahora os enseñaré
+[00:31:17.800 --> 00:31:18.680]   lo de ayer
+[00:31:18.680 --> 00:31:20.520]   cuando en una se me abra
+[00:31:20.520 --> 00:31:20.940]   en la otra
+[00:31:20.940 --> 00:31:21.440]   se me debería
+[00:31:21.440 --> 00:31:22.260]   de replicar
+[00:31:22.260 --> 00:31:23.840]   una cosa más
+[00:31:23.840 --> 00:31:25.260]   y ahora luego
+[00:31:25.260 --> 00:31:26.120]   ya si vamos a la otra
+[00:31:26.120 --> 00:31:26.620]   no te preguntas
+[00:31:26.620 --> 00:31:26.840]   ¿vale?
+[00:31:28.260 --> 00:31:29.380]   el News Manager
+[00:31:29.380 --> 00:31:30.860]   ¿qué hace este Expert Advisor?
+[00:31:30.980 --> 00:31:31.720]   que los podéis cargar
+[00:31:31.720 --> 00:31:32.300]   también de
+[00:31:32.300 --> 00:31:33.920]   de allí
+[00:31:33.920 --> 00:31:36.540]   lo que hace es
+[00:31:36.540 --> 00:31:37.980]   lee
+[00:31:37.980 --> 00:31:39.380]   las noticias económicas
+[00:31:39.380 --> 00:31:40.260]   que hay durante el día
+[00:31:40.260 --> 00:31:41.880]   y
+[00:31:41.880 --> 00:31:43.820]   cierra
+[00:31:43.820 --> 00:31:44.840]   cualquier
+[00:31:44.840 --> 00:31:45.640]   operación
+[00:31:45.640 --> 00:31:48.140]   y no deja abrir
+[00:31:48.140 --> 00:31:49.020]   ninguna operación
+[00:31:49.020 --> 00:31:50.120]   durante un tiempo
+[00:31:50.120 --> 00:31:50.820]   determinado
+[00:31:50.820 --> 00:31:51.600]   durante el tiempo
+[00:31:51.600 --> 00:31:52.220]   de la noticia
+[00:31:52.220 --> 00:31:53.140]   ¿bien?
+[00:31:55.000 --> 00:31:55.920]   vamos a ver
+[00:31:55.920 --> 00:31:56.920]   por ejemplo
+[00:31:56.920 --> 00:32:02.560]   Wall Street Funded
+[00:32:02.560 --> 00:32:03.700]   News
+[00:32:03.700 --> 00:32:04.500]   Noticias
+[00:32:04.500 --> 00:32:09.760]   Wall Street Funded
+[00:32:09.760 --> 00:32:11.200]   ¿qué nos dice aquí?
+[00:32:13.540 --> 00:32:14.900]   que Wall Street Funded
+[00:32:14.900 --> 00:32:16.280]   no deja operar
+[00:32:16.280 --> 00:32:16.820]   noticias
+[00:32:16.820 --> 00:32:18.920]   cuatro minutos antes
+[00:32:18.920 --> 00:32:20.820]   y cuatro minutos después
+[00:32:20.820 --> 00:32:25.500]   hay empresas
+[00:32:25.500 --> 00:32:26.000]   yo por ejemplo
+[00:32:26.000 --> 00:32:26.780]   voy a FundedNet
+[00:32:26.780 --> 00:32:29.660]   hay
+[00:32:29.660 --> 00:32:30.100]   hay
+[00:32:30.100 --> 00:32:30.960]   empresas que sí
+[00:32:30.960 --> 00:32:34.380]   FundedNet
+[00:32:34.380 --> 00:32:34.940]   permite operar
+[00:32:34.940 --> 00:32:35.520]   noticias en casi
+[00:32:35.520 --> 00:32:36.460]   todas las cuentas
+[00:32:36.460 --> 00:32:37.900]   bueno
+[00:32:37.900 --> 00:32:38.440]   pues FundedNet
+[00:32:38.440 --> 00:32:38.700]   sí
+[00:32:38.700 --> 00:32:41.000]   The Trading Pit
+[00:32:41.000 --> 00:32:41.560]   por ejemplo
+[00:32:41.560 --> 00:32:47.560]   a ver
+[00:32:47.560 --> 00:32:49.000]   está aquí abajo
+[00:32:49.000 --> 00:32:49.420]   está aquí abajo
+[00:32:49.420 --> 00:32:54.280]   bueno
+[00:32:54.280 --> 00:32:54.880]   ya lo podéis ver
+[00:32:54.880 --> 00:32:58.220]   la negociación
+[00:32:58.220 --> 00:32:58.540]   de noticias
+[00:32:58.540 --> 00:32:59.320]   está permitida
+[00:32:59.320 --> 00:32:59.920]   para las cuentas
+[00:32:59.920 --> 00:33:00.260]   de FEDES
+[00:33:00.260 --> 00:33:01.000]   con la excepción
+[00:33:01.000 --> 00:33:01.540]   de las cuentas
+[00:33:01.540 --> 00:33:01.960]   de 100.000
+[00:33:01.960 --> 00:33:02.660]   y 200.000
+[00:33:02.660 --> 00:33:03.040]   dólares
+[00:33:03.040 --> 00:33:07.420]   mira
+[00:33:07.420 --> 00:33:09.040]   las clases
+[00:33:09.040 --> 00:33:09.700]   no
+[00:33:09.700 --> 00:33:13.840]   aquí lo dice
+[00:33:13.840 --> 00:33:14.460]   las siguientes acciones
+[00:33:14.460 --> 00:33:15.120]   no están permitidas
+[00:33:15.120 --> 00:33:15.820]   dentro de los
+[00:33:15.820 --> 00:33:16.960]   dos minutos
+[00:33:16.960 --> 00:33:17.860]   antes o después
+[00:33:17.860 --> 00:33:18.480]   de la publicación
+[00:33:18.480 --> 00:33:19.000]   de noticias
+[00:33:19.000 --> 00:33:20.640]   que ahora
+[00:33:20.640 --> 00:33:21.160]   leyendo esto
+[00:33:21.160 --> 00:33:21.980]   he hecho una cagada
+[00:33:21.980 --> 00:33:22.460]   porque ayer
+[00:33:22.460 --> 00:33:23.080]   puse
+[00:33:23.080 --> 00:33:23.940]   Wall Street Funded
+[00:33:23.940 --> 00:33:25.500]   y me acabo
+[00:33:25.500 --> 00:33:27.620]   de acordar
+[00:33:27.620 --> 00:33:28.380]   es de cuatro minutos
+[00:33:28.380 --> 00:33:28.920]   y no de dos
+[00:33:28.920 --> 00:33:30.240]   creo que he incumplido
+[00:33:30.240 --> 00:33:30.560]   algo
+[00:33:30.560 --> 00:33:31.680]   lo que pasa es que
+[00:33:31.680 --> 00:33:33.980]   solo para cuentas
+[00:33:33.980 --> 00:33:34.380]   financiadas
+[00:33:34.380 --> 00:33:34.880]   simuladas
+[00:33:34.880 --> 00:33:35.380]   no se aplica
+[00:33:35.380 --> 00:33:36.060]   en fase una y dos
+[00:33:36.060 --> 00:33:36.680]   de las pruebas
+[00:33:36.680 --> 00:33:38.000]   me he salvado
+[00:33:38.000 --> 00:33:38.800]   me he salvado
+[00:33:38.800 --> 00:33:41.120]   fue por eso
+[00:33:41.120 --> 00:33:42.560]   lo que pasa es que
+[00:33:42.560 --> 00:33:43.560]   en The Trading Pit
+[00:33:43.560 --> 00:33:43.780]   sí
+[00:33:43.780 --> 00:33:44.980]   en The Trading Pit
+[00:33:44.980 --> 00:33:45.580]   sí que
+[00:33:45.580 --> 00:33:47.300]   no está permitido
+[00:33:47.300 --> 00:33:48.720]   dos minutos
+[00:33:48.720 --> 00:33:49.460]   antes o después
+[00:33:49.460 --> 00:33:50.420]   por tanto
+[00:33:50.420 --> 00:33:51.380]   si yo sé que tengo
+[00:33:51.380 --> 00:33:51.800]   Trading Pit
+[00:33:51.800 --> 00:33:52.380]   y la estoy haciendo
+[00:33:52.380 --> 00:33:53.500]   contra la Wall Street Funded
+[00:33:53.500 --> 00:33:55.880]   pues la Wall Street Funded
+[00:33:55.880 --> 00:33:57.840]   en fase de evaluación
+[00:33:57.840 --> 00:33:58.360]   no hay
+[00:33:58.360 --> 00:33:59.480]   restricción de noticia
+[00:33:59.480 --> 00:34:01.100]   pero en The Trading Pit
+[00:34:01.100 --> 00:34:01.540]   sí por tanto
+[00:34:01.540 --> 00:34:02.100]   tenemos que ir
+[00:34:02.100 --> 00:34:02.740]   a la más restrictiva
+[00:34:02.740 --> 00:34:03.240]   dos minutos
+[00:34:03.240 --> 00:34:06.480]   bueno
+[00:34:06.480 --> 00:34:06.960]   en este caso
+[00:34:06.960 --> 00:34:07.480]   es
+[00:34:07.480 --> 00:34:08.200]   Funded Nets
+[00:34:08.200 --> 00:34:09.080]   y The Fifers
+[00:34:09.080 --> 00:34:10.360]   voy a configurarlo
+[00:34:10.360 --> 00:34:10.940]   para ellos dos
+[00:34:10.940 --> 00:34:11.620]   como si fueran
+[00:34:11.620 --> 00:34:12.340]   The Trading Pit
+[00:34:12.340 --> 00:34:13.760]   y
+[00:34:13.760 --> 00:34:16.180]   Wall Street Funded
+[00:34:16.180 --> 00:34:17.140]   bien
+[00:34:17.140 --> 00:34:17.820]   aquí tengo
+[00:34:17.820 --> 00:34:20.700]   esto se tiene que colocar
+[00:34:20.700 --> 00:34:21.360]   en el mismo
+[00:34:21.360 --> 00:34:22.400]   donde está la estrategia
+[00:34:22.400 --> 00:34:22.980]   y el master
+[00:34:22.980 --> 00:34:23.980]   ¿vale?
+[00:34:24.000 --> 00:34:24.660]   es en el mismo
+[00:34:24.660 --> 00:34:25.140]   ¿de acuerdo?
+[00:34:25.180 --> 00:34:25.860]   porque es la que manda
+[00:34:25.860 --> 00:34:26.380]   es la que lanza
+[00:34:26.380 --> 00:34:26.780]   la operación
+[00:34:26.780 --> 00:34:27.360]   y la cierre
+[00:34:27.360 --> 00:34:28.040]   entonces
+[00:34:28.040 --> 00:34:29.860]   voy a un tercer gráfico
+[00:34:29.860 --> 00:34:30.880]   este de aquí
+[00:34:30.880 --> 00:34:31.360]   por ejemplo
+[00:34:31.360 --> 00:34:34.380]   yo que soy maniático
+[00:34:34.380 --> 00:34:35.160]   lo quito
+[00:34:35.160 --> 00:34:36.880]   quito esto
+[00:34:36.880 --> 00:34:37.580]   cuando no es necesario
+[00:34:37.580 --> 00:34:38.040]   quitarlo
+[00:34:38.040 --> 00:34:38.920]   es porque lo hago
+[00:34:38.920 --> 00:34:39.460]   y ya está
+[00:34:39.460 --> 00:34:45.040]   bien
+[00:34:45.040 --> 00:34:46.760]   y
+[00:34:46.760 --> 00:34:48.320]   lo arrastro
+[00:34:48.320 --> 00:34:50.860]   parámetros de entrada
+[00:34:50.860 --> 00:34:52.120]   operar noticias
+[00:34:52.120 --> 00:34:53.440]   modo de gestión
+[00:34:53.440 --> 00:34:54.020]   de noticias
+[00:34:54.020 --> 00:34:55.320]   operar noticias
+[00:34:55.320 --> 00:34:56.100]   si tenéis esto
+[00:34:56.100 --> 00:34:56.900]   puesto operar noticias
+[00:34:56.900 --> 00:34:58.200]   no nos hace nada
+[00:34:58.200 --> 00:34:59.160]   ¿vale?
+[00:34:59.200 --> 00:34:59.680]   no sé ni por qué
+[00:34:59.680 --> 00:35:00.620]   tenemos este modo
+[00:35:00.620 --> 00:35:01.000]   pero bueno
+[00:35:01.000 --> 00:35:02.380]   esto es no hacer nada
+[00:35:02.380 --> 00:35:04.480]   esto es
+[00:35:04.480 --> 00:35:05.860]   no abrir trades
+[00:35:05.860 --> 00:35:06.320]   ojo
+[00:35:06.320 --> 00:35:06.820]   porque hay empresas
+[00:35:06.820 --> 00:35:07.160]   de fondeo
+[00:35:07.160 --> 00:35:07.580]   que te dicen
+[00:35:07.580 --> 00:35:08.920]   si tienes trades
+[00:35:08.920 --> 00:35:09.580]   abiertos
+[00:35:09.580 --> 00:35:10.560]   de antes
+[00:35:10.560 --> 00:35:13.840]   lo puedes dejar
+[00:35:13.840 --> 00:35:14.580]   bueno
+[00:35:14.580 --> 00:35:14.820]   de hecho
+[00:35:14.820 --> 00:35:15.460]   de trading pit
+[00:35:15.460 --> 00:35:18.760]   las siete acciones
+[00:35:18.760 --> 00:35:19.560]   no están permitidas
+[00:35:19.560 --> 00:35:20.660]   durante los dos minutos
+[00:35:20.660 --> 00:35:21.920]   abrir operaciones
+[00:35:21.920 --> 00:35:23.100]   tener órdenes
+[00:35:23.100 --> 00:35:24.020]   pendientes
+[00:35:24.020 --> 00:35:25.740]   que significa
+[00:35:25.740 --> 00:35:27.080]   que si tienes operaciones
+[00:35:27.080 --> 00:35:28.680]   antes de esos dos minutos
+[00:35:28.680 --> 00:35:31.060]   si las puedes mantener
+[00:35:31.060 --> 00:35:31.100]   si las puedes mantener
+[00:35:31.100 --> 00:35:32.980]   ojo
+[00:35:32.980 --> 00:35:35.100]   esto es el modo
+[00:35:35.100 --> 00:35:36.280]   que hemos desarrollado
+[00:35:36.280 --> 00:35:37.480]   puedes
+[00:35:37.480 --> 00:35:38.340]   puedes decir
+[00:35:38.340 --> 00:35:39.660]   no abrir trades
+[00:35:39.660 --> 00:35:40.340]   durante noticias
+[00:35:40.340 --> 00:35:42.020]   no vamos a abrir trades nuevos
+[00:35:42.020 --> 00:35:43.920]   pero si tenemos trades abiertos
+[00:35:43.920 --> 00:35:45.060]   se pueden mantener
+[00:35:45.060 --> 00:35:47.180]   esto sería
+[00:35:47.180 --> 00:35:48.320]   esta segunda opción
+[00:35:48.320 --> 00:35:49.180]   y la tercera es
+[00:35:49.180 --> 00:35:51.400]   no abrir trades
+[00:35:51.400 --> 00:35:52.260]   durante ese tiempo
+[00:35:52.260 --> 00:35:53.580]   y además
+[00:35:53.580 --> 00:35:55.020]   si llevo un trade abierto
+[00:35:55.020 --> 00:35:57.700]   antes de los dos minutos
+[00:35:57.700 --> 00:35:59.040]   o los minutos que les pongamos
+[00:35:59.040 --> 00:36:00.380]   lo vamos a cerrar
+[00:36:00.380 --> 00:36:01.240]   para que no
+[00:36:01.240 --> 00:36:02.560]   para que no nos pille con nada
+[00:36:02.560 --> 00:36:02.740]   vale
+[00:36:02.740 --> 00:36:04.460]   a ver
+[00:36:04.460 --> 00:36:06.780]   si no queréis problemas
+[00:36:06.780 --> 00:36:07.480]   poner el último
+[00:36:07.480 --> 00:36:08.720]   vale
+[00:36:08.720 --> 00:36:10.160]   pero bueno
+[00:36:10.160 --> 00:36:11.080]   ahí si queréis mirar
+[00:36:11.080 --> 00:36:11.740]   que empresa está
+[00:36:11.740 --> 00:36:11.980]   vale
+[00:36:11.980 --> 00:36:12.740]   en esta puedo poner esto
+[00:36:12.740 --> 00:36:13.420]   en esta puedo poner esto
+[00:36:13.420 --> 00:36:14.120]   pues afinarlo
+[00:36:14.120 --> 00:36:14.300]   vale
+[00:36:14.300 --> 00:36:17.560]   duración de las noticias
+[00:36:17.560 --> 00:36:18.480]   estos son
+[00:36:18.480 --> 00:36:19.380]   los minutos
+[00:36:19.380 --> 00:36:20.440]   no el total
+[00:36:20.440 --> 00:36:20.820]   sino
+[00:36:20.820 --> 00:36:21.840]   la mitad
+[00:36:21.840 --> 00:36:22.280]   es decir
+[00:36:22.280 --> 00:36:23.520]   si nos dicen
+[00:36:23.520 --> 00:36:25.120]   que dos minutos antes
+[00:36:25.120 --> 00:36:26.420]   y dos minutos después
+[00:36:26.420 --> 00:36:27.020]   de la noticia
+[00:36:27.020 --> 00:36:28.940]   no podemos operar
+[00:36:28.940 --> 00:36:29.440]   aquí hay que poner
+[00:36:29.440 --> 00:36:30.020]   los segundos
+[00:36:30.020 --> 00:36:30.760]   de dos minutos
+[00:36:30.760 --> 00:36:31.380]   no de cuatro
+[00:36:31.380 --> 00:36:31.600]   vale
+[00:36:31.600 --> 00:36:34.040]   son 120 segundos
+[00:36:34.040 --> 00:36:35.060]   son los dos minutos
+[00:36:35.060 --> 00:36:36.260]   si nos dicen cuatro
+[00:36:36.260 --> 00:36:37.220]   en Wall Street Funded
+[00:36:37.220 --> 00:36:38.160]   en la fase fondeada
+[00:36:38.160 --> 00:36:39.760]   porque este guardián
+[00:36:39.760 --> 00:36:41.240]   de noticias manager
+[00:36:41.240 --> 00:36:42.700]   lo podéis poner
+[00:36:42.700 --> 00:36:43.720]   en vuestras cuentas
+[00:36:43.720 --> 00:36:44.400]   fondeadas
+[00:36:44.400 --> 00:36:44.920]   donde queráis
+[00:36:44.920 --> 00:36:46.080]   esto lo podéis poner
+[00:36:46.080 --> 00:36:46.640]   donde queráis
+[00:36:46.640 --> 00:36:48.300]   esto no va asociado
+[00:36:48.300 --> 00:36:49.540]   a evaluaciones de fondeo
+[00:36:49.540 --> 00:36:50.820]   pero si nos va muy bien
+[00:36:50.820 --> 00:36:51.620]   para no incumplir
+[00:36:51.620 --> 00:36:52.000]   esa norma
+[00:36:52.000 --> 00:36:52.560]   que a veces
+[00:36:52.560 --> 00:36:53.500]   con robots
+[00:36:53.500 --> 00:36:54.360]   es fácil incumplir
+[00:36:54.360 --> 00:36:54.600]   vale
+[00:36:54.600 --> 00:36:58.000]   por lo tanto
+[00:36:58.000 --> 00:36:58.480]   aquí poner
+[00:36:58.480 --> 00:36:59.820]   el minutaje
+[00:36:59.820 --> 00:37:00.200]   de antes
+[00:37:00.200 --> 00:37:00.820]   y el de después
+[00:37:00.820 --> 00:37:01.400]   que es el mismo
+[00:37:01.400 --> 00:37:01.600]   vale
+[00:37:01.600 --> 00:37:03.020]   120
+[00:37:03.020 --> 00:37:03.660]   poned
+[00:37:03.660 --> 00:37:05.580]   122
+[00:37:05.580 --> 00:37:07.020]   o 121
+[00:37:07.020 --> 00:37:07.680]   vale
+[00:37:07.680 --> 00:37:08.180]   no lo dejéis
+[00:37:08.180 --> 00:37:08.840]   en 120
+[00:37:08.840 --> 00:37:09.620]   que si no
+[00:37:09.620 --> 00:37:10.060]   luego os dicen
+[00:37:10.060 --> 00:37:10.740]   ah es que
+[00:37:10.740 --> 00:37:12.660]   justo dos minutos
+[00:37:12.660 --> 00:37:13.120]   lo has cerrado
+[00:37:13.120 --> 00:37:13.520]   no pues
+[00:37:13.520 --> 00:37:14.280]   dejad dos segundos
+[00:37:14.280 --> 00:37:14.960]   por si acaso
+[00:37:14.960 --> 00:37:17.080]   vale
+[00:37:17.080 --> 00:37:17.980]   esto de aquí
+[00:37:17.980 --> 00:37:19.060]   ahora no lo voy a conectar
+[00:37:19.060 --> 00:37:19.260]   bueno
+[00:37:19.260 --> 00:37:20.760]   si lo voy a conectar
+[00:37:20.760 --> 00:37:21.720]   voy a conectar
+[00:37:21.720 --> 00:37:22.160]   venga
+[00:37:22.160 --> 00:37:26.120]   voy a dejar conectado
+[00:37:26.120 --> 00:37:37.120]   vale
+[00:37:37.120 --> 00:37:41.540]   os tengo que explicar algo
+[00:37:41.540 --> 00:37:42.500]   que no he explicado antes
+[00:37:42.500 --> 00:37:47.240]   esto de aquí
+[00:37:47.240 --> 00:37:49.520]   currencies a monitorear
+[00:37:49.520 --> 00:37:50.960]   es esto de aquí
+[00:37:50.960 --> 00:37:51.520]   vale
+[00:37:51.520 --> 00:37:54.360]   cuando vais a investing
+[00:37:54.360 --> 00:37:54.740]   y veis
+[00:37:54.740 --> 00:37:56.280]   el calendario económico
+[00:37:56.280 --> 00:38:00.900]   ostia lo han cambiado
+[00:38:00.900 --> 00:38:01.240]   esto
+[00:38:01.240 --> 00:38:03.240]   ah economic calendar
+[00:38:03.240 --> 00:38:03.960]   lo han cambiado
+[00:38:03.960 --> 00:38:07.580]   veis aquí
+[00:38:07.580 --> 00:38:08.260]   primero de todo
+[00:38:08.260 --> 00:38:08.960]   esto filtra
+[00:38:08.960 --> 00:38:10.540]   tres estrellas
+[00:38:10.540 --> 00:38:10.740]   vale
+[00:38:10.740 --> 00:38:13.240]   esto filtra
+[00:38:13.240 --> 00:38:14.680]   tres estrellas
+[00:38:14.680 --> 00:38:16.040]   no va
+[00:38:16.040 --> 00:38:16.480]   ni a una
+[00:38:16.480 --> 00:38:17.240]   ni a dos estrellas
+[00:38:17.240 --> 00:38:17.740]   todas las empresas
+[00:38:17.740 --> 00:38:18.220]   de fondeo
+[00:38:18.220 --> 00:38:18.560]   te dicen
+[00:38:18.560 --> 00:38:19.200]   tres estrellas
+[00:38:19.200 --> 00:38:19.340]   vale
+[00:38:19.340 --> 00:38:19.600]   es verdad
+[00:38:19.600 --> 00:38:20.060]   que cada empresa
+[00:38:20.060 --> 00:38:20.400]   de fondeo
+[00:38:20.400 --> 00:38:21.200]   tiene su calendario
+[00:38:21.200 --> 00:38:22.340]   pero nosotros
+[00:38:22.340 --> 00:38:23.300]   como somos algorímicos
+[00:38:23.300 --> 00:38:23.920]   lo tenemos que coger
+[00:38:23.920 --> 00:38:24.460]   de algún sitio
+[00:38:24.460 --> 00:38:25.400]   no lo que hacemos de investing
+[00:38:25.400 --> 00:38:26.080]   es de otra API
+[00:38:26.080 --> 00:38:26.260]   vale
+[00:38:26.260 --> 00:38:28.260]   pero que sepáis que
+[00:38:28.260 --> 00:38:29.860]   está coordinado con investing
+[00:38:29.860 --> 00:38:31.860]   por tanto
+[00:38:31.860 --> 00:38:33.640]   lo que filtramos nosotros es
+[00:38:33.640 --> 00:38:37.060]   categorías
+[00:38:37.060 --> 00:38:39.820]   importancia
+[00:38:39.820 --> 00:38:40.460]   high
+[00:38:40.460 --> 00:38:42.400]   países
+[00:38:42.400 --> 00:38:43.560]   la moneda
+[00:38:43.560 --> 00:38:45.220]   que monedas
+[00:38:45.220 --> 00:38:46.180]   vamos a tener en cuenta
+[00:38:46.180 --> 00:38:46.900]   si yo estoy operando
+[00:38:46.900 --> 00:38:47.440]   el euro dólar
+[00:38:47.440 --> 00:38:49.340]   que noticias
+[00:38:49.340 --> 00:38:50.380]   voy a tener en cuenta
+[00:38:50.380 --> 00:38:51.220]   el euro y el dólar
+[00:38:51.220 --> 00:38:52.260]   vale
+[00:38:52.260 --> 00:38:52.700]   por tanto
+[00:38:52.700 --> 00:38:55.420]   yo aquí
+[00:38:55.420 --> 00:38:56.440]   le voy a dejar
+[00:38:56.440 --> 00:38:57.220]   el euro
+[00:38:57.220 --> 00:38:57.900]   y el dólar
+[00:38:57.900 --> 00:38:59.000]   es posible
+[00:38:59.000 --> 00:38:59.940]   que haya alguna empresa
+[00:38:59.940 --> 00:39:00.280]   de fondeo
+[00:39:00.280 --> 00:39:01.180]   que sea tiquismiquis
+[00:39:01.180 --> 00:39:03.560]   y es decir
+[00:39:03.560 --> 00:39:04.680]   esto serían
+[00:39:04.680 --> 00:39:05.980]   noticias de Europa
+[00:39:05.980 --> 00:39:06.900]   y Estados Unidos
+[00:39:06.900 --> 00:39:08.140]   las demás
+[00:39:08.140 --> 00:39:08.940]   no me importan
+[00:39:08.940 --> 00:39:09.720]   es posible
+[00:39:09.720 --> 00:39:10.280]   que haya alguna empresa
+[00:39:10.280 --> 00:39:10.540]   de fondeo
+[00:39:10.540 --> 00:39:11.340]   que ponga tiquismiquis
+[00:39:11.340 --> 00:39:11.580]   tipo
+[00:39:11.580 --> 00:39:12.600]   ahora opera el euro dólar
+[00:39:12.600 --> 00:39:13.260]   y había una noticia
+[00:39:13.260 --> 00:39:13.760]   importante
+[00:39:13.760 --> 00:39:15.020]   en el canadiense
+[00:39:15.020 --> 00:39:16.700]   pero no creo
+[00:39:16.700 --> 00:39:16.980]   vale
+[00:39:16.980 --> 00:39:17.420]   pero bueno
+[00:39:17.420 --> 00:39:18.200]   hay cada uno
+[00:39:18.200 --> 00:39:19.020]   que se cubra
+[00:39:19.020 --> 00:39:20.020]   como prefiera
+[00:39:20.020 --> 00:39:21.100]   vale
+[00:39:21.100 --> 00:39:21.780]   ahora si voy a poner
+[00:39:21.780 --> 00:39:22.880]   la ronda seña
+[00:39:22.880 --> 00:39:27.420]   voy a aceptar
+[00:39:27.420 --> 00:39:30.980]   y todo me aseguro
+[00:39:30.980 --> 00:39:31.280]   que
+[00:39:31.280 --> 00:39:40.120]   vale
+[00:39:40.120 --> 00:39:44.660]   vale
+[00:39:44.660 --> 00:39:45.540]   vale pues fijaros aquí
+[00:39:45.540 --> 00:39:47.260]   en el log
+[00:39:47.260 --> 00:39:47.580]   dice
+[00:39:47.580 --> 00:39:48.260]   news manager
+[00:39:48.260 --> 00:39:49.160]   he iniciado
+[00:39:49.160 --> 00:39:50.280]   modo
+[00:39:50.280 --> 00:39:51.060]   este modo
+[00:39:51.060 --> 00:39:52.120]   noticias económicas
+[00:39:52.120 --> 00:39:52.880]   detectadas
+[00:39:52.880 --> 00:39:53.860]   ocho noticias
+[00:39:53.860 --> 00:39:55.120]   programadas
+[00:39:55.120 --> 00:40:00.420]   esto creo que es para hoy
+[00:40:00.420 --> 00:40:01.100]   lo que pasa es que hoy
+[00:40:01.100 --> 00:40:01.580]   ya han pasado
+[00:40:01.580 --> 00:40:03.240]   las noticias
+[00:40:03.240 --> 00:40:05.020]   por eso os digo también
+[00:40:05.020 --> 00:40:06.140]   no hagáis estrategias
+[00:40:06.140 --> 00:40:06.880]   haced estrategias
+[00:40:06.880 --> 00:40:07.640]   que abren y cierran
+[00:40:07.640 --> 00:40:08.500]   rápido
+[00:40:08.500 --> 00:40:10.720]   porque si no
+[00:40:10.720 --> 00:40:11.660]   cada dos por tres
+[00:40:11.660 --> 00:40:12.800]   pues os estará cerrando
+[00:40:12.800 --> 00:40:13.380]   por noticias
+[00:40:13.380 --> 00:40:13.900]   también
+[00:40:13.900 --> 00:40:14.360]   vale
+[00:40:14.360 --> 00:40:16.200]   así que ahora
+[00:40:16.200 --> 00:40:16.900]   tenemos conectado
+[00:40:16.900 --> 00:40:20.540]   la explicación
+[00:40:20.540 --> 00:40:21.060]   hasta aquí
+[00:40:21.060 --> 00:40:22.340]   ahora antes de ir a
+[00:40:22.340 --> 00:40:22.960]   preguntas
+[00:40:22.960 --> 00:40:23.680]   os enseño
+[00:40:23.680 --> 00:40:24.520]   la movida de ayer
+[00:40:24.520 --> 00:40:26.800]   la movida de ayer
+[00:40:26.800 --> 00:40:27.800]   que son estas dos de aquí
+[00:40:27.800 --> 00:40:32.400]   fíjate
+[00:40:32.400 --> 00:40:35.140]   noticia activa
+[00:40:35.140 --> 00:40:35.440]   hoy
+[00:40:35.440 --> 00:40:36.080]   bueno primero
+[00:40:36.080 --> 00:40:36.700]   el historial
+[00:40:36.700 --> 00:40:36.900]   vale
+[00:40:36.900 --> 00:40:39.600]   esta es la cuenta
+[00:40:39.600 --> 00:40:40.520]   master
+[00:40:40.520 --> 00:40:41.540]   de acuerdo
+[00:40:41.540 --> 00:40:43.200]   ayer me perdió
+[00:40:43.200 --> 00:40:44.080]   dos mil cien dólares
+[00:40:44.080 --> 00:40:45.480]   y hoy me ha perdido
+[00:40:45.480 --> 00:40:45.900]   dos tres
+[00:40:45.900 --> 00:40:46.800]   yo aquí le tengo
+[00:40:46.800 --> 00:40:47.620]   dos tres al día
+[00:40:47.620 --> 00:40:47.940]   ¿por qué?
+[00:40:47.980 --> 00:40:48.440]   porque arriesgo
+[00:40:48.440 --> 00:40:49.580]   2,1%
+[00:40:49.580 --> 00:40:50.960]   como podéis ver
+[00:40:50.960 --> 00:40:51.980]   porque aquí
+[00:40:51.980 --> 00:40:53.100]   tengo Wall Street Fund
+[00:40:53.100 --> 00:40:54.400]   no puedo ir al 4%
+[00:40:54.400 --> 00:40:54.560]   vale
+[00:40:54.560 --> 00:40:54.920]   la nueva
+[00:40:54.920 --> 00:40:55.600]   sí que hemos hecho
+[00:40:55.600 --> 00:40:56.120]   4%
+[00:40:56.120 --> 00:40:56.580]   en esta no
+[00:40:56.580 --> 00:40:57.720]   por tanto
+[00:40:57.720 --> 00:40:58.600]   ayer perdí
+[00:40:58.600 --> 00:40:59.540]   en esta cuenta
+[00:40:59.540 --> 00:41:00.240]   menos dos mil
+[00:41:00.240 --> 00:41:01.220]   ahora veréis en la otra
+[00:41:01.220 --> 00:41:02.500]   la tengo aquí
+[00:41:02.500 --> 00:41:03.700]   en historial
+[00:41:03.700 --> 00:41:04.820]   tengo más dos mil
+[00:41:04.820 --> 00:41:05.320]   fijaros
+[00:41:05.320 --> 00:41:06.140]   las comisiones
+[00:41:06.140 --> 00:41:06.740]   como nos está
+[00:41:06.740 --> 00:41:07.220]   un poco
+[00:41:07.220 --> 00:41:08.340]   mermando
+[00:41:08.340 --> 00:41:09.240]   la que está perdiendo
+[00:41:09.240 --> 00:41:11.240]   y luego
+[00:41:11.240 --> 00:41:11.920]   aquí lo he ganado
+[00:41:11.920 --> 00:41:12.920]   y aquí lo he perdido
+[00:41:12.920 --> 00:41:14.100]   bien
+[00:41:14.100 --> 00:41:16.460]   fijaros
+[00:41:16.460 --> 00:41:17.540]   que tanto esta
+[00:41:17.540 --> 00:41:18.160]   como esta
+[00:41:18.160 --> 00:41:19.980]   no me han llegado
+[00:41:19.980 --> 00:41:20.600]   al dos mil
+[00:41:20.600 --> 00:41:21.700]   y pico
+[00:41:21.700 --> 00:41:23.740]   porque me la ha cortado
+[00:41:23.740 --> 00:41:25.280]   una noticia económica
+[00:41:25.280 --> 00:41:27.860]   me la han cortado
+[00:41:27.860 --> 00:41:28.680]   una noticia económica
+[00:41:28.680 --> 00:41:29.800]   y esto me sale
+[00:41:29.800 --> 00:41:30.900]   en el master
+[00:41:30.900 --> 00:41:31.440]   fijaros
+[00:41:31.440 --> 00:41:33.380]   trading detenido
+[00:41:33.380 --> 00:41:34.340]   todas las posiciones
+[00:41:34.340 --> 00:41:34.940]   cerradas
+[00:41:34.940 --> 00:41:36.900]   yo tendría que haber revisado
+[00:41:36.900 --> 00:41:37.660]   en Wall Street Fund
+[00:41:37.660 --> 00:41:38.240]   ahora ya sé
+[00:41:38.240 --> 00:41:39.400]   que lo puedo habilitar
+[00:41:39.400 --> 00:41:40.660]   y en The Trading Pit
+[00:41:40.660 --> 00:41:42.320]   yo sé
+[00:41:42.320 --> 00:41:43.640]   que no me tiene que cerrar
+[00:41:43.640 --> 00:41:44.240]   las operaciones
+[00:41:44.240 --> 00:41:45.800]   por tanto
+[00:41:45.800 --> 00:41:46.420]   este modo
+[00:41:46.420 --> 00:41:47.060]   yo ahora mismo
+[00:41:47.060 --> 00:41:47.880]   lo puedo cambiar
+[00:41:47.880 --> 00:41:49.980]   que son estas dos
+[00:41:49.980 --> 00:41:50.180]   de aquí
+[00:41:50.180 --> 00:41:50.840]   The Trading Pit
+[00:41:50.840 --> 00:41:55.160]   le voy a cambiar
+[00:41:55.160 --> 00:41:55.880]   Use Manager
+[00:41:55.880 --> 00:41:56.660]   bueno no
+[00:41:56.660 --> 00:41:57.320]   no lo voy a cambiar ahora
+[00:41:57.320 --> 00:41:57.880]   porque si no se va a ver
+[00:41:57.880 --> 00:41:58.380]   mi contraseña
+[00:41:58.380 --> 00:41:58.540]   ¿vale?
+[00:41:59.000 --> 00:41:59.740]   pero lo haré luego
+[00:41:59.740 --> 00:42:00.680]   le voy a cambiar
+[00:42:00.680 --> 00:42:01.080]   y voy a poner
+[00:42:01.080 --> 00:42:02.100]   solo que no me abra
+[00:42:02.100 --> 00:42:02.720]   operaciones nuevas
+[00:42:02.720 --> 00:42:03.220]   pero fijaros
+[00:42:03.220 --> 00:42:03.560]   hoy
+[00:42:03.560 --> 00:42:05.020]   trading detenido
+[00:42:05.020 --> 00:42:06.960]   una vez
+[00:42:06.960 --> 00:42:07.940]   y trading detenido
+[00:42:07.940 --> 00:42:08.540]   dos veces
+[00:42:08.540 --> 00:42:10.280]   y te dice
+[00:42:10.280 --> 00:42:10.980]   mira la noticia
+[00:42:10.980 --> 00:42:12.200]   es a las 14.45
+[00:42:12.200 --> 00:42:13.860]   protección
+[00:42:13.860 --> 00:42:15.400]   hasta las 14.47
+[00:42:15.400 --> 00:42:16.220]   os lo dice
+[00:42:16.220 --> 00:42:16.820]   todo aquí
+[00:42:16.820 --> 00:42:18.680]   ¿vale?
+[00:42:18.740 --> 00:42:19.640]   pues si necesitáis ver
+[00:42:19.640 --> 00:42:20.500]   qué es lo que ha hecho
+[00:42:20.500 --> 00:42:21.120]   durante el día
+[00:42:21.120 --> 00:42:22.800]   os leís este log
+[00:42:22.800 --> 00:42:25.520]   y hoy me he cerrado
+[00:42:25.520 --> 00:42:26.200]   dos operaciones
+[00:42:26.200 --> 00:42:26.620]   en
+[00:42:26.620 --> 00:42:27.180]   bueno
+[00:42:27.180 --> 00:42:28.280]   por noticias
+[00:42:28.280 --> 00:42:28.720]   pero bueno
+[00:42:28.720 --> 00:42:29.420]   tengo una cuenta
+[00:42:29.420 --> 00:42:29.960]   en
+[00:42:29.960 --> 00:42:32.560]   en menos 1600
+[00:42:32.560 --> 00:42:34.360]   menos 1600
+[00:42:34.360 --> 00:42:37.220]   y tengo otra cuenta
+[00:42:37.220 --> 00:42:37.540]   en
+[00:42:37.540 --> 00:42:39.080]   en más 1200
+[00:42:39.080 --> 00:42:40.440]   fijaros las comisiones
+[00:42:40.440 --> 00:42:41.580]   esto tendré que ir a ver
+[00:42:41.580 --> 00:42:41.920]   el
+[00:42:41.920 --> 00:42:43.520]   lo que me habéis contado
+[00:42:43.520 --> 00:42:43.920]   del
+[00:42:43.920 --> 00:42:45.580]   de los índices
+[00:42:45.580 --> 00:42:46.440]   porque las comisiones
+[00:42:46.440 --> 00:42:47.120]   comen mucho
+[00:42:47.120 --> 00:42:48.460]   yo ahí he tenido
+[00:42:48.460 --> 00:42:49.000]   una merma de
+[00:42:49.000 --> 00:42:49.920]   400 dólares
+[00:42:49.920 --> 00:42:51.180]   cuando sucede
+[00:42:51.180 --> 00:42:51.640]   esto
+[00:42:51.640 --> 00:42:54.060]   a lo mejor
+[00:42:54.060 --> 00:42:54.820]   en algún momento
+[00:42:54.820 --> 00:42:57.220]   habrá que reajustar
+[00:42:57.220 --> 00:42:58.140]   en los últimos trades
+[00:42:58.140 --> 00:42:59.420]   el riesgo que asumimos
+[00:42:59.420 --> 00:43:00.540]   poner un pelín más
+[00:43:00.540 --> 00:43:01.600]   por recuperar
+[00:43:01.600 --> 00:43:02.000]   esa pérdida
+[00:43:02.000 --> 00:43:02.440]   pero bueno
+[00:43:02.440 --> 00:43:03.780]   esto es lo que pasa
+[00:43:03.780 --> 00:43:04.420]   con las comisiones
+[00:43:04.420 --> 00:43:05.560]   creo que la solución
+[00:43:05.560 --> 00:43:06.740]   como me habéis comentado
+[00:43:06.740 --> 00:43:07.660]   es ir a índices
+[00:43:07.660 --> 00:43:08.960]   pero lo tengo que analizar
+[00:43:08.960 --> 00:43:09.500]   primero ¿vale?
+[00:43:09.500 --> 00:43:09.880]   que no
+[00:43:09.880 --> 00:43:11.480]   que no haya nada raro
+[00:43:11.480 --> 00:43:15.360]   dudas
+[00:43:15.360 --> 00:43:15.900]   ahora es así
+[00:43:15.900 --> 00:43:16.900]   ya no tengo nada más
+[00:43:16.900 --> 00:43:17.480]   que contar hoy
+[00:43:17.480 --> 00:43:18.140]   dudas
+[00:43:18.140 --> 00:43:19.740]   digamos ya casi dos horas
+[00:43:19.740 --> 00:43:19.940]   ¿eh?
+[00:43:20.740 --> 00:43:20.960]   ay
+[00:43:20.960 --> 00:43:22.500]   no sé
+[00:43:22.500 --> 00:43:23.260]   he puesto solicita
+[00:43:23.260 --> 00:43:24.120]   reactivar audio
+[00:43:24.120 --> 00:43:24.440]   a alguien
+[00:43:24.440 --> 00:43:26.140]   voy a ir al chat
+[00:43:26.140 --> 00:43:28.160]   que veo que
+[00:43:28.160 --> 00:43:29.180]   creo que hay muchos
+[00:43:29.180 --> 00:43:29.920]   creo que habéis hablado
+[00:43:29.920 --> 00:43:30.680]   entre vosotros ¿vale?
+[00:43:37.000 --> 00:43:37.820]   los límites
+[00:43:37.820 --> 00:43:38.560]   de drawdown diario
+[00:43:38.560 --> 00:43:39.440]   que controlo copiador
+[00:43:39.440 --> 00:43:40.200]   también lo tiene en cuenta
+[00:43:40.200 --> 00:43:41.160]   si es drawdown estático
+[00:43:41.160 --> 00:43:41.380]   no
+[00:43:41.380 --> 00:43:43.500]   esto lo tendréis
+[00:43:43.500 --> 00:43:43.820]   que vosotros
+[00:43:43.820 --> 00:43:44.660]   cambiar manualmente
+[00:43:44.660 --> 00:43:45.120]   cada día
+[00:43:45.120 --> 00:43:48.380]   no
+[00:43:48.380 --> 00:43:58.000]   el límite diario
+[00:43:58.000 --> 00:43:58.640]   sí que habría que dejar
+[00:43:58.640 --> 00:43:58.820]   vale
+[00:43:58.820 --> 00:43:59.420]   esto de cuatro
+[00:43:59.420 --> 00:44:00.020]   lo he contestado
+[00:44:00.020 --> 00:44:00.640]   en el momento
+[00:44:00.640 --> 00:44:03.720]   de todas formas
+[00:44:03.720 --> 00:44:03.960]   Ramón
+[00:44:03.960 --> 00:44:04.580]   si no pones
+[00:44:04.580 --> 00:44:05.240]   lo de una operación
+[00:44:05.240 --> 00:44:05.620]   al día
+[00:44:05.620 --> 00:44:07.060]   nada más
+[00:44:07.060 --> 00:44:10.060]   que por el límite
+[00:44:10.060 --> 00:44:10.520]   de ganancia
+[00:44:10.520 --> 00:44:10.920]   o pérdida
+[00:44:10.920 --> 00:44:11.420]   ya lo estaría
+[00:44:11.420 --> 00:44:12.000]   también limitando
+[00:44:12.000 --> 00:44:12.140]   ¿no?
+[00:44:12.860 --> 00:44:13.500]   no porque
+[00:44:13.500 --> 00:44:16.000]   sí
+[00:44:16.000 --> 00:44:16.560]   pero
+[00:44:16.560 --> 00:44:18.520]   a la que no cuadre
+[00:44:18.520 --> 00:44:19.160]   un euro
+[00:44:19.160 --> 00:44:19.820]   o un dólar
+[00:44:19.820 --> 00:44:20.320]   te va a abrir
+[00:44:20.320 --> 00:44:21.160]   una siguiente operación
+[00:44:21.160 --> 00:44:21.780]   y se te va a cerrar
+[00:44:21.780 --> 00:44:22.280]   al momento
+[00:44:22.280 --> 00:44:23.820]   yo lo pondría
+[00:44:23.820 --> 00:44:27.280]   Godoy
+[00:44:27.280 --> 00:44:28.160]   lo del modo inverso
+[00:44:28.160 --> 00:44:28.960]   es para hacerla
+[00:44:28.960 --> 00:44:29.500]   claro
+[00:44:29.500 --> 00:44:30.720]   esto se basa
+[00:44:30.720 --> 00:44:30.940]   todo
+[00:44:30.940 --> 00:44:31.200]   todo
+[00:44:31.200 --> 00:44:32.040]   todo este
+[00:44:32.040 --> 00:44:34.760]   es para ganar
+[00:44:34.760 --> 00:44:35.240]   una y la otra
+[00:44:35.240 --> 00:44:35.740]   perderla
+[00:44:35.740 --> 00:44:37.020]   para controlar
+[00:44:37.020 --> 00:44:37.500]   que tengas
+[00:44:37.500 --> 00:44:38.060]   una pasada
+[00:44:38.060 --> 00:44:40.320]   si tienes cuentas
+[00:44:40.320 --> 00:44:40.680]   de fondeo
+[00:44:40.680 --> 00:44:41.240]   de diferente valor
+[00:44:41.240 --> 00:44:41.660]   hay probabilidades
+[00:44:41.660 --> 00:44:42.020]   de que pierdas
+[00:44:42.020 --> 00:44:42.760]   la más costosa
+[00:44:42.760 --> 00:44:43.060]   o no
+[00:44:43.060 --> 00:44:43.920]   no
+[00:44:43.920 --> 00:44:44.560]   no tiene por qué
+[00:44:44.560 --> 00:44:47.060]   no tiene por qué
+[00:44:47.060 --> 00:44:48.060]   tener más posibilidades
+[00:44:48.060 --> 00:44:50.820]   mira
+[00:44:50.820 --> 00:44:51.220]   una persona
+[00:44:51.220 --> 00:44:51.760]   que acaba de
+[00:44:51.760 --> 00:44:52.500]   pasar una
+[00:44:52.500 --> 00:44:53.460]   llegar a
+[00:44:53.460 --> 00:44:55.060]   a la primera fase
+[00:44:55.060 --> 00:44:55.620]   de HSELECT
+[00:44:55.620 --> 00:44:56.080]   enhorabuena
+[00:44:56.080 --> 00:44:57.120]   enhorabuena
+[00:44:57.120 --> 00:44:57.440]   Eduard
+[00:44:57.440 --> 00:44:59.420]   si la empresa
+[00:44:59.420 --> 00:45:00.820]   de fondeo
+[00:45:00.820 --> 00:45:01.380]   no deja operar
+[00:45:01.380 --> 00:45:02.060]   en cualquier noticia
+[00:45:02.060 --> 00:45:02.560]   de alta impact
+[00:45:02.560 --> 00:45:02.880]   vale
+[00:45:02.880 --> 00:45:04.580]   después de un año
+[00:45:04.580 --> 00:45:04.960]   los alumnos
+[00:45:04.960 --> 00:45:05.300]   perdemos
+[00:45:05.300 --> 00:45:06.140]   el CESIMBOL STAT
+[00:45:06.140 --> 00:45:07.020]   esto es
+[00:45:07.020 --> 00:45:08.240]   estas herramientas
+[00:45:08.240 --> 00:45:09.180]   solo están activas
+[00:45:09.180 --> 00:45:10.040]   si tenéis un usuario
+[00:45:10.040 --> 00:45:10.900]   activo con nosotros
+[00:45:10.900 --> 00:45:12.540]   que eso creo que es
+[00:45:12.540 --> 00:45:13.340]   la pregunta de Simón
+[00:45:13.340 --> 00:45:16.820]   tenéis que tener
+[00:45:16.820 --> 00:45:17.000]   la
+[00:45:17.000 --> 00:45:17.840]   obviamente
+[00:45:17.840 --> 00:45:19.020]   estar con nosotros
+[00:45:19.020 --> 00:45:19.400]   nuestra
+[00:45:19.400 --> 00:45:20.680]   comunidad
+[00:45:20.680 --> 00:45:23.460]   parece que
+[00:45:23.460 --> 00:45:23.940]   no nos serviría
+[00:45:23.940 --> 00:45:24.400]   porque no cumple
+[00:45:24.400 --> 00:45:25.260]   la regla de consistencia
+[00:45:25.260 --> 00:45:26.780]   porque no lo debería cumplir
+[00:45:26.780 --> 00:45:27.880]   la regla de consistencia
+[00:45:27.880 --> 00:45:31.020]   el sistema es muy torramón
+[00:45:31.020 --> 00:45:31.600]   gracias Izan
+[00:45:31.600 --> 00:45:34.800]   es posible tener
+[00:45:34.800 --> 00:45:35.520]   los tres ficheros
+[00:45:35.520 --> 00:45:36.240]   o por lo menos
+[00:45:36.240 --> 00:45:36.860]   el pdf
+[00:45:36.860 --> 00:45:37.480]   abajo del vídeo
+[00:45:37.480 --> 00:45:39.520]   que
+[00:45:39.520 --> 00:45:40.340]   bueno
+[00:45:40.340 --> 00:45:40.780]   esto lo
+[00:45:40.780 --> 00:45:41.000]   no
+[00:45:41.000 --> 00:45:42.340]   esto lo tendréis
+[00:45:42.340 --> 00:45:42.740]   en
+[00:45:42.740 --> 00:45:44.900]   los ficheros
+[00:45:44.900 --> 00:45:45.900]   todos los tenéis
+[00:45:45.900 --> 00:45:48.020]   en la web
+[00:45:48.020 --> 00:45:48.560]   vale
+[00:45:48.560 --> 00:45:52.900]   esto lo tenéis aquí
+[00:45:52.900 --> 00:45:54.040]   todos los ficheros
+[00:45:54.040 --> 00:45:54.300]   hay
+[00:45:54.300 --> 00:45:55.300]   en la sesión invalida
+[00:45:55.300 --> 00:45:55.520]   ahora
+[00:45:55.520 --> 00:45:59.360]   esto lo tenéis
+[00:45:59.360 --> 00:45:59.920]   expert app
+[00:45:59.920 --> 00:46:00.400]   esos tenéis
+[00:46:00.400 --> 00:46:01.120]   el de copy trading
+[00:46:01.120 --> 00:46:02.000]   que ahí os descargaréis
+[00:46:02.000 --> 00:46:02.360]   los dos
+[00:46:02.360 --> 00:46:03.140]   más el tutorial
+[00:46:03.140 --> 00:46:04.540]   y el new manager
+[00:46:04.540 --> 00:46:05.080]   que también tiene
+[00:46:05.080 --> 00:46:05.540]   un tutorial
+[00:46:05.540 --> 00:46:06.120]   de acuerdo
+[00:46:06.120 --> 00:46:07.260]   y esto es
+[00:46:07.260 --> 00:46:07.840]   el parcheador
+[00:46:07.840 --> 00:46:08.400]   que debéis de pasar
+[00:46:08.400 --> 00:46:09.160]   los robots
+[00:46:09.160 --> 00:46:09.520]   por aquí
+[00:46:09.520 --> 00:46:17.800]   gran cuentito
+[00:46:17.800 --> 00:46:18.200]   ya ves
+[00:46:18.200 --> 00:46:18.660]   a mí me ha venido
+[00:46:18.660 --> 00:46:19.040]   esta semana
+[00:46:19.040 --> 00:46:19.320]   este
+[00:46:19.320 --> 00:46:20.560]   cuentito
+[00:46:20.560 --> 00:46:21.140]   sería tremendamente
+[00:46:21.140 --> 00:46:21.440]   interesante
+[00:46:21.440 --> 00:46:21.820]   que nos cuentes
+[00:46:21.820 --> 00:46:22.520]   cómo te va yendo
+[00:46:22.520 --> 00:46:22.900]   a día a día
+[00:46:22.900 --> 00:46:23.500]   con esta metodología
+[00:46:23.500 --> 00:46:23.900]   para ir viendo
+[00:46:23.900 --> 00:46:24.360]   por si os problemas
+[00:46:24.360 --> 00:46:24.800]   con arreglos
+[00:46:24.800 --> 00:46:25.620]   a ver
+[00:46:25.620 --> 00:46:26.680]   te os lo puedo decir
+[00:46:26.680 --> 00:46:27.240]   Iván también
+[00:46:27.240 --> 00:46:29.240]   yo os lo expliqué
+[00:46:29.240 --> 00:46:29.740]   al principio
+[00:46:29.740 --> 00:46:31.000]   nos complicamos
+[00:46:31.000 --> 00:46:31.600]   muchísimo
+[00:46:31.600 --> 00:46:32.560]   con gestión de escalado
+[00:46:32.560 --> 00:46:32.800]   y tal
+[00:46:32.800 --> 00:46:33.620]   que tenéis la herramienta
+[00:46:33.620 --> 00:46:33.740]   ahí
+[00:46:33.740 --> 00:46:34.480]   ya que la hemos desarrollado
+[00:46:34.480 --> 00:46:35.100]   pues la tenéis ahí
+[00:46:35.100 --> 00:46:36.260]   porque a alguien
+[00:46:36.260 --> 00:46:36.960]   le puede servir
+[00:46:36.960 --> 00:46:37.400]   para algo
+[00:46:37.400 --> 00:46:38.620]   pero al final
+[00:46:38.620 --> 00:46:40.060]   dijimos tú
+[00:46:40.060 --> 00:46:40.880]   lo sencillo
+[00:46:40.880 --> 00:46:41.360]   es lo que funciona
+[00:46:41.360 --> 00:46:41.640]   mejor
+[00:46:41.640 --> 00:46:43.020]   lo más predecible
+[00:46:43.020 --> 00:46:43.480]   lo que os he dicho
+[00:46:43.480 --> 00:46:44.160]   es más predecible
+[00:46:44.160 --> 00:46:44.600]   por lo tanto
+[00:46:44.600 --> 00:46:46.340]   vamos con esto
+[00:46:46.340 --> 00:46:46.780]   yo esto
+[00:46:46.780 --> 00:46:47.760]   empecé ayer
+[00:46:47.760 --> 00:46:48.180]   Andrés
+[00:46:48.180 --> 00:46:50.680]   durante todos estos meses
+[00:46:50.680 --> 00:46:51.520]   no he podido comprar
+[00:46:51.520 --> 00:46:52.220]   cuentas de 100.000
+[00:46:52.220 --> 00:46:53.440]   porque estábamos comprando
+[00:46:53.440 --> 00:46:54.280]   a mi nombre
+[00:46:54.280 --> 00:46:55.600]   muchas cuentas
+[00:46:55.600 --> 00:46:56.080]   de 10.000
+[00:46:56.080 --> 00:46:56.600]   20.000
+[00:46:56.600 --> 00:46:57.640]   para hacer pruebas
+[00:46:57.640 --> 00:46:58.440]   muchas evaluaciones
+[00:46:58.440 --> 00:46:58.980]   hemos pasado
+[00:46:58.980 --> 00:46:59.860]   he comprado
+[00:46:59.860 --> 00:47:00.920]   y por lo tanto
+[00:47:00.920 --> 00:47:01.840]   no tenía cabida
+[00:47:01.840 --> 00:47:02.540]   para poder comprar
+[00:47:02.540 --> 00:47:03.200]   nuevas de 100.000
+[00:47:03.200 --> 00:47:04.440]   ahora sí
+[00:47:04.440 --> 00:47:05.420]   ya lo hago yo
+[00:47:05.420 --> 00:47:06.400]   ya con Iván
+[00:47:06.400 --> 00:47:07.280]   hemos cerrado
+[00:47:07.280 --> 00:47:07.740]   este
+[00:47:07.740 --> 00:47:10.860]   todo este proyecto
+[00:47:10.860 --> 00:47:11.220]   que hemos hecho
+[00:47:11.220 --> 00:47:11.620]   con esto
+[00:47:11.620 --> 00:47:13.340]   y ahora ya pues
+[00:47:13.340 --> 00:47:14.620]   ya voy por mi cuenta
+[00:47:14.620 --> 00:47:15.260]   ya utilizo
+[00:47:15.260 --> 00:47:16.600]   por lo que hemos aprendido
+[00:47:16.600 --> 00:47:17.520]   lo que os estoy enseñando
+[00:47:17.520 --> 00:47:19.300]   ayer mismo empecé
+[00:47:19.300 --> 00:47:19.800]   o sea
+[00:47:19.800 --> 00:47:20.440]   no he empezado
+[00:47:20.440 --> 00:47:21.000]   mucho antes
+[00:47:21.000 --> 00:47:21.960]   que vosotros
+[00:47:21.960 --> 00:47:28.300]   vale
+[00:47:28.300 --> 00:47:28.920]   voy a hacer un paro
+[00:47:28.920 --> 00:47:29.340]   en el chat
+[00:47:29.340 --> 00:47:30.420]   y le doy paso a Gonzalo
+[00:47:30.420 --> 00:47:33.800]   hola Ramón
+[00:47:33.800 --> 00:47:36.080]   por lo que me he dado cuenta
+[00:47:36.080 --> 00:47:37.140]   cuando has mostrado
+[00:47:37.140 --> 00:47:38.800]   los últimos resultados
+[00:47:38.800 --> 00:47:40.380]   de beneficio
+[00:47:40.380 --> 00:47:41.040]   y pérdidas
+[00:47:41.040 --> 00:47:42.320]   en tus dos cuentas
+[00:47:42.320 --> 00:47:44.100]   se te puede dar
+[00:47:44.100 --> 00:47:45.160]   el caso
+[00:47:45.160 --> 00:47:46.240]   catastrófico
+[00:47:46.240 --> 00:47:47.240]   de que
+[00:47:47.240 --> 00:47:49.040]   pierdas una
+[00:47:49.040 --> 00:47:49.680]   y la otra
+[00:47:49.680 --> 00:47:51.080]   no llegues
+[00:47:51.080 --> 00:47:52.740]   al objetivo
+[00:47:52.740 --> 00:47:54.080]   ese es el riesgo
+[00:47:54.080 --> 00:47:54.320]   sí
+[00:47:54.320 --> 00:47:55.860]   hay que afinar bien eso
+[00:47:55.860 --> 00:47:56.520]   de hecho yo ahora
+[00:47:56.520 --> 00:47:57.400]   aquí he perdido
+[00:47:57.400 --> 00:47:58.420]   500 dólares
+[00:47:58.420 --> 00:47:59.320]   por eso
+[00:47:59.320 --> 00:48:00.680]   tengo que
+[00:48:00.680 --> 00:48:01.460]   una de dos
+[00:48:01.460 --> 00:48:03.340]   a la configuración
+[00:48:03.340 --> 00:48:03.860]   que estoy ahora
+[00:48:03.860 --> 00:48:04.680]   creo que para
+[00:48:04.680 --> 00:48:06.060]   arriesgar 2,1 no vale
+[00:48:06.060 --> 00:48:06.980]   ahí debería ir
+[00:48:06.980 --> 00:48:08.100]   a arriesgar al 4%
+[00:48:08.100 --> 00:48:09.260]   para ganarla
+[00:48:09.260 --> 00:48:11.300]   en 2, 3 o 4 trades
+[00:48:11.300 --> 00:48:11.760]   no más
+[00:48:11.760 --> 00:48:13.640]   puedo
+[00:48:13.640 --> 00:48:15.040]   aumentar más
+[00:48:15.040 --> 00:48:15.600]   el espacio
+[00:48:15.600 --> 00:48:16.420]   de esta forma
+[00:48:16.420 --> 00:48:17.380]   no tengo que abrir
+[00:48:17.380 --> 00:48:18.380]   tanto lote
+[00:48:18.380 --> 00:48:19.180]   por tanto la comisión
+[00:48:19.180 --> 00:48:19.900]   no es tan elevada
+[00:48:19.900 --> 00:48:21.440]   o puedo ir a hacerlo
+[00:48:21.440 --> 00:48:22.520]   en activos
+[00:48:22.520 --> 00:48:23.200]   sin comisión
+[00:48:23.200 --> 00:48:23.940]   que creo que será
+[00:48:23.940 --> 00:48:24.860]   la solución definitiva
+[00:48:24.860 --> 00:48:26.460]   esto lo estudiaré bien
+[00:48:26.460 --> 00:48:27.040]   este fin de semana
+[00:48:27.040 --> 00:48:28.440]   y probablemente
+[00:48:28.440 --> 00:48:29.440]   la cuenta
+[00:48:29.440 --> 00:48:30.100]   que acabo de
+[00:48:30.100 --> 00:48:30.980]   o las dos cuentas
+[00:48:30.980 --> 00:48:31.600]   que acabo de poner
+[00:48:31.600 --> 00:48:33.180]   las cuatro cuentas
+[00:48:33.180 --> 00:48:34.700]   en lugar del euro dólar
+[00:48:34.700 --> 00:48:35.980]   vaya a un índice
+[00:48:35.980 --> 00:48:37.060]   sí
+[00:48:37.060 --> 00:48:37.720]   bueno
+[00:48:37.720 --> 00:48:38.240]   ha sido yo
+[00:48:38.240 --> 00:48:38.800]   quien más o menos
+[00:48:38.800 --> 00:48:39.740]   te lo ha comentado
+[00:48:39.740 --> 00:48:40.780]   yo creo que incluso
+[00:48:40.780 --> 00:48:42.340]   subiendo alguna temporalidad
+[00:48:42.340 --> 00:48:43.220]   de mi 15
+[00:48:43.220 --> 00:48:43.840]   o algo
+[00:48:43.840 --> 00:48:44.720]   yo creo que
+[00:48:44.720 --> 00:48:45.840]   se puede sacar algo
+[00:48:45.840 --> 00:48:46.280]   pero bueno
+[00:48:46.280 --> 00:48:47.440]   quedamos a la espera
+[00:48:47.440 --> 00:48:48.920]   aumentar temporalidad
+[00:48:48.920 --> 00:48:49.180]   lo dices
+[00:48:49.180 --> 00:48:50.120]   para dejar mal espacio
+[00:48:50.120 --> 00:48:50.280]   ¿no?
+[00:48:50.920 --> 00:48:51.420]   sí, sí
+[00:48:51.420 --> 00:48:52.480]   para que se abra
+[00:48:52.480 --> 00:48:53.820]   y no haya problemas
+[00:48:53.820 --> 00:48:55.700]   pero bueno
+[00:48:55.700 --> 00:48:56.800]   tú otro es el que sabe
+[00:48:56.800 --> 00:48:57.840]   y quedamos a la espera
+[00:48:57.840 --> 00:48:58.980]   vale
+[00:48:58.980 --> 00:49:02.000]   oa González
+[00:49:02.000 --> 00:49:03.560]   sí
+[00:49:03.560 --> 00:49:05.800]   una preguntita
+[00:49:05.800 --> 00:49:06.500]   porque estabas hablando
+[00:49:06.500 --> 00:49:07.060]   posiblemente
+[00:49:07.060 --> 00:49:07.900]   por desconocimiento
+[00:49:07.900 --> 00:49:08.580]   así que perdón
+[00:49:08.580 --> 00:49:09.920]   si ya alguien lo sabe
+[00:49:09.920 --> 00:49:10.640]   pero
+[00:49:10.640 --> 00:49:11.560]   estabas hablando
+[00:49:11.560 --> 00:49:12.080]   de que pasas
+[00:49:12.080 --> 00:49:12.920]   la primera fase
+[00:49:12.920 --> 00:49:14.080]   ¿qué pasa
+[00:49:14.080 --> 00:49:15.060]   ahora?
+[00:49:15.140 --> 00:49:15.680]   a partir de ahora
+[00:49:15.680 --> 00:49:16.000]   es decir
+[00:49:16.000 --> 00:49:17.500]   tienes la primera fase pasada
+[00:49:17.500 --> 00:49:18.980]   ¿qué es lo que ocurre
+[00:49:18.980 --> 00:49:19.580]   con estas cuentas?
+[00:49:19.620 --> 00:49:20.180]   ¿qué hay que hacer
+[00:49:20.180 --> 00:49:21.340]   para pasar una segunda fase?
+[00:49:21.820 --> 00:49:22.080]   bueno
+[00:49:22.080 --> 00:49:22.860]   tú has visto
+[00:49:22.860 --> 00:49:23.540]   que tengo cuatro
+[00:49:23.540 --> 00:49:23.720]   ahora
+[00:49:23.720 --> 00:49:24.840]   tengo cuatro metatraders
+[00:49:24.840 --> 00:49:25.480]   sí
+[00:49:25.480 --> 00:49:26.560]   ayer conecté dos
+[00:49:26.560 --> 00:49:27.660]   ahora acabo de conectar
+[00:49:27.660 --> 00:49:28.100]   dos más
+[00:49:28.100 --> 00:49:30.340]   de las cuentas
+[00:49:30.340 --> 00:49:31.100]   quien me gane
+[00:49:31.100 --> 00:49:32.520]   de estas dos
+[00:49:32.520 --> 00:49:33.160]   me va a ganar una
+[00:49:33.160 --> 00:49:34.720]   y de estas dos
+[00:49:34.720 --> 00:49:35.300]   me va a ganar otra
+[00:49:35.300 --> 00:49:35.500]   ¿vale?
+[00:49:35.520 --> 00:49:36.460]   por tanto tengo dos cuentas
+[00:49:36.460 --> 00:49:37.100]   en fase dos
+[00:49:37.100 --> 00:49:38.820]   haré lo mismo
+[00:49:38.820 --> 00:49:41.400]   ponerlas en contra
+[00:49:41.400 --> 00:49:42.260]   y una de las dos
+[00:49:42.260 --> 00:49:43.260]   la voy a tener fondeada
+[00:49:43.260 --> 00:49:44.560]   vale
+[00:49:44.560 --> 00:49:46.800]   ¿y tiene otros criterios
+[00:49:46.800 --> 00:49:47.380]   la fase dos?
+[00:49:47.640 --> 00:49:47.940]   es decir
+[00:49:47.940 --> 00:49:48.700]   no
+[00:49:48.700 --> 00:49:49.380]   bueno
+[00:49:49.380 --> 00:49:50.320]   la rentabilidad
+[00:49:50.320 --> 00:49:51.860]   no vayáis al 4%
+[00:49:51.860 --> 00:49:52.780]   y tal 2,5%
+[00:49:52.780 --> 00:49:53.620]   porque solo os piden
+[00:49:53.620 --> 00:49:54.440]   un 5%
+[00:49:54.440 --> 00:49:55.680]   intentad hacerlo
+[00:49:55.680 --> 00:49:57.320]   que tenga dos saltos
+[00:49:57.320 --> 00:49:58.580]   vale
+[00:49:58.580 --> 00:50:00.120]   vale
+[00:50:00.120 --> 00:50:00.820]   muchas gracias
+[00:50:00.820 --> 00:50:01.560]   a ti
+[00:50:01.560 --> 00:50:03.220]   Reme
+[00:50:03.220 --> 00:50:04.520]   Reme Clash
+[00:50:04.520 --> 00:50:05.500]   bueno
+[00:50:05.500 --> 00:50:06.720]   en primer lugar
+[00:50:06.720 --> 00:50:07.500]   agradecerte todo
+[00:50:07.500 --> 00:50:07.960]   porque la verdad
+[00:50:07.960 --> 00:50:08.560]   fue una pasada
+[00:50:08.560 --> 00:50:09.640]   gracias
+[00:50:09.640 --> 00:50:11.220]   y a Iván también
+[00:50:11.220 --> 00:50:11.760]   te da la gracia
+[00:50:11.760 --> 00:50:12.420]   Iván que estaba ahí
+[00:50:12.420 --> 00:50:13.140]   Iván también
+[00:50:13.140 --> 00:50:14.100]   es una maravilla
+[00:50:14.100 --> 00:50:15.180]   siempre está intentando
+[00:50:15.180 --> 00:50:15.760]   aportar algo
+[00:50:15.760 --> 00:50:16.420]   y eso es maravilloso
+[00:50:16.420 --> 00:50:17.740]   bueno aparte de eso
+[00:50:17.740 --> 00:50:18.760]   yo hay una duda
+[00:50:18.760 --> 00:50:19.140]   muy tonta
+[00:50:19.140 --> 00:50:19.680]   pero es que no sé
+[00:50:19.680 --> 00:50:20.700]   si es que no lo oíde
+[00:50:20.700 --> 00:50:22.660]   cuando te lo veas
+[00:50:22.660 --> 00:50:23.220]   en el
+[00:50:23.220 --> 00:50:27.860]   tu correo
+[00:50:27.860 --> 00:50:29.920]   y luego aparte
+[00:50:29.920 --> 00:50:30.520]   tienes que poner
+[00:50:30.520 --> 00:50:31.300]   la contraseña
+[00:50:31.300 --> 00:50:31.860]   de símbolo
+[00:50:31.860 --> 00:50:32.160]   de tal
+[00:50:32.160 --> 00:50:33.020]   sí
+[00:50:33.020 --> 00:50:33.960]   ah vale
+[00:50:33.960 --> 00:50:34.480]   que no sabía
+[00:50:34.480 --> 00:50:35.200]   si era lo de símbolo
+[00:50:35.200 --> 00:50:35.360]   de tal
+[00:50:35.360 --> 00:50:35.740]   o lo de home
+[00:50:35.740 --> 00:50:36.440]   ya había
+[00:50:36.440 --> 00:50:37.760]   no era de símbolo
+[00:50:37.760 --> 00:50:37.920]   de tal
+[00:50:37.920 --> 00:50:38.080]   sí
+[00:50:38.080 --> 00:50:38.580]   la de la web
+[00:50:38.580 --> 00:50:39.460]   ok
+[00:50:39.460 --> 00:50:40.080]   gracias
+[00:50:40.080 --> 00:50:41.360]   a ti
+[00:50:41.360 --> 00:50:44.940]   vale
+[00:50:44.940 --> 00:50:45.640]   ¿cómo cambiamos
+[00:50:45.640 --> 00:50:46.400]   la contraseña de símbolo
+[00:50:46.400 --> 00:50:46.580]   de tal?
+[00:50:46.680 --> 00:50:46.820]   vale
+[00:50:46.820 --> 00:50:47.120]   bien
+[00:50:47.120 --> 00:50:48.280]   te vas aquí
+[00:50:48.280 --> 00:50:49.620]   entráis en símbolo
+[00:50:49.620 --> 00:50:49.840]   de tal
+[00:50:49.840 --> 00:50:50.480]   bueno que ahora se llama
+[00:50:50.480 --> 00:50:51.480]   académicovico.com
+[00:50:51.480 --> 00:50:52.160]   que lo hemos renombrado
+[00:50:52.160 --> 00:50:52.360]   vale
+[00:50:52.360 --> 00:50:53.700]   te vas a Ramón
+[00:50:53.700 --> 00:50:54.380]   mi perfil
+[00:50:54.380 --> 00:50:54.800]   bueno Ramón
+[00:50:54.800 --> 00:50:55.680]   a vuestro mi perfil
+[00:50:55.680 --> 00:50:56.720]   y cambiar contraseña
+[00:50:56.720 --> 00:50:58.100]   si os enviara
+[00:50:58.100 --> 00:50:59.120]   una contraseña
+[00:50:59.120 --> 00:51:00.520]   a vuestro correo
+[00:51:00.520 --> 00:51:01.340]   random
+[00:51:01.340 --> 00:51:02.120]   vale
+[00:51:02.120 --> 00:51:02.840]   no la podréis
+[00:51:02.840 --> 00:51:04.440]   poner la que vosotros queráis
+[00:51:04.440 --> 00:51:05.280]   random
+[00:51:05.280 --> 00:51:06.240]   y esa os la copiáis
+[00:51:06.240 --> 00:51:07.300]   y esa es la que vais a utilizar
+[00:51:07.300 --> 00:51:09.520]   por tanto
+[00:51:09.520 --> 00:51:09.740]   sí
+[00:51:09.740 --> 00:51:10.580]   todo el mundo
+[00:51:10.580 --> 00:51:11.940]   entra con la misma contraseña
+[00:51:11.940 --> 00:51:12.860]   1, 2, 3, 4, 5, 6
+[00:51:12.860 --> 00:51:14.240]   siempre al principio
+[00:51:14.240 --> 00:51:14.780]   os decimos
+[00:51:14.780 --> 00:51:15.920]   id aquí
+[00:51:15.920 --> 00:51:16.780]   y cambiar la contraseña
+[00:51:16.780 --> 00:51:16.940]   vale
+[00:51:16.940 --> 00:51:18.140]   y tendréis una a cada uno
+[00:51:18.140 --> 00:51:19.780]   para que nadie entre con vuestro correo
+[00:51:19.780 --> 00:51:21.080]   ok
+[00:51:21.080 --> 00:51:28.700]   en la segunda fase de cuenta de Fondeo
+[00:51:28.700 --> 00:51:29.360]   si seguí el mismo hotel
+[00:51:29.360 --> 00:51:29.700]   decía vale
+[00:51:29.700 --> 00:51:29.940]   sí
+[00:51:29.940 --> 00:51:31.400]   así es
+[00:51:31.400 --> 00:51:33.660]   los noticias
+[00:51:33.660 --> 00:51:34.900]   has dicho que es una configuración única
+[00:51:34.900 --> 00:51:35.840]   lo mismo para máster
+[00:51:35.840 --> 00:51:36.740]   se explica ya el Slade
+[00:51:36.740 --> 00:51:37.840]   sí
+[00:51:37.840 --> 00:51:40.020]   porque lo que no haga máster
+[00:51:40.020 --> 00:51:41.080]   el Slade no lo hará
+[00:51:41.080 --> 00:51:44.300]   si hacemos dos evaluaciones
+[00:51:44.300 --> 00:51:45.060]   de una sola fase
+[00:51:45.060 --> 00:51:45.520]   de dos brokers
+[00:51:45.520 --> 00:51:46.000]   diferente
+[00:51:46.000 --> 00:51:47.840]   también sería apropiado
+[00:51:47.840 --> 00:51:48.160]   sí
+[00:51:48.160 --> 00:51:49.080]   siempre y cuando
+[00:51:49.080 --> 00:51:50.040]   sepas configurar bien
+[00:51:50.040 --> 00:51:51.160]   las límites
+[00:51:51.160 --> 00:51:51.900]   que te pida
+[00:51:51.900 --> 00:51:52.180]   sí
+[00:51:52.180 --> 00:51:52.420]   sí
+[00:51:52.420 --> 00:51:54.840]   genial
+[00:51:54.840 --> 00:51:55.760]   solo con la Scalping
+[00:51:55.760 --> 00:51:57.020]   he quemado varias cuentas
+[00:51:57.020 --> 00:51:59.100]   muchas gracias
+[00:51:59.100 --> 00:51:59.740]   por todo su esfuerzo
+[00:51:59.740 --> 00:51:59.940]   bueno
+[00:51:59.940 --> 00:52:01.320]   gracias por las felicitaciones
+[00:52:01.320 --> 00:52:01.700]   por ahí
+[00:52:01.700 --> 00:52:03.080]   la clase
+[00:52:03.080 --> 00:52:03.800]   tendrás que verla
+[00:52:03.800 --> 00:52:04.420]   tendrás que verla
+[00:52:04.420 --> 00:52:04.660]   a Peter
+[00:52:04.660 --> 00:52:05.800]   cinco veces
+[00:52:05.800 --> 00:52:06.640]   sí
+[00:52:06.640 --> 00:52:06.960]   sí
+[00:52:06.960 --> 00:52:07.180]   sí
+[00:52:07.180 --> 00:52:08.040]   gracias Peter
+[00:52:08.040 --> 00:52:08.960]   por estar ahí
+[00:52:08.960 --> 00:52:11.880]   entonces esta herramienta
+[00:52:11.880 --> 00:52:13.280]   solo vamos a usar un año
+[00:52:13.280 --> 00:52:13.420]   ¿no?
+[00:52:15.000 --> 00:52:15.440]   sí
+[00:52:15.440 --> 00:52:16.120]   pero luego
+[00:52:16.120 --> 00:52:17.040]   se pueden renovar
+[00:52:17.040 --> 00:52:17.220]   o sea
+[00:52:17.220 --> 00:52:17.920]   podéis renovar
+[00:52:17.920 --> 00:52:19.360]   anualmente con nosotros
+[00:52:19.360 --> 00:52:21.480]   ¿funciona Meta 3D4?
+[00:52:21.600 --> 00:52:21.960]   no José
+[00:52:21.960 --> 00:52:22.640]   no
+[00:52:22.640 --> 00:52:33.860]   no hay más ¿no?
+[00:52:35.280 --> 00:52:35.720]   ¿Diego?
+[00:52:36.760 --> 00:52:37.380]   Ramón
+[00:52:37.380 --> 00:52:38.120]   una pregunta
+[00:52:38.120 --> 00:52:38.800]   dime
+[00:52:38.800 --> 00:52:40.180]   no sé si
+[00:52:40.180 --> 00:52:40.960]   si
+[00:52:40.960 --> 00:52:42.100]   no me di cuenta
+[00:52:42.100 --> 00:52:42.520]   pero
+[00:52:42.520 --> 00:52:43.860]   tú configuraste
+[00:52:43.860 --> 00:52:44.720]   dos maestros
+[00:52:44.720 --> 00:52:45.220]   en la misma
+[00:52:45.220 --> 00:52:46.160]   BPS
+[00:52:46.160 --> 00:52:47.700]   sí
+[00:52:47.700 --> 00:52:50.240]   y no estaría
+[00:52:50.240 --> 00:52:51.400]   mal eso
+[00:52:51.400 --> 00:52:52.360]   pues tendrías
+[00:52:52.360 --> 00:52:52.960]   dos maestros
+[00:52:52.960 --> 00:52:53.440]   que están
+[00:52:53.440 --> 00:52:54.520]   mandando operaciones
+[00:52:54.520 --> 00:52:55.960]   como esclados
+[00:52:55.960 --> 00:53:02.480]   pues me han hecho pensar ahora
+[00:53:02.480 --> 00:53:05.540]   pues tendrías que tenerlo
+[00:53:05.540 --> 00:53:06.920]   en otra BPS
+[00:53:06.920 --> 00:53:07.420]   puede ser
+[00:53:07.420 --> 00:53:07.920]   puede ser
+[00:53:07.920 --> 00:53:08.740]   puede ser
+[00:53:08.740 --> 00:53:11.200]   o en caso contrario
+[00:53:11.200 --> 00:53:11.880]   pues entonces
+[00:53:11.880 --> 00:53:13.800]   utilizas un maestro
+[00:53:13.800 --> 00:53:16.380]   y tres réplicas
+[00:53:16.380 --> 00:53:17.560]   pero una
+[00:53:17.560 --> 00:53:18.980]   que no abran
+[00:53:18.980 --> 00:53:19.740]   en contraria
+[00:53:19.740 --> 00:53:21.300]   sino como la master
+[00:53:21.300 --> 00:53:23.120]   y dos que sí sean
+[00:53:23.120 --> 00:53:24.460]   inversas
+[00:53:24.460 --> 00:53:24.980]   sí
+[00:53:24.980 --> 00:53:25.440]   sí
+[00:53:25.440 --> 00:53:25.660]   sí
+[00:53:25.660 --> 00:53:25.820]   sí
+[00:53:25.820 --> 00:53:25.940]   sí
+[00:53:25.940 --> 00:53:26.560]   pues
+[00:53:26.560 --> 00:53:29.760]   lo voy a preguntar
+[00:53:29.760 --> 00:53:30.400]   ahora mismo
+[00:53:30.400 --> 00:53:31.100]   un segundo
+[00:53:31.100 --> 00:53:32.020]   antes de que me olvide
+[00:53:32.020 --> 00:53:39.120]   se me pregunta
+[00:53:39.120 --> 00:53:39.960]   quién no ha programado
+[00:53:39.960 --> 00:53:42.200]   a ver si se puede
+[00:53:42.200 --> 00:53:43.260]   hacer esto técnicamente
+[00:53:43.260 --> 00:53:47.740]   probablemente si
+[00:53:47.740 --> 00:53:48.700]   manejaras un ID
+[00:53:48.700 --> 00:53:49.240]   por
+[00:53:49.240 --> 00:53:50.360]   por
+[00:53:50.360 --> 00:53:51.060]   par
+[00:53:51.060 --> 00:53:51.760]   master
+[00:53:51.760 --> 00:53:52.200]   slave
+[00:53:52.200 --> 00:53:53.240]   quizás
+[00:53:53.240 --> 00:53:53.760]   no
+[00:53:53.760 --> 00:53:54.720]   podrías hacerlo
+[00:53:54.720 --> 00:53:55.160]   pero bueno
+[00:53:55.160 --> 00:53:55.580]   hay que ver
+[00:53:55.580 --> 00:53:56.300]   cómo está programado
+[00:53:56.300 --> 00:53:56.660]   de hecho
+[00:53:56.660 --> 00:53:57.700]   habiéndome dicho esto
+[00:53:57.700 --> 00:53:58.420]   y yo teniendo
+[00:53:58.420 --> 00:53:59.060]   toda
+[00:53:59.060 --> 00:54:00.900]   esta duda
+[00:54:00.900 --> 00:54:04.940]   realmente depende
+[00:54:04.940 --> 00:54:05.540]   del fichero
+[00:54:05.540 --> 00:54:08.840]   depende del fichero
+[00:54:08.840 --> 00:54:11.540]   lo voy a parar
+[00:54:11.540 --> 00:54:13.420]   voy a pararlo todo
+[00:54:13.420 --> 00:54:13.640]   ¿vale?
+[00:54:13.760 --> 00:54:14.840]   en las dos que acabo de hacer
+[00:54:14.840 --> 00:54:16.040]   simplemente parando
+[00:54:16.040 --> 00:54:17.100]   es simplemente poniéndolo aquí
+[00:54:17.100 --> 00:54:20.000]   según mi lógica
+[00:54:20.000 --> 00:54:20.780]   lo que entiendo
+[00:54:20.780 --> 00:54:21.520]   es que el fichero
+[00:54:21.520 --> 00:54:22.700]   se tiene que llamar distinto
+[00:54:22.700 --> 00:54:23.180]   ¿sabes?
+[00:54:23.260 --> 00:54:24.220]   aunque el fichero ponía
+[00:54:24.220 --> 00:54:26.300]   master.json
+[00:54:26.300 --> 00:54:27.240]   pues deberíamos de poner
+[00:54:27.240 --> 00:54:27.880]   creo que
+[00:54:27.880 --> 00:54:29.320]   la solución es poner
+[00:54:29.320 --> 00:54:30.940]   master2.json
+[00:54:30.940 --> 00:54:45.660]   ¿entiendes?
+[00:54:45.660 --> 00:54:46.540]   no sé quién me lo ha preguntado
+[00:54:46.540 --> 00:54:47.720]   pero entiendes lo que he dicho
+[00:54:47.720 --> 00:54:47.980]   o sea
+[00:54:47.980 --> 00:54:51.060]   aquí por ejemplo
+[00:54:51.060 --> 00:54:52.180]   sí, sí
+[00:54:52.180 --> 00:54:52.740]   sí
+[00:54:52.740 --> 00:54:54.420]   en la configuración
+[00:54:54.420 --> 00:54:56.220]   al poner master2
+[00:54:56.220 --> 00:54:56.840]   este
+[00:54:56.840 --> 00:54:58.300]   poner master2
+[00:54:58.300 --> 00:54:58.940]   para que no sea
+[00:54:58.940 --> 00:54:59.300]   claro
+[00:54:59.300 --> 00:55:00.680]   porque se puede liar bastante
+[00:55:00.680 --> 00:55:01.500]   ajá
+[00:55:01.500 --> 00:55:02.560]   y en el esclavo igual
+[00:55:02.560 --> 00:55:04.860]   me he dejado una cosa
+[00:55:04.860 --> 00:55:05.920]   que no os he explicado
+[00:55:05.920 --> 00:55:07.100]   una cosa muy importante
+[00:55:07.100 --> 00:55:08.700]   en el slave
+[00:55:08.700 --> 00:55:10.280]   todo esto se explica
+[00:55:10.280 --> 00:55:11.380]   en el documento
+[00:55:11.380 --> 00:55:12.780]   fijaros
+[00:55:12.780 --> 00:55:15.240]   a ver
+[00:55:15.240 --> 00:55:16.520]   cómo está en este caso
+[00:55:16.520 --> 00:55:16.740]   vale
+[00:55:16.740 --> 00:55:17.300]   en este caso
+[00:55:17.300 --> 00:55:17.780]   no hay problema
+[00:55:17.780 --> 00:55:18.700]   porque se llama igual
+[00:55:18.700 --> 00:55:19.720]   eur usd
+[00:55:19.720 --> 00:55:22.580]   y en the five is
+[00:55:22.580 --> 00:55:23.120]   también se llama
+[00:55:23.120 --> 00:55:23.960]   eur usd
+[00:55:23.960 --> 00:55:24.780]   no hay problema
+[00:55:24.780 --> 00:55:25.840]   pero
+[00:55:25.840 --> 00:55:28.060]   por ejemplo
+[00:55:28.060 --> 00:55:28.360]   aquí
+[00:55:28.360 --> 00:55:29.300]   en world of stefandes
+[00:55:29.300 --> 00:55:29.600]   se pone
+[00:55:29.600 --> 00:55:30.420]   eur usd
+[00:55:30.420 --> 00:55:30.920]   c
+[00:55:30.920 --> 00:55:33.540]   en el slave
+[00:55:33.540 --> 00:55:34.160]   aquí
+[00:55:34.160 --> 00:55:36.400]   tendríamos que haber puesto
+[00:55:36.400 --> 00:55:37.880]   si tú por ejemplo
+[00:55:37.880 --> 00:55:38.800]   ya sabéis que sólo
+[00:55:38.800 --> 00:55:39.820]   se van a lanzar órdenes
+[00:55:39.820 --> 00:55:40.420]   en euro dólar
+[00:55:40.420 --> 00:55:41.060]   tienes que poner
+[00:55:41.060 --> 00:55:42.020]   eur usd
+[00:55:42.020 --> 00:55:43.860]   que es el master
+[00:55:43.860 --> 00:55:44.740]   se llama eur usd
+[00:55:44.740 --> 00:55:45.360]   el activo
+[00:55:45.360 --> 00:55:46.240]   y en el slave
+[00:55:46.240 --> 00:55:46.700]   se pone
+[00:55:46.700 --> 00:55:47.980]   eur usd
+[00:55:47.980 --> 00:55:48.600]   c
+[00:55:48.600 --> 00:55:50.400]   esto debería quedar así
+[00:55:50.400 --> 00:55:52.740]   así como lo pone el ejemplo
+[00:55:52.740 --> 00:55:53.780]   si hay más
+[00:55:53.780 --> 00:55:55.380]   ponéis punto y coma
+[00:55:55.380 --> 00:55:56.420]   y poned los demás
+[00:55:56.420 --> 00:55:58.440]   sólo los activos
+[00:55:58.440 --> 00:55:59.040]   que sepáis
+[00:55:59.040 --> 00:56:00.260]   que se van a lanzar
+[00:56:00.260 --> 00:56:00.880]   operaciones
+[00:56:00.880 --> 00:56:04.360]   no me había acordado
+[00:56:04.360 --> 00:56:04.980]   y esto es importante
+[00:56:04.980 --> 00:56:05.180]   vale
+[00:56:05.180 --> 00:56:06.380]   en este caso
+[00:56:06.380 --> 00:56:07.100]   no pasaría nada
+[00:56:07.100 --> 00:56:09.000]   porque se llaman
+[00:56:09.000 --> 00:56:09.800]   exactamente igual
+[00:56:09.800 --> 00:56:10.560]   si se llaman exactamente igual
+[00:56:10.560 --> 00:56:11.260]   lo podéis dejar igual
+[00:56:11.260 --> 00:56:12.420]   pero si no
+[00:56:12.420 --> 00:56:13.540]   lo tenéis que especificar ahí
+[00:56:13.540 --> 00:56:19.640]   bueno
+[00:56:19.640 --> 00:56:20.460]   yo os lo pondré
+[00:56:20.460 --> 00:56:21.320]   por discord
+[00:56:21.320 --> 00:56:22.380]   cuando me confirme
+[00:56:22.380 --> 00:56:23.500]   lo del poder poner
+[00:56:23.500 --> 00:56:24.020]   dos masters
+[00:56:24.020 --> 00:56:24.920]   en la misma WPS
+[00:56:24.920 --> 00:56:29.760]   ya ver que me dice
+[00:56:29.760 --> 00:56:29.980]   vale
+[00:56:29.980 --> 00:56:33.300]   ya ver que me dice
+[00:56:33.300 --> 00:56:35.200]   pero yo creo que era así
+[00:56:35.200 --> 00:56:36.340]   poner diferentes ficheros
+[00:56:36.340 --> 00:56:36.740]   y ya está
+[00:56:36.740 --> 00:56:38.160]   que no se líne entre ellos
+[00:56:38.160 --> 00:56:48.860]   vale
+[00:56:48.860 --> 00:56:50.360]   me está recordando
+[00:56:50.360 --> 00:56:51.320]   lo de Rigo 1
+[00:56:51.320 --> 00:56:52.100]   ahora lo veremos
+[00:56:52.100 --> 00:56:59.140]   vale
+[00:56:59.140 --> 00:56:59.840]   vamos a ello
+[00:56:59.840 --> 00:57:16.720]   me voy a conectar
+[00:57:16.720 --> 00:57:18.540]   al servidor
+[00:57:18.540 --> 00:57:24.120]   a ver
+[00:57:24.120 --> 00:57:25.180]   a ver
+[00:57:25.180 --> 00:57:27.960]   a ver si vamos a quedar mal
+[00:57:27.960 --> 00:57:28.400]   con Neura
+[00:57:28.400 --> 00:57:35.500]   si no
+[00:57:35.500 --> 00:57:36.160]   este mismo
+[00:57:36.160 --> 00:57:37.660]   tengo
+[00:57:37.660 --> 00:57:39.420]   unos varios
+[00:57:39.420 --> 00:57:48.760]   en full settings
+[00:57:48.760 --> 00:57:53.560]   en full settings
+[00:57:53.560 --> 00:57:55.220]   stop loss
+[00:57:55.220 --> 00:57:58.180]   bueno aquí
+[00:57:58.180 --> 00:57:58.920]   ATR
+[00:57:58.920 --> 00:57:59.500]   lo que sea
+[00:57:59.500 --> 00:58:00.640]   yo os diría
+[00:58:00.640 --> 00:58:01.820]   que vayáis a pips fijos
+[00:58:01.820 --> 00:58:03.080]   a pips fijos
+[00:58:03.080 --> 00:58:03.660]   no os liéis
+[00:58:03.660 --> 00:58:06.520]   y el profit target
+[00:58:06.520 --> 00:58:08.220]   podéis poner aquí
+[00:58:08.220 --> 00:58:09.280]   que el profit target
+[00:58:09.280 --> 00:58:10.320]   activarlo de abajo
+[00:58:10.320 --> 00:58:11.120]   fijaros
+[00:58:11.120 --> 00:58:11.900]   activarlo de abajo
+[00:58:11.900 --> 00:58:13.640]   y que el profit target
+[00:58:13.640 --> 00:58:13.960]   vaya
+[00:58:13.960 --> 00:58:16.200]   del 100%
+[00:58:16.200 --> 00:58:16.920]   al
+[00:58:16.920 --> 00:58:17.980]   100%
+[00:58:17.980 --> 00:58:19.080]   de tu stop loss size
+[00:58:19.080 --> 00:58:20.080]   es decir
+[00:58:20.080 --> 00:58:21.000]   que arriesgue siempre
+[00:58:21.000 --> 00:58:22.060]   lo mismo
+[00:58:22.060 --> 00:58:23.120]   que tu stop loss size
+[00:58:23.120 --> 00:58:26.200]   es activar esto
+[00:58:26.200 --> 00:58:28.140]   yo no lo he probado
+[00:58:28.140 --> 00:58:28.900]   pero
+[00:58:28.900 --> 00:58:30.400]   la teoría me dice
+[00:58:30.400 --> 00:58:31.000]   que es poner aquí
+[00:58:31.000 --> 00:58:31.460]   100-100
+[00:58:31.460 --> 00:58:32.500]   y ya debería salir
+[00:58:32.500 --> 00:58:33.220]   siempre estrategia
+[00:58:33.220 --> 00:58:33.740]   de Rigo 1
+[00:58:33.740 --> 00:58:34.980]   vale
+[00:58:34.980 --> 00:58:52.080]   vale
+[00:58:52.080 --> 00:58:52.900]   más preguntas
+[00:58:52.900 --> 00:59:08.460]   no
+[00:59:08.460 --> 00:59:11.220]   damos por fin
+[00:59:11.220 --> 00:59:11.700]   quitado esto
+[00:59:11.700 --> 00:59:12.200]   lo tenéis ya
+[00:59:12.200 --> 00:59:12.400]   todo
+[00:59:12.400 --> 00:59:12.840]   todo
+[00:59:12.840 --> 00:59:14.000]   disponible
+[00:59:14.000 --> 00:59:14.460]   en
+[00:59:14.460 --> 00:59:15.080]   symbol start
+[00:59:15.080 --> 00:59:15.460]   en academia
+[00:59:15.460 --> 00:59:16.220]   jodigo.com
+[00:59:16.220 --> 00:59:16.960]   lo tenéis ahí ya
+[00:59:16.960 --> 00:59:18.560]   nada
+[00:59:18.560 --> 00:59:19.740]   toquetear
+[00:59:19.740 --> 00:59:20.380]   cualquier cosa
+[00:59:20.380 --> 00:59:21.240]   que tengáis
+[00:59:21.240 --> 00:59:22.440]   lo reportáis
+[00:59:22.440 --> 00:59:22.640]   vale
+[00:59:22.640 --> 00:59:23.360]   si veis algún error
+[00:59:23.360 --> 00:59:23.660]   y demás
+[00:59:23.660 --> 00:59:24.380]   lo reportáis
+[00:59:24.380 --> 00:59:25.900]   ya os digo
+[00:59:25.900 --> 00:59:26.960]   hemos hecho pruebas
+[00:59:26.960 --> 00:59:27.820]   con cuentas demo
+[00:59:27.820 --> 00:59:29.000]   abriendo operaciones manuales
+[00:59:29.000 --> 00:59:29.280]   de hecho
+[00:59:29.280 --> 00:59:30.280]   si vosotros habéis
+[00:59:30.280 --> 00:59:31.180]   operaciones manuales
+[00:59:31.180 --> 00:59:31.900]   en la cuenta master
+[00:59:31.900 --> 00:59:32.700]   también se va
+[00:59:32.700 --> 00:59:33.260]   a la slave
+[00:59:33.260 --> 00:59:34.040]   se copian también
+[00:59:34.040 --> 00:59:35.040]   todas las operaciones
+[00:59:35.040 --> 00:59:35.600]   se copian
+[00:59:35.600 --> 00:59:37.180]   así que nada
+[00:59:37.180 --> 00:59:37.980]   trastead un poco
+[00:59:37.980 --> 00:59:39.440]   primero de todo
+[00:59:39.440 --> 00:59:41.100]   probad con algo
+[00:59:41.100 --> 00:59:41.920]   que os podáis permitir
+[00:59:41.920 --> 00:59:43.160]   todo esto
+[00:59:43.160 --> 00:59:43.720]   ya lo sabéis
+[00:59:43.720 --> 00:59:45.680]   y nada
+[00:59:45.680 --> 00:59:46.480]   pues me vais diciendo
+[00:59:46.480 --> 00:59:47.320]   espero que
+[00:59:47.320 --> 00:59:48.540]   esto sea un inicio
+[00:59:48.540 --> 00:59:49.180]   en esta academia
+[00:59:49.180 --> 00:59:49.740]   para que
+[00:59:49.740 --> 00:59:51.660]   no se habla mucho
+[00:59:51.660 --> 00:59:52.760]   he pasado esta evaluación
+[00:59:52.760 --> 00:59:53.400]   he pasado esta otra
+[00:59:53.400 --> 00:59:54.380]   pero compartidlo
+[00:59:54.380 --> 00:59:54.940]   si me lo metéis
+[00:59:54.940 --> 00:59:55.540]   en cuentas de fondo
+[00:59:55.540 --> 00:59:56.140]   y con esto
+[00:59:56.140 --> 00:59:57.260]   vais pasando
+[00:59:57.260 --> 00:59:58.080]   exámenes
+[00:59:58.080 --> 00:59:58.800]   compartidlo
+[00:59:58.800 --> 00:59:59.380]   para que veamos
+[00:59:59.380 --> 00:59:59.960]   pues que gente
+[00:59:59.960 --> 01:00:00.720]   lo está consiguiendo
+[01:00:00.720 --> 01:00:01.600]   y que esta herramienta
+[01:00:01.600 --> 01:00:02.180]   pues está ayudando
+[01:00:02.180 --> 01:00:03.960]   a muchos de vosotros
+[01:00:03.960 --> 01:00:04.360]   y vosotras
+[01:00:04.360 --> 01:00:04.580]   vale
+[01:00:04.580 --> 01:00:05.920]   así que nada
+[01:00:05.920 --> 01:00:07.000]   me agradeceros vosotros
+[01:00:07.000 --> 01:00:07.720]   por estar dos horas
+[01:00:07.720 --> 01:00:08.000]   aquí
+[01:00:08.000 --> 01:00:09.060]   escuchando la chapa
+[01:00:09.060 --> 01:00:10.080]   y nada
+[01:00:10.080 --> 01:00:10.600]   este fin de semana
+[01:00:10.600 --> 01:00:11.260]   pues ya tenéis
+[01:00:11.260 --> 01:00:11.840]   tareita
+[01:00:11.840 --> 01:00:12.960]   si quieres repasar la clase
+[01:00:12.960 --> 01:00:14.020]   y trastear con esto
+[01:00:14.020 --> 01:00:14.220]   vale
+[01:00:14.220 --> 01:00:15.620]   un fuerte abrazo
+[01:00:15.620 --> 01:00:16.000]   y nos vemos
+[01:00:16.000 --> 01:00:16.360]   bueno
+[01:00:16.360 --> 01:00:17.820]   a próximamente
+[01:00:17.820 --> 01:00:18.100]   eventual
+[01:00:18.100 --> 01:00:19.920]   gracias Ramón
+[01:00:19.920 --> 01:00:20.580]   por cierto
+[01:00:20.580 --> 01:00:21.740]   el evento va a ser
+[01:00:21.740 --> 01:00:22.380]   lo anunciaré
+[01:00:22.380 --> 01:00:23.220]   el 16 de mayo
+[01:00:23.220 --> 01:00:24.000]   en Madrid
+[01:00:24.000 --> 01:00:25.740]   16 de mayo
+[01:00:25.740 --> 01:00:26.200]   en Madrid
+[01:00:26.200 --> 01:00:26.540]   vale
+[01:00:26.540 --> 01:00:27.280]   será por la tarde
+[01:00:27.280 --> 01:00:28.660]   después de comer
+[01:00:28.660 --> 01:00:29.440]   y
+[01:00:29.440 --> 01:00:31.220]   ya pasaré más información
+[01:00:31.220 --> 01:00:31.560]   para
+[01:00:31.560 --> 01:00:33.300]   reservar vuestra plaza
+[01:00:33.300 --> 01:00:33.640]   y demás
+[01:00:33.640 --> 01:00:34.440]   pero que sepáis
+[01:00:34.440 --> 01:00:34.780]   que va a ser
+[01:00:34.780 --> 01:00:35.880]   el 16 de mayo
+[01:00:35.880 --> 01:00:37.840]   que bien
+[01:00:37.840 --> 01:00:38.640]   vale
+[01:00:38.640 --> 01:00:39.520]   muchas gracias
+[01:00:39.520 --> 01:00:39.760]   chao
+[01:00:39.760 --> 01:00:40.040]   chao
+[01:00:40.040 --> 01:00:40.200]   chao
+[01:00:40.200 --> 01:00:40.560]   chao
+[01:00:40.560 --> 01:00:41.160]   chao
+[01:00:41.160 --> 01:00:42.000]   chao
+[01:00:42.000 --> 01:00:42.600]   chao
+[01:00:42.600 --> 01:00:43.000]   chao
+[01:00:43.000 --> 01:00:43.280]   chao
+[01:00:43.280 --> 01:00:44.000]   chao
+[01:00:44.000 --> 01:00:44.000]   chao
+[01:00:44.000 --> 01:00:44.220]   chao
+[01:00:44.220 --> 01:00:44.560]   chao
+[01:00:44.560 --> 01:00:45.140]   chao
+[01:00:45.140 --> 01:00:45.720]   chao
+[01:00:45.720 --> 01:00:46.060]   chao
+[01:00:46.060 --> 01:00:46.320]   chao
+[01:00:46.320 --> 01:00:46.720]   chao
+[01:00:46.720 --> 01:00:46.720]   chao
+[01:00:46.720 --> 01:00:47.320]   chao
+[01:00:47.320 --> 01:00:48.140]   chao
+[01:00:48.140 --> 01:00:48.720]   chao
+[01:00:48.720 --> 01:00:48.720]   chao
+[01:00:48.720 --> 01:00:49.660]   chao
+[01:00:49.660 --> 01:00:50.560]   chao
+[01:00:50.560 --> 01:00:50.860]   chao
+[01:00:50.860 --> 01:00:51.780]   gran trabajo Ramón
+[01:00:51.780 --> 01:00:52.580]   gracias
+[01:00:52.580 --> 01:00:54.160]   chao Ramón
+[01:00:54.160 --> 01:00:54.940]   chao
+[01:00:54.940 --> 01:00:55.440]   chao
+[01:00:55.440 --> 01:00:56.100]   aprovechadlo
+[01:00:56.100 --> 01:00:56.940]   chao
+[01:00:56.940 --> 01:00:57.560]   chao
+[01:00:57.560 --> 01:00:58.140]   chao
+[01:00:58.140 --> 01:00:58.700]   chao
+output_txt: saving output to 'transcripts/mentoria_2_b.txt'
+
+whisper_print_timings:     load time =  2001.62 ms
+whisper_print_timings:     fallbacks =   2 p /  10 h
+whisper_print_timings:      mel time = 11821.16 ms
+whisper_print_timings:   sample time = 61145.34 ms / 85827 runs (     0.71 ms per run)
+whisper_print_timings:   encode time = 868025.69 ms /   145 runs (  5986.38 ms per run)
+whisper_print_timings:   decode time =  5678.65 ms /   398 runs (    14.27 ms per run)
+whisper_print_timings:   batchd time = 319770.03 ms / 84698 runs (     3.78 ms per run)
+whisper_print_timings:   prompt time = 31394.72 ms / 33047 runs (     0.95 ms per run)
+whisper_print_timings:    total time = 1306117.62 ms
+ggml_metal_free: deallocating

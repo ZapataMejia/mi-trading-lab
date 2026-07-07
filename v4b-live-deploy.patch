@@ -1,0 +1,892 @@
+From ed8402883fb26ff75f19717de5e6ce2178e6bc75 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Santiago=20Zapata=20Mej=C3=ADa?= <szapatamejia193@gmail.com>
+Date: Wed, 10 Jun 2026 10:13:01 -0500
+Subject: [PATCH] Add V4B live trading and focused bot setup.
+
+Wire Polymarket CLOB orders into the paper trader, add VPS scripts to run V4A/V4B demo and V4B live from $95.98, and slim the dashboard to compare demo vs live.
+
+Co-authored-by: Cursor <cursoragent@cursor.com>
+---
+ .env.example                    |  15 +++
+ requirements-bot.txt            |   2 +
+ scripts/run_paper_trader.py     |   9 +-
+ scripts/test_live_clob.py       |  34 +++++
+ src/polymarket/dashboard_bot.py |  47 +++----
+ src/polymarket/live_clob.py     | 213 ++++++++++++++++++++++++++++++++
+ src/polymarket/paper_trader.py  |  76 +++++++++++-
+ vps/install_autostart.ps1       |   4 +-
+ vps/reset_v4b_comparison.ps1    |  32 +++++
+ vps/run_dashboard.ps1           |   2 +-
+ vps/run_v4.ps1                  |   8 +-
+ vps/run_v4b_demo.ps1            |  39 ++++++
+ vps/run_v4b_live.ps1            |  59 +++++++++
+ vps/start_bots_focused.ps1      |  39 ++++++
+ vps/stop_all_bots.ps1           |  23 ++++
+ 15 files changed, 557 insertions(+), 45 deletions(-)
+ create mode 100644 scripts/test_live_clob.py
+ create mode 100644 src/polymarket/live_clob.py
+ create mode 100644 vps/reset_v4b_comparison.ps1
+ create mode 100644 vps/run_v4b_demo.ps1
+ create mode 100644 vps/run_v4b_live.ps1
+ create mode 100644 vps/start_bots_focused.ps1
+ create mode 100644 vps/stop_all_bots.ps1
+
+diff --git a/.env.example b/.env.example
+index 7873457..2a682f1 100644
+--- a/.env.example
++++ b/.env.example
+@@ -4,5 +4,20 @@ BYBIT_API_KEY=your_api_key_here
+ BYBIT_SECRET=your_secret_here
+ TELEGRAM_BOT_TOKEN=your_bot_token_here
+ TELEGRAM_CHAT_ID=your_chat_id_here
++# LIVE: reutiliza el bot de V1 (mismo token) o crea TELEGRAM_BOT_TOKEN_LIVE=
++TELEGRAM_BOT_TOKEN_LIVE=
++TELEGRAM_CHAT_ID_LIVE=
+ TELEGRAM_BOT_TOKEN_V2=your_second_bot_token_here
++TELEGRAM_BOT_TOKEN_V4B=your_v4b_bot_token_here
++# Mismo chat para DEMO+LIVE = comparacion lado a lado (opcional)
++TELEGRAM_CHAT_ID_DEMO=
++TELEGRAM_CHAT_ID_LIVE=-100xxxxxxxxxx
+ OPENAI_API_KEY=your_openai_key_here
++
++# Polymarket LIVE (V4B) — never commit real values
++POLYMARKET_PRIVATE_KEY=0x...
++POLYMARKET_FUNDER_ADDRESS=0x...
++POLYMARKET_SIGNATURE_TYPE=1
++POLYMARKET_CHAIN_ID=137
++POLYMARKET_MAX_SLIPPAGE_CENTS=5
++POLYMARKET_LIVE_ENABLED=true
+diff --git a/requirements-bot.txt b/requirements-bot.txt
+index 8cfe30b..5336a25 100644
+--- a/requirements-bot.txt
++++ b/requirements-bot.txt
+@@ -13,3 +13,5 @@ sqlalchemy>=2.0
+ aiosqlite>=0.20
+ greenlet>=3.0
+ certifi>=2024.0
++py-clob-client>=0.24.0
++eth-account>=0.13.0
+diff --git a/scripts/run_paper_trader.py b/scripts/run_paper_trader.py
+index cb64fb6..3fb8145 100644
+--- a/scripts/run_paper_trader.py
++++ b/scripts/run_paper_trader.py
+@@ -91,12 +91,17 @@ async def amain() -> None:
+     ap.add_argument("--disable-telegram", action="store_true",
+                     help="Run without Telegram (only file log). Used by V4B when no token is set.")
+     ap.add_argument("--log-file", default="logs/paper_trader.log")
++    ap.add_argument("--live", action="store_true",
++                    help="Place real Polymarket orders (requires POLYMARKET_* in .env)")
++    ap.add_argument("--max-position-usd", type=float, default=25.0,
++                    help="Hard cap per live order in USD")
+     args = ap.parse_args()
+ 
+     cfg = Config.from_yaml(args.config)
+     setup_logger("trading", cfg.log_level, args.log_file)
+     log = logging.getLogger("trading.polymarket.paper")
+-    log.info("[%s] starting paper trader, bankroll=$%.2f", args.instance_label, args.bankroll)
++    mode = "LIVE" if args.live else "PAPER"
++    log.info("[%s] starting %s trader, bankroll=$%.2f", args.instance_label, mode, args.bankroll)
+ 
+     paper_cfg = PaperConfig(
+         initial_bankroll_usd=args.bankroll,
+@@ -118,6 +123,8 @@ async def amain() -> None:
+         skip_weekdays=tuple(args.skip_weekdays),
+         min_volume_usd=args.min_volume,
+         instance_label=args.instance_label,
++        live_mode=args.live,
++        max_position_usd=args.max_position_usd,
+     )
+ 
+     if args.disable_telegram:
+diff --git a/scripts/test_live_clob.py b/scripts/test_live_clob.py
+new file mode 100644
+index 0000000..7a70b9e
+--- /dev/null
++++ b/scripts/test_live_clob.py
+@@ -0,0 +1,34 @@
++"""Smoke-test Polymarket live credentials (balance only, no orders).
++
++Usage on VPS:
++    python scripts/test_live_clob.py
++"""
++from __future__ import annotations
++
++import asyncio
++import sys
++from pathlib import Path
++
++_REPO = Path(__file__).resolve().parent.parent
++sys.path.insert(0, str(_REPO))
++
++from src.polymarket.live_clob import LiveClobExecutor, load_live_config
++
++
++async def main() -> None:
++    cfg = load_live_config()
++    live = LiveClobExecutor(cfg)
++    print("Updating allowance...")
++    await live.ensure_allowance()
++    bal = await live.get_usdc_balance()
++    print(f"USDC balance: ${bal:.2f}")
++    print(f"Funder: {cfg.funder_address[:10]}...{cfg.funder_address[-6:]}")
++    print(f"Signature type: {cfg.signature_type}")
++    if bal < 1:
++        print("WARNING: balance very low — deposit USDC before going live.")
++    else:
++        print("OK — credentials work.")
++
++
++if __name__ == "__main__":
++    asyncio.run(main())
+diff --git a/src/polymarket/dashboard_bot.py b/src/polymarket/dashboard_bot.py
+index a82d3ad..0e56e7f 100644
+--- a/src/polymarket/dashboard_bot.py
++++ b/src/polymarket/dashboard_bot.py
+@@ -1,10 +1,10 @@
+-"""Dashboard Telegram bot — agregador de los 5 bots de Polymarket.
++"""Dashboard Telegram bot — agregador de bots Polymarket (modo foco V4).
+ 
+ Vive en el mismo VPS donde corren los bots y lee directamente los state.json
+ de cada uno. NO se conecta a internet salvo para Telegram.
+ 
+ Comandos:
+-    /all      → resumen de los 5 bots (bankroll, PnL, posiciones)
++    /all      → resumen de bots activos (bankroll, PnL, posiciones)
+     /today    → PnL del día por bot + total
+     /week     → PnL semanal + ranking
+     /month    → PnL mensual
+@@ -42,45 +42,29 @@ class BotInfo:
+ 
+ 
+ BOTS: list[BotInfo] = [
+-    BotInfo(
+-        label="V1",
+-        name="Alerts",
+-        emoji="🎯",
+-        state_path=Path("data/paper_trading/state.json"),
+-        threshold_pp=5,
+-        description="edge ≥ 5pp, todos los assets, cualquier minuto",
+-    ),
+-    BotInfo(
+-        label="V2B",
+-        name="Selective",
+-        emoji="🛡",
+-        state_path=Path("data/paper_trading_v2b/state.json"),
+-        threshold_pp=10,
+-        description="edge ≥ 10pp, skip 21/23 UTC + sáb, vol ≥ $5k",
+-    ),
+     BotInfo(
+         label="V4A",
+-        name="Endgame 30pp",
++        name="Endgame 30pp (demo)",
+         emoji="⏱",
+         state_path=Path("data/paper_trading_v4/state.json"),
+         threshold_pp=30,
+-        description="edge ≥ 30pp, últimos 5 min, todos los assets",
++        description="edge ≥ 30pp, últimos 5 min — paper",
+     ),
+     BotInfo(
+-        label="V4B",
+-        name="Endgame 40pp",
+-        emoji="🎯",
++        label="DEMO",
++        name="V4B demo",
++        emoji="📝",
+         state_path=Path("data/paper_trading_v4b/state.json"),
+         threshold_pp=40,
+-        description="edge ≥ 40pp, últimos 5 min, version tight",
++        description="edge ≥ 40pp, últimos 5 min — paper",
+     ),
+     BotInfo(
+-        label="V4C",
+-        name="SOL-only",
+-        emoji="◎",
+-        state_path=Path("data/paper_trading_v4c/state.json"),
+-        threshold_pp=30,
+-        description="edge ≥ 30pp, últimos 5 min, solo SOL",
++        label="LIVE",
++        name="V4B Live",
++        emoji="🟢",
++        state_path=Path("data/live_trading_v4b/state.json"),
++        threshold_pp=40,
++        description="edge ≥ 40pp, últimos 5 min — USDC real",
+     ),
+ ]
+ 
+@@ -298,7 +282,8 @@ def format_all(metrics: list[BotMetrics]) -> str:
+             f"🔓 {m.open_positions}"
+         )
+ 
+-    total_pct = (total_bankroll - 500.0) / 500.0 * 100 if total_bankroll > 0 else 0.0
++    initial_total = sum(m.initial_bankroll for m in metrics) or 1.0
++    total_pct = (total_bankroll - initial_total) / initial_total * 100
+     lines.append("─" * 32)
+     lines.append(
+         f"<b>TOTAL</b>     <code>${total_bankroll:>7.2f}</code>  "
+diff --git a/src/polymarket/live_clob.py b/src/polymarket/live_clob.py
+new file mode 100644
+index 0000000..c5464f4
+--- /dev/null
++++ b/src/polymarket/live_clob.py
+@@ -0,0 +1,213 @@
++"""Polymarket CLOB live order execution (real USDC).
++
++Wraps the synchronous ``py-clob-client`` SDK for use inside the async
++``PaperTrader`` loop. Credentials come from environment variables only.
++"""
++from __future__ import annotations
++
++import asyncio
++import logging
++import os
++from dataclasses import dataclass
++from typing import Any
++
++from dotenv import load_dotenv
++from py_clob_client.client import ClobClient
++from py_clob_client.clob_types import (
++    AssetType,
++    BalanceAllowanceParams,
++    MarketOrderArgs,
++    OrderType,
++)
++from py_clob_client.order_builder.constants import BUY
++
++logger = logging.getLogger("trading.polymarket.live_clob")
++
++CLOB_HOST = "https://clob.polymarket.com"
++
++
++@dataclass
++class LiveClobConfig:
++    private_key: str
++    funder_address: str
++    signature_type: int = 1
++    chain_id: int = 137
++    max_slippage_cents: float = 5.0
++
++
++@dataclass
++class LiveOrderResult:
++    ok: bool
++    token_id: str
++    amount_usd: float
++    fill_price: float = 0.0
++    contracts: float = 0.0
++    cost_paid: float = 0.0
++    order_id: str = ""
++    raw: dict[str, Any] | None = None
++    error: str = ""
++
++
++def load_live_config() -> LiveClobConfig:
++    load_dotenv()
++    key = os.getenv("POLYMARKET_PRIVATE_KEY", "").strip()
++    funder = os.getenv("POLYMARKET_FUNDER_ADDRESS", "").strip()
++    if not key or not funder:
++        raise RuntimeError(
++            "POLYMARKET_PRIVATE_KEY and POLYMARKET_FUNDER_ADDRESS must be set in .env"
++        )
++    sig = int(os.getenv("POLYMARKET_SIGNATURE_TYPE", "1"))
++    chain = int(os.getenv("POLYMARKET_CHAIN_ID", "137"))
++    slip = float(os.getenv("POLYMARKET_MAX_SLIPPAGE_CENTS", "5"))
++    return LiveClobConfig(
++        private_key=key,
++        funder_address=funder,
++        signature_type=sig,
++        chain_id=chain,
++        max_slippage_cents=slip,
++    )
++
++
++class LiveClobExecutor:
++    """Places FOK market buys on Polymarket CLOB."""
++
++    def __init__(self, config: LiveClobConfig):
++        self.cfg = config
++        self._client: ClobClient | None = None
++
++    def _client_sync(self) -> ClobClient:
++        if self._client is None:
++            client = ClobClient(
++                CLOB_HOST,
++                key=self.cfg.private_key,
++                chain_id=self.cfg.chain_id,
++                signature_type=self.cfg.signature_type,
++                funder=self.cfg.funder_address,
++            )
++            client.set_api_creds(client.create_or_derive_api_creds())
++            self._client = client
++        return self._client
++
++    async def _run(self, fn, *args, **kwargs):
++        return await asyncio.to_thread(fn, *args, **kwargs)
++
++    async def ensure_allowance(self) -> None:
++        """Refresh collateral allowance (safe to call on startup)."""
++        def _go() -> None:
++            client = self._client_sync()
++            params = BalanceAllowanceParams(asset_type=AssetType.COLLATERAL)
++            client.update_balance_allowance(params)
++
++        await self._run(_go)
++        logger.info("collateral allowance updated")
++
++    async def get_usdc_balance(self) -> float:
++        def _go() -> float:
++            client = self._client_sync()
++            params = BalanceAllowanceParams(asset_type=AssetType.COLLATERAL)
++            data = client.get_balance_allowance(params)
++            if not isinstance(data, dict):
++                return 0.0
++            # balance is in micro-USDC (6 decimals)
++            raw = data.get("balance") or "0"
++            return int(raw) / 1_000_000.0
++
++        return await self._run(_go)
++
++    async def buy_fok(
++        self,
++        token_id: str,
++        amount_usd: float,
++        max_price: float | None = None,
++    ) -> LiveOrderResult:
++        """Market-buy ``amount_usd`` dollars of ``token_id`` (FOK)."""
++
++        def _go() -> LiveOrderResult:
++            client = self._client_sync()
++            try:
++                mo = MarketOrderArgs(
++                    token_id=token_id,
++                    amount=amount_usd,
++                    side=BUY,
++                    order_type=OrderType.FOK,
++                )
++                if max_price and max_price > 0:
++                    mo.price = max_price
++                signed = client.create_market_order(mo)
++                resp = client.post_order(signed, OrderType.FOK)
++                return _parse_order_response(token_id, amount_usd, resp)
++            except Exception as exc:
++                logger.exception("live order failed")
++                return LiveOrderResult(
++                    ok=False,
++                    token_id=token_id,
++                    amount_usd=amount_usd,
++                    error=str(exc),
++                )
++
++        return await self._run(_go)
++
++
++def _parse_order_response(
++    token_id: str,
++    amount_usd: float,
++    resp: Any,
++) -> LiveOrderResult:
++    if resp is None:
++        return LiveOrderResult(
++            ok=False, token_id=token_id, amount_usd=amount_usd,
++            error="empty response from CLOB",
++        )
++
++    if isinstance(resp, dict):
++        data = resp
++    else:
++        data = {"raw": str(resp)}
++
++    status = str(data.get("status", "")).lower()
++    success = data.get("success")
++    if success is False:
++        return LiveOrderResult(
++            ok=False, token_id=token_id, amount_usd=amount_usd,
++            raw=data, error=data.get("errorMsg") or data.get("error") or "order rejected",
++        )
++    if status in ("matched", "filled", "live", "delayed"):
++        ok = True
++    elif success is True:
++        ok = True
++    else:
++        ok = bool(data.get("orderID") or data.get("orderId"))
++
++    fill_price = _f(data.get("price") or data.get("avgPrice") or 0)
++    contracts = _f(
++        data.get("takingAmount")
++        or data.get("size")
++        or data.get("filledSize")
++        or 0
++    )
++    cost = _f(data.get("makingAmount") or amount_usd)
++    if contracts > 0 and fill_price <= 0 and cost > 0:
++        fill_price = cost / contracts
++    if fill_price <= 0:
++        fill_price = 0.5  # fallback for bookkeeping
++
++    order_id = str(data.get("orderID") or data.get("orderId") or "")
++
++    return LiveOrderResult(
++        ok=ok,
++        token_id=token_id,
++        amount_usd=amount_usd,
++        fill_price=fill_price,
++        contracts=contracts if contracts > 0 else amount_usd / max(fill_price, 0.01),
++        cost_paid=cost if cost > 0 else amount_usd,
++        order_id=order_id,
++        raw=data,
++        error="" if ok else str(data),
++    )
++
++
++def _f(val: Any) -> float:
++    try:
++        return float(val)
++    except (TypeError, ValueError):
++        return 0.0
+diff --git a/src/polymarket/paper_trader.py b/src/polymarket/paper_trader.py
+index 0612838..081ba84 100644
+--- a/src/polymarket/paper_trader.py
++++ b/src/polymarket/paper_trader.py
+@@ -73,6 +73,9 @@ class PaperConfig:
+     min_volume_usd: float = 0.0
+     # Optional human-readable label for logs / Telegram messages.
+     instance_label: str = "V1"
++    # Live trading: place real CLOB orders (requires POLYMARKET_* in .env).
++    live_mode: bool = False
++    max_position_usd: float = 25.0  # hard cap per order (liquidity / safety)
+ 
+     @property
+     def half_spread(self) -> float:
+@@ -111,6 +114,7 @@ class PaperPosition:
+     correct: bool | None = None
+     payoff: float | None = None
+     pnl: float | None = None
++    live_order_id: str | None = None
+ 
+ 
+ @dataclass
+@@ -274,6 +278,10 @@ class PaperTrader:
+         self._gamma_session: aiohttp.ClientSession | None = None
+         self._clob_session: aiohttp.ClientSession | None = None
+         self._stop = False
++        self.live = None
++        if config.live_mode:
++            from src.polymarket.live_clob import LiveClobExecutor, load_live_config
++            self.live = LiveClobExecutor(load_live_config())
+ 
+     # --- public API ---------------------------------------------------------
+     async def run(self) -> None:
+@@ -296,14 +304,25 @@ class PaperTrader:
+             f"cap {self.cfg.max_pct_per_trade*100:.0f}%"
+         ) if self.cfg.sizing_mode == "kelly" else f"Fijo ${self.cfg.position_size_usd:.0f}/trade"
+         assets = ", ".join(s.split("-")[0].upper() for s in self.cfg.series_slugs)
++        mode_str = "🟢 <b>LIVE</b> (órdenes reales)" if self.cfg.live_mode else "📝 Paper"
++        if self.live:
++            try:
++                await self.live.ensure_allowance()
++                self.state.bankroll = await self.live.get_usdc_balance()
++                _save_state(Path(self.cfg.state_path), self.state)
++            except Exception as exc:
++                logger.exception("live startup balance sync failed")
++                await self.notifier.send(f"⚠️ LIVE: no pude leer balance: {exc}")
+         await self.notifier.send(
+-            "🤖 <b>Bot encendido</b>\n"
++            f"🤖 <b>Bot encendido</b> — {mode_str}\n"
+             f"Bankroll: <code>${self.state.bankroll:.2f}</code>\n"
+             f"Sizing: <code>{sizing_str}</code>\n"
+             f"Threshold edge: <code>{self.cfg.entry_threshold*100:.0f}pp</code>\n"
+             f"Assets: <code>{assets}</code>\n"
+             f"Costos asumidos: {self.cfg.half_spread_cents}¢ + {self.cfg.fee_rate_pct}% fee\n"
+-            "\nUsá /help para ver comandos disponibles."
++            + (f"Stop loss: pausa bajo <code>${self.cfg.bankroll_floor_usd:.0f}</code>\n"
++               if self.cfg.live_mode else "")
++            + "\nUsá /help para ver comandos disponibles."
+         )
+         ctx = ssl.create_default_context(cafile=certifi.where())
+         self._gamma_session = aiohttp.ClientSession(
+@@ -370,6 +389,11 @@ class PaperTrader:
+     # --- internals ----------------------------------------------------------
+     async def _tick(self) -> None:
+         now = _now_utc()
++        if self.cfg.live_mode and self.live:
++            try:
++                self.state.bankroll = await self.live.get_usdc_balance()
++            except Exception as exc:
++                logger.warning("live balance sync: %s", exc)
+         async with GammaClient(session=self._gamma_session) as gamma, ClobClient(session=self._clob_session) as clob:
+             # 1) Discover open markets (next 0..max_seconds_to_resolution).
+             open_markets = await self._discover_open_markets(gamma, now)
+@@ -551,6 +575,8 @@ class PaperTrader:
+             position_usd = self.cfg.position_size_usd
+ 
+         position_usd = min(position_usd, self.state.bankroll * 0.95)
++        if self.cfg.live_mode:
++            position_usd = min(position_usd, self.cfg.max_position_usd)
+         if position_usd < self.cfg.min_position_usd:
+             logger.info("Position size $%.2f below min, skipping %s", position_usd, mkt.slug)
+             return
+@@ -561,7 +587,30 @@ class PaperTrader:
+         if cost_paid > self.state.bankroll:
+             return
+ 
+-        self.state.bankroll -= cost_paid
++        live_order_id: str | None = None
++        if self.cfg.live_mode and self.live:
++            token_id = mkt.token_id_up if direction == "UP" else mkt.token_id_down
++            max_price = min(0.99, fill + self.live.cfg.max_slippage_cents / 100.0)
++            result = await self.live.buy_fok(token_id, position_usd, max_price=max_price)
++            if not result.ok:
++                await self.notifier.send(
++                    f"🔴 <b>LIVE orden falló</b> — {mkt.asset.upper()} {direction}\n"
++                    f"<i>{mkt.question}</i>\n"
++                    f"Error: <code>{result.error[:200]}</code>"
++                )
++                logger.warning("live order failed %s: %s", mkt.slug, result.error)
++                return
++            fill = result.fill_price
++            contracts = result.contracts
++            cost_paid = result.cost_paid
++            live_order_id = result.order_id or None
++            try:
++                self.state.bankroll = await self.live.get_usdc_balance()
++            except Exception:
++                self.state.bankroll -= cost_paid
++        else:
++            self.state.bankroll -= cost_paid
++
+         pos = PaperPosition(
+             market_id=mkt.market_id,
+             slug=mkt.slug,
+@@ -579,19 +628,26 @@ class PaperTrader:
+             contracts=contracts,
+             cost_paid=cost_paid,
+             opened_at_utc=_iso(now),
++            live_order_id=live_order_id,
+         )
+         self.state.open_positions[mkt.market_id] = pos
+         _save_state(Path(self.cfg.state_path), self.state)
+ 
+         secs_left = int(seconds_remaining)
++        if self.cfg.live_mode:
++            mode_tag = "🟢 LIVE"
++        elif "DEMO" in self.cfg.instance_label.upper() or self.cfg.instance_label.upper().startswith("V4A"):
++            mode_tag = "📝 DEMO"
++        else:
++            mode_tag = "🎯"
+         await self.notifier.send(
+-            f"🎯 <b>SEÑAL {direction}</b> — {mkt.asset.upper()}\n"
++            f"{mode_tag} <b>SEÑAL {direction}</b> — {mkt.asset.upper()}\n"
+             f"<i>{mkt.question}</i>\n"
+             f"Strike: <code>{strike:,.2f}</code> | Spot: <code>{s_now:,.2f}</code>\n"
+             f"p_poly={p_poly_up*100:.1f}% · p_fair={p_fair_up*100:.1f}% · "
+             f"<b>edge={edge*100:+.1f}pp</b>\n"
+             f"Fill: <code>{fill*100:.1f}¢</code> | Contratos: <code>{contracts:.2f}</code>\n"
+-            f"Apostado: <code>${cost_paid:.2f}</code> de bankroll <code>${self.state.bankroll+cost_paid:.2f}</code>\n"
++            f"Apostado: <code>${cost_paid:.2f}</code> de bankroll <code>${self.state.bankroll:.2f}</code>\n"
+             f"Resolución en {secs_left//60}m{secs_left%60:02d}s"
+         )
+         logger.info(
+@@ -624,7 +680,15 @@ class PaperTrader:
+             correct = (outcome == pos.direction)
+             payoff = pos.contracts if correct else 0.0
+             pnl = payoff - pos.cost_paid
+-            self.state.bankroll += payoff
++            if self.cfg.live_mode and self.live:
++                try:
++                    await asyncio.sleep(3)
++                    self.state.bankroll = await self.live.get_usdc_balance()
++                except Exception as exc:
++                    logger.warning("live balance sync after settle: %s", exc)
++                    self.state.bankroll += payoff
++            else:
++                self.state.bankroll += payoff
+             pos.settled_at_utc = _iso(now)
+             pos.outcome = outcome
+             pos.correct = correct
+diff --git a/vps/install_autostart.ps1 b/vps/install_autostart.ps1
+index c17a2a6..6af421e 100644
+--- a/vps/install_autostart.ps1
++++ b/vps/install_autostart.ps1
+@@ -2,7 +2,7 @@
+ # cada vez que inicies sesión en el VPS (sobrevive reinicios).
+ # Correr UNA vez:  powershell -ExecutionPolicy Bypass -File vps\install_autostart.ps1
+ $ErrorActionPreference = "Stop"
+-$startScript = Join-Path $PSScriptRoot "start_bots.ps1"
++$startScript = Join-Path $PSScriptRoot "start_bots_focused.ps1"
+ 
+ $action = New-ScheduledTaskAction -Execute "powershell.exe" `
+     -Argument "-ExecutionPolicy Bypass -WindowStyle Hidden -File `"$startScript`""
+@@ -12,7 +12,7 @@ $settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries `
+ 
+ Register-ScheduledTask -TaskName "PolymarketBots" -Action $action -Trigger $trigger `
+     -Settings $settings -Force `
+-    -Description "Arranca los bots de Polymarket (V1 + V2B) al iniciar sesion en el VPS."
++    -Description "Arranca bots foco Polymarket (V4A demo + V4B demo + LIVE) al iniciar sesion."
+ 
+ Write-Host "Tarea 'PolymarketBots' registrada." -ForegroundColor Green
+ Write-Host "Los bots arrancaran solos al iniciar sesion en el VPS." -ForegroundColor Green
+diff --git a/vps/reset_v4b_comparison.ps1 b/vps/reset_v4b_comparison.ps1
+new file mode 100644
+index 0000000..a891728
+--- /dev/null
++++ b/vps/reset_v4b_comparison.ps1
+@@ -0,0 +1,32 @@
++# Reinicia V4A/V4B demo y LIVE para comparacion limpia desde $95.98.
++# Hace backup de los state.json viejos antes de borrar.
++$ErrorActionPreference = "Stop"
++$root = Split-Path $PSScriptRoot -Parent
++Set-Location $root
++$ts = Get-Date -Format "yyyyMMdd_HHmmss"
++$backup = Join-Path $root "data\backups\$ts"
++New-Item -ItemType Directory -Force -Path $backup | Out-Null
++
++$files = @(
++    "data\paper_trading_v4\state.json",
++    "data\paper_trading_v4b\state.json",
++    "data\live_trading_v4b\state.json"
++)
++foreach ($rel in $files) {
++    $path = Join-Path $root $rel
++    if (Test-Path $path) {
++        $dest = Join-Path $backup (Split-Path $rel -Leaf)
++        Copy-Item $path $dest
++        Remove-Item $path -Force
++        Write-Host "  backup + reset: $rel" -ForegroundColor Gray
++    }
++}
++
++Write-Host ""
++Write-Host "Reset listo. Backup en: $backup" -ForegroundColor Green
++Write-Host "Al arrancar los bots:" -ForegroundColor Cyan
++Write-Host "  V4A demo  -> empieza en `$95.98 (paper)" -ForegroundColor White
++Write-Host "  V4B demo  -> empieza en `$95.98 (paper)" -ForegroundColor White
++Write-Host "  V4B LIVE  -> lee balance real de Polymarket (~`$95.98)" -ForegroundColor White
++Write-Host ""
++Write-Host "Ahora corre: powershell -File vps\start_bots_focused.ps1" -ForegroundColor Yellow
+diff --git a/vps/run_dashboard.ps1 b/vps/run_dashboard.ps1
+index a731df1..1aadc8a 100644
+--- a/vps/run_dashboard.ps1
++++ b/vps/run_dashboard.ps1
+@@ -1,6 +1,6 @@
+ # Corre el bot Dashboard de Telegram con auto-reinicio.
+ # Este bot vive en el mismo VPS que los demas bots y lee directamente los
+-# state.json para mostrar resumen consolidado de los 5 bots (V1, V2B, V4A, V4B, V4C).
++# state.json para resumen V4A demo + V4B demo + V4B LIVE.
+ #
+ # Usa TELEGRAM_BOT_TOKEN_DASHBOARD del .env (token del bot Telegram dedicado).
+ # Si no esta seteado, el script se detiene con error.
+diff --git a/vps/run_v4.ps1 b/vps/run_v4.ps1
+index 6c2798d..676404e 100644
+--- a/vps/run_v4.ps1
++++ b/vps/run_v4.ps1
+@@ -21,20 +21,20 @@ while ($true) {
+     Write-Host "[V4] Arrancando paper trader (Endgame)..." -ForegroundColor Cyan
+     if ([string]::IsNullOrWhiteSpace($tokenV4)) {
+         & $py scripts/run_paper_trader.py `
+-            --bankroll 100 --threshold 0.30 `
++            --bankroll 95.98 --bankroll-floor 67 --threshold 0.30 `
+             --max-seconds-to-resolution 300 `
+             --min-seconds-to-resolution 90 `
+             --kelly-fraction 0.50 --max-pct-per-trade 0.20 `
+-            --instance-label V4 `
++            --instance-label "V4A-DEMO" `
+             --state-path data/paper_trading_v4/state.json `
+             --log-file logs/paper_v4.log
+     } else {
+         & $py scripts/run_paper_trader.py `
+-            --bankroll 100 --threshold 0.30 `
++            --bankroll 95.98 --bankroll-floor 67 --threshold 0.30 `
+             --max-seconds-to-resolution 300 `
+             --min-seconds-to-resolution 90 `
+             --kelly-fraction 0.50 --max-pct-per-trade 0.20 `
+-            --instance-label V4 `
++            --instance-label "V4A-DEMO" `
+             --state-path data/paper_trading_v4/state.json `
+             --telegram-token $tokenV4 `
+             --log-file logs/paper_v4.log
+diff --git a/vps/run_v4b_demo.ps1 b/vps/run_v4b_demo.ps1
+new file mode 100644
+index 0000000..12ac25a
+--- /dev/null
++++ b/vps/run_v4b_demo.ps1
+@@ -0,0 +1,39 @@
++# V4B paper (demo) CON Telegram — comparar lado a lado con LIVE.
++# Usa bot V4B (TELEGRAM_BOT_TOKEN_V4B). LIVE usa el bot viejo V1.
++$ErrorActionPreference = "Continue"
++$root = Split-Path $PSScriptRoot -Parent
++Set-Location $root
++$py = Join-Path $root ".venv\Scripts\python.exe"
++
++$tokenV4B = ""
++$chatId = ""
++foreach ($line in Get-Content (Join-Path $root ".env")) {
++    if ($line -match '^\s*TELEGRAM_BOT_TOKEN_V4B\s*=\s*(.+)$') { $tokenV4B = $Matches[1].Trim() }
++    if ($line -match '^\s*TELEGRAM_CHAT_ID_DEMO\s*=\s*(.+)$') { $chatId = $Matches[1].Trim() }
++}
++if ([string]::IsNullOrWhiteSpace($chatId)) {
++    foreach ($line in Get-Content (Join-Path $root ".env")) {
++        if ($line -match '^\s*TELEGRAM_CHAT_ID\s*=\s*(.+)$') { $chatId = $Matches[1].Trim(); break }
++    }
++}
++if ([string]::IsNullOrWhiteSpace($tokenV4B)) {
++    Write-Host "[V4B-DEMO] ERROR: falta TELEGRAM_BOT_TOKEN_V4B en .env" -ForegroundColor Red
++    exit 1
++}
++
++while ($true) {
++    Write-Host "[V4B-DEMO] Paper 40pp -> Telegram V4B (bankroll `$95.98)..." -ForegroundColor Cyan
++    & $py scripts/run_paper_trader.py `
++        --bankroll 95.98 --bankroll-floor 67 `
++        --threshold 0.40 `
++        --max-seconds-to-resolution 300 `
++        --min-seconds-to-resolution 90 `
++        --kelly-fraction 0.50 --max-pct-per-trade 0.20 `
++        --instance-label "V4B-DEMO" `
++        --state-path data/paper_trading_v4b/state.json `
++        --telegram-token $tokenV4B `
++        --telegram-chat-id $chatId `
++        --log-file logs/paper_v4b.log
++    Write-Host "[V4B-DEMO] Reintentando en 10s..." -ForegroundColor Yellow
++    Start-Sleep -Seconds 10
++}
+diff --git a/vps/run_v4b_live.ps1 b/vps/run_v4b_live.ps1
+new file mode 100644
+index 0000000..db16b79
+--- /dev/null
++++ b/vps/run_v4b_live.ps1
+@@ -0,0 +1,59 @@
++# V4B LIVE — ordenes reales en Polymarket (USDC).
++# IMPORTANTE: detener run_v4b.ps1 (paper) antes de arrancar este script
++# para no duplicar senales en el mismo mercado.
++#
++# Config = igual paper V4B: Kelly 50%, cap 20%, 40pp endgame, stop $67.
++# Requiere en .env:
++#   POLYMARKET_PRIVATE_KEY, POLYMARKET_FUNDER_ADDRESS,
++#   POLYMARKET_SIGNATURE_TYPE=1, TELEGRAM_BOT_TOKEN_V4B, TELEGRAM_CHAT_ID
++$ErrorActionPreference = "Continue"
++$root = Split-Path $PSScriptRoot -Parent
++Set-Location $root
++$py = Join-Path $root ".venv\Scripts\python.exe"
++
++New-Item -ItemType Directory -Force -Path (Join-Path $root "data\live_trading_v4b") | Out-Null
++
++# Token LIVE: reutiliza el bot viejo de V1 (TELEGRAM_BOT_TOKEN_LIVE o TELEGRAM_BOT_TOKEN).
++# Si no hay, usa TELEGRAM_BOT_TOKEN_V4B.
++$tokenLive = ""
++$chatId = ""
++foreach ($line in Get-Content (Join-Path $root ".env")) {
++    if ($line -match '^\s*TELEGRAM_BOT_TOKEN_LIVE\s*=\s*(.+)$') { $tokenLive = $Matches[1].Trim() }
++    if ($line -match '^\s*TELEGRAM_BOT_TOKEN\s*=\s*(.+)$' -and [string]::IsNullOrWhiteSpace($tokenLive)) {
++        $tokenLive = $Matches[1].Trim()
++    }
++    if ($line -match '^\s*TELEGRAM_BOT_TOKEN_V4B\s*=\s*(.+)$' -and [string]::IsNullOrWhiteSpace($tokenLive)) {
++        $tokenLive = $Matches[1].Trim()
++    }
++    if ($line -match '^\s*TELEGRAM_CHAT_ID_LIVE\s*=\s*(.+)$') { $chatId = $Matches[1].Trim() }
++}
++if ([string]::IsNullOrWhiteSpace($chatId)) {
++    foreach ($line in Get-Content (Join-Path $root ".env")) {
++        if ($line -match '^\s*TELEGRAM_CHAT_ID\s*=\s*(.+)$') { $chatId = $Matches[1].Trim(); break }
++    }
++}
++if ([string]::IsNullOrWhiteSpace($tokenLive)) {
++    Write-Host "[V4B-LIVE] ERROR: falta token Telegram (TELEGRAM_BOT_TOKEN_LIVE o TELEGRAM_BOT_TOKEN)" -ForegroundColor Red
++    exit 1
++}
++
++while ($true) {
++    Write-Host "[V4B-LIVE] Arrancando trader LIVE (40pp, Kelly 50%K cap 20%)..." -ForegroundColor Green
++    & $py scripts/run_paper_trader.py `
++        --live `
++        --bankroll 95.98 --bankroll-floor 67 `
++        --sizing-mode kelly `
++        --kelly-fraction 0.50 --max-pct-per-trade 0.20 `
++        --max-position-usd 50 `
++        --threshold 0.40 `
++        --max-seconds-to-resolution 300 `
++        --min-seconds-to-resolution 90 `
++        --max-concurrent 2 `
++        --instance-label "V4B-LIVE" `
++        --state-path data/live_trading_v4b/state.json `
++        --telegram-token $tokenLive `
++        --telegram-chat-id $chatId `
++        --log-file logs/live_v4b.log
++    Write-Host "[V4B-LIVE] Detenido. Reintento en 10s... (Ctrl+C para salir)" -ForegroundColor Yellow
++    Start-Sleep -Seconds 10
++}
+diff --git a/vps/start_bots_focused.ps1 b/vps/start_bots_focused.ps1
+new file mode 100644
+index 0000000..e384d15
+--- /dev/null
++++ b/vps/start_bots_focused.ps1
+@@ -0,0 +1,39 @@
++# Setup foco: V4A demo + V4B demo + V4B LIVE + Dashboard.
++# Comparacion demo vs live en Telegram (2 bots distintos, mismo chat opcional).
++#
++#   V4A demo  - paper 30pp   -> bot V4A  (TELEGRAM_BOT_TOKEN_V4)  $95.98
++#   V4B demo  - paper 40pp   -> bot V4B  (TELEGRAM_BOT_TOKEN_V4B)  $95.98
++#   V4B LIVE  - USDC real    -> bot V1   (TELEGRAM_BOT_TOKEN_LIVE) ~$95.98
++#   Dashboard -> /week /all
++#
++# Reset limpio: powershell -File vps\reset_v4b_comparison.ps1
++$root = Split-Path $PSScriptRoot -Parent
++New-Item -ItemType Directory -Force -Path (Join-Path $root "logs") | Out-Null
++New-Item -ItemType Directory -Force -Path (Join-Path $root "data\live_trading_v4b") | Out-Null
++
++Write-Host "=== Setup FOCO: V4A demo + V4B demo + V4B LIVE + Dashboard ===" -ForegroundColor Cyan
++Write-Host "Deteniendo bots viejos primero..." -ForegroundColor Yellow
++& (Join-Path $PSScriptRoot "stop_all_bots.ps1")
++Start-Sleep -Seconds 3
++
++Start-Process powershell -WindowStyle Minimized -ArgumentList `
++    "-ExecutionPolicy","Bypass","-File",(Join-Path $PSScriptRoot "run_v4.ps1")
++
++Start-Process powershell -WindowStyle Minimized -ArgumentList `
++    "-ExecutionPolicy","Bypass","-File",(Join-Path $PSScriptRoot "run_v4b_demo.ps1")
++
++Start-Process powershell -WindowStyle Minimized -ArgumentList `
++    "-ExecutionPolicy","Bypass","-File",(Join-Path $PSScriptRoot "run_v4b_live.ps1")
++
++Start-Process powershell -WindowStyle Minimized -ArgumentList `
++    "-ExecutionPolicy","Bypass","-File",(Join-Path $PSScriptRoot "run_dashboard.ps1")
++
++Write-Host ""
++Write-Host "Bots activos:" -ForegroundColor Green
++Write-Host "  [V4A-DEMO] paper 30pp   - bot Telegram V4A  (desde `$95.98)" -ForegroundColor White
++Write-Host "  [V4B-DEMO] paper 40pp   - bot Telegram V4B  (desde `$95.98)" -ForegroundColor White
++Write-Host "  [V4B-LIVE] USDC real    - bot V1 reutilizado (~`$95.98)" -ForegroundColor Green
++Write-Host "  [Dashboard] /week /all - demo vs live" -ForegroundColor Cyan
++Write-Host ""
++Write-Host "APAGADOS: V1, V2B, V4C" -ForegroundColor Yellow
++Write-Host "Logs: paper_v4.log, paper_v4b.log, live_v4b.log, dashboard_bot.log" -ForegroundColor Gray
+diff --git a/vps/stop_all_bots.ps1 b/vps/stop_all_bots.ps1
+new file mode 100644
+index 0000000..575a1e5
+--- /dev/null
++++ b/vps/stop_all_bots.ps1
+@@ -0,0 +1,23 @@
++# Detiene TODOS los bots Polymarket (ventanas PowerShell con run_*.ps1).
++# Correr antes de arrancar el setup foco (V4A demo + V4B demo + V4B live).
++$ErrorActionPreference = "Continue"
++Write-Host "Deteniendo bots Polymarket..." -ForegroundColor Yellow
++
++Get-CimInstance Win32_Process -Filter "Name='python.exe'" | ForEach-Object {
++    $cmd = $_.CommandLine
++    if ($cmd -match "run_paper_trader|run_dashboard_bot|run_paper_sumone") {
++        Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue
++        Write-Host "  killed pid $($_.ProcessId)" -ForegroundColor Gray
++    }
++}
++
++# Tambien cerrar loops PowerShell de los scripts run_*.ps1
++Get-CimInstance Win32_Process -Filter "Name='powershell.exe'" | ForEach-Object {
++    $cmd = $_.CommandLine
++    if ($cmd -match "run_v1|run_v2b|run_v4|run_v4b|run_v4c|run_dashboard|start_bots") {
++        Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue
++        Write-Host "  killed ps $($_.ProcessId): $($cmd.Substring(0, [Math]::Min(60, $cmd.Length)))..." -ForegroundColor Gray
++    }
++}
++
++Write-Host "Listo. Verifica que no queden ventanas [V1][V2B][V4][V4C][Dashboard]." -ForegroundColor Green
+-- 
+2.50.1 (Apple Git-155)
+

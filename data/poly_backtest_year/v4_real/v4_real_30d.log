@@ -1,0 +1,71 @@
+fatal: bad revision 'HEAD'
+Window: 2026-05-03T13:00:00+00:00  ->  2026-06-02T13:00:00+00:00
+Assets: ['bitcoin', 'ethereum', 'solana', 'xrp']
+2026-06-02 08:54:17,914 | INFO     | trading.data.exchange | Exchange client created: binance (sandbox=False)
+2026-06-02 08:54:51,210 | INFO     | trading.polymarket.gamma | Gamma: found 32 Up/Down markets in 2026-05-03..2026-06-02
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+Up/Down markets matched: 32
+
+==============================================================================
+                 POLYMARKET 'UP OR DOWN' EDGE — EMPIRICAL TEST                
+==============================================================================
+  Markets analyzed       : 32
+  Entry threshold        : 30.0pp  (|p_fair - p_poly|)
+  Half-spread charged    : 1.50¢ per fill
+  Flat fee charged       : 0.50¢ per fill (gas/relayer)
+  Proportional taker fee : 2.00% of fill price
+  Min sec-to-resolution  : 60s (look-ahead guardrail)
+
+  Markets with signal    : 7  (21.9%)
+  Markets without signal : 25
+      reason                  'no_signal': 25
+
+  Win rate               : 71.4%  (5/7)
+  Avg signal |edge|      : 35.21pp
+  Avg naive fill price   : $0.4071
+
+  --- PnL per signal ($1 stake = 1 contract paying $1 if right) ---
+    Naive   total:  $2.1500 | mean:  $0.3071 | per market:  $0.0672
+    Realistic total:  $1.9509 | mean:  $0.2787 | per market:  $0.0610
+
+  --- Capital ROI per signal (PnL / dollars at risk) ---
+    Naive   median ROI: +88.68% | mean: +180.54%
+    Realistic median ROI: +80.57% | mean: +155.66%
+
+  By asset:
+    bitcoin    n=   1  win=  0.0%  |edge|=33.31pp  PnL naive=-$0.4550  realistic=-$0.4844
+    ethereum   n=   1  win=100.0%  |edge|=30.60pp  PnL naive= $0.4350  realistic= $0.4034
+    solana     n=   2  win=100.0%  |edge|=38.47pp  PnL naive= $1.3300  realistic= $1.2760
+    xrp        n=   3  win= 66.7%  |edge|=35.21pp  PnL naive= $0.8400  realistic= $0.7559
+
+==============================================================================
+  Verdict: PnL realistic POSITIVE; edge survives spread+fee in this sample.
+  CAVEATS: 1-min data only — misses sub-second moves. Mid-price not bid/ask.
+           No order-book depth modeled. Hold-to-resolution; no exit slippage.
+           Sample may be small. Run with --days 14+ for stable stats.
+==============================================================================
+
+==============================================================================
+            MODEL CALIBRATION (predicted prob vs realized win rate)           
+==============================================================================
+  fair in [0.50,0.55)  n=   1  predicted= 50.0%  actual=100.0%  diff=+50.0pp
+  fair in [0.55,0.60)  n=   1  predicted= 57.1%  actual=100.0%  diff=+42.9pp
+  fair in [0.70,0.80)  n=   1  predicted= 78.8%  actual=  0.0%  diff=-78.8pp
+  fair in [0.80,1.00)  n=   4  predicted= 86.4%  actual= 75.0%  diff=-11.4pp
+
+ PnL by signal |edge| bucket (realistic costs):
+  |edge| in [25.0,50.0)pp  n=   7  win= 71.4%  mean PnL=$+0.2787  total=$+1.95
+==============================================================================
+
+==============================================================================
+              MONTHLY BREAKDOWN (is the edge decaying over time?)             
+==============================================================================
+  month     n     win%   |edge|   PnL_naive    PnL_real    ROI_real%
+  --------------------------------------------------------------------------
+  2026-06     7   71.4%  35.21pp  $    2.15   $    1.95   +66.02%
+==============================================================================
+
+Wrote per-market results to data/poly_backtest_year/v4_real/v4_real_30d.csv

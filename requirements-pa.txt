@@ -1,0 +1,8 @@
+# PythonAnywhere — instalar en Bash: pip install -r requirements-pa.txt
+fastapi>=0.110
+pandas>=2.2
+numpy>=2.0
+pydantic>=2.6
+python-multipart>=0.0.9
+a2wsgi>=1.10
+requests>=2.31

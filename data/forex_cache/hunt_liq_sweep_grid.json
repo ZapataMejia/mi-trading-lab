@@ -1,0 +1,39 @@
+{
+  "combos_tested": 768,
+  "full_pass_count": 112,
+  "baseline": {
+    "lookback_bars": 24,
+    "sess_start": 700,
+    "sess_end": 1400,
+    "risk_pct": 2.1,
+    "tp_ratio": 1.5,
+    "max_trades_per_day": 2,
+    "w30_rate": 41.1,
+    "w30_pass": 23,
+    "w30_total": 56,
+    "w30_med": 4,
+    "full_dd": -5.91,
+    "full_daily": 4.71,
+    "full_trades": 2639
+  },
+  "best": {
+    "lookback_bars": 36,
+    "sess_start": 700,
+    "sess_end": 1200,
+    "risk_pct": 2.0,
+    "tp_ratio": 1.5,
+    "sl_buffer_pips": 2.0,
+    "max_trades_per_day": 2,
+    "broker_utc_offset_hours": 7,
+    "w30_rate": 42.9,
+    "w30_pass": 24,
+    "w30_total": 56,
+    "w30_med": 7,
+    "full_dd": -4.1,
+    "full_daily": 4.51,
+    "full_trades": 2380,
+    "full_pass": true
+  },
+  "improved": true,
+  "delta_pp": 1.8
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Liquidity Sweep SAFE — WS CLASSIC $5k",
+  "saved_at": "2026-07-01",
+  "strategy": "liquidity_sweep",
+  "symbol": "EURUSD",
+  "timeframe": "M5",
+  "lookback_bars": 36,
+  "equal_tolerance_pips": 3.0,
+  "sess_start": 700,
+  "sess_end": 1400,
+  "risk_pct": 1.5,
+  "mm_risk_pct": 1.5,
+  "tp_ratio": 1.5,
+  "sl_buffer_pips": 3.0,
+  "max_trades_per_day": 1,
+  "initial_balance": 5000,
+  "broker_utc_offset_hours": 7,
+  "allow_long": true,
+  "allow_short": true,
+  "backtest_default_period": {
+    "start": "2017-01-03",
+    "end": "2024-10-30"
+  },
+  "notes": "Config oficial prop firm. Riesgo 1.5%, 1 trade/día, sesión 07:00-14:00 broker UTC+7."
+}

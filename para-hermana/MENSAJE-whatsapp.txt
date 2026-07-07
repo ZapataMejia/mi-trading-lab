@@ -1,0 +1,25 @@
+Hola! Te dejo la app lista 🙌
+
+🔗 https://frontend-kappa-sepia-16.vercel.app/fondeo/liquidity-sweep
+
+Cómo probar la estrategia:
+
+1️⃣ Ejemplo que PASA eval WS (recomendado para empezar):
+   Fechas: 01/01/2025 → 31/03/2025
+   Pulsa "Simular este periodo" (~90 días, un solo clic)
+   Deberías ver ~+$1,000 y "PASA eval"
+
+2️⃣ Si quieres 6 meses o un año (ene–jul, todo 2026, etc.):
+   Pon las fechas que quieras en el calendario
+   Aparece un botón AZUL: "Simular ene–jul 2026 mes a mes (7 meses)"
+   Pulsa ese — NO el gris de abajo
+   Espera 2–4 min (va mes por mes)
+   Toca cada mes para ver trades y gráfico
+
+El límite de 90 días es del servidor gratis, no de la estrategia. Mes a mes = mismo backtest, solo partido en trozos.
+
+3️⃣ Arriba de todo verás cuánto tarda en pasar la eval (~2–3 meses en promedio). Si un mes dice "Rentable" y no "Pasa eval", está bien — significa que ganó pero no llegó a +$400 en ese mes. La estrategia se usa reintentando evals.
+
+Guía dentro de la app: menú → Fondeo / Simulador WS ★
+
+Cualquier duda me escribes 💬

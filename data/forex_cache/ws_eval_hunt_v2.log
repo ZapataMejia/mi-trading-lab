@@ -1,0 +1,18 @@
+WS HUNT v2 — 391,810 barras
+
+Combos: 300
+
+  scan 50/300 ok=25
+  scan 100/300 ok=48
+  scan 150/300 ok=77
+  scan 200/300 ok=102
+  scan 250/300 ok=136
+  scan 300/300 ok=166
+
+DD ok: 166 | ventanas top 30
+
+
+Survivors: 0
+
+
+Guardado /Users/santiago/Documents/Personal/trading/data/forex_cache/ws_eval_best.json

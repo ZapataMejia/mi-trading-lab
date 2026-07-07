@@ -1,0 +1,42 @@
+MEGA HUNT · EURUSD OOS 2022-01-01→2024-10-30 · 211720 bars
+
+Configs: 843
+
+  PASS [liq_sweep] daily=1.42% trades=726
+  PASS [liq_sweep] daily=1.42% trades=736
+  PASS [liq_sweep] daily=1.42% trades=736
+  PASS [liq_sweep] daily=2.12% trades=736
+  PASS [liq_sweep] daily=1.38% trades=706
+  PASS [liq_sweep] daily=1.32% trades=706
+  PASS [liq_sweep] daily=2.37% trades=1213
+  PASS [liq_sweep] daily=2.31% trades=1151
+  PASS [liq_sweep] daily=2.07% trades=706
+  PASS [liq_sweep] daily=1.98% trades=706
+  PASS [liq_sweep] daily=2.76% trades=706
+  PASS [liq_sweep] daily=2.64% trades=706
+  PASS [liq_sweep] daily=1.38% trades=706
+  PASS [liq_sweep] daily=2.37% trades=1177
+  PASS [liq_sweep] daily=3.54% trades=1177
+  PASS [liq_sweep] daily=1.38% trades=729
+  PASS [liq_sweep] daily=1.32% trades=729
+  PASS [liq_sweep] daily=2.07% trades=729
+  PASS [liq_sweep] daily=1.98% trades=729
+  PASS [liq_sweep] daily=2.76% trades=729
+  PASS [liq_sweep] daily=2.64% trades=729
+  PASS [liq_sweep] daily=1.38% trades=729
+  PASS [liq_sweep] daily=2.37% trades=1305
+  PASS [liq_sweep] daily=2.07% trades=729
+  PASS [liq_sweep] daily=2.76% trades=729
+  PASS [liq_sweep] daily=1.38% trades=734
+  PASS [liq_sweep] daily=1.32% trades=734
+  PASS [liq_sweep] daily=2.31% trades=1377
+  PASS [liq_sweep] daily=2.07% trades=734
+  PASS [liq_sweep] daily=1.98% trades=734
+  PASS [liq_sweep] daily=2.76% trades=734
+  PASS [liq_sweep] daily=2.64% trades=734
+  PASS [liq_sweep] daily=1.38% trades=734
+  PASS [liq_sweep] daily=2.07% trades=734
+  200/843 survivors=91
+  PASS [liq_sweep] daily=2.76% trades=734
+  400/843 survivors=98
+  PASS [silver_bullet] daily=1.5% trades=74

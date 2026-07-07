@@ -1,0 +1,24 @@
+Cargando EURUSD M5...
+Datos: 2003-05-05 03:00:00+00:00 -> 2026-07-01 22:27:07+00:00 (1,657,316 barras)
+
+=== 2017-2022 lab (392,097 barras) ===
+  30d: pass 25.8% (8/31) | med 15d | esperado 3.88 intentos
+  60d: pass 50.0% (10/20) | med 41d | esperado 2.0 intentos
+  90d: pass 30.0% (6/20) | med 48d | esperado 3.33 intentos
+  full: pass=False meta_en=385d daily=2.63%
+
+=== 2022-2024 OOS (211,755 barras) ===
+  30d: pass 41.2% (7/17) | med 9d | esperado 2.43 intentos
+  60d: pass 41.7% (5/12) | med 23d | esperado 2.4 intentos
+  90d: pass 33.3% (4/12) | med 35d | esperado 3.0 intentos
+  full: pass=True meta_en=23d daily=1.98%
+
+=== 2017-2024 full (585,420 barras) ===
+  30d: pass 29.8% (14/47) | med 15d | esperado 3.36 intentos
+  60d: pass 45.2% (14/31) | med 28d | esperado 2.21 intentos
+  90d: pass 32.3% (10/31) | med 41d | esperado 3.1 intentos
+  full: pass=False meta_en=385d daily=2.63%
+
+→ /Users/santiago/Documents/Personal/trading/data/forex_cache/eval_timing_safe.json
+
+Cuando pasa: meta en ~9 días (mediana). ~41.2% de ventanas 30d pasan → con 2 cuentas ~65.4% de lograr al menos 1 pass en el primer intento. Si falla, reintento mes 2-3.

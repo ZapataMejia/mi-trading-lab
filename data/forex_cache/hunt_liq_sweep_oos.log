@@ -1,0 +1,32 @@
+OOS HUNT — 1280 combos · 8 workers
+Periodo full: 2022-01-01 → 2024-10-30
+Ventanas 30d: 2022-01-01 → 2024-08-01 · daily DD ≤ 4.5%
+
+  100/1280 survivors=25
+  200/1280 survivors=54
+  300/1280 survivors=64
+  400/1280 survivors=89
+  500/1280 survivors=136
+  600/1280 survivors=154
+  700/1280 survivors=182
+  800/1280 survivors=223
+  900/1280 survivors=260
+  1000/1280 survivors=262
+  1100/1280 survivors=267
+  1200/1280 survivors=269
+
+Fase 1: 269 pass OOS full + daily≤4.5% (3206s)
+
+FASE 2 MP — 30d en top 120
+
+  30/120
+  60/120
+  90/120
+  120/120
+
+BASELINE (config actual): 30d=43.8% daily=None%
+MEJOR: lb=36 700-1400 TP1.5 r1.5% max1/d buf3.0
+  30d=43.8% (7/16) med=9d DD=-1.64% daily=1.98%
+  Mejora vs baseline: +0.0pp
+→ /Users/santiago/Documents/Personal/trading/data/forex_cache/hunt_liq_sweep_oos.json
+→ /Users/santiago/Documents/Personal/trading/data/forex_cache/liq_sweep_best.json

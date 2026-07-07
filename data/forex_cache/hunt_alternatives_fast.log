@@ -1,0 +1,30 @@
+Screen 576 configs (full period)
+
+  100/576 candidates=0
+  200/576 candidates=0
+  300/576 candidates=0
+  400/576 candidates=0
+  FULL PASS [liq_sweep] $81143.73 trades=2639
+  FULL PASS [liq_sweep] $99834.54 trades=2143
+  FULL PASS [liq_sweep] $284066.77 trades=2554
+  FULL PASS [liq_sweep] $83777.53 trades=2024
+  500/576 candidates=4
+  FULL PASS [liq_sweep] $137383.57 trades=1895
+  FULL PASS [liq_sweep] $21692.99 trades=2108
+  FULL PASS [liq_sweep] $69038.32 trades=1843
+  FULL PASS [liq_sweep] $93516.72 trades=1813
+  FULL PASS [liq_sweep] $68630.93 trades=1787
+
+Candidatos: 9 — validando 30d en top 9
+
+  30d HIT [liq_sweep] 37.5% med=6d full=$284066.77
+  30d HIT [liq_sweep] 33.9% med=6d full=$137383.57
+  30d HIT [liq_sweep] 32.1% med=6d full=$99834.54
+  30d HIT [liq_sweep] 30.4% med=4d full=$93516.72
+  30d HIT [liq_sweep] 32.1% med=5d full=$83777.53
+  30d HIT [liq_sweep] 41.1% med=4d full=$81143.73
+  30d HIT [liq_sweep] 28.6% med=4d full=$69038.32
+  30d HIT [liq_sweep] 28.6% med=7d full=$68630.93
+  30d HIT [liq_sweep] 26.8% med=7d full=$21692.99
+
+Survivors 30d: 9 → /Users/santiago/Documents/Personal/trading/data/forex_cache/hunt_alternatives_fast.json

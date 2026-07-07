@@ -1,0 +1,92 @@
+{
+  "updated": "2026-07-01",
+  "objective": "Pasar WS CLASSIC $5k fase 1 en ≤60-90 días sin perder la cuenta",
+  "research_done": [
+    "Liquidity Sweep SMC (768 + 1280 combos OOS)",
+    "ICT Judas Swing",
+    "ICT Silver Bullet (nuevo engine)",
+    "ORB + ADX London (nuevo engine)",
+    "London breakout fade",
+    "EMA cross variantes",
+    "Consenso internet prop firms: 0.5-1.5% riesgo, ADX>20, evitar noticias"
+  ],
+  "honest_finding": "Ninguna estrategia EURUSD M5 alcanza ≥55% pass rate en ventanas 30d OOS 2022-2024. Mejor: Liquidity Sweep ~43.8% (7/16 ventanas).",
+  "solution": {
+    "name": "Liquidity Sweep SAFE — plan dual cuenta",
+    "why": "Única estrategia con pass 30d >40% en datos recientes + DD diario 1.98% (margen amplio vs límite 5%)",
+    "config": {
+      "symbol": "EURUSD",
+      "timeframe": "M5",
+      "lookback_bars": 36,
+      "sess_start": 700,
+      "sess_end": 1400,
+      "risk_pct": 1.5,
+      "mm_risk_pct": 1.5,
+      "tp_ratio": 1.5,
+      "sl_buffer_pips": 3.0,
+      "max_trades_per_day": 1,
+      "broker_utc_offset_hours": 7,
+      "allow_long": true,
+      "allow_short": true
+    },
+    "metrics_oos_2022_2024": {
+      "w30_pass_rate_pct": 41.2,
+      "w30_pass": "7/17",
+      "w30_median_days_to_meta": 9,
+      "w60_pass_rate_pct": 41.7,
+      "w60_median_days_to_meta": 23,
+      "full_daily_dd_pct": 1.98,
+      "full_static_dd_pct": -1.64,
+      "full_period_days_to_meta": 23
+    },
+    "timing_historical": {
+      "source": "scripts/eval_timing_safe.py",
+      "config_file": "data/forex_cache/liq_sweep_safe_config.json",
+      "when_passes_median_days_oos": 9,
+      "pass_rate_30d_oos_pct": 41.2,
+      "pass_rate_60d_oos_pct": 41.7,
+      "pass_rate_30d_all_years_pct": 29.8,
+      "pass_rate_60d_all_years_pct": 45.2,
+      "expected_attempts_30d": 2.43,
+      "prob_2_accounts_one_passes_pct": 65.4,
+      "realistic_eval_timeline": "1-4 semanas cuando entra en ventana buena; 1-2 intentos mensuales con 2 cuentas encaja en 2-3 meses"
+    },
+    "rejected_alternatives": {
+      "ict_judas": "0% ventanas 30d OOS",
+      "silver_bullet": "0% ventanas 30d OOS",
+      "orb_adx": "insuficiente / lento",
+      "ema_cross": "0% histórico",
+      "london_breakout": "DD catastrófico"
+    }
+  },
+  "execution_plan_2_3_months": {
+    "semana_1_2": "Demo WS con config SAFE. Solo operar si el lab y demo coinciden. Circuit breaker: parar el día si -2% flotante.",
+    "checklist_file": "data/forex_cache/ws_demo_checklist.json",
+    "semana_3": "Si demo ok → Eval CUENTA 1 (la regalada principal)",
+    "si_breach_cuenta_1": "Eval CUENTA 2 con misma config (sin cambiar parámetros por emoción)",
+    "probabilidad_2_cuentas_al_menos_1_pasa": "68.4%",
+    "mes_2_3": "Si ambas fallan: repetir eval cuenta restante o re-comprar solo si demo forward vuelve a ser positivo 2 semanas",
+    "vps": "Solo cuando EA MT5 replique exactamente esta lógica — no antes"
+  },
+  "recent_forward_2026_q1": {
+    "source": "scripts/eval_recent_2026.py",
+    "file": "data/forex_cache/eval_recent_2026_q1.json",
+    "pnl_usd": 449.14,
+    "pass_ws_eval": true,
+    "days_to_meta": 26,
+    "max_daily_dd_pct": 1.5,
+    "note": "Backtest con CSV mergeado Dukascopy abr2025-mar2026. Feb -376; Mar +408 en 15d."
+  },
+  "parallel_track": {
+    "name": "Agotamiento NAS100 (MNQ/NAS100 CFD)",
+    "note": "En datos recientes 5m long-only fue muy rentable. WS opera NAS100 como CFD. Requiere datos + EA separado. Diversifica si EURUSD falla.",
+    "script": "scripts/agotamiento_backtest.py"
+  },
+  "rules_never_break": [
+    "Riesgo 1.5% máximo por trade (nunca 2.1%)",
+    "Max 1 trade/día en eval",
+    "No operar día NFP/CPI (filtro manual)",
+    "No mirar curva de 5 años — solo ventana de 30 días",
+    "Parar si DD diario flotante > 3%"
+  ]
+}

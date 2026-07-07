@@ -1,0 +1,77 @@
+fatal: bad revision 'HEAD'
+Window: 2026-04-27T00:00:00+00:00  ->  2026-05-27T00:00:00+00:00
+Assets: ['bitcoin', 'ethereum', 'solana', 'xrp']
+2026-06-02 09:00:29,825 | INFO     | trading.data.exchange | Exchange client created: binance (sandbox=False)
+2026-06-02 09:00:29,874 | INFO     | trading.polymarket.gamma | Gamma series btc-up-or-down-hourly: 716 markets in 2026-04-27..2026-05-27
+2026-06-02 09:00:29,874 | INFO     | trading.polymarket.gamma | Gamma series ethereum-up-or-down-hourly: 0 markets in 2026-04-27..2026-05-27
+2026-06-02 09:00:29,905 | INFO     | trading.polymarket.gamma | Gamma series solana-up-or-down-hourly: 716 markets in 2026-04-27..2026-05-27
+2026-06-02 09:00:29,936 | INFO     | trading.polymarket.gamma | Gamma series xrp-up-or-down-hourly: 716 markets in 2026-04-27..2026-05-27
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+Up/Down markets matched: 2148
+
+==============================================================================
+                 POLYMARKET 'UP OR DOWN' EDGE — EMPIRICAL TEST                
+==============================================================================
+  Markets analyzed       : 2148
+  Entry threshold        : 30.0pp  (|p_fair - p_poly|)
+  Half-spread charged    : 1.50¢ per fill
+  Flat fee charged       : 0.50¢ per fill (gas/relayer)
+  Proportional taker fee : 2.00% of fill price
+  Min sec-to-resolution  : 60s (look-ahead guardrail)
+
+  Markets with signal    : 155  (7.2%)
+  Markets without signal : 1993
+      reason                  'no_signal': 1993
+
+  Win rate               : 61.3%  (95/155)
+  Avg signal |edge|      : 40.40pp
+  Avg naive fill price   : $0.2690
+
+  --- PnL per signal ($1 stake = 1 contract paying $1 if right) ---
+    Naive   total:  $53.3120 | mean:  $0.3439 | per market:  $0.0248
+    Realistic total:  $49.3317 | mean:  $0.3183 | per market:  $0.0230
+
+  --- Capital ROI per signal (PnL / dollars at risk) ---
+    Naive   median ROI: +98.02% | mean: +432.03%
+    Realistic median ROI: +89.35% | mean: +248.02%
+
+  By asset:
+    bitcoin    n=  48  win= 60.4%  |edge|=39.30pp  PnL naive= $16.5210  realistic= $15.2970
+    solana     n=  54  win= 57.4%  |edge|=39.92pp  PnL naive= $16.6205  realistic= $15.2367
+    xrp        n=  53  win= 66.0%  |edge|=41.89pp  PnL naive= $20.1705  realistic= $18.7980
+
+==============================================================================
+  Verdict: PnL realistic POSITIVE; edge survives spread+fee in this sample.
+  CAVEATS: 1-min data only — misses sub-second moves. Mid-price not bid/ask.
+           No order-book depth modeled. Hold-to-resolution; no exit slippage.
+           Sample may be small. Run with --days 14+ for stable stats.
+==============================================================================
+
+==============================================================================
+            MODEL CALIBRATION (predicted prob vs realized win rate)           
+==============================================================================
+  fair in [0.50,0.55)  n=   6  predicted= 52.6%  actual= 50.0%  diff= -2.6pp
+  fair in [0.55,0.60)  n=  15  predicted= 57.8%  actual= 60.0%  diff= +2.2pp
+  fair in [0.60,0.65)  n=   6  predicted= 63.2%  actual= 50.0%  diff=-13.2pp
+  fair in [0.65,0.70)  n=  13  predicted= 67.7%  actual= 76.9%  diff= +9.3pp
+  fair in [0.70,0.80)  n=  24  predicted= 74.7%  actual= 54.2%  diff=-20.6pp
+  fair in [0.80,1.00)  n=  47  predicted= 91.2%  actual= 87.2%  diff= -4.0pp
+
+ PnL by signal |edge| bucket (realistic costs):
+  |edge| in [25.0,50.0)pp  n= 130  win= 59.2%  mean PnL=$+0.2847  total=$+37.01
+  |edge| in [50.0,100.0)pp  n=  25  win= 72.0%  mean PnL=$+0.4927  total=$+12.32
+==============================================================================
+
+==============================================================================
+              MONTHLY BREAKDOWN (is the edge decaying over time?)             
+==============================================================================
+  month     n     win%   |edge|   PnL_naive    PnL_real    ROI_real%
+  --------------------------------------------------------------------------
+  2026-04    33   63.6%  39.75pp  $   11.49   $   10.63   +106.19%
+  2026-05   122   60.7%  40.58pp  $   41.82   $   38.70   +113.82%
+==============================================================================
+
+Wrote per-market results to data/poly_backtest_year/v4_real/v4_real_30d_full.csv

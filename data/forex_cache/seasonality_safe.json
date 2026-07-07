@@ -1,0 +1,108 @@
+{
+  "by_month_avg": {
+    "Ene": {
+      "avg_pnl": 187.2,
+      "pass_rate": 40.0,
+      "samples": 10
+    },
+    "Feb": {
+      "avg_pnl": 140.5,
+      "pass_rate": 30.0,
+      "samples": 10
+    },
+    "Mar": {
+      "avg_pnl": -26.7,
+      "pass_rate": 20.0,
+      "samples": 10
+    },
+    "Abr": {
+      "avg_pnl": 171.9,
+      "pass_rate": 20.0,
+      "samples": 10
+    },
+    "May": {
+      "avg_pnl": 147.7,
+      "pass_rate": 30.0,
+      "samples": 10
+    },
+    "Jun": {
+      "avg_pnl": 117.5,
+      "pass_rate": 20.0,
+      "samples": 10
+    },
+    "Jul": {
+      "avg_pnl": 131.22222222222223,
+      "pass_rate": 33.333333333333336,
+      "samples": 9
+    },
+    "Ago": {
+      "avg_pnl": 459.44444444444446,
+      "pass_rate": 55.55555555555556,
+      "samples": 9
+    },
+    "Sep": {
+      "avg_pnl": 31.555555555555557,
+      "pass_rate": 22.22222222222222,
+      "samples": 9
+    },
+    "Oct": {
+      "avg_pnl": -51.0,
+      "pass_rate": 11.11111111111111,
+      "samples": 9
+    },
+    "Nov": {
+      "avg_pnl": 125.0,
+      "pass_rate": 22.22222222222222,
+      "samples": 9
+    },
+    "Dic": {
+      "avg_pnl": 197.44444444444446,
+      "pass_rate": 44.44444444444444,
+      "samples": 9
+    }
+  },
+  "2026": [
+    {
+      "year": 2026,
+      "month": 1,
+      "pnl": 247.0,
+      "pass": false,
+      "dd": -3.06
+    },
+    {
+      "year": 2026,
+      "month": 2,
+      "pnl": -376.0,
+      "pass": false,
+      "dd": -9.55
+    },
+    {
+      "year": 2026,
+      "month": 3,
+      "pnl": 408.0,
+      "pass": true,
+      "dd": 0.0
+    },
+    {
+      "year": 2026,
+      "month": 4,
+      "pnl": 446.0,
+      "pass": true,
+      "dd": -0.88
+    },
+    {
+      "year": 2026,
+      "month": 5,
+      "pnl": 27.0,
+      "pass": false,
+      "dd": -2.98
+    },
+    {
+      "year": 2026,
+      "month": 6,
+      "pnl": -226.0,
+      "pass": false,
+      "dd": -4.51
+    }
+  ]
+}

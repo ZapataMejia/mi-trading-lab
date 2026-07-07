@@ -1,0 +1,21 @@
+{
+  "survivors": 0,
+  "note": "Mejor config full-period WS CLASSIC. Ventanas rolling 60d: 0% (EURUSD EMA es lento). Validar en SQX.",
+  "best": {
+    "fast_period": 3,
+    "slow_period": 8,
+    "risk_pct": 2.1,
+    "tp_ratio": 2.5,
+    "sess_start": 700,
+    "sess_end": 1400,
+    "max_trades_per_day": 2,
+    "broker_utc_offset_hours": 7,
+    "full_trades": 0,
+    "full_pnl": 2022,
+    "full_dd": -2.1,
+    "full_pf": 0,
+    "full_pass": true,
+    "sqx_params": "EMA 3/8 | Risk 2.1% | TP 2.5 | Session 07:00-14:00 | Max 2/d | Offset +7 | EST+07"
+  },
+  "top": []
+}

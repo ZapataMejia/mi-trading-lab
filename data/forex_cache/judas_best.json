@@ -1,0 +1,49 @@
+{
+  "source": "internet_consensus_ict_judas + lab_backtest_fixed_equity",
+  "strategy": "ICT Judas Swing — London open liquidity sweep fade",
+  "internet_references": [
+    "ICT London Open Kill Zone / Judas Swing",
+    "Liquidity sweep SMC price action",
+    "London breakout prop firm (PropJournal, ForexBroker500)",
+    "0.5-1% risk per trade (Sadik Finance blueprint)"
+  ],
+  "best_full_period_pass": {
+    "fast_period": null,
+    "asian_start": 0,
+    "asian_end": 700,
+    "kill_start": 700,
+    "kill_end": 900,
+    "tp_mode": "asian_opposite",
+    "min_asian_range_pips": 10.0,
+    "max_trades_per_day": 1,
+    "risk_pct": 0.8,
+    "mm_risk_pct": 0.8,
+    "broker_utc_offset_hours": 7,
+    "full_pass": true,
+    "full_pnl": 956,
+    "full_dd_pct": -5.63,
+    "full_trades": 138,
+    "days_to_meta_full_period": 927,
+    "w30_pass_rate_pct": 12.5,
+    "w30_pass_count": "7/56",
+    "note": "Pasa reglas WS 5 años. Mejor ventana 30d rolling: 12,5% (7/56). Inferior a Liquidity Sweep (41%). Requiere riesgo ≤1,5% — a 2,1% rompe DD."
+  },
+  "aggressive_near_pass": {
+    "risk_pct": 1.0,
+    "full_pass": true,
+    "full_pnl": 1208,
+    "full_dd_pct": -7.0
+  },
+  "rejected_strategies": {
+    "ema_cross": "0% ventanas 30d",
+    "hedge_2_cuentas": "0% ventanas 30d",
+    "london_breakout_raw": "DD -69% a -88%",
+    "liquidity_sweep_m5": "demasiados trades, DD alto"
+  },
+  "recommended_live_plan": {
+    "cuenta_1": "ICT Judas EURUSD M5, kill 07:00-09:00 broker, 1 trade/día max, 0.8% riesgo",
+    "cuenta_2": "Reserva — misma config si breach cuenta 1",
+    "plazo": "WS sin límite; histórico ~900-1200 días a meta con 0.8%. Para ≤30d: demo hedge curso 7 días en paralelo",
+    "sqx_next": "Implementar Judas en AlgoWizard o MT5 EA (asian range + sweep fade)"
+  }
+}

@@ -1,0 +1,88 @@
+fatal: bad revision 'HEAD'
+Window: 2025-05-27T00:00:00+00:00  ->  2026-05-27T00:00:00+00:00
+Assets: ['solana']
+2026-05-27 19:35:03,342 | INFO     | trading.data.exchange | Exchange client created: binance (sandbox=False)
+2026-05-27 19:36:14,836 | INFO     | trading.polymarket.gamma | Gamma series solana-up-or-down-hourly: 8198 markets in 2025-05-27..2026-05-27
+Up/Down markets matched: 8198
+2026-05-27 20:09:51,878 | WARNING  | trading.polymarket.edge | Failed market solana-up-or-down-december-31-9pm-et: No objects to concatenate
+2026-05-27 20:09:52,842 | WARNING  | trading.polymarket.edge | Failed market solana-up-or-down-december-31-6pm-et: No objects to concatenate
+2026-05-27 20:09:53,842 | WARNING  | trading.polymarket.edge | Failed market solana-up-or-down-december-31-10pm-et: No objects to concatenate
+2026-05-27 20:09:54,764 | WARNING  | trading.polymarket.edge | Failed market solana-up-or-down-december-31-7pm-et: No objects to concatenate
+2026-05-27 20:09:55,617 | WARNING  | trading.polymarket.edge | Failed market solana-up-or-down-december-31-11pm-et: No objects to concatenate
+2026-05-27 20:09:56,714 | WARNING  | trading.polymarket.edge | Failed market solana-up-or-down-december-31-8pm-et: No objects to concatenate
+
+==============================================================================
+                 POLYMARKET 'UP OR DOWN' EDGE — EMPIRICAL TEST                
+==============================================================================
+  Markets analyzed       : 8198
+  Entry threshold        : 5.0pp  (|p_fair - p_poly|)
+  Half-spread charged    : 1.50¢ per fill
+  Flat fee charged       : 0.50¢ per fill (gas/relayer)
+  Proportional taker fee : 2.00% of fill price
+  Min sec-to-resolution  : 30s (look-ahead guardrail)
+
+  Markets with signal    : 8188  (99.9%)
+  Markets without signal : 10
+      reason 'error: No objects to concatenate': 6
+      reason                 'poly_empty': 4
+
+  Win rate               : 55.4%  (4537/8188)
+  Avg signal |edge|      : 8.85pp
+  Avg naive fill price   : $0.4726
+
+  --- PnL per signal ($1 stake = 1 contract paying $1 if right) ---
+    Naive   total:  $667.4200 | mean:  $0.0815 | per market:  $0.0814
+    Realistic total:  $423.8120 | mean:  $0.0518 | per market:  $0.0517
+
+  --- Capital ROI per signal (PnL / dollars at risk) ---
+    Naive   median ROI: +81.82% | mean: +17.52%
+    Realistic median ROI: +74.11% | mean: +10.76%
+
+  By asset:
+    solana     n=8188  win= 55.4%  |edge|=8.85pp  PnL naive= $667.4200  realistic= $423.8120
+
+==============================================================================
+  Verdict: PnL realistic POSITIVE; edge survives spread+fee in this sample.
+  CAVEATS: 1-min data only — misses sub-second moves. Mid-price not bid/ask.
+           No order-book depth modeled. Hold-to-resolution; no exit slippage.
+           Sample may be small. Run with --days 14+ for stable stats.
+==============================================================================
+
+==============================================================================
+            MODEL CALIBRATION (predicted prob vs realized win rate)           
+==============================================================================
+  fair in [0.50,0.55)  n=2027  predicted= 52.9%  actual= 51.3%  diff= -1.6pp
+  fair in [0.55,0.60)  n=2923  predicted= 57.3%  actual= 56.7%  diff= -0.7pp
+  fair in [0.60,0.65)  n=1348  predicted= 62.1%  actual= 64.4%  diff= +2.3pp
+  fair in [0.65,0.70)  n= 451  predicted= 67.1%  actual= 66.7%  diff= -0.3pp
+  fair in [0.70,0.80)  n= 181  predicted= 73.2%  actual= 72.4%  diff= -0.9pp
+  fair in [0.80,1.00)  n=  25  predicted= 85.5%  actual= 88.0%  diff= +2.5pp
+
+ PnL by signal |edge| bucket (realistic costs):
+  |edge| in [ 5.0, 7.5)pp  n=3914  win= 54.0%  mean PnL=$+0.0285  total=$+111.55
+  |edge| in [ 7.5,10.0)pp  n=2132  win= 54.6%  mean PnL=$+0.0426  total=$+90.80
+  |edge| in [10.0,15.0)pp  n=1549  win= 57.8%  mean PnL=$+0.0857  total=$+132.77
+  |edge| in [15.0,25.0)pp  n= 526  win= 59.3%  mean PnL=$+0.1294  total=$+68.04
+  |edge| in [25.0,50.0)pp  n=  67  win= 76.1%  mean PnL=$+0.3083  total=$+20.66
+==============================================================================
+
+==============================================================================
+              MONTHLY BREAKDOWN (is the edge decaying over time?)             
+==============================================================================
+  month     n     win%   |edge|   PnL_naive    PnL_real    ROI_real%
+  --------------------------------------------------------------------------
+  2025-06   308   52.6%   9.03pp  $   16.78   $    7.62    +5.09%
+  2025-07   744   52.2%   9.05pp  $   39.76   $   17.69    +4.92%
+  2025-08   744   56.7%   8.46pp  $   58.61   $   36.23    +9.67%
+  2025-09   720   56.7%   8.60pp  $   60.65   $   39.09   +10.91%
+  2025-10   742   58.9%   8.64pp  $   79.84   $   57.63   +15.65%
+  2025-11   707   54.7%   8.32pp  $   48.14   $   27.01    +7.73%
+  2025-12   739   55.5%   8.93pp  $   61.44   $   39.47   +10.97%
+  2026-01   735   53.6%   8.95pp  $   50.73   $   28.94    +8.17%
+  2026-02   672   54.5%   8.49pp  $   53.30   $   33.41   +10.35%
+  2026-03   745   55.7%   8.69pp  $   61.17   $   38.97   +10.68%
+  2026-04   713   56.5%   9.02pp  $   70.07   $   48.94   +14.24%
+  2026-05   619   55.7%  10.38pp  $   66.94   $   48.81   +16.99%
+==============================================================================
+
+Wrote per-market results to data/poly_backtest_year/sol_hourly_1y_full.csv

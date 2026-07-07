@@ -1,0 +1,249 @@
+{
+  "period": {
+    "start": "2026-02-01",
+    "end": "2026-02-28"
+  },
+  "bars": 5760,
+  "data_from": "2026-02-01 22:00:00+00:00",
+  "data_to": "2026-02-27 21:55:00+00:00",
+  "metrics": {
+    "n_trades": 20,
+    "n_wins": 6,
+    "n_losses": 14,
+    "win_rate_pct": 30.0,
+    "profit_factor": 0.627,
+    "best_trade": 108.19,
+    "worst_trade": -75.0,
+    "avg_trade": -18.78,
+    "avg_win": 105.412,
+    "avg_loss": -72.005,
+    "expectancy": -18.78,
+    "max_drawdown_pct": -9.55,
+    "max_drawdown_usd": -477.34,
+    "sharpe": -3.57,
+    "sortino": -4.95,
+    "calmar": -0.79,
+    "longest_win_streak": 2,
+    "longest_loss_streak": 4
+  },
+  "total_pnl": -375.58,
+  "ws_eval": {
+    "pass_all": false,
+    "checks": {
+      "pass_meta": false,
+      "pass_static_dd": false,
+      "pass_daily_dd": true,
+      "pass_min_days": true,
+      "pass_pf": false,
+      "pass_risk": true,
+      "pass_max_trades": true,
+      "pass_all": false
+    },
+    "static_dd_pct": -9.55,
+    "max_daily_loss_pct": 1.5,
+    "days_to_meta": null,
+    "trading_days": 20
+  },
+  "trades": [
+    {
+      "timestamp": "2026-02-02T04:40:00+00:00",
+      "direction": "long",
+      "pnl": -75.0,
+      "entry_price": 1.18636,
+      "extra": {
+        "reason": "sl",
+        "strategy": "liq_sweep"
+      }
+    },
+    {
+      "timestamp": "2026-02-03T01:15:00+00:00",
+      "direction": "short",
+      "pnl": -73.88,
+      "entry_price": 1.1805,
+      "extra": {
+        "reason": "sl",
+        "strategy": "liq_sweep"
+      }
+    },
+    {
+      "timestamp": "2026-02-04T01:45:00+00:00",
+      "direction": "short",
+      "pnl": -72.77,
+      "entry_price": 1.18249,
+      "extra": {
+        "reason": "sl",
+        "strategy": "liq_sweep"
+      }
+    },
+    {
+      "timestamp": "2026-02-05T02:05:00+00:00",
+      "direction": "long",
+      "pnl": -71.68,
+      "entry_price": 1.18021,
+      "extra": {
+        "reason": "sl",
+        "strategy": "liq_sweep"
+      }
+    },
+    {
+      "timestamp": "2026-02-06T04:35:00+00:00",
+      "direction": "long",
+      "pnl": 105.9,
+      "entry_price": 1.17749,
+      "extra": {
+        "reason": "tp",
+        "strategy": "liq_sweep"
+      }
+    },
+    {
+      "timestamp": "2026-02-09T05:35:00+00:00",
+      "direction": "short",
+      "pnl": -72.19,
+      "entry_price": 1.1827,
+      "extra": {
+        "reason": "sl",
+        "strategy": "liq_sweep"
+      }
+    },
+    {
+      "timestamp": "2026-02-10T00:45:00+00:00",
+      "direction": "long",
+      "pnl": -71.11,
+      "entry_price": 1.19022,
+      "extra": {
+        "reason": "sl",
+        "strategy": "liq_sweep"
+      }
+    },
+    {
+      "timestamp": "2026-02-11T00:50:00+00:00",
+      "direction": "long",
+      "pnl": 105.06,
+      "entry_price": 1.18899,
+      "extra": {
+        "reason": "tp",
+        "strategy": "liq_sweep"
+      }
+    },
+    {
+      "timestamp": "2026-02-12T00:20:00+00:00",
+      "direction": "long",
+      "pnl": 107.42,
+      "entry_price": 1.18688,
+      "extra": {
+        "reason": "tp",
+        "strategy": "liq_sweep"
+      }
+    },
+    {
+      "timestamp": "2026-02-13T01:25:00+00:00",
+      "direction": "long",
+      "pnl": -73.23,
+      "entry_price": 1.18697,
+      "extra": {
+        "reason": "sl",
+        "strategy": "liq_sweep"
+      }
+    },
+    {
+      "timestamp": "2026-02-16T03:20:00+00:00",
+      "direction": "long",
+      "pnl": 108.19,
+      "entry_price": 1.18627,
+      "extra": {
+        "reason": "tp",
+        "strategy": "liq_sweep"
+      }
+    },
+    {
+      "timestamp": "2026-02-17T00:40:00+00:00",
+      "direction": "long",
+      "pnl": -73.75,
+      "entry_price": 1.18473,
+      "extra": {
+        "reason": "sl",
+        "strategy": "liq_sweep"
+      }
+    },
+    {
+      "timestamp": "2026-02-18T00:55:00+00:00",
+      "direction": "long",
+      "pnl": -72.64,
+      "entry_price": 1.18521,
+      "extra": {
+        "reason": "sl",
+        "strategy": "liq_sweep"
+      }
+    },
+    {
+      "timestamp": "2026-02-19T01:00:00+00:00",
+      "direction": "short",
+      "pnl": -71.56,
+      "entry_price": 1.17889,
+      "extra": {
+        "reason": "sl",
+        "strategy": "liq_sweep"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:25:00+00:00",
+      "direction": "long",
+      "pnl": -70.48,
+      "entry_price": 1.17705,
+      "extra": {
+        "reason": "sl",
+        "strategy": "liq_sweep"
+      }
+    },
+    {
+      "timestamp": "2026-02-23T06:10:00+00:00",
+      "direction": "long",
+      "pnl": 104.14,
+      "entry_price": 1.1819,
+      "extra": {
+        "reason": "tp",
+        "strategy": "liq_sweep"
+      }
+    },
+    {
+      "timestamp": "2026-02-24T01:15:00+00:00",
+      "direction": "long",
+      "pnl": -70.99,
+      "entry_price": 1.17855,
+      "extra": {
+        "reason": "sl",
+        "strategy": "liq_sweep"
+      }
+    },
+    {
+      "timestamp": "2026-02-25T02:05:00+00:00",
+      "direction": "short",
+      "pnl": -69.92,
+      "entry_price": 1.17782,
+      "extra": {
+        "reason": "sl",
+        "strategy": "liq_sweep"
+      }
+    },
+    {
+      "timestamp": "2026-02-26T01:00:00+00:00",
+      "direction": "short",
+      "pnl": -68.87,
+      "entry_price": 1.18157,
+      "extra": {
+        "reason": "sl",
+        "strategy": "liq_sweep"
+      }
+    },
+    {
+      "timestamp": "2026-02-27T00:50:00+00:00",
+      "direction": "short",
+      "pnl": 101.76,
+      "entry_price": 1.1803,
+      "extra": {
+        "reason": "tp",
+        "strategy": "liq_sweep"
+      }
+    }
+  ]
+}

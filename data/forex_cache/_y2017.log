@@ -1,0 +1,5 @@
+skip EURUSD_201701.csv
+skip EURUSD_201702.csv
+skip EURUSD_201703.csv
+skip EURUSD_201704.csv
+download 2017-05...

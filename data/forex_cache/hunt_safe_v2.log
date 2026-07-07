@@ -1,0 +1,48 @@
+HUNT v2 · 1152 combos · periodo 2017-01-03→2024-10-30
+
+  100/1152 survivors=29
+  200/1152 survivors=48
+  300/1152 survivors=57
+  400/1152 survivors=103
+  500/1152 survivors=123
+  600/1152 survivors=142
+  700/1152 survivors=196
+  800/1152 survivors=229
+  900/1152 survivors=264
+  1000/1152 survivors=319
+  1100/1152 survivors=361
+Fase1: 402 (5388s)
+  HIT 50.0% lb=60 r=1.0
+  HIT 50.0% lb=60 r=1.0
+  HIT 50.0% lb=60 r=1.2
+  HIT 50.0% lb=60 r=1.2
+  HIT 50.0% lb=60 r=1.2
+  HIT 50.0% lb=60 r=1.2
+  HIT 50.0% lb=60 r=1.2
+  HIT 50.0% lb=60 r=1.5
+  HIT 50.0% lb=60 r=1.5
+  HIT 50.0% lb=60 r=1.5
+  HIT 50.0% lb=60 r=1.0
+  HIT 50.0% lb=60 r=1.8
+  HIT 50.0% lb=60 r=1.8
+  HIT 50.0% lb=24 r=1.0
+  HIT 50.0% lb=24 r=1.0
+  HIT 50.0% lb=60 r=1.0
+  HIT 50.0% lb=60 r=1.0
+  HIT 50.0% lb=60 r=1.2
+  HIT 50.0% lb=60 r=1.2
+  HIT 50.0% lb=60 r=1.0
+  HIT 50.0% lb=60 r=1.0
+  HIT 50.0% lb=60 r=1.0
+Traceback (most recent call last):
+  File "/Users/santiago/Documents/Personal/trading/scripts/eval_hunt_safe_v2.py", line 138, in <module>
+    main()
+    ~~~~^^
+  File "/Users/santiago/Documents/Personal/trading/scripts/eval_hunt_safe_v2.py", line 125, in main
+    safe_row = _screen(SAFE.to_dict()) or SAFE.to_dict()
+               ~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/santiago/Documents/Personal/trading/scripts/eval_hunt_safe_v2.py", line 52, in _screen
+    cfg = _cfg(p)
+  File "/Users/santiago/Documents/Personal/trading/scripts/eval_hunt_safe_v2.py", line 42, in _cfg
+    return LiquiditySweepConfig(**d, mm_risk_pct=d["risk_pct"], equity_sample_bars=12, equal_tolerance_pips=3.0)
+TypeError: webapp.backend.engine.liquidity_sweep_engine.LiquiditySweepConfig() got multiple values for keyword argument 'mm_risk_pct'

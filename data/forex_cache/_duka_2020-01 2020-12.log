@@ -1,0 +1,3 @@
+usage: download_dukascopy_m5.py [-h] [--start START] [--end END]
+                                [--merge-only] [--merge]
+download_dukascopy_m5.py: error: argument --end: expected one argument

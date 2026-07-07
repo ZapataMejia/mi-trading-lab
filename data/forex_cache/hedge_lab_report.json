@@ -1,0 +1,65 @@
+{
+  "config": {
+    "fast_period": 9,
+    "slow_period": 20,
+    "risk_pct": 2.1,
+    "tp_ratio": 1.0,
+    "sess_start": 800,
+    "sess_end": 1000,
+    "max_trades_per_day": 2,
+    "initial_balance": 5000.0,
+    "mm_risk_pct": 2.1,
+    "slippage_pips": 2.0,
+    "pip_size": 0.0001,
+    "allow_short": true,
+    "allow_long": true,
+    "broker_utc_offset_hours": 7,
+    "equity_sample_bars": 1
+  },
+  "bars": 391810,
+  "windows": {
+    "7d": {
+      "pair_wins": 0,
+      "attempts": 27,
+      "pass_rate_pct": 0.0,
+      "median_days": null,
+      "a_wins": 0,
+      "b_wins": 0,
+      "both_fail": 27
+    },
+    "14d": {
+      "pair_wins": 0,
+      "attempts": 27,
+      "pass_rate_pct": 0.0,
+      "median_days": null,
+      "a_wins": 0,
+      "b_wins": 0,
+      "both_fail": 27
+    },
+    "30d": {
+      "pair_wins": 0,
+      "attempts": 27,
+      "pass_rate_pct": 0.0,
+      "median_days": null,
+      "a_wins": 0,
+      "b_wins": 0,
+      "both_fail": 27
+    },
+    "60d": {
+      "pair_wins": 0,
+      "attempts": 27,
+      "pass_rate_pct": 0.0,
+      "median_days": null,
+      "a_wins": 0,
+      "b_wins": 0,
+      "both_fail": 27
+    }
+  },
+  "full_period": {
+    "outcome": "both_fail",
+    "account_a_pnl": -419.58,
+    "account_b_pnl": -400.69,
+    "account_a_dd": -8.39,
+    "account_b_dd": -8.01
+  }
+}

@@ -1,0 +1,115 @@
+fatal: bad revision 'HEAD'
+Window: 2025-06-02T00:00:00+00:00  ->  2026-05-27T00:00:00+00:00
+Assets: ['bitcoin', 'ethereum', 'solana', 'xrp']
+2026-06-02 09:18:27,295 | INFO     | trading.data.exchange | Exchange client created: binance (sandbox=False)
+2026-06-02 09:19:47,686 | INFO     | trading.polymarket.gamma | Gamma series btc-up-or-down-hourly: 8198 markets in 2025-06-02..2026-05-27
+2026-06-02 09:21:06,248 | INFO     | trading.polymarket.gamma | Gamma series eth-up-or-down-hourly: 8181 markets in 2025-06-02..2026-05-27
+2026-06-02 09:22:21,506 | INFO     | trading.polymarket.gamma | Gamma series solana-up-or-down-hourly: 8198 markets in 2025-06-02..2026-05-27
+2026-06-02 09:23:33,351 | INFO     | trading.polymarket.gamma | Gamma series xrp-up-or-down-hourly: 8038 markets in 2025-06-02..2026-05-27
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+Up/Down markets matched: 32615
+2026-06-02 09:40:06,176 | WARNING  | trading.polymarket.edge | Failed market archxrp-up-or-down-july-9-12am-et: No objects to concatenate
+2026-06-02 09:40:08,586 | WARNING  | trading.polymarket.edge | Failed market bitcoin-up-or-down-december-31-9pm-et: No objects to concatenate
+2026-06-02 09:40:09,053 | WARNING  | trading.polymarket.edge | Failed market ethereum-up-or-down-december-31-9pm-et: No objects to concatenate
+2026-06-02 09:40:09,546 | WARNING  | trading.polymarket.edge | Failed market solana-up-or-down-december-31-9pm-et: No objects to concatenate
+2026-06-02 09:40:10,007 | WARNING  | trading.polymarket.edge | Failed market xrp-up-or-down-december-31-9pm-et: No objects to concatenate
+2026-06-02 09:40:12,421 | WARNING  | trading.polymarket.edge | Failed market bitcoin-up-or-down-december-31-6pm-et: No objects to concatenate
+2026-06-02 09:40:12,890 | WARNING  | trading.polymarket.edge | Failed market ethereum-up-or-down-december-31-6pm-et: No objects to concatenate
+2026-06-02 09:40:13,395 | WARNING  | trading.polymarket.edge | Failed market solana-up-or-down-december-31-6pm-et: No objects to concatenate
+2026-06-02 09:40:13,861 | WARNING  | trading.polymarket.edge | Failed market xrp-up-or-down-december-31-6pm-et: No objects to concatenate
+2026-06-02 09:40:16,265 | WARNING  | trading.polymarket.edge | Failed market bitcoin-up-or-down-december-31-10pm-et: No objects to concatenate
+2026-06-02 09:40:16,766 | WARNING  | trading.polymarket.edge | Failed market ethereum-up-or-down-december-31-10pm-et: No objects to concatenate
+2026-06-02 09:40:17,225 | WARNING  | trading.polymarket.edge | Failed market solana-up-or-down-december-31-10pm-et: No objects to concatenate
+2026-06-02 09:40:17,693 | WARNING  | trading.polymarket.edge | Failed market xrp-up-or-down-december-31-10pm-et: No objects to concatenate
+2026-06-02 09:40:18,183 | WARNING  | trading.polymarket.edge | Failed market bitcoin-up-or-down-december-31-7pm-et: No objects to concatenate
+2026-06-02 09:40:18,650 | WARNING  | trading.polymarket.edge | Failed market ethereum-up-or-down-december-31-7pm-et: No objects to concatenate
+2026-06-02 09:40:19,146 | WARNING  | trading.polymarket.edge | Failed market solana-up-or-down-december-31-7pm-et: No objects to concatenate
+2026-06-02 09:40:19,612 | WARNING  | trading.polymarket.edge | Failed market xrp-up-or-down-december-31-7pm-et: No objects to concatenate
+2026-06-02 09:40:20,104 | WARNING  | trading.polymarket.edge | Failed market bitcoin-up-or-down-december-31-11pm-et: No objects to concatenate
+2026-06-02 09:40:20,573 | WARNING  | trading.polymarket.edge | Failed market ethereum-up-or-down-december-31-11pm-et: No objects to concatenate
+2026-06-02 09:40:21,063 | WARNING  | trading.polymarket.edge | Failed market solana-up-or-down-december-31-11pm-et: No objects to concatenate
+2026-06-02 09:40:21,538 | WARNING  | trading.polymarket.edge | Failed market xrp-up-or-down-december-31-11pm-et: No objects to concatenate
+2026-06-02 09:40:22,024 | WARNING  | trading.polymarket.edge | Failed market bitcoin-up-or-down-december-31-8pm-et: No objects to concatenate
+2026-06-02 09:40:22,496 | WARNING  | trading.polymarket.edge | Failed market ethereum-up-or-down-december-31-8pm-et: No objects to concatenate
+2026-06-02 09:40:22,983 | WARNING  | trading.polymarket.edge | Failed market solana-up-or-down-december-31-8pm-et: No objects to concatenate
+2026-06-02 09:40:23,453 | WARNING  | trading.polymarket.edge | Failed market xrp-up-or-down-december-31-8pm-et: No objects to concatenate
+
+==============================================================================
+                 POLYMARKET 'UP OR DOWN' EDGE — EMPIRICAL TEST                
+==============================================================================
+  Markets analyzed       : 32615
+  Entry threshold        : 30.0pp  (|p_fair - p_poly|)
+  Half-spread charged    : 1.50¢ per fill
+  Flat fee charged       : 0.50¢ per fill (gas/relayer)
+  Proportional taker fee : 2.00% of fill price
+  Min sec-to-resolution  : 60s (look-ahead guardrail)
+
+  Markets with signal    : 2830  (8.7%)
+  Markets without signal : 29785
+      reason                  'no_signal': 29743
+      reason 'error: No objects to concatenate': 25
+      reason                 'poly_empty': 17
+
+  Win rate               : 63.8%  (1806/2830)
+  Avg signal |edge|      : 41.38pp
+  Avg naive fill price   : $0.3234
+
+  --- PnL per signal ($1 stake = 1 contract paying $1 if right) ---
+    Naive   total:  $890.6885 | mean:  $0.3147 | per market:  $0.0273
+    Realistic total:  $814.9333 | mean:  $0.2880 | per market:  $0.0250
+
+  --- Capital ROI per signal (PnL / dollars at risk) ---
+    Naive   median ROI: +100.00% | mean: +319.94%
+    Realistic median ROI: +91.20% | mean: +185.22%
+
+  By asset:
+    bitcoin    n= 690  win= 60.7%  |edge|=41.26pp  PnL naive= $218.5365  realistic= $200.5202
+    ethereum   n= 679  win= 62.6%  |edge|=41.52pp  PnL naive= $203.6195  realistic= $185.4082
+    solana     n= 708  win= 67.5%  |edge|=41.44pp  PnL naive= $235.2070  realistic= $215.9787
+    xrp        n= 753  win= 64.3%  |edge|=41.31pp  PnL naive= $233.3255  realistic= $213.0261
+
+==============================================================================
+  Verdict: PnL realistic POSITIVE; edge survives spread+fee in this sample.
+  CAVEATS: 1-min data only — misses sub-second moves. Mid-price not bid/ask.
+           No order-book depth modeled. Hold-to-resolution; no exit slippage.
+           Sample may be small. Run with --days 14+ for stable stats.
+==============================================================================
+
+==============================================================================
+            MODEL CALIBRATION (predicted prob vs realized win rate)           
+==============================================================================
+  fair in [0.50,0.55)  n= 178  predicted= 52.5%  actual= 53.4%  diff= +0.9pp
+  fair in [0.55,0.60)  n= 155  predicted= 57.7%  actual= 52.3%  diff= -5.4pp
+  fair in [0.60,0.65)  n= 168  predicted= 62.4%  actual= 69.0%  diff= +6.6pp
+  fair in [0.65,0.70)  n= 160  predicted= 67.6%  actual= 69.4%  diff= +1.8pp
+  fair in [0.70,0.80)  n= 344  predicted= 75.0%  actual= 77.3%  diff= +2.3pp
+  fair in [0.80,1.00)  n=1302  predicted= 92.9%  actual= 74.5%  diff=-18.4pp
+
+ PnL by signal |edge| bucket (realistic costs):
+  |edge| in [25.0,50.0)pp  n=2354  win= 62.9%  mean PnL=$+0.2722  total=$+640.83
+  |edge| in [50.0,100.0)pp  n= 476  win= 68.5%  mean PnL=$+0.3658  total=$+174.10
+==============================================================================
+
+==============================================================================
+              MONTHLY BREAKDOWN (is the edge decaying over time?)             
+==============================================================================
+  month     n     win%   |edge|   PnL_naive    PnL_real    ROI_real%
+  --------------------------------------------------------------------------
+  2025-06   146   84.2%  40.15pp  $   68.17   $   64.11   +112.44%
+  2025-07   220   73.2%  41.07pp  $   91.53   $   85.68   +117.75%
+  2025-08   192   76.6%  41.06pp  $   88.58   $   83.52   +136.26%
+  2025-09   196   73.0%  38.58pp  $   84.00   $   78.84   +127.27%
+  2025-10   188   73.4%  40.59pp  $   82.83   $   77.91   +134.33%
+  2025-11   672   54.6%  44.57pp  $   61.37   $   41.62   +13.18%
+  2025-12   230   66.1%  39.68pp  $   85.33   $   79.33   +113.12%
+  2026-01   195   57.9%  39.14pp  $   64.19   $   59.25   +114.52%
+  2026-02   183   56.3%  39.13pp  $   58.73   $   54.13   +115.13%
+  2026-03   198   56.6%  42.38pp  $   62.53   $   57.52   +109.70%
+  2026-04   252   60.3%  41.83pp  $   89.70   $   83.34   +126.11%
+  2026-05   158   60.1%  40.09pp  $   53.73   $   49.70   +113.89%
+==============================================================================
+
+Wrote per-market results to data/poly_backtest_year/v4_real/v4_real_1y.csv

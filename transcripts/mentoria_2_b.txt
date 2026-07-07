@@ -1,0 +1,3001 @@
+ cuenta. ¿La empresa de fondeo podría
+ detectar que tenemos el copiador en la cuenta?
+ No, porque
+ primero de todo, el
+ copiador, al el master
+ y el slave estar dentro del mismo
+ VPS, al estar
+ dentro del mismo VPS
+ no debemos de hacer una conexión hacia el exterior
+ sino que se hablan entre ellos
+ directamente, no sale a internet
+ digamos, esa
+ copia no va a internet
+ tanto ya esa señal ya no se puede rastrear
+ el master
+ lo único que hace es escuchar
+ y te hace
+ de guardián también, pero eso no es un copiador
+ el slave es
+ como un expert advisor
+ vuestro
+ que
+ lanza operaciones
+ ese slave, es como el de strategy
+ one que también lanza operaciones
+ a través del código, pues el slave hace
+ lo mismo, lanza operaciones
+ a tu cuenta de tener exactamente lo mismo
+ lo que sí podríamos hacer es
+ en la huella que deja
+ el slave
+ o incluso le podríamos cambiar de nombre
+ por si acaso
+ nos piden algo
+ le cambiar de nombre
+ a no sé qué
+ crossover
+ yo lo tengo en slave
+ padre mío
+ y en el parámetro
+ comments
+ que esto también lo
+ intentaré cambiar
+ hay que cambiar el nombre
+ hay que cambiar el nombre de estas cosas
+ porque esto a veces deja marca
+ en la columnita comentarios
+ y esto sí que en el historial de trade
+ sí que lo podrían ver las empresas de fondeo
+ es lo único
+ vale
+ la empresa de fondeo
+ este
+ sí que lo he explicado
+ lo he dicho antes
+ gracias
+ lo he dicho antes
+ Juanra
+ sí
+ la segunda fase se sigue igual
+ pero con otra segunda fase
+ hay que hacer la contraria
+ de la misma fase
+ pregunta
+ y bueno
+ entiendo que van contra las cuentas de fondeo
+ si pongo una cuenta
+ en nombre de mi esposa
+ para que me hagan las operaciones inversas
+ de la misma empresa
+ yo no
+ no hagáis
+ no hagáis
+ operaciones inversas
+ de la misma empresa
+ lo pueden detectar
+ porque yo estoy en la información
+ de las dos
+ dice oye
+ qué casualidad
+ que el 100% de las operaciones
+ de estas dos cuentas
+ son contrarias
+ esto lo pueden hacer
+ eso sí que lo pueden hacer
+ noctorial
+ yo no
+ noctorial
+ noctorial
+ me gusta
+ me equivoco en un momento
+ que sí pero no
+ vale
+ se terminaron las preguntas
+ sigo
+ ahora mismo
+ ahora sigo con la configuración
+ vale
+ vale
+ estoy en la cuenta
+ no estoy en la cuenta
+ B
+ la cuenta
+ pongo esto en grande
+ voy a poner
+ voy a poner
+ la misma estrategia
+ que en la otra cuenta
+ por tanto
+ voy a utilizar
+ el mismo
+ expert advisor
+ y es que a mí me gusta
+ ver estas cosas
+ a mí manera
+ vale
+ bien
+ vamos a
+ vamos a tener
+ dos pestañas
+ ¿de acuerdo?
+ vamos a tener
+ dos pestañas
+ esta de aquí
+ y voy a poner
+ el mismo
+ la misma movida
+ una es para conectar
+ nuestro robot
+ y la otra es para conectar
+ el copiador
+ primero
+ hay que conectar
+ el copiador
+ lo primero que hay que hacer
+ es conectar el copiador
+ bien
+ trading algorítmico
+ antes de arrastrar el copiador
+ trading algorítmico
+ en verde
+ punto número dos
+ nos vamos a ver herramientas
+ opciones
+ en asesores expertos
+ aquí hay que seleccionar
+ permitir importación de DLLs
+ porque utiliza librerías
+ el código
+ y permitir web request
+ de acuerdo
+ si no nos va a funcionar
+ esto es para conectarse
+ a nuestra base de datos
+ para el tema del login
+ y demás
+ si no nos va a hacer login
+ ¿vale?
+ ¿qué url tenemos que poner aquí?
+ es la que os pone
+ la que os pone
+ en el manual de instrucciones
+ ¿vale?
+ de hecho lo voy a abrir
+ guía de instalación
+ abrimiento de DLLs 5
+ herramientas de opciones
+ expert advisors
+ y meter este link
+ bien
+ mtacademiajoico.com
+ le vamos a aceptar
+ ¿de acuerdo?
+ yo os recomiendo
+ que aquí abajo
+ siempre tengáis la pestaña
+ expertos abierta
+ porque es la que os va a dar
+ logs a partir de ahora
+ si algo funciona mal o bien
+ primero de todo
+ vamos a poner el master
+ lo arrastro
+ en esta
+ en este
+ da igual en qué
+ activo esté el gráfico
+ da igual qué temporalidad
+ da igual el master
+ ¿vale?
+ lo que importa es la estrategia
+ bien
+ hacer grande esto
+ y vamos paso por paso
+ primero de todo
+ vuestro usuario
+ y password
+ de
+ poner symbol stats
+ pero esto hay que cambiarlo
+ esto tiene que poner
+ academiajoico
+ porque hemos cambiado el nombre
+ vale
+ ya lo cambiaré yo
+ más que nada
+ simplemente nomenclatura
+ para vosotros
+ da igual
+ aquí pone vuestro correo
+ no sé qué
+ arroba
+ gemel.com
+ y vuestra contraseña
+ que accedéis
+ a nuestra web
+ de academiajoico.com
+ o símbolo stats
+ que se llamaba antes
+ bien
+ símbolos a replicar
+ es decir
+ imaginaros
+ que vosotros
+ queréis hacer
+ trading manual
+ me invento
+ en el oro
+ pero en forex
+ metéis
+ la estrategia
+ que queréis
+ que replique
+ aquí podríais poner
+ como bien pone
+ euro dólar
+ euro usd
+ coma
+ usd
+ jpi
+ coma
+ gbp
+ usd
+ si yo pongo esto
+ únicamente
+ el copiador
+ va a copiar
+ las operaciones
+ que se abran
+ estos tres activos
+ vale
+ únicamente
+ los de estos tres activos
+ si yo lo dejo
+ en blanco
+ si yo lo dejo
+ en blanco
+ se va a copiar
+ todo lo que haga
+ en la cuenta
+ de acuerdo
+ recordad que
+ tiene que ser
+ el mismo nombre
+ que os aparece
+ aquí a la izquierda
+ ok
+ nombre del archivo
+ como se
+ como se
+ como se
+ como se leen
+ los copiadores
+ a través de un fichero
+ que será guardado
+ en vuestras carpetas
+ vale
+ el fichero
+ se va a guardar
+ en una carpeta
+ que pone
+ common
+ barra
+ files
+ barra
+ copytrading
+ y el nombre del fichero
+ es master.json
+ esto no lo debéis
+ tocar para nada
+ si no queréis
+ de líos
+ lo dejáis tal cual
+ así como está
+ y lo que va a hacer
+ esto es
+ cuando se copien
+ esto va guardando
+ un fichero
+ a ver si
+ con la carpeta
+ a ver si lo podré
+ encontrar o no
+ pero esto
+ se va a hacer
+ creo que
+ el common file
+ no es
+ no sé si es common
+ no
+ el common
+ estará
+ aquí
+ no sé si será
+ el x86
+ o no
+ pero bueno
+ será una carpeta
+ de estas
+ no
+ perdonad
+ perdonad
+ ya me acuerdo
+ ya me acuerdo
+ donde se copia esto
+ esto se guarda
+ en una carpeta
+ del propio metatrader
+ aquí dentro
+ creo que se
+ creo que se
+ se realiza
+ aquí dentro
+ de acuerdo
+ vosotros esto
+ no lo toquéis
+ no lo toquéis
+ porque ya viene
+ por defecto así
+ ruta personalizada
+ lo tenéis que dejar
+ vacío
+ esto es por si
+ queréis hacer
+ queréis colocarlo
+ en otra carpeta
+ que no sea la que
+ nosotros venimos
+ por defecto
+ vale
+ si queréis
+ queréis crear
+ nuevas carpetas
+ dentro de la ubicación
+ raíz
+ podéis crear
+ pero
+ estas dos de aquí
+ no las deberíais tocar
+ para nada
+ vale
+ las dejáis así
+ como están
+ modo cuentas
+ de fondeo
+ a partir de aquí
+ hasta aquí
+ es simplemente
+ un replicador
+ de operaciones
+ ahora viene
+ el modo cuentas
+ de fondeo
+ esto
+ si estamos en
+ evaluaciones de fondeo
+ le vais a dar
+ a true
+ doble clic
+ lo ponéis en true
+ en verdadero
+ bien
+ todo esto de aquí
+ que sepáis
+ que se explica
+ a partir de aquí
+ sin profit more
+ con profit mode
+ que es lo que acabo
+ de activar ahora
+ que es lo que hace
+ este modio
+ vigila
+ tu equity
+ cada segundo
+ cada segundo
+ mira que
+ bueno
+ donde está tu
+ máximo drawdown
+ o
+ la ganancia
+ la tende
+ que estás ganando
+ por si tiene que cerrar
+ cuenta tus operaciones
+ que realizas
+ durante el día
+ detecta
+ si alcanzas
+ algún límite
+ configurado
+ que hayas puesto
+ cierra
+ todas las posiciones
+ automáticamente
+ si obviamente
+ ese límite
+ se arrebasa
+ incluso bloquea
+ nuevas operaciones
+ hasta reseteo
+ bien
+ es decir
+ tenemos límites
+ que al día
+ siguiente
+ se reinician
+ y tenemos
+ límites
+ que ya no vuelve
+ a abrir
+ ninguna operación
+ límites
+ que queréis
+ poner vosotros
+ vale
+ y si no recuerdo mal
+ este de aquí
+ en el caso
+ de que se os bloquee
+ indefinidamente
+ el abrir operaciones
+ cuando volváis a poner
+ este robot
+ tenéis que poner esto
+ en true
+ para que se olvide
+ del bloqueo anterior
+ vale
+ por eso está
+ este parámetro
+ para que se olvide
+ si en el caso
+ de haber llegado
+ en un bloqueo
+ de cuenta
+ vale
+ ahora vamos a ver
+ límites de equity
+ cuánto
+ cuánto quieres ganar
+ al día
+ si no queréis
+ un límite
+ que estos
+ si esto lo controláis
+ si vosotros
+ por ejemplo
+ ponéis
+ yo solo me va a abrir
+ una operación al día
+ y me va a cerrar
+ cuando
+ bueno
+ cuando llega
+ el take profit
+ yo sé que esa operación
+ me va a ganar
+ un 4,2%
+ esto lo podéis poner
+ al 10%
+ si queréis
+ no lo utilizaréis
+ a lo mejor
+ cuando es que se utiliza
+ esto
+ el límite diario
+ de ganancia
+ imaginaros que estáis
+ al 7,5%
+ de profit
+ de la cuenta
+ se os abre
+ una operación
+ al 4%
+ de riesgo
+ y a la mínima
+ que vaya hacia arriba
+ la queréis cerrar
+ pero no queréis
+ tocar la estrategia
+ porque la estrategia
+ viene definida
+ con un take profit
+ y un stop loss
+ por lo tanto
+ si os queda
+ solo un 0,5%
+ le ponéis aquí
+ 0,5%
+ y cuando lo tenga ganado
+ cierra
+ ¿vale?
+ o también podéis poner
+ que es lo más común
+ lo siguiente
+ límite total
+ de ganancia
+ no es lo mismo
+ el límite diario
+ de ganancia
+ yo creo que el límite
+ diario de ganancia
+ no lo vais a utilizar
+ demasiado
+ este sí
+ límite total
+ cuando yo llegue
+ al 8%
+ intentad poner
+ siempre un 8,1
+ un 8,05
+ cuando el total
+ de ganancia
+ llega al 8%
+ me corta todo
+ y este límite
+ total
+ este límite
+ total
+ sí que lo bloquea
+ los totales
+ lo bloquea
+ ¿vale?
+ estaríamos
+ cierra todo
+ bueno
+ límite total
+ de ganancia
+ cierra todo
+ si ganas
+ x%
+ del capital
+ inicial
+ dando un 8%
+ subes a
+ 1800
+ siempre mira
+ el porcentual
+ respecto al capital
+ inicial
+ no
+ del día anterior
+ eso es lo que nos interesa
+ a nosotros
+ respecto al
+ siempre los porcentuales
+ van
+ estés donde estés
+ del capital
+ inicial
+ no del capital
+ que tú tengas
+ en balance
+ ¿vale?
+ y esto al revés
+ pues diario de pérdida
+ realmente
+ el diario de pérdida
+ sí que lo tendría puesto
+ si vosotros tenéis puestos
+ que vuestro trade
+ va a arriesgar
+ un 4,1%
+ aquí poned
+ un 4,5%
+ ¿por qué?
+ y si hay deslizamiento
+ si ha pasado algo
+ con la
+ con la
+ con la
+ con la estrategia
+ si pasa algo
+ que no cierra
+ lo que sea
+ que pase algo
+ con los lotajes
+ lo que me pasó
+ en HXL
+ que baje de la cuenta
+ de un millón
+ por no poner
+ el mínimo lotaje
+ correctamente
+ perdona
+ no poner el lote
+ correctamente
+ en el caso
+ de que no pueda calcular
+ esto
+ es un segundo
+ para caídas
+ por tanto
+ los límites
+ de pérdida
+ sí
+ los debéis
+ de configurar bien
+ yo voy a poner
+ 4,5
+ para que no
+ pues pasa algo
+ ¿vale?
+ durante el día
+ límite diario
+ de ganancia
+ aquí lo voy a poner
+ el 10%
+ porque no me interesa
+ limitar
+ límite total
+ de ganancia
+ acumulado
+ voy a poner
+ un 8,05%
+ esto
+ en principio
+ esto
+ está contado ya
+ sin contar
+ es decir
+ habiendo restado
+ comisiones
+ y límite
+ total
+ de pérdida
+ pues
+ ahí voy a poner
+ un 9,9%
+ porque sé
+ que puedo caer
+ hasta 10
+ ¿vale?
+ pero bueno
+ da igual
+ es que pierdo
+ la cuenta
+ y ya está
+ no pasa nada
+ ¿vale?
+ es un poco
+ redundante
+ esta
+ pero bueno
+ por si en algo
+ yo que sé
+ en alguna casualista
+ la casualística
+ lo necesitáis
+ ahí lo tenéis
+ Ramón
+ si estás duplicando
+ en el slave
+ el límite de pérdida
+ tiene que ser también
+ 10,05
+ o 8
+ ah o no
+ perdona
+ 9,9%
+ no está bien
+ porque está por encima
+ del 8
+ nada, nada
+ me callo
+ pero ten en cuenta
+ que esto también
+ va a ser lo contrario
+ en el slave
+ o sea
+ tienes que configurar
+ yo pondría
+ 8,05
+ porque en este caso
+ ya se para la operativa
+ en el slave
+ ya no tiene que continuar
+ o sea
+ también lo podrías poner
+ más bajo si quieres
+ no
+ porque
+ la cuenta
+ si tú una cuenta
+ la llegas al 8%
+ en profit
+ la otra no estará
+ en menos 8
+ la otra probablemente
+ esté en menos 9
+ por el tema
+ de las comisiones
+ vale, vale, vale
+ perdona, perdona
+ te dejo
+ gracias
+ si te pones aquí
+ un 8 acumulado
+ es posible
+ que se te corten
+ en el slave
+ antes de que
+ en la master
+ te llegue el take profit
+ por tanto
+ ahí ese 2%
+ nos va bien
+ que haya ese margen
+ que nos den ese margen
+ hasta el menos 10
+ por el tema
+ de las comisiones
+ de la cuenta
+ que está perdiendo
+ vale, vale
+ gracias
+ perdona
+ nos dice
+ el límite diario
+ sí que habría que dejarlo
+ en 4
+ no, ¿por qué?
+ recordad
+ que esto
+ no es el riesgo
+ que yo pongo
+ por operación
+ estos son guardianes
+ estos son guardianes
+ son los segundos
+ para caídas
+ la estrategia
+ aún no la he configurado
+ en el expert
+ a ver, vale
+ estos son guardianes
+ un paracaídas
+ un segundo
+ para caídas
+ tipo, oye
+ que si llegas
+ al 4,5%
+ que no deberías
+ de llegar
+ porque yo te voy
+ a poner la estrategia
+ al 4,1
+ no deberías
+ de llegar
+ al 4,5%
+ pero si ves
+ que llega
+ guardian
+ córtame
+ ¿entendéis?
+ córtalo
+ es que habrá pasado
+ luego con la estrategia
+ ¿entendéis?
+ bien, máxima de operaciones
+ que queréis
+ simultáneas
+ bueno, yo siempre
+ pongo una
+ no sé
+ porque podríamos
+ poner dos
+ pero yo siempre
+ voy una
+ si tienes una estrategia
+ que te da
+ varias señales
+ durante el día
+ con una es suficiente
+ porque ya os digo
+ vamos a ir a un trade
+ al día
+ o como mucho
+ dos al día
+ máxima de ganancias
+ consecutivas
+ por día
+ por si queréis
+ tener este límite
+ no sé si creo
+ en algún momento
+ sí que lo tuvimos
+ pero ya no necesito
+ máxima pérdidas
+ consecutivas
+ al día
+ lo tenéis
+ ahí al límite
+ ¿vale?
+ cuando toquen
+ estos límites
+ esto es por día
+ bueno, excepto
+ el primero
+ son por día
+ al día siguiente
+ se va a reiniciar
+ ¿vale?
+ limitar aperturas
+ en horario específico
+ yo esto lo hago
+ desde la estrategia
+ por tanto aquí
+ lo pongo en false
+ en false
+ espera, máximo de tres
+ por día
+ voy a poner uno
+ perdonad
+ claro, es que esto
+ lo tengo que configurar
+ para mí
+ ¿vale?
+ no se lo explico
+ ahora a vosotros
+ ¿vale?
+ esto lo dejo en uno
+ en uno
+ vale
+ no voy a poner
+ un horario específico
+ porque ya lo pondré
+ en el Expert Advisor
+ ¿vale?
+ pero lo podréis poner aquí
+ directamente si queréis
+ al estar esto en falso
+ todo esto de aquí
+ ya no
+ no
+ no lo tiene en cuenta
+ ¿vale?
+ hora inicio trading
+ minuto inicio trading
+ hora fin de trading
+ minuto fin de trading
+ en este caso
+ en este caso iría
+ de las 6 de la madrugada
+ hora del broker
+ que es la hora que os aparece
+ en el gráfico
+ y la hora de cierre
+ y si queréis
+ forzar
+ un cierre
+ en una hora determinada
+ es decir
+ si en este franco horario
+ se os ha abierto una operación
+ pero aún no se ha cerrado
+ forzar que se cierre a las 22.00
+ en este caso están las 22.00
+ luego
+ algo muy importante
+ los dos últimos
+ horas de reseteo
+ horas de reseteo
+ a veces
+ hay cuentas de
+ empresas de fondeo
+ que el reset
+ en lugar de hacerse
+ a las 12 de la noche
+ hora broker
+ se hace a las 23.00
+ me refiero
+ al reset
+ en el reset
+ de pérdida máxima diaria
+ si entráis en un panel
+ a ver si os pueden tener
+ algún panel por aquí
+ que lo ponga
+ hay algunos
+ que lo ponen
+ a ver
+ the five first
+ no lo pone
+ and the nets
+ and the nets
+ and the nets
+ si
+ mirad
+ and the nets
+ fijaros aquí
+ hoy se va a resetear
+ en 4 horas
+ GMT más 2
+ vale
+ en 4 horas
+ en España serían
+ las 12
+ 4 horas y media
+ serían la 1
+ de la madrugada
+ no no no
+ que digo yo
+ sería a las 22
+ 24
+ a las 23
+ de España
+ a las 23
+ de España
+ o sea en 4 horas y media
+ y ahora mismo
+ está
+ tendría que ver
+ ahora
+ creo que esto es
+ a las 23
+ de España
+ creo que esto es
+ a las
+ 20
+ a las
+ a las 0
+ en el broker
+ vale
+ a las
+ 00
+ en el broker
+ vale
+ me ha costado ahora
+ donde está 00
+ vale
+ pero miradlo bien
+ que en alguna empresa
+ pues a lo mejor
+ se resete a las 11
+ de la noche
+ del horario broker
+ de acuerdo
+ generalmente todas
+ desde las 00
+ horario broker
+ pero bueno
+ por tanto
+ ya quedaría
+ configurado esto
+ le doy
+ a aceptar
+ importante
+ vale
+ no me ha funcionado
+ porque
+ el correo
+ es requerido
+ por tanto
+ se me ha detenido
+ el expert
+ apaisos
+ claro
+ no he puesto
+ mi login
+ esto pasa
+ cuando lo ponéis
+ vuestro login
+ vuelvo a configurar
+ todo esto
+ como estaba
+ límite de ganancia
+ al 10%
+ activar
+ quiero activarlo
+ límite diario
+ de pérdida
+ 4,5
+ total de ganancia
+ 8,05
+ 8,05
+ total de pérdida
+ 9,1
+ match 1
+ 1
+ y
+ esto lo dejo
+ porque lo haré
+ desde el expert
+ vale
+ voy a poner
+ mi
+ si me lo
+ permitís
+ voy a poner
+ las credenciales
+ en otra pantalla
+ ahora lo enseño
+ vale
+ vale
+ ya lo he puesto
+ de acuerdo
+ ya se me ha puesto
+ copy trading master
+ ea iniciado
+ iniciado
+ profit mode
+ activado
+ fijaros en
+ la pestaña
+ expertos
+ que os dice todo
+ equity inicial
+ 100,000
+ límite diario
+ hasta 95,000
+ límite total
+ hasta 90,100
+ próximo reseteo
+ a las 00
+ a las 21
+ de día 21
+ de 02
+ 3 abiertos
+ hoy 0
+ 3 paralelos 0
+ ganancias
+ bla bla bla
+ y el ficherito
+ está guardado
+ en esta ruta
+ que esto es importante
+ también
+ vale
+ fijaros que aquí
+ se nos ha abierto
+ un panel
+ un panel
+ copy trading master
+ email
+ me pensaba
+ me pensaba
+ pondría aquí
+ la contraseña
+ digo no creo
+ vale
+ este es mi correo
+ símbolos todos
+ 0 posiciones
+ bla bla
+ habilitado
+ y aquí os va calculando
+ un poco
+ lo que llevas
+ equity diario
+ equity total
+ como va calculando
+ el expert
+ para que tengáis aquí
+ los datos
+ próximo reseteo
+ mira
+ también tenemos
+ próximos eventos
+ reseteo
+ 4 horas y media
+ por lo tanto
+ va bien
+ va genial
+ vale
+ bien
+ tenemos el master
+ puesto
+ y ahora nos vamos
+ al slave
+ y luego pondremos
+ la estrategia
+ y ya estará
+ vale
+ es que hay que ir
+ con mucho cuidado
+ al principio
+ poco a poco
+ yo ayer me tiré
+ bastante tiempo
+ que es el tiempo
+ que me estoy tirando
+ hoy
+ vale
+ bien
+ aquí voy a tirar
+ el slave
+ bueno
+ primero de todo
+ lo mismo
+ en la segunda cuenta
+ lo mismo
+ trading algorítmico
+ activado
+ herramientas
+ opciones
+ expert advisor
+ permitir importación
+ de DLL
+ y web request
+ que esto es
+ el enlace
+ yo lo pongo aquí
+ tar
+ y ahora si le doy aquí
+ aquí hay menos
+ que configurar
+ email y password
+ que ahora lo pondré
+ fuera de cámaras
+ ruta personalizada
+ del fichero
+ lo tenéis que dejar
+ exactamente lo mismo
+ que tiene el otro
+ para que sepa
+ dónde ir
+ modo de copia
+ bien
+ aquí hay
+ dos tipos
+ de copias
+ el normal
+ es decir
+ replica todo
+ eso sí
+ órdenes en buy stop
+ no
+ lo hace a mercado
+ todo
+ o sea
+ si vosotros tenéis un buy stop
+ en la master
+ cuando entre a mercado
+ es cuando se va a replicar
+ en la segunda
+ no se va a replicar
+ la buy stop
+ normal
+ y te coge
+ te coge el stop loss
+ el take profit
+ el cierre de operaciones
+ modificaciones
+ de operaciones
+ también
+ que modifiques
+ tengas un trailing stop
+ o algo
+ te lo modifica todo
+ te lo hace
+ y aperturas
+ modo incógnito
+ esto lo he puesto
+ porque puede ser interesante
+ no lo necesitamos realmente
+ ahora para este caso
+ de evaluaciones
+ pero puede ser interesante
+ esto es
+ que te abre la operación
+ y cuando cierra
+ independientemente
+ si es porque ha tocado
+ take profit
+ stop loss
+ o un trailing stop
+ lo que sea
+ en la cuenta master
+ en el slave
+ no va a haber
+ ni take profit
+ ni stop loss
+ va a haber una operación
+ no se va a ver
+ los niveles de stop loss
+ ahí
+ se cierra
+ ¿vale?
+ cuando se cierra la A
+ se cierra la B
+ únicamente hace
+ apertura y cierre
+ por eso lo llamamos
+ modo incógnito
+ vamos a ponerlo normal
+ ¿vale?
+ en cuentas de mondeo
+ lo incógnito
+ para gente que le interese
+ lo tiene ahí
+ lo importante
+ modo inverso
+ sí
+ vamos a hacer
+ la inversa
+ y lo vamos a poner
+ en true
+ ¿de acuerdo?
+ multiplicador
+ y aquí me preguntaba
+ oye Ramón
+ si hacéis
+ si hacemos
+ cuentas
+ de diferente capital
+ pues si en la primera
+ tenéis una cuenta
+ de 50.000
+ y la segunda
+ de 100.000
+ podéis poner
+ un multiplicador
+ de por 2
+ ¿de acuerdo?
+ yo lo dejo en 1
+ porque las 2 son de 100.000
+ que es lo más habitual
+ sleep page
+ esto es
+ en el caso
+ de que haya deslizamiento
+ de una operación
+ de la que abres
+ a la que vas a abrir
+ si hay mucha diferencia
+ decidir no abrirla
+ ¿vale?
+ ¿cuántos puntos
+ queréis poner de margen
+ de las cuales van a abrir?
+ esto es
+ yo lo pongo
+ holgado
+ ¿vale?
+ o sea lo pongo
+ bastante holgado
+ esto es por si alguien
+ quiere tiquismiqui
+ que sé que esta opción
+ se puede también
+ en algunos
+ expert advisors
+ la habilité ahí
+ y el magic number
+ dejad este magic number
+ aquí mismo
+ os tengo que preguntar
+ si hay diferentes
+ slaves
+ bueno no no no
+ no no no
+ da igual
+ no no
+ magic number
+ da igual
+ este mismo está bien
+ sí porque magic number
+ va por metatrader
+ da igual
+ este está bien así
+ vale pues yo voy a poner
+ mi usuario
+ de acuerdo
+ de nuevo
+ y luego de nuevo
+ y esperad
+ voy a abrir
+ la
+ voy a abrir la pestaña expertos
+ y veis aquí
+ autenticación exitosa
+ modo normal
+ modo inverso activado
+ multiplicador 1.0
+ copy training slave
+ EA
+ iniciado
+ bien
+ por tanto
+ ya tenemos activado
+ el master
+ ya tenemos activado
+ el slave
+ y ahora vamos a poner
+ la estrategia
+ y me voy
+ a la primera cuenta
+ que es esta de aquí
+ me voy
+ ahora sí
+ ¿dónde va a operar
+ esa estrategia?
+ pues
+ en el euro dólar
+ ¿por qué?
+ porque el spread
+ es bajísimo
+ en el euro dólar
+ es verdad que hay comisión
+ y miraré lo de
+ hacerlo en índices
+ que esto no había caído
+ esta semana en hacerlo
+ pero
+ por ahora
+ como que no he probado
+ la estrategia
+ en los índices
+ no quiero tampoco
+ perder mucho más tiempo
+ como que sé que el euro dólar
+ tiene un spread
+ muy bajo
+ porque ya sabéis
+ que aquí vamos
+ con distancias bajas
+ nos interesa
+ que el mismo día
+ haya abierto
+ y haya cerrado
+ eso es lo importante
+ que el mismo día
+ abra y cierra
+ tanto no pongas
+ estrategias
+ con stop loss
+ muy anchos
+ que sean
+ sweet trading
+ que sean
+ day trading
+ por eso
+ o scalping
+ a poder ser
+ por eso
+ hay que ver
+ si en los índices
+ el spread
+ ocupa mucho
+ por el espacio
+ que vayamos a dejar
+ ¿de acuerdo?
+ vale
+ esta es mi estrategia
+ que en vuestro caso
+ será barra baja
+ copy trading
+ ¿de acuerdo?
+ luego terminaré
+ ya estoy a punto de terminar
+ arrastro
+ y esto ya es
+ la estrategia
+ aquí no veis
+ nada distinto
+ magic number
+ el que sea
+ creo que lo podéis
+ dejar uno a uno
+ no habría problema
+ money management
+ fijaros
+ risk money
+ siempre
+ bueno esto
+ cada uno lo que quiera
+ pero lo mejor
+ que va
+ en esta combinación
+ es que aquí pongáis
+ riesgo fijo
+ ¿vale?
+ porque así controláis
+ porque nosotros
+ no necesitamos
+ no debéis de hacer
+ riesgo variable
+ porque
+ no tenéis que calcular
+ sobre el balance
+ que tenéis del día anterior
+ tenéis que calcular
+ sobre el capital inicial
+ por lo tanto
+ es un riesgo fijo
+ yo voy a arriesgar
+ 4100 dólares
+ decimales de lotes
+ dos
+ para que te lo pueda
+ calcular bien
+ cálculo de lotes
+ si no es capaz
+ de calcular el lotaje
+ cuidado
+ que a mí me han pasado
+ cosas muy
+ muy feas
+ por no configurar
+ esto bien
+ si no es capaz
+ de calcularlo
+ dejad en lo mínimo
+ 0,01
+ no pongáis uno
+ como lo hice yo
+ en Atsi
+ sin querer
+ y máximo de lotes
+ no creo que
+ llegue a 500
+ pero bueno
+ poned ahí
+ una barrera
+ muy elevada
+ ¿vale?
+ y este 0,01
+ esto que se queda así
+ ¿vale?
+ bien
+ yo en esta estrategia
+ esto ya viene hecho
+ de Strategy 1
+ le tengo limitado
+ de las 9 de la mañana
+ que serían las 8 en España
+ hasta las 10 y media
+ en España
+ sesión europea
+ sesión americana
+ ¿por qué?
+ ¿por qué estoy eliminando
+ la asiática?
+ porque el spread
+ es demasiado elevado
+ porque el spread
+ respecto a lo que se mueve
+ el precio
+ es demasiado elevado
+ por lo tanto
+ hay que intentar
+ que los costes
+ sean los mínimos
+ para que no nos merme tanto
+ y que al finalizar el día
+ si tengo una operación abierta
+ y no haya tocado
+ ni Take Profit
+ ni Tristoblos
+ me la cierre
+ ¿vale?
+ me lo cierre
+ para que no se me aguante
+ hasta el día siguiente
+ y no me coma un swap
+ si no ha llegado
+ da igual
+ pues a lo mejor
+ habré ganado un 2%
+ al día siguiente
+ ya ganaré
+ el 4 que me toque
+ todo lo demás
+ use
+ yo esto siempre lo activo
+ que se utilice
+ el pip size
+ que hemos configurado
+ en Strategic One
+ siempre lo tengo
+ lo intento poner en activo
+ en Forex
+ no hay mucha diferencia
+ pero en índices
+ a veces sí
+ por lo tanto
+ siempre pone True
+ porque así el robot
+ se ha creado
+ con esas configuraciones
+ yo siempre lo dejaría en True
+ y creo que ya está
+ y esto pues ya
+ pues le doy a aceptar
+ abajo veo
+ bueno
+ el típico log de Strategic One
+ Starting
+ de Expert Advisor
+ y ya está
+ Expert Advisor
+ funcionando
+ ¿de acuerdo?
+ por lo tanto
+ ahora
+ cuando en un
+ en un
+ ahora os enseñaré
+ lo de ayer
+ cuando en una se me abra
+ en la otra
+ se me debería
+ de replicar
+ una cosa más
+ y ahora luego
+ ya si vamos a la otra
+ no te preguntas
+ ¿vale?
+ el News Manager
+ ¿qué hace este Expert Advisor?
+ que los podéis cargar
+ también de
+ de allí
+ lo que hace es
+ lee
+ las noticias económicas
+ que hay durante el día
+ y
+ cierra
+ cualquier
+ operación
+ y no deja abrir
+ ninguna operación
+ durante un tiempo
+ determinado
+ durante el tiempo
+ de la noticia
+ ¿bien?
+ vamos a ver
+ por ejemplo
+ Wall Street Funded
+ News
+ Noticias
+ Wall Street Funded
+ ¿qué nos dice aquí?
+ que Wall Street Funded
+ no deja operar
+ noticias
+ cuatro minutos antes
+ y cuatro minutos después
+ hay empresas
+ yo por ejemplo
+ voy a FundedNet
+ hay
+ hay
+ empresas que sí
+ FundedNet
+ permite operar
+ noticias en casi
+ todas las cuentas
+ bueno
+ pues FundedNet
+ sí
+ The Trading Pit
+ por ejemplo
+ a ver
+ está aquí abajo
+ está aquí abajo
+ bueno
+ ya lo podéis ver
+ la negociación
+ de noticias
+ está permitida
+ para las cuentas
+ de FEDES
+ con la excepción
+ de las cuentas
+ de 100.000
+ y 200.000
+ dólares
+ mira
+ las clases
+ no
+ aquí lo dice
+ las siguientes acciones
+ no están permitidas
+ dentro de los
+ dos minutos
+ antes o después
+ de la publicación
+ de noticias
+ que ahora
+ leyendo esto
+ he hecho una cagada
+ porque ayer
+ puse
+ Wall Street Funded
+ y me acabo
+ de acordar
+ es de cuatro minutos
+ y no de dos
+ creo que he incumplido
+ algo
+ lo que pasa es que
+ solo para cuentas
+ financiadas
+ simuladas
+ no se aplica
+ en fase una y dos
+ de las pruebas
+ me he salvado
+ me he salvado
+ fue por eso
+ lo que pasa es que
+ en The Trading Pit
+ sí
+ en The Trading Pit
+ sí que
+ no está permitido
+ dos minutos
+ antes o después
+ por tanto
+ si yo sé que tengo
+ Trading Pit
+ y la estoy haciendo
+ contra la Wall Street Funded
+ pues la Wall Street Funded
+ en fase de evaluación
+ no hay
+ restricción de noticia
+ pero en The Trading Pit
+ sí por tanto
+ tenemos que ir
+ a la más restrictiva
+ dos minutos
+ bueno
+ en este caso
+ es
+ Funded Nets
+ y The Fifers
+ voy a configurarlo
+ para ellos dos
+ como si fueran
+ The Trading Pit
+ y
+ Wall Street Funded
+ bien
+ aquí tengo
+ esto se tiene que colocar
+ en el mismo
+ donde está la estrategia
+ y el master
+ ¿vale?
+ es en el mismo
+ ¿de acuerdo?
+ porque es la que manda
+ es la que lanza
+ la operación
+ y la cierre
+ entonces
+ voy a un tercer gráfico
+ este de aquí
+ por ejemplo
+ yo que soy maniático
+ lo quito
+ quito esto
+ cuando no es necesario
+ quitarlo
+ es porque lo hago
+ y ya está
+ bien
+ y
+ lo arrastro
+ parámetros de entrada
+ operar noticias
+ modo de gestión
+ de noticias
+ operar noticias
+ si tenéis esto
+ puesto operar noticias
+ no nos hace nada
+ ¿vale?
+ no sé ni por qué
+ tenemos este modo
+ pero bueno
+ esto es no hacer nada
+ esto es
+ no abrir trades
+ ojo
+ porque hay empresas
+ de fondeo
+ que te dicen
+ si tienes trades
+ abiertos
+ de antes
+ lo puedes dejar
+ bueno
+ de hecho
+ de trading pit
+ las siete acciones
+ no están permitidas
+ durante los dos minutos
+ abrir operaciones
+ tener órdenes
+ pendientes
+ que significa
+ que si tienes operaciones
+ antes de esos dos minutos
+ si las puedes mantener
+ si las puedes mantener
+ ojo
+ esto es el modo
+ que hemos desarrollado
+ puedes
+ puedes decir
+ no abrir trades
+ durante noticias
+ no vamos a abrir trades nuevos
+ pero si tenemos trades abiertos
+ se pueden mantener
+ esto sería
+ esta segunda opción
+ y la tercera es
+ no abrir trades
+ durante ese tiempo
+ y además
+ si llevo un trade abierto
+ antes de los dos minutos
+ o los minutos que les pongamos
+ lo vamos a cerrar
+ para que no
+ para que no nos pille con nada
+ vale
+ a ver
+ si no queréis problemas
+ poner el último
+ vale
+ pero bueno
+ ahí si queréis mirar
+ que empresa está
+ vale
+ en esta puedo poner esto
+ en esta puedo poner esto
+ pues afinarlo
+ vale
+ duración de las noticias
+ estos son
+ los minutos
+ no el total
+ sino
+ la mitad
+ es decir
+ si nos dicen
+ que dos minutos antes
+ y dos minutos después
+ de la noticia
+ no podemos operar
+ aquí hay que poner
+ los segundos
+ de dos minutos
+ no de cuatro
+ vale
+ son 120 segundos
+ son los dos minutos
+ si nos dicen cuatro
+ en Wall Street Funded
+ en la fase fondeada
+ porque este guardián
+ de noticias manager
+ lo podéis poner
+ en vuestras cuentas
+ fondeadas
+ donde queráis
+ esto lo podéis poner
+ donde queráis
+ esto no va asociado
+ a evaluaciones de fondeo
+ pero si nos va muy bien
+ para no incumplir
+ esa norma
+ que a veces
+ con robots
+ es fácil incumplir
+ vale
+ por lo tanto
+ aquí poner
+ el minutaje
+ de antes
+ y el de después
+ que es el mismo
+ vale
+ 120
+ poned
+ 122
+ o 121
+ vale
+ no lo dejéis
+ en 120
+ que si no
+ luego os dicen
+ ah es que
+ justo dos minutos
+ lo has cerrado
+ no pues
+ dejad dos segundos
+ por si acaso
+ vale
+ esto de aquí
+ ahora no lo voy a conectar
+ bueno
+ si lo voy a conectar
+ voy a conectar
+ venga
+ voy a dejar conectado
+ vale
+ os tengo que explicar algo
+ que no he explicado antes
+ esto de aquí
+ currencies a monitorear
+ es esto de aquí
+ vale
+ cuando vais a investing
+ y veis
+ el calendario económico
+ ostia lo han cambiado
+ esto
+ ah economic calendar
+ lo han cambiado
+ veis aquí
+ primero de todo
+ esto filtra
+ tres estrellas
+ vale
+ esto filtra
+ tres estrellas
+ no va
+ ni a una
+ ni a dos estrellas
+ todas las empresas
+ de fondeo
+ te dicen
+ tres estrellas
+ vale
+ es verdad
+ que cada empresa
+ de fondeo
+ tiene su calendario
+ pero nosotros
+ como somos algorímicos
+ lo tenemos que coger
+ de algún sitio
+ no lo que hacemos de investing
+ es de otra API
+ vale
+ pero que sepáis que
+ está coordinado con investing
+ por tanto
+ lo que filtramos nosotros es
+ categorías
+ importancia
+ high
+ países
+ la moneda
+ que monedas
+ vamos a tener en cuenta
+ si yo estoy operando
+ el euro dólar
+ que noticias
+ voy a tener en cuenta
+ el euro y el dólar
+ vale
+ por tanto
+ yo aquí
+ le voy a dejar
+ el euro
+ y el dólar
+ es posible
+ que haya alguna empresa
+ de fondeo
+ que sea tiquismiquis
+ y es decir
+ esto serían
+ noticias de Europa
+ y Estados Unidos
+ las demás
+ no me importan
+ es posible
+ que haya alguna empresa
+ de fondeo
+ que ponga tiquismiquis
+ tipo
+ ahora opera el euro dólar
+ y había una noticia
+ importante
+ en el canadiense
+ pero no creo
+ vale
+ pero bueno
+ hay cada uno
+ que se cubra
+ como prefiera
+ vale
+ ahora si voy a poner
+ la ronda seña
+ voy a aceptar
+ y todo me aseguro
+ que
+ vale
+ vale
+ vale pues fijaros aquí
+ en el log
+ dice
+ news manager
+ he iniciado
+ modo
+ este modo
+ noticias económicas
+ detectadas
+ ocho noticias
+ programadas
+ esto creo que es para hoy
+ lo que pasa es que hoy
+ ya han pasado
+ las noticias
+ por eso os digo también
+ no hagáis estrategias
+ haced estrategias
+ que abren y cierran
+ rápido
+ porque si no
+ cada dos por tres
+ pues os estará cerrando
+ por noticias
+ también
+ vale
+ así que ahora
+ tenemos conectado
+ la explicación
+ hasta aquí
+ ahora antes de ir a
+ preguntas
+ os enseño
+ la movida de ayer
+ la movida de ayer
+ que son estas dos de aquí
+ fíjate
+ noticia activa
+ hoy
+ bueno primero
+ el historial
+ vale
+ esta es la cuenta
+ master
+ de acuerdo
+ ayer me perdió
+ dos mil cien dólares
+ y hoy me ha perdido
+ dos tres
+ yo aquí le tengo
+ dos tres al día
+ ¿por qué?
+ porque arriesgo
+ 2,1%
+ como podéis ver
+ porque aquí
+ tengo Wall Street Fund
+ no puedo ir al 4%
+ vale
+ la nueva
+ sí que hemos hecho
+ 4%
+ en esta no
+ por tanto
+ ayer perdí
+ en esta cuenta
+ menos dos mil
+ ahora veréis en la otra
+ la tengo aquí
+ en historial
+ tengo más dos mil
+ fijaros
+ las comisiones
+ como nos está
+ un poco
+ mermando
+ la que está perdiendo
+ y luego
+ aquí lo he ganado
+ y aquí lo he perdido
+ bien
+ fijaros
+ que tanto esta
+ como esta
+ no me han llegado
+ al dos mil
+ y pico
+ porque me la ha cortado
+ una noticia económica
+ me la han cortado
+ una noticia económica
+ y esto me sale
+ en el master
+ fijaros
+ trading detenido
+ todas las posiciones
+ cerradas
+ yo tendría que haber revisado
+ en Wall Street Fund
+ ahora ya sé
+ que lo puedo habilitar
+ y en The Trading Pit
+ yo sé
+ que no me tiene que cerrar
+ las operaciones
+ por tanto
+ este modo
+ yo ahora mismo
+ lo puedo cambiar
+ que son estas dos
+ de aquí
+ The Trading Pit
+ le voy a cambiar
+ Use Manager
+ bueno no
+ no lo voy a cambiar ahora
+ porque si no se va a ver
+ mi contraseña
+ ¿vale?
+ pero lo haré luego
+ le voy a cambiar
+ y voy a poner
+ solo que no me abra
+ operaciones nuevas
+ pero fijaros
+ hoy
+ trading detenido
+ una vez
+ y trading detenido
+ dos veces
+ y te dice
+ mira la noticia
+ es a las 14.45
+ protección
+ hasta las 14.47
+ os lo dice
+ todo aquí
+ ¿vale?
+ pues si necesitáis ver
+ qué es lo que ha hecho
+ durante el día
+ os leís este log
+ y hoy me he cerrado
+ dos operaciones
+ en
+ bueno
+ por noticias
+ pero bueno
+ tengo una cuenta
+ en
+ en menos 1600
+ menos 1600
+ y tengo otra cuenta
+ en
+ en más 1200
+ fijaros las comisiones
+ esto tendré que ir a ver
+ el
+ lo que me habéis contado
+ del
+ de los índices
+ porque las comisiones
+ comen mucho
+ yo ahí he tenido
+ una merma de
+ 400 dólares
+ cuando sucede
+ esto
+ a lo mejor
+ en algún momento
+ habrá que reajustar
+ en los últimos trades
+ el riesgo que asumimos
+ poner un pelín más
+ por recuperar
+ esa pérdida
+ pero bueno
+ esto es lo que pasa
+ con las comisiones
+ creo que la solución
+ como me habéis comentado
+ es ir a índices
+ pero lo tengo que analizar
+ primero ¿vale?
+ que no
+ que no haya nada raro
+ dudas
+ ahora es así
+ ya no tengo nada más
+ que contar hoy
+ dudas
+ digamos ya casi dos horas
+ ¿eh?
+ ay
+ no sé
+ he puesto solicita
+ reactivar audio
+ a alguien
+ voy a ir al chat
+ que veo que
+ creo que hay muchos
+ creo que habéis hablado
+ entre vosotros ¿vale?
+ los límites
+ de drawdown diario
+ que controlo copiador
+ también lo tiene en cuenta
+ si es drawdown estático
+ no
+ esto lo tendréis
+ que vosotros
+ cambiar manualmente
+ cada día
+ no
+ el límite diario
+ sí que habría que dejar
+ vale
+ esto de cuatro
+ lo he contestado
+ en el momento
+ de todas formas
+ Ramón
+ si no pones
+ lo de una operación
+ al día
+ nada más
+ que por el límite
+ de ganancia
+ o pérdida
+ ya lo estaría
+ también limitando
+ ¿no?
+ no porque
+ sí
+ pero
+ a la que no cuadre
+ un euro
+ o un dólar
+ te va a abrir
+ una siguiente operación
+ y se te va a cerrar
+ al momento
+ yo lo pondría
+ Godoy
+ lo del modo inverso
+ es para hacerla
+ claro
+ esto se basa
+ todo
+ todo
+ todo este
+ es para ganar
+ una y la otra
+ perderla
+ para controlar
+ que tengas
+ una pasada
+ si tienes cuentas
+ de fondeo
+ de diferente valor
+ hay probabilidades
+ de que pierdas
+ la más costosa
+ o no
+ no
+ no tiene por qué
+ no tiene por qué
+ tener más posibilidades
+ mira
+ una persona
+ que acaba de
+ pasar una
+ llegar a
+ a la primera fase
+ de HSELECT
+ enhorabuena
+ enhorabuena
+ Eduard
+ si la empresa
+ de fondeo
+ no deja operar
+ en cualquier noticia
+ de alta impact
+ vale
+ después de un año
+ los alumnos
+ perdemos
+ el CESIMBOL STAT
+ esto es
+ estas herramientas
+ solo están activas
+ si tenéis un usuario
+ activo con nosotros
+ que eso creo que es
+ la pregunta de Simón
+ tenéis que tener
+ la
+ obviamente
+ estar con nosotros
+ nuestra
+ comunidad
+ parece que
+ no nos serviría
+ porque no cumple
+ la regla de consistencia
+ porque no lo debería cumplir
+ la regla de consistencia
+ el sistema es muy torramón
+ gracias Izan
+ es posible tener
+ los tres ficheros
+ o por lo menos
+ el pdf
+ abajo del vídeo
+ que
+ bueno
+ esto lo
+ no
+ esto lo tendréis
+ en
+ los ficheros
+ todos los tenéis
+ en la web
+ vale
+ esto lo tenéis aquí
+ todos los ficheros
+ hay
+ en la sesión invalida
+ ahora
+ esto lo tenéis
+ expert app
+ esos tenéis
+ el de copy trading
+ que ahí os descargaréis
+ los dos
+ más el tutorial
+ y el new manager
+ que también tiene
+ un tutorial
+ de acuerdo
+ y esto es
+ el parcheador
+ que debéis de pasar
+ los robots
+ por aquí
+ gran cuentito
+ ya ves
+ a mí me ha venido
+ esta semana
+ este
+ cuentito
+ sería tremendamente
+ interesante
+ que nos cuentes
+ cómo te va yendo
+ a día a día
+ con esta metodología
+ para ir viendo
+ por si os problemas
+ con arreglos
+ a ver
+ te os lo puedo decir
+ Iván también
+ yo os lo expliqué
+ al principio
+ nos complicamos
+ muchísimo
+ con gestión de escalado
+ y tal
+ que tenéis la herramienta
+ ahí
+ ya que la hemos desarrollado
+ pues la tenéis ahí
+ porque a alguien
+ le puede servir
+ para algo
+ pero al final
+ dijimos tú
+ lo sencillo
+ es lo que funciona
+ mejor
+ lo más predecible
+ lo que os he dicho
+ es más predecible
+ por lo tanto
+ vamos con esto
+ yo esto
+ empecé ayer
+ Andrés
+ durante todos estos meses
+ no he podido comprar
+ cuentas de 100.000
+ porque estábamos comprando
+ a mi nombre
+ muchas cuentas
+ de 10.000
+ 20.000
+ para hacer pruebas
+ muchas evaluaciones
+ hemos pasado
+ he comprado
+ y por lo tanto
+ no tenía cabida
+ para poder comprar
+ nuevas de 100.000
+ ahora sí
+ ya lo hago yo
+ ya con Iván
+ hemos cerrado
+ este
+ todo este proyecto
+ que hemos hecho
+ con esto
+ y ahora ya pues
+ ya voy por mi cuenta
+ ya utilizo
+ por lo que hemos aprendido
+ lo que os estoy enseñando
+ ayer mismo empecé
+ o sea
+ no he empezado
+ mucho antes
+ que vosotros
+ vale
+ voy a hacer un paro
+ en el chat
+ y le doy paso a Gonzalo
+ hola Ramón
+ por lo que me he dado cuenta
+ cuando has mostrado
+ los últimos resultados
+ de beneficio
+ y pérdidas
+ en tus dos cuentas
+ se te puede dar
+ el caso
+ catastrófico
+ de que
+ pierdas una
+ y la otra
+ no llegues
+ al objetivo
+ ese es el riesgo
+ sí
+ hay que afinar bien eso
+ de hecho yo ahora
+ aquí he perdido
+ 500 dólares
+ por eso
+ tengo que
+ una de dos
+ a la configuración
+ que estoy ahora
+ creo que para
+ arriesgar 2,1 no vale
+ ahí debería ir
+ a arriesgar al 4%
+ para ganarla
+ en 2, 3 o 4 trades
+ no más
+ puedo
+ aumentar más
+ el espacio
+ de esta forma
+ no tengo que abrir
+ tanto lote
+ por tanto la comisión
+ no es tan elevada
+ o puedo ir a hacerlo
+ en activos
+ sin comisión
+ que creo que será
+ la solución definitiva
+ esto lo estudiaré bien
+ este fin de semana
+ y probablemente
+ la cuenta
+ que acabo de
+ o las dos cuentas
+ que acabo de poner
+ las cuatro cuentas
+ en lugar del euro dólar
+ vaya a un índice
+ sí
+ bueno
+ ha sido yo
+ quien más o menos
+ te lo ha comentado
+ yo creo que incluso
+ subiendo alguna temporalidad
+ de mi 15
+ o algo
+ yo creo que
+ se puede sacar algo
+ pero bueno
+ quedamos a la espera
+ aumentar temporalidad
+ lo dices
+ para dejar mal espacio
+ ¿no?
+ sí, sí
+ para que se abra
+ y no haya problemas
+ pero bueno
+ tú otro es el que sabe
+ y quedamos a la espera
+ vale
+ oa González
+ sí
+ una preguntita
+ porque estabas hablando
+ posiblemente
+ por desconocimiento
+ así que perdón
+ si ya alguien lo sabe
+ pero
+ estabas hablando
+ de que pasas
+ la primera fase
+ ¿qué pasa
+ ahora?
+ a partir de ahora
+ es decir
+ tienes la primera fase pasada
+ ¿qué es lo que ocurre
+ con estas cuentas?
+ ¿qué hay que hacer
+ para pasar una segunda fase?
+ bueno
+ tú has visto
+ que tengo cuatro
+ ahora
+ tengo cuatro metatraders
+ sí
+ ayer conecté dos
+ ahora acabo de conectar
+ dos más
+ de las cuentas
+ quien me gane
+ de estas dos
+ me va a ganar una
+ y de estas dos
+ me va a ganar otra
+ ¿vale?
+ por tanto tengo dos cuentas
+ en fase dos
+ haré lo mismo
+ ponerlas en contra
+ y una de las dos
+ la voy a tener fondeada
+ vale
+ ¿y tiene otros criterios
+ la fase dos?
+ es decir
+ no
+ bueno
+ la rentabilidad
+ no vayáis al 4%
+ y tal 2,5%
+ porque solo os piden
+ un 5%
+ intentad hacerlo
+ que tenga dos saltos
+ vale
+ vale
+ muchas gracias
+ a ti
+ Reme
+ Reme Clash
+ bueno
+ en primer lugar
+ agradecerte todo
+ porque la verdad
+ fue una pasada
+ gracias
+ y a Iván también
+ te da la gracia
+ Iván que estaba ahí
+ Iván también
+ es una maravilla
+ siempre está intentando
+ aportar algo
+ y eso es maravilloso
+ bueno aparte de eso
+ yo hay una duda
+ muy tonta
+ pero es que no sé
+ si es que no lo oíde
+ cuando te lo veas
+ en el
+ tu correo
+ y luego aparte
+ tienes que poner
+ la contraseña
+ de símbolo
+ de tal
+ sí
+ ah vale
+ que no sabía
+ si era lo de símbolo
+ de tal
+ o lo de home
+ ya había
+ no era de símbolo
+ de tal
+ sí
+ la de la web
+ ok
+ gracias
+ a ti
+ vale
+ ¿cómo cambiamos
+ la contraseña de símbolo
+ de tal?
+ vale
+ bien
+ te vas aquí
+ entráis en símbolo
+ de tal
+ bueno que ahora se llama
+ académicovico.com
+ que lo hemos renombrado
+ vale
+ te vas a Ramón
+ mi perfil
+ bueno Ramón
+ a vuestro mi perfil
+ y cambiar contraseña
+ si os enviara
+ una contraseña
+ a vuestro correo
+ random
+ vale
+ no la podréis
+ poner la que vosotros queráis
+ random
+ y esa os la copiáis
+ y esa es la que vais a utilizar
+ por tanto
+ sí
+ todo el mundo
+ entra con la misma contraseña
+ 1, 2, 3, 4, 5, 6
+ siempre al principio
+ os decimos
+ id aquí
+ y cambiar la contraseña
+ vale
+ y tendréis una a cada uno
+ para que nadie entre con vuestro correo
+ ok
+ en la segunda fase de cuenta de Fondeo
+ si seguí el mismo hotel
+ decía vale
+ sí
+ así es
+ los noticias
+ has dicho que es una configuración única
+ lo mismo para máster
+ se explica ya el Slade
+ sí
+ porque lo que no haga máster
+ el Slade no lo hará
+ si hacemos dos evaluaciones
+ de una sola fase
+ de dos brokers
+ diferente
+ también sería apropiado
+ sí
+ siempre y cuando
+ sepas configurar bien
+ las límites
+ que te pida
+ sí
+ sí
+ genial
+ solo con la Scalping
+ he quemado varias cuentas
+ muchas gracias
+ por todo su esfuerzo
+ bueno
+ gracias por las felicitaciones
+ por ahí
+ la clase
+ tendrás que verla
+ tendrás que verla
+ a Peter
+ cinco veces
+ sí
+ sí
+ sí
+ gracias Peter
+ por estar ahí
+ entonces esta herramienta
+ solo vamos a usar un año
+ ¿no?
+ sí
+ pero luego
+ se pueden renovar
+ o sea
+ podéis renovar
+ anualmente con nosotros
+ ¿funciona Meta 3D4?
+ no José
+ no
+ no hay más ¿no?
+ ¿Diego?
+ Ramón
+ una pregunta
+ dime
+ no sé si
+ si
+ no me di cuenta
+ pero
+ tú configuraste
+ dos maestros
+ en la misma
+ BPS
+ sí
+ y no estaría
+ mal eso
+ pues tendrías
+ dos maestros
+ que están
+ mandando operaciones
+ como esclados
+ pues me han hecho pensar ahora
+ pues tendrías que tenerlo
+ en otra BPS
+ puede ser
+ puede ser
+ puede ser
+ o en caso contrario
+ pues entonces
+ utilizas un maestro
+ y tres réplicas
+ pero una
+ que no abran
+ en contraria
+ sino como la master
+ y dos que sí sean
+ inversas
+ sí
+ sí
+ sí
+ sí
+ sí
+ pues
+ lo voy a preguntar
+ ahora mismo
+ un segundo
+ antes de que me olvide
+ se me pregunta
+ quién no ha programado
+ a ver si se puede
+ hacer esto técnicamente
+ probablemente si
+ manejaras un ID
+ por
+ por
+ par
+ master
+ slave
+ quizás
+ no
+ podrías hacerlo
+ pero bueno
+ hay que ver
+ cómo está programado
+ de hecho
+ habiéndome dicho esto
+ y yo teniendo
+ toda
+ esta duda
+ realmente depende
+ del fichero
+ depende del fichero
+ lo voy a parar
+ voy a pararlo todo
+ ¿vale?
+ en las dos que acabo de hacer
+ simplemente parando
+ es simplemente poniéndolo aquí
+ según mi lógica
+ lo que entiendo
+ es que el fichero
+ se tiene que llamar distinto
+ ¿sabes?
+ aunque el fichero ponía
+ master.json
+ pues deberíamos de poner
+ creo que
+ la solución es poner
+ master2.json
+ ¿entiendes?
+ no sé quién me lo ha preguntado
+ pero entiendes lo que he dicho
+ o sea
+ aquí por ejemplo
+ sí, sí
+ sí
+ en la configuración
+ al poner master2
+ este
+ poner master2
+ para que no sea
+ claro
+ porque se puede liar bastante
+ ajá
+ y en el esclavo igual
+ me he dejado una cosa
+ que no os he explicado
+ una cosa muy importante
+ en el slave
+ todo esto se explica
+ en el documento
+ fijaros
+ a ver
+ cómo está en este caso
+ vale
+ en este caso
+ no hay problema
+ porque se llama igual
+ eur usd
+ y en the five is
+ también se llama
+ eur usd
+ no hay problema
+ pero
+ por ejemplo
+ aquí
+ en world of stefandes
+ se pone
+ eur usd
+ c
+ en el slave
+ aquí
+ tendríamos que haber puesto
+ si tú por ejemplo
+ ya sabéis que sólo
+ se van a lanzar órdenes
+ en euro dólar
+ tienes que poner
+ eur usd
+ que es el master
+ se llama eur usd
+ el activo
+ y en el slave
+ se pone
+ eur usd
+ c
+ esto debería quedar así
+ así como lo pone el ejemplo
+ si hay más
+ ponéis punto y coma
+ y poned los demás
+ sólo los activos
+ que sepáis
+ que se van a lanzar
+ operaciones
+ no me había acordado
+ y esto es importante
+ vale
+ en este caso
+ no pasaría nada
+ porque se llaman
+ exactamente igual
+ si se llaman exactamente igual
+ lo podéis dejar igual
+ pero si no
+ lo tenéis que especificar ahí
+ bueno
+ yo os lo pondré
+ por discord
+ cuando me confirme
+ lo del poder poner
+ dos masters
+ en la misma WPS
+ ya ver que me dice
+ vale
+ ya ver que me dice
+ pero yo creo que era así
+ poner diferentes ficheros
+ y ya está
+ que no se líne entre ellos
+ vale
+ me está recordando
+ lo de Rigo 1
+ ahora lo veremos
+ vale
+ vamos a ello
+ me voy a conectar
+ al servidor
+ a ver
+ a ver
+ a ver si vamos a quedar mal
+ con Neura
+ si no
+ este mismo
+ tengo
+ unos varios
+ en full settings
+ en full settings
+ stop loss
+ bueno aquí
+ ATR
+ lo que sea
+ yo os diría
+ que vayáis a pips fijos
+ a pips fijos
+ no os liéis
+ y el profit target
+ podéis poner aquí
+ que el profit target
+ activarlo de abajo
+ fijaros
+ activarlo de abajo
+ y que el profit target
+ vaya
+ del 100%
+ al
+ 100%
+ de tu stop loss size
+ es decir
+ que arriesgue siempre
+ lo mismo
+ que tu stop loss size
+ es activar esto
+ yo no lo he probado
+ pero
+ la teoría me dice
+ que es poner aquí
+ 100-100
+ y ya debería salir
+ siempre estrategia
+ de Rigo 1
+ vale
+ vale
+ más preguntas
+ no
+ damos por fin
+ quitado esto
+ lo tenéis ya
+ todo
+ todo
+ disponible
+ en
+ symbol start
+ en academia
+ jodigo.com
+ lo tenéis ahí ya
+ nada
+ toquetear
+ cualquier cosa
+ que tengáis
+ lo reportáis
+ vale
+ si veis algún error
+ y demás
+ lo reportáis
+ ya os digo
+ hemos hecho pruebas
+ con cuentas demo
+ abriendo operaciones manuales
+ de hecho
+ si vosotros habéis
+ operaciones manuales
+ en la cuenta master
+ también se va
+ a la slave
+ se copian también
+ todas las operaciones
+ se copian
+ así que nada
+ trastead un poco
+ primero de todo
+ probad con algo
+ que os podáis permitir
+ todo esto
+ ya lo sabéis
+ y nada
+ pues me vais diciendo
+ espero que
+ esto sea un inicio
+ en esta academia
+ para que
+ no se habla mucho
+ he pasado esta evaluación
+ he pasado esta otra
+ pero compartidlo
+ si me lo metéis
+ en cuentas de fondo
+ y con esto
+ vais pasando
+ exámenes
+ compartidlo
+ para que veamos
+ pues que gente
+ lo está consiguiendo
+ y que esta herramienta
+ pues está ayudando
+ a muchos de vosotros
+ y vosotras
+ vale
+ así que nada
+ me agradeceros vosotros
+ por estar dos horas
+ aquí
+ escuchando la chapa
+ y nada
+ este fin de semana
+ pues ya tenéis
+ tareita
+ si quieres repasar la clase
+ y trastear con esto
+ vale
+ un fuerte abrazo
+ y nos vemos
+ bueno
+ a próximamente
+ eventual
+ gracias Ramón
+ por cierto
+ el evento va a ser
+ lo anunciaré
+ el 16 de mayo
+ en Madrid
+ 16 de mayo
+ en Madrid
+ vale
+ será por la tarde
+ después de comer
+ y
+ ya pasaré más información
+ para
+ reservar vuestra plaza
+ y demás
+ pero que sepáis
+ que va a ser
+ el 16 de mayo
+ que bien
+ vale
+ muchas gracias
+ chao
+ chao
+ chao
+ chao
+ chao
+ chao
+ chao
+ chao
+ chao
+ chao
+ chao
+ chao
+ chao
+ chao
+ chao
+ chao
+ chao
+ chao
+ chao
+ chao
+ chao
+ chao
+ chao
+ chao
+ chao
+ chao
+ gran trabajo Ramón
+ gracias
+ chao Ramón
+ chao
+ chao
+ aprovechadlo
+ chao
+ chao
+ chao
+ chao

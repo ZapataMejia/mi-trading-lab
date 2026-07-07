@@ -1,0 +1,26 @@
+Variantes: 192
+
+  1/192 SAFE (sin filtro) w30=43.8% pass6=2
+  20/192 adx≤28 + atr≥8 + atr≤25 w30=12.5% pass6=0
+  40/192 adx≤35 + atr≥6 w30=6.2% pass6=0
+  60/192 adx≥18 + atr≥10 + atr≤35 w30=25.0% pass6=1
+  80/192 adx≥18 + adx≤32 + atr≥8 + atr≤25 w30=0.0% pass6=0
+  100/192 adx≥20 + atr≥6 w30=25.0% pass6=1
+  120/192 adx≥20 + adx≤28 + atr≥10 + atr≤35 w30=12.5% pass6=0
+  140/192 adx≥20 + adx≤35 + atr≥8 + atr≤25 w30=6.2% pass6=0
+  160/192 adx≥22 + adx≤28 + atr≥6 w30=12.5% pass6=0
+  180/192 adx≥22 + adx≤32 + atr≥10 + atr≤35 w30=6.2% pass6=0
+
+BASELINE: w30=43.8% pass_2026=2/6 feb=-375.58 jun=-225.65
+MEJOR:    SAFE (sin filtro)
+          w30=43.8% pass_2026=2/6 feb=-375.58 jun=-225.65
+improved=False
+→ /Users/santiago/Documents/Personal/trading/data/forex_cache/liq_sweep_regime_compare.json
+
+=== 2026 mes a mes: BASELINE vs MEJOR ===
+  Ene 2026: SAFE $+247 FAIL | SAFE (sin filtro) $+247 FAIL
+  Feb 2026: SAFE $-376 FAIL | SAFE (sin filtro) $-376 FAIL
+  Mar 2026: SAFE $+408 PASS | SAFE (sin filtro) $+408 PASS
+  Abr 2026: SAFE $+446 PASS | SAFE (sin filtro) $+446 PASS
+  May 2026: SAFE $+27 FAIL | SAFE (sin filtro) $+27 FAIL
+  Jun 2026: SAFE $-226 FAIL | SAFE (sin filtro) $-226 FAIL

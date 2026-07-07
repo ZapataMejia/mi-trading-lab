@@ -1,0 +1,54 @@
+{
+  "name": "Demo WS — Liquidity Sweep SAFE (2 semanas)",
+  "created": "2026-07-01",
+  "duration_days": 14,
+  "account": "Demo WS CLASSIC $5k (mismas reglas que eval)",
+  "config": {
+    "symbol": "EURUSD",
+    "timeframe": "M5",
+    "lookback_bars": 36,
+    "sess_start": 700,
+    "sess_end": 1400,
+    "risk_pct": 1.5,
+    "tp_ratio": 1.5,
+    "sl_buffer_pips": 3.0,
+    "max_trades_per_day": 1,
+    "broker_utc_offset_hours": 7
+  },
+  "daily_routine": [
+    "07:00 broker — abrir lab /fondeo/liquidity-sweep y confirmar señal vs MT5",
+    "Solo 1 trade máximo entre 07:00–14:00 broker",
+    "Anotar: fecha, dirección, entry, SL, TP, resultado, DD flotante del día",
+    "Si DD flotante del día ≥ -2% → NO abrir más trades (circuit breaker)",
+    "Si DD flotante del día ≥ -3% → parar el día completo",
+    "No operar días NFP (1er viernes mes) ni CPI US (calendario manual)"
+  ],
+  "go_criteria_after_2_weeks": {
+    "min_trades": 4,
+    "max_daily_dd_observed_pct": 4.0,
+    "lab_demo_match_pct": 80,
+    "pnl_not_required": "Demo no exige +8%; buscamos disciplina y DD controlado",
+    "proceed_to_eval": "Si cumple go criteria → iniciar eval CUENTA 1"
+  },
+  "no_go": [
+    "DD diario > 4% en cualquier día",
+    "Más de 1 trade en un día",
+    "Riesgo > 1.5% en algún trade",
+    "Señales lab vs demo no coinciden en >30% de días con setup"
+  ],
+  "tracking_fields": [
+    "date",
+    "setup_seen_lab",
+    "setup_taken",
+    "direction",
+    "entry",
+    "sl",
+    "tp",
+    "result_pips",
+    "result_usd",
+    "daily_dd_pct",
+    "notes"
+  ],
+  "next_step_on_pass": "Eval WS CLASSIC $5k fase 1 — cuenta regalada 1",
+  "next_step_on_breach_eval": "Cuenta regalada 2 — misma config, sin cambiar parámetros"
+}

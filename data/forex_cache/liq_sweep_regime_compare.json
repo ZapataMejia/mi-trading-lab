@@ -1,0 +1,510 @@
+{
+  "baseline": {
+    "label": "SAFE (sin filtro)",
+    "params": {
+      "use_regime_filter": false,
+      "adx_period": 14,
+      "adx_min": 0.0,
+      "adx_max": 0.0,
+      "atr_period": 14,
+      "min_atr_pips": 0.0,
+      "max_atr_pips": 0.0
+    },
+    "w30": {
+      "passed": 7,
+      "total": 16,
+      "rate_pct": 43.8
+    },
+    "months_2026": [
+      {
+        "month": 1,
+        "label": "Ene 2026",
+        "pnl": 247.1,
+        "pass": false,
+        "dd": -3.06,
+        "trades": 21
+      },
+      {
+        "month": 2,
+        "label": "Feb 2026",
+        "pnl": -375.58,
+        "pass": false,
+        "dd": -9.55,
+        "trades": 20
+      },
+      {
+        "month": 3,
+        "label": "Mar 2026",
+        "pnl": 408.35,
+        "pass": true,
+        "dd": 0.0,
+        "trades": 22
+      },
+      {
+        "month": 4,
+        "label": "Abr 2026",
+        "pnl": 445.65,
+        "pass": true,
+        "dd": -0.88,
+        "trades": 15
+      },
+      {
+        "month": 5,
+        "label": "May 2026",
+        "pnl": 26.97,
+        "pass": false,
+        "dd": -2.98,
+        "trades": 15
+      },
+      {
+        "month": 6,
+        "label": "Jun 2026",
+        "pnl": -225.65,
+        "pass": false,
+        "dd": -4.51,
+        "trades": 8
+      }
+    ],
+    "pass_months_2026": 2,
+    "pnl_2026_h1": 526.84,
+    "feb_pnl": -375.58,
+    "jun_pnl": -225.65,
+    "feb_jun_ok": false
+  },
+  "best": {
+    "label": "SAFE (sin filtro)",
+    "params": {
+      "use_regime_filter": false,
+      "adx_period": 14,
+      "adx_min": 0.0,
+      "adx_max": 0.0,
+      "atr_period": 14,
+      "min_atr_pips": 0.0,
+      "max_atr_pips": 0.0
+    },
+    "w30": {
+      "passed": 7,
+      "total": 16,
+      "rate_pct": 43.8
+    },
+    "months_2026": [
+      {
+        "month": 1,
+        "label": "Ene 2026",
+        "pnl": 247.1,
+        "pass": false,
+        "dd": -3.06,
+        "trades": 21
+      },
+      {
+        "month": 2,
+        "label": "Feb 2026",
+        "pnl": -375.58,
+        "pass": false,
+        "dd": -9.55,
+        "trades": 20
+      },
+      {
+        "month": 3,
+        "label": "Mar 2026",
+        "pnl": 408.35,
+        "pass": true,
+        "dd": 0.0,
+        "trades": 22
+      },
+      {
+        "month": 4,
+        "label": "Abr 2026",
+        "pnl": 445.65,
+        "pass": true,
+        "dd": -0.88,
+        "trades": 15
+      },
+      {
+        "month": 5,
+        "label": "May 2026",
+        "pnl": 26.97,
+        "pass": false,
+        "dd": -2.98,
+        "trades": 15
+      },
+      {
+        "month": 6,
+        "label": "Jun 2026",
+        "pnl": -225.65,
+        "pass": false,
+        "dd": -4.51,
+        "trades": 8
+      }
+    ],
+    "pass_months_2026": 2,
+    "pnl_2026_h1": 526.84,
+    "feb_pnl": -375.58,
+    "jun_pnl": -225.65,
+    "feb_jun_ok": false
+  },
+  "improved": false,
+  "top5": [
+    {
+      "label": "SAFE (sin filtro)",
+      "params": {
+        "use_regime_filter": false,
+        "adx_period": 14,
+        "adx_min": 0.0,
+        "adx_max": 0.0,
+        "atr_period": 14,
+        "min_atr_pips": 0.0,
+        "max_atr_pips": 0.0
+      },
+      "w30": {
+        "passed": 7,
+        "total": 16,
+        "rate_pct": 43.8
+      },
+      "months_2026": [
+        {
+          "month": 1,
+          "label": "Ene 2026",
+          "pnl": 247.1,
+          "pass": false,
+          "dd": -3.06,
+          "trades": 21
+        },
+        {
+          "month": 2,
+          "label": "Feb 2026",
+          "pnl": -375.58,
+          "pass": false,
+          "dd": -9.55,
+          "trades": 20
+        },
+        {
+          "month": 3,
+          "label": "Mar 2026",
+          "pnl": 408.35,
+          "pass": true,
+          "dd": 0.0,
+          "trades": 22
+        },
+        {
+          "month": 4,
+          "label": "Abr 2026",
+          "pnl": 445.65,
+          "pass": true,
+          "dd": -0.88,
+          "trades": 15
+        },
+        {
+          "month": 5,
+          "label": "May 2026",
+          "pnl": 26.97,
+          "pass": false,
+          "dd": -2.98,
+          "trades": 15
+        },
+        {
+          "month": 6,
+          "label": "Jun 2026",
+          "pnl": -225.65,
+          "pass": false,
+          "dd": -4.51,
+          "trades": 8
+        }
+      ],
+      "pass_months_2026": 2,
+      "pnl_2026_h1": 526.84,
+      "feb_pnl": -375.58,
+      "jun_pnl": -225.65,
+      "feb_jun_ok": false
+    },
+    {
+      "label": "atr\u22656",
+      "params": {
+        "use_regime_filter": true,
+        "adx_period": 14,
+        "adx_min": 0.0,
+        "adx_max": 0.0,
+        "atr_period": 14,
+        "min_atr_pips": 6.0,
+        "max_atr_pips": 0.0
+      },
+      "w30": {
+        "passed": 7,
+        "total": 16,
+        "rate_pct": 43.8
+      },
+      "months_2026": [
+        {
+          "month": 1,
+          "label": "Ene 2026",
+          "pnl": 247.1,
+          "pass": false,
+          "dd": -3.06,
+          "trades": 21
+        },
+        {
+          "month": 2,
+          "label": "Feb 2026",
+          "pnl": -375.58,
+          "pass": false,
+          "dd": -9.55,
+          "trades": 20
+        },
+        {
+          "month": 3,
+          "label": "Mar 2026",
+          "pnl": 408.35,
+          "pass": true,
+          "dd": 0.0,
+          "trades": 22
+        },
+        {
+          "month": 4,
+          "label": "Abr 2026",
+          "pnl": 445.65,
+          "pass": true,
+          "dd": -0.88,
+          "trades": 15
+        },
+        {
+          "month": 5,
+          "label": "May 2026",
+          "pnl": 26.97,
+          "pass": false,
+          "dd": -2.98,
+          "trades": 15
+        },
+        {
+          "month": 6,
+          "label": "Jun 2026",
+          "pnl": -225.65,
+          "pass": false,
+          "dd": -4.51,
+          "trades": 8
+        }
+      ],
+      "pass_months_2026": 2,
+      "pnl_2026_h1": 526.84,
+      "feb_pnl": -375.58,
+      "jun_pnl": -225.65,
+      "feb_jun_ok": false
+    },
+    {
+      "label": "atr\u22658",
+      "params": {
+        "use_regime_filter": true,
+        "adx_period": 14,
+        "adx_min": 0.0,
+        "adx_max": 0.0,
+        "atr_period": 14,
+        "min_atr_pips": 8.0,
+        "max_atr_pips": 0.0
+      },
+      "w30": {
+        "passed": 7,
+        "total": 16,
+        "rate_pct": 43.8
+      },
+      "months_2026": [
+        {
+          "month": 1,
+          "label": "Ene 2026",
+          "pnl": 247.1,
+          "pass": false,
+          "dd": -3.06,
+          "trades": 21
+        },
+        {
+          "month": 2,
+          "label": "Feb 2026",
+          "pnl": -375.58,
+          "pass": false,
+          "dd": -9.55,
+          "trades": 20
+        },
+        {
+          "month": 3,
+          "label": "Mar 2026",
+          "pnl": 408.35,
+          "pass": true,
+          "dd": 0.0,
+          "trades": 22
+        },
+        {
+          "month": 4,
+          "label": "Abr 2026",
+          "pnl": 445.65,
+          "pass": true,
+          "dd": -0.88,
+          "trades": 15
+        },
+        {
+          "month": 5,
+          "label": "May 2026",
+          "pnl": 26.97,
+          "pass": false,
+          "dd": -2.98,
+          "trades": 15
+        },
+        {
+          "month": 6,
+          "label": "Jun 2026",
+          "pnl": -225.65,
+          "pass": false,
+          "dd": -4.51,
+          "trades": 8
+        }
+      ],
+      "pass_months_2026": 2,
+      "pnl_2026_h1": 526.84,
+      "feb_pnl": -375.58,
+      "jun_pnl": -225.65,
+      "feb_jun_ok": false
+    },
+    {
+      "label": "atr\u226510",
+      "params": {
+        "use_regime_filter": true,
+        "adx_period": 14,
+        "adx_min": 0.0,
+        "adx_max": 0.0,
+        "atr_period": 14,
+        "min_atr_pips": 10.0,
+        "max_atr_pips": 0.0
+      },
+      "w30": {
+        "passed": 7,
+        "total": 16,
+        "rate_pct": 43.8
+      },
+      "months_2026": [
+        {
+          "month": 1,
+          "label": "Ene 2026",
+          "pnl": 247.1,
+          "pass": false,
+          "dd": -3.06,
+          "trades": 21
+        },
+        {
+          "month": 2,
+          "label": "Feb 2026",
+          "pnl": -375.58,
+          "pass": false,
+          "dd": -9.55,
+          "trades": 20
+        },
+        {
+          "month": 3,
+          "label": "Mar 2026",
+          "pnl": 408.35,
+          "pass": true,
+          "dd": 0.0,
+          "trades": 22
+        },
+        {
+          "month": 4,
+          "label": "Abr 2026",
+          "pnl": 445.65,
+          "pass": true,
+          "dd": -0.88,
+          "trades": 15
+        },
+        {
+          "month": 5,
+          "label": "May 2026",
+          "pnl": 26.97,
+          "pass": false,
+          "dd": -2.98,
+          "trades": 15
+        },
+        {
+          "month": 6,
+          "label": "Jun 2026",
+          "pnl": -225.65,
+          "pass": false,
+          "dd": -4.51,
+          "trades": 8
+        }
+      ],
+      "pass_months_2026": 2,
+      "pnl_2026_h1": 526.84,
+      "feb_pnl": -375.58,
+      "jun_pnl": -225.65,
+      "feb_jun_ok": false
+    },
+    {
+      "label": "adx\u226518 + atr\u226510",
+      "params": {
+        "use_regime_filter": true,
+        "adx_period": 14,
+        "adx_min": 18.0,
+        "adx_max": 0.0,
+        "atr_period": 14,
+        "min_atr_pips": 10.0,
+        "max_atr_pips": 0.0
+      },
+      "w30": {
+        "passed": 5,
+        "total": 16,
+        "rate_pct": 31.2
+      },
+      "months_2026": [
+        {
+          "month": 1,
+          "label": "Ene 2026",
+          "pnl": 247.1,
+          "pass": false,
+          "dd": -3.06,
+          "trades": 21
+        },
+        {
+          "month": 2,
+          "label": "Feb 2026",
+          "pnl": -375.58,
+          "pass": false,
+          "dd": -9.55,
+          "trades": 20
+        },
+        {
+          "month": 3,
+          "label": "Mar 2026",
+          "pnl": 614.25,
+          "pass": true,
+          "dd": 0.0,
+          "trades": 22
+        },
+        {
+          "month": 4,
+          "label": "Abr 2026",
+          "pnl": 325.82,
+          "pass": false,
+          "dd": -3.06,
+          "trades": 14
+        },
+        {
+          "month": 5,
+          "label": "May 2026",
+          "pnl": 26.97,
+          "pass": false,
+          "dd": -2.98,
+          "trades": 15
+        },
+        {
+          "month": 6,
+          "label": "Jun 2026",
+          "pnl": -152.95,
+          "pass": false,
+          "dd": -3.06,
+          "trades": 7
+        }
+      ],
+      "pass_months_2026": 1,
+      "pnl_2026_h1": 685.61,
+      "feb_pnl": -375.58,
+      "jun_pnl": -152.95,
+      "feb_jun_ok": false
+    }
+  ],
+  "variants_tested": 192
+}

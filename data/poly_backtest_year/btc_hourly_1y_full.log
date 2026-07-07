@@ -1,0 +1,113 @@
+fatal: bad revision 'HEAD'
+Window: 2025-05-27T00:00:00+00:00  ->  2026-05-27T00:00:00+00:00
+Assets: ['bitcoin', 'ethereum', 'solana']
+2026-05-27 16:40:49,767 | INFO     | trading.data.exchange | Exchange client created: binance (sandbox=False)
+2026-05-27 16:40:50,830 | INFO     | trading.polymarket.gamma | Gamma series btc-up-or-down-hourly: 8198 markets in 2025-05-27..2026-05-27
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+Up/Down markets matched: 5789
+2026-05-27 16:55:11,510 | WARNING  | trading.polymarket.edge | Failed market bitcoin-up-or-down-december-31-9pm-et: No objects to concatenate
+2026-05-27 16:55:11,511 | WARNING  | trading.polymarket.edge | Failed market bitcoin-up-or-down-december-31-10pm-et: No objects to concatenate
+2026-05-27 16:55:11,512 | WARNING  | trading.polymarket.edge | Failed market bitcoin-up-or-down-december-31-11pm-et: No objects to concatenate
+2026-05-27 16:55:11,513 | WARNING  | trading.polymarket.edge | Failed market bitcoin-up-or-down-december-31-6pm-et: No objects to concatenate
+2026-05-27 16:55:11,513 | WARNING  | trading.polymarket.edge | Failed market bitcoin-up-or-down-december-31-7pm-et: No objects to concatenate
+2026-05-27 16:55:11,513 | WARNING  | trading.polymarket.edge | Failed market bitcoin-up-or-down-december-31-8pm-et: No objects to concatenate
+
+==============================================================================
+                 POLYMARKET 'UP OR DOWN' EDGE — EMPIRICAL TEST                
+==============================================================================
+  Markets analyzed       : 5789
+  Entry threshold        : 5.0pp  (|p_fair - p_poly|)
+  Half-spread charged    : 1.50¢ per fill
+  Flat fee charged       : 0.50¢ per fill (gas/relayer)
+  Proportional taker fee : 2.00% of fill price
+  Min sec-to-resolution  : 30s (look-ahead guardrail)
+
+  Markets with signal    : 5781  (99.9%)
+  Markets without signal : 8
+      reason 'error: No objects to concatenate': 6
+      reason                 'poly_empty': 2
+
+  Win rate               : 52.6%  (3041/5781)
+  Avg signal |edge|      : 8.36pp
+  Avg naive fill price   : $0.4607
+
+  --- PnL per signal ($1 stake = 1 contract paying $1 if right) ---
+    Naive   total:  $377.8450 | mean:  $0.0654 | per market:  $0.0653
+    Realistic total:  $207.2276 | mean:  $0.0358 | per market:  $0.0358
+
+  --- Capital ROI per signal (PnL / dollars at risk) ---
+    Naive   median ROI: +73.91% | mean: +14.86%
+    Realistic median ROI: +66.64% | mean: +8.04%
+
+  By asset:
+    bitcoin    n=5781  win= 52.6%  |edge|=8.36pp  PnL naive= $377.8450  realistic= $207.2276
+
+==============================================================================
+  Verdict: PnL realistic positive but win-rate close to coin-flip; high variance.
+  CAVEATS: 1-min data only — misses sub-second moves. Mid-price not bid/ask.
+           No order-book depth modeled. Hold-to-resolution; no exit slippage.
+           Sample may be small. Run with --days 14+ for stable stats.
+==============================================================================
+
+==============================================================================
+            MODEL CALIBRATION (predicted prob vs realized win rate)           
+==============================================================================
+  fair in [0.50,0.55)  n=1759  predicted= 52.7%  actual= 51.7%  diff= -1.1pp
+  fair in [0.55,0.60)  n=1659  predicted= 57.2%  actual= 53.5%  diff= -3.7pp
+  fair in [0.60,0.65)  n= 681  predicted= 62.1%  actual= 58.9%  diff= -3.2pp
+  fair in [0.65,0.70)  n= 260  predicted= 67.1%  actual= 64.2%  diff= -2.9pp
+  fair in [0.70,0.80)  n= 114  predicted= 73.5%  actual= 74.6%  diff= +1.1pp
+  fair in [0.80,1.00)  n=  22  predicted= 84.7%  actual= 72.7%  diff=-12.0pp
+
+ PnL by signal |edge| bucket (realistic costs):
+  |edge| in [ 5.0, 7.5)pp  n=3014  win= 51.3%  mean PnL=$+0.0194  total=$+58.56
+  |edge| in [ 7.5,10.0)pp  n=1518  win= 52.0%  mean PnL=$+0.0308  total=$+46.83
+  |edge| in [10.0,15.0)pp  n= 959  win= 54.3%  mean PnL=$+0.0623  total=$+59.71
+  |edge| in [15.0,25.0)pp  n= 256  win= 60.9%  mean PnL=$+0.1223  total=$+31.30
+  |edge| in [25.0,50.0)pp  n=  34  win= 82.4%  mean PnL=$+0.3184  total=$+10.83
+==============================================================================
+
+==============================================================================
+              MONTHLY BREAKDOWN (is the edge decaying over time?)             
+==============================================================================
+  month     n     win%   |edge|   PnL_naive    PnL_real    ROI_real%
+  --------------------------------------------------------------------------
+  2025-06   284   49.6%   7.74pp  $    8.77   $    0.36    +0.26%
+  2025-07   500   51.0%   8.23pp  $   26.71   $   11.99    +5.08%
+  2025-08   500   52.4%   7.80pp  $   29.55   $   14.76    +6.15%
+  2025-09   499   51.5%   8.48pp  $   32.06   $   17.43    +7.50%
+  2025-10   499   52.3%   8.45pp  $   31.53   $   16.81    +7.09%
+  2025-11   499   52.3%   8.23pp  $   22.16   $    7.25    +2.94%
+  2025-12   500   54.4%   8.51pp  $   42.93   $   28.20   +11.92%
+  2026-01   500   54.4%   8.05pp  $   44.33   $   29.63   +12.60%
+  2026-02   501   51.9%   8.40pp  $   26.42   $   11.57    +4.80%
+  2026-03   500   52.6%   8.71pp  $   28.84   $   14.00    +5.79%
+  2026-04   500   54.4%   8.88pp  $   45.42   $   30.74   +13.13%
+  2026-05   499   53.1%   8.57pp  $   39.13   $   24.49   +10.49%
+==============================================================================
+
+==============================================================================
+                              SPREAD SENSITIVITY                              
+==============================================================================
+ half-spread + fee  →  mean PnL per signal  | mean ROI on stake  | total PnL
+ ----------------------------------------------------------------------------
+   0.0¢ + 0.5¢ + 2.0%·fill →  $ 0.0511 per signal | +11.75% ROI | total $  295.68 over 5781 signals
+   1.0¢ + 0.5¢ + 2.0%·fill →  $ 0.0409 per signal |  +9.25% ROI | total $  236.71 over 5781 signals
+   1.5¢ + 0.5¢ + 2.0%·fill →  $ 0.0358 per signal |  +8.04% ROI | total $  207.23 over 5781 signals
+   2.0¢ + 0.5¢ + 2.0%·fill →  $ 0.0307 per signal |  +6.86% ROI | total $  177.74 over 5781 signals
+   3.0¢ + 0.5¢ + 2.0%·fill →  $ 0.0205 per signal |  +4.58% ROI | total $  118.78 over 5781 signals
+   5.0¢ + 0.5¢ + 2.0%·fill →  $ 0.0001 per signal |  +0.29% ROI | total $    0.85 over 5781 signals
+   7.0¢ + 0.5¢ + 2.0%·fill →  $-0.0203 per signal |  -3.65% ROI | total $ -117.09 over 5781 signals
+  10.0¢ + 0.5¢ + 2.0%·fill →  $-0.0509 per signal |  -9.01% ROI | total $ -293.99 over 5781 signals
+==============================================================================
+ Interpretation: this is the most important table in the report.
+ 1.5¢ is what active LPs quote on liquid Up/Down markets.
+ 3-5¢ is more realistic for thin/late-window markets.
+ Polymarket's documented 2% taker fee already takes a big bite at avg fill ~$0.50.
+ Wherever mean PnL flips negative, the 'edge' is just a model artifact.
+==============================================================================
+
+Wrote per-market results to data/poly_backtest_year/btc_hourly_1y_full.csv

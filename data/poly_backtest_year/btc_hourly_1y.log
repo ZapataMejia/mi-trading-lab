@@ -1,0 +1,97 @@
+fatal: bad revision 'HEAD'
+Window: 2025-05-27T00:00:00+00:00  ->  2026-05-27T00:00:00+00:00
+Assets: ['bitcoin', 'ethereum', 'solana']
+2026-05-27 16:36:28,556 | INFO     | trading.data.exchange | Exchange client created: binance (sandbox=False)
+2026-05-27 16:36:58,593 | INFO     | trading.polymarket.gamma | Gamma series btc-up-or-down-hourly: 8198 markets in 2025-05-27..2026-05-27
+Up/Down markets matched: 400
+
+==============================================================================
+                 POLYMARKET 'UP OR DOWN' EDGE — EMPIRICAL TEST                
+==============================================================================
+  Markets analyzed       : 400
+  Entry threshold        : 5.0pp  (|p_fair - p_poly|)
+  Half-spread charged    : 1.50¢ per fill
+  Flat fee charged       : 0.50¢ per fill (gas/relayer)
+  Proportional taker fee : 2.00% of fill price
+  Min sec-to-resolution  : 30s (look-ahead guardrail)
+
+  Markets with signal    : 400  (100.0%)
+  Markets without signal : 0
+
+  Win rate               : 51.7%  (207/400)
+  Avg signal |edge|      : 8.33pp
+  Avg naive fill price   : $0.4658
+
+  --- PnL per signal ($1 stake = 1 contract paying $1 if right) ---
+    Naive   total:  $20.6800 | mean:  $0.0517 | per market:  $0.0517
+    Realistic total:  $8.8336 | mean:  $0.0221 | per market:  $0.0221
+
+  --- Capital ROI per signal (PnL / dollars at risk) ---
+    Naive   median ROI: +68.78% | mean: +11.11%
+    Realistic median ROI: +61.79% | mean: +4.53%
+
+  By asset:
+    bitcoin    n= 400  win= 51.7%  |edge|=8.33pp  PnL naive= $20.6800  realistic= $8.8336
+
+==============================================================================
+  Verdict: PnL realistic positive but win-rate close to coin-flip; high variance.
+  CAVEATS: 1-min data only — misses sub-second moves. Mid-price not bid/ask.
+           No order-book depth modeled. Hold-to-resolution; no exit slippage.
+           Sample may be small. Run with --days 14+ for stable stats.
+==============================================================================
+
+==============================================================================
+            MODEL CALIBRATION (predicted prob vs realized win rate)           
+==============================================================================
+  fair in [0.50,0.55)  n= 138  predicted= 52.7%  actual= 52.9%  diff= +0.2pp
+  fair in [0.55,0.60)  n=  99  predicted= 57.2%  actual= 54.5%  diff= -2.7pp
+  fair in [0.60,0.65)  n=  58  predicted= 62.2%  actual= 53.4%  diff= -8.8pp
+  fair in [0.65,0.70)  n=  18  predicted= 67.1%  actual= 44.4%  diff=-22.7pp
+  fair in [0.70,0.80)  n=   7  predicted= 73.4%  actual= 85.7%  diff=+12.3pp
+  fair in [0.80,1.00)  n=   3  predicted= 84.0%  actual=100.0%  diff=+16.0pp
+
+ PnL by signal |edge| bucket (realistic costs):
+  |edge| in [ 5.0, 7.5)pp  n= 206  win= 50.0%  mean PnL=$+0.0032  total=$+0.66
+  |edge| in [ 7.5,10.0)pp  n= 107  win= 53.3%  mean PnL=$+0.0407  total=$+4.35
+  |edge| in [10.0,15.0)pp  n=  70  win= 50.0%  mean PnL=$+0.0031  total=$+0.22
+  |edge| in [15.0,25.0)pp  n=  16  win= 68.8%  mean PnL=$+0.1961  total=$+3.14
+  |edge| in [25.0,50.0)pp  n=   1  win=100.0%  mean PnL=$+0.4646  total=$+0.46
+==============================================================================
+
+==============================================================================
+              MONTHLY BREAKDOWN (is the edge decaying over time?)             
+==============================================================================
+  month     n     win%   |edge|   PnL_naive    PnL_real    ROI_real%
+  --------------------------------------------------------------------------
+  2025-07     4   50.0%   8.92pp  $    0.10   $   -0.02    -1.24%
+  2025-10    37   45.9%   7.51pp  $   -0.67   $   -1.77    -9.74%
+  2025-11     2   50.0%   5.28pp  $   -0.09   $   -0.16   -14.00%
+  2025-12     8   62.5%  11.49pp  $    0.95   $    0.70   +16.80%
+  2026-01   135   47.4%   7.72pp  $    2.35   $   -1.63    -2.56%
+  2026-02   178   55.1%   8.70pp  $   15.47   $   10.21   +11.98%
+  2026-03    35   57.1%   8.97pp  $    3.17   $    2.12   +12.20%
+  2026-04     1    0.0%  12.00pp  $   -0.57   $   -0.61   -102.85%
+==============================================================================
+
+==============================================================================
+                              SPREAD SENSITIVITY                              
+==============================================================================
+ half-spread + fee  →  mean PnL per signal  | mean ROI on stake  | total PnL
+ ----------------------------------------------------------------------------
+   0.0¢ + 0.5¢ + 2.0%·fill →  $ 0.0374 per signal |  +8.02% ROI | total $   14.95 over 400 signals
+   1.0¢ + 0.5¢ + 2.0%·fill →  $ 0.0272 per signal |  +5.67% ROI | total $   10.87 over 400 signals
+   1.5¢ + 0.5¢ + 2.0%·fill →  $ 0.0221 per signal |  +4.53% ROI | total $    8.83 over 400 signals
+   2.0¢ + 0.5¢ + 2.0%·fill →  $ 0.0170 per signal |  +3.42% ROI | total $    6.79 over 400 signals
+   3.0¢ + 0.5¢ + 2.0%·fill →  $ 0.0068 per signal |  +1.26% ROI | total $    2.71 over 400 signals
+   5.0¢ + 0.5¢ + 2.0%·fill →  $-0.0136 per signal |  -2.80% ROI | total $   -5.45 over 400 signals
+   7.0¢ + 0.5¢ + 2.0%·fill →  $-0.0340 per signal |  -6.54% ROI | total $  -13.61 over 400 signals
+  10.0¢ + 0.5¢ + 2.0%·fill →  $-0.0646 per signal | -11.65% ROI | total $  -25.85 over 400 signals
+==============================================================================
+ Interpretation: this is the most important table in the report.
+ 1.5¢ is what active LPs quote on liquid Up/Down markets.
+ 3-5¢ is more realistic for thin/late-window markets.
+ Polymarket's documented 2% taker fee already takes a big bite at avg fill ~$0.50.
+ Wherever mean PnL flips negative, the 'edge' is just a model artifact.
+==============================================================================
+
+Wrote per-market results to data/poly_backtest_year/btc_hourly_1y.csv

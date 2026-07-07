@@ -1,0 +1,91 @@
+fatal: bad revision 'HEAD'
+Window: 2025-05-27T00:00:00+00:00  ->  2026-05-27T00:00:00+00:00
+Assets: ['xrp']
+2026-05-27 19:35:05,072 | INFO     | trading.data.exchange | Exchange client created: binance (sandbox=False)
+2026-05-27 19:36:15,209 | INFO     | trading.polymarket.gamma | Gamma series xrp-up-or-down-hourly: 8038 markets in 2025-05-27..2026-05-27
+Up/Down markets matched: 8038
+2026-05-27 20:08:57,114 | WARNING  | trading.polymarket.edge | Failed market archxrp-up-or-down-july-9-12am-et: No objects to concatenate
+2026-05-27 20:08:58,442 | WARNING  | trading.polymarket.edge | Failed market xrp-up-or-down-december-31-9pm-et: No objects to concatenate
+2026-05-27 20:08:59,347 | WARNING  | trading.polymarket.edge | Failed market xrp-up-or-down-december-31-6pm-et: No objects to concatenate
+2026-05-27 20:09:00,306 | WARNING  | trading.polymarket.edge | Failed market xrp-up-or-down-december-31-10pm-et: No objects to concatenate
+2026-05-27 20:09:01,152 | WARNING  | trading.polymarket.edge | Failed market xrp-up-or-down-december-31-7pm-et: No objects to concatenate
+2026-05-27 20:09:01,999 | WARNING  | trading.polymarket.edge | Failed market xrp-up-or-down-december-31-11pm-et: No objects to concatenate
+2026-05-27 20:09:02,841 | WARNING  | trading.polymarket.edge | Failed market xrp-up-or-down-december-31-8pm-et: No objects to concatenate
+
+==============================================================================
+                 POLYMARKET 'UP OR DOWN' EDGE — EMPIRICAL TEST                
+==============================================================================
+  Markets analyzed       : 8038
+  Entry threshold        : 5.0pp  (|p_fair - p_poly|)
+  Half-spread charged    : 1.50¢ per fill
+  Flat fee charged       : 0.50¢ per fill (gas/relayer)
+  Proportional taker fee : 2.00% of fill price
+  Min sec-to-resolution  : 30s (look-ahead guardrail)
+
+  Markets with signal    : 8024  (99.8%)
+  Markets without signal : 14
+      reason 'error: No objects to concatenate': 7
+      reason                 'poly_empty': 4
+      reason                  'no_signal': 3
+
+  Win rate               : 55.3%  (4435/8024)
+  Avg signal |edge|      : 9.00pp
+  Avg naive fill price   : $0.4685
+
+  --- PnL per signal ($1 stake = 1 contract paying $1 if right) ---
+    Naive   total:  $675.6100 | mean:  $0.0842 | per market:  $0.0841
+    Realistic total:  $437.5350 | mean:  $0.0545 | per market:  $0.0544
+
+  --- Capital ROI per signal (PnL / dollars at risk) ---
+    Naive   median ROI: +81.82% | mean: +17.92%
+    Realistic median ROI: +74.11% | mean: +11.11%
+
+  By asset:
+    xrp        n=8024  win= 55.3%  |edge|=9.00pp  PnL naive= $675.6100  realistic= $437.5350
+
+==============================================================================
+  Verdict: PnL realistic POSITIVE; edge survives spread+fee in this sample.
+  CAVEATS: 1-min data only — misses sub-second moves. Mid-price not bid/ask.
+           No order-book depth modeled. Hold-to-resolution; no exit slippage.
+           Sample may be small. Run with --days 14+ for stable stats.
+==============================================================================
+
+==============================================================================
+            MODEL CALIBRATION (predicted prob vs realized win rate)           
+==============================================================================
+  fair in [0.50,0.55)  n=2072  predicted= 52.8%  actual= 51.7%  diff= -1.1pp
+  fair in [0.55,0.60)  n=2736  predicted= 57.3%  actual= 57.4%  diff= +0.1pp
+  fair in [0.60,0.65)  n=1238  predicted= 62.1%  actual= 62.9%  diff= +0.8pp
+  fair in [0.65,0.70)  n= 440  predicted= 67.1%  actual= 68.6%  diff= +1.6pp
+  fair in [0.70,0.80)  n= 181  predicted= 72.8%  actual= 72.9%  diff= +0.1pp
+  fair in [0.80,1.00)  n=  34  predicted= 86.2%  actual= 88.2%  diff= +2.0pp
+
+ PnL by signal |edge| bucket (realistic costs):
+  |edge| in [ 5.0, 7.5)pp  n=3704  win= 53.4%  mean PnL=$+0.0274  total=$+101.42
+  |edge| in [ 7.5,10.0)pp  n=2086  win= 56.7%  mean PnL=$+0.0656  total=$+136.82
+  |edge| in [10.0,15.0)pp  n=1619  win= 55.6%  mean PnL=$+0.0657  total=$+106.35
+  |edge| in [15.0,25.0)pp  n= 548  win= 60.0%  mean PnL=$+0.1399  total=$+76.69
+  |edge| in [25.0,50.0)pp  n=  66  win= 68.2%  mean PnL=$+0.2385  total=$+15.74
+  |edge| in [50.0,100.0)pp  n=   1  win=100.0%  mean PnL=$+0.5258  total=$+0.53
+==============================================================================
+
+==============================================================================
+              MONTHLY BREAKDOWN (is the edge decaying over time?)             
+==============================================================================
+  month     n     win%   |edge|   PnL_naive    PnL_real    ROI_real%
+  --------------------------------------------------------------------------
+  2025-06   164   59.1%  10.39pp  $   22.02   $   17.20   +22.21%
+  2025-07   743   54.5%   9.17pp  $   56.77   $   34.72    +9.66%
+  2025-08   746   58.7%   8.57pp  $   72.62   $   50.17   +13.32%
+  2025-09   720   54.7%   8.61pp  $   52.30   $   30.86    +8.75%
+  2025-10   742   55.5%   8.68pp  $   57.58   $   35.43    +9.69%
+  2025-11   704   54.0%   8.36pp  $   42.02   $   20.96    +6.01%
+  2025-12   725   55.6%   9.01pp  $   64.52   $   43.03   +12.32%
+  2026-01   732   56.1%   8.95pp  $   74.39   $   52.80   +15.19%
+  2026-02   672   53.6%   8.50pp  $   48.12   $   28.24    +8.77%
+  2026-03   745   55.7%   8.81pp  $   63.25   $   41.09   +11.32%
+  2026-04   713   54.7%   9.38pp  $   61.85   $   40.82   +12.05%
+  2026-05   618   53.4%  10.84pp  $   60.16   $   42.22   +15.13%
+==============================================================================
+
+Wrote per-market results to data/poly_backtest_year/xrp_hourly_1y_full.csv

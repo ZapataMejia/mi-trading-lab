@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: mi-trading-lab-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && python scripts/install_forex_data.py
+    startCommand: uvicorn webapp.backend.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.0"
+      - key: ALLOWED_ORIGINS
+        sync: false
+    healthCheckPath: /api/health

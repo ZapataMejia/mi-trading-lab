@@ -1,0 +1,74 @@
+FON DEO EMA — INSTALACION EN STRATEGYQUANT X
+============================================
+
+IMPORTANTE: StrategyQuant NO permite subir una estrategia .sqx hecha fuera del programa.
+El archivo .sqx solo lo genera SQX cuando TU guardas la estrategia desde AlgoWizard.
+Lo maximo que se puede automatizar desde fuera son los SNIPPETS (indicador + condiciones).
+
+PASO 1 — INSTALAR SNIPPETS (una vez)
+------------------------------------
+Opcion A (copiar carpetas — RECOMENDADO):
+  1. En el Mac: carpeta trading/sqx/bundle/user/
+  2. Por RDP al VPS: copia todo "user" dentro de:
+     C:\SQX_143\user\
+     Debe quedar:
+       ...\user\extend\Snippets\SQ\Blocks\Indicators\Custom\LiquiditySweep\LiquiditySweep.java
+       ...\user\extend\Snippets\SQ\Blocks\Indicators\Custom\FondeoEMAcross\...
+  3. Code Editor -> Compile all -> reinicia SQX
+
+  NOTA: El .java debe estar en Indicators\Custom\LiquiditySweep\
+        (no en Indicators\LiquiditySweep\ suelto — el package es Custom)
+
+Opcion A2 (solo LiquiditySweep):
+  Copia la carpeta LiquiditySweep entera al VPS en la ruta de arriba.
+
+Opcion B (Code Editor):
+  1. Descomprime este zip.
+  2. Code Editor -> Import/Export -> Import extensions (si tienes .sxp).
+     Si no tienes .sxp, usa Opcion A.
+
+  3. Code Editor -> Compile all (Compilar todo).
+  4. Reinicia StrategyQuant si no aparecen los bloques.
+
+PASO 2 — ALGOWIZARD (5 minutos, solo la primera vez)
+----------------------------------------------------
+  LIQUIDITY SWEEP SAFE (config actual del lab — recomendado):
+  Ver sqx/VALIDAR_LIQ_SWEEP_SQX.md
+  Indicador: LiquiditySweep.java (copiar carpeta bundle, abajo)
+  Parametros: Lookback 36 | SL buffer 3 pips | Risk 1.5% | TP 1.5 |
+               Sesion 700-1400 | Max 1/d
+  Backtest ref: 2022-01-01 -> 2024-10-30 (~734 trades, DD dia ~2%)
+  Guardar: LiquiditySweepSAFE.sqx
+  DESPUES: AlgoWizard -> "Cargar desde un archivo" -> ese .sqx
+
+  FON DEO EMA (legacy):
+  1. AlgoWizard -> estrategia nueva.
+  2. Datos: EURUSD, M5, capital 5000.
+  3. Long entry:
+     - Condicion: "Fondeo Long Entry"
+     - Accion: Enter at Market
+     - SL: FondeoEMAcross -> LongStop
+     - TP: FondeoEMAcross -> LongTP
+  4. Short entry:
+     - Condicion: "Fondeo Short Entry"
+     - Accion: Enter at Market
+     - SL: ShortStop, TP: ShortTP
+  5. Parametros indicador + condiciones (eval CLASSIC $5k):
+     EMA 9/18 | Risk 2.1% | TP 1.0 | Sesion 700-1100 | Max 2/d
+     Timezone: EST+07 (offset broker +7 en el lab Mac)
+  6. Money Management: Risk fixed % -> 2.1% (eval) o 1% (Instant WS).
+  7. Backtest 2017-01-03 -> 2022-03-31 (mismo CSV que el lab).
+     Referencia lab: ~46 trades, +$1175, PASA eval WS.
+  8. File -> Save as -> FondeoEMA.sqx
+     Checklist completo: sqx/VALIDAR_SQX.md
+
+PASO 3 — DESPUES (solo abrir)
+-----------------------------
+  Doble clic en FondeoEMA.sqx o cargar en databank.
+  Ya no repites AlgoWizard.
+
+POR QUE NO HAY .SQX LISTO
+-------------------------
+- .sqx es ZIP propietario con XML + binarios internos.
+- Referencia bloques Java que deben estar compilados EN TU SQX primero.
+- StrategyQuant no importa estrategias completas desde fuera (solo snippets .sxp o copiar carpetas).

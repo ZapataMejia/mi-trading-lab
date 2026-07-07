@@ -1,0 +1,4951 @@
+ Bien, pues damos por comienzo
+ la aventura mensual de diciembre de 2025
+ estamos haciendo récord de gente conectada
+ nunca habíamos tenido más de 150, creo, creo
+ una aventura mensual de más de 150 personas
+ esto me estáis diciendo que el tema
+ os pica bastante, el tema que traigo hoy
+ así que bueno, también
+ hemos invitado esta vez
+ a la última edición que ya empezó hace un tiempecito
+ que es la edición 6 de 2025
+ están por primera vez aquí con nosotros
+ un mensaje para vosotros que yo os lo he dicho
+ y siempre repito a los nuevos invitadores a estas sesiones
+ esto es una sesión donde se habla de cosas muy avanzadas
+ a veces algunas aventuras mensuales serán
+ cosas más avanzadas, otras no tan avanzadas
+ pero siempre son conceptos
+ o sea, yo siempre damos por sentado
+ de que todo el mundo que debe de entender al 100%
+ los conceptos que os explican en esta sesión
+ es gente que ya ha terminado el programa de mentorías
+ tanto aquí ahora mismo tenemos dos ediciones
+ de las cuales no habéis terminado aún
+ el programa de mentorías
+ si queréis poner la oreja, ponedla
+ esta sesión no es obligatoria
+ como siempre os invito
+ pero no os agobiéis si no os enteráis de nada
+ de lo que estamos hablando aquí
+ y además yo también estoy hablando de historias o temas
+ que ya en un momento a lo mejor nuestra mentoría mensual
+ expliqué o hice una introducción
+ y como es en este caso de esta sesión
+ voy a dar una actualización sobre un reto
+ o más que reto un trabajo que hemos hecho
+ internamente
+ en este caso Iván
+ que es un ex alumno
+ y yo mismo
+ para poder tener un sistema
+ de pasar evaluaciones de fondeo
+ de forma más automática
+ y que realmente
+ todo este trabajo que estamos haciendo
+ y dinero y tiempo
+ que estamos invirtiendo
+ pues esto resultará
+ en un pequeño módulo
+ de evaluaciones de fondeo
+ de la mejor forma posible
+ que nosotros
+ basados
+ en experimentos
+ y en cosas que hemos hecho
+ y no en teorías
+ las teorías
+ yo os las expliqué en verano
+ pero hoy ya vengo con datos
+ ¿de acuerdo?
+ con datos
+ con aprendizaje sobre todo
+ que esto es lo más interesante
+ y con un poco
+ una dirección clara
+ que creo que
+ que creo que
+ empezaremos a coger
+ a partir de ahora
+ que ya estamos adaptando
+ en diciembre
+ ¿vale?
+ tanto Iván como yo
+ luego hay otra parte
+ de la mentoría mensual
+ que es
+ un poco
+ hacia donde quiero llevar
+ ciertos expertos advisors
+ que se están
+ que estamos dando
+ desde la marca HobbyCode
+ incluso también
+ expertos advisors
+ que están desarrollando
+ incluso alumnos actuales
+ de esta comunidad
+ por tanto
+ quiero dar un poco
+ más de boda a eso
+ también explicándoos
+ un expertos advisors
+ que voy a sacar nuevo
+ para
+ para dentro de muy poco
+ y que os voy a hacer
+ una demo hoy
+ ¿vale?
+ que es referente
+ a un expertos advisors
+ de copy trading
+ estos son los dos temas
+ que quiero afrontar hoy
+ lo primero que voy a
+ atacar
+ es el tema
+ de las evaluaciones
+ bueno
+ y cerrando un poco
+ la bienvenida
+ a estas nuevas personas
+ que están aquí
+ con nosotros
+ en una mentoría mensual
+ lo dicho
+ sin agobios
+ poned la oreja
+ pillad lo que queráis
+ pillar
+ pero
+ pero no os agobéis
+ y no os enteráis
+ de algunas cosas
+ porque
+ vuestro foco es
+ el programa de mentorías
+ ¿vale?
+ hasta que lo terminéis
+ esto se subirá
+ también grabado
+ en Homeward
+ de hecho
+ los que sois nuevos
+ la edición 6
+ de este año
+ vais a tener acceso
+ ahora cuando subamos
+ esta sesión
+ cuando la subamos
+ en Homeward
+ vais a tener acceso
+ se os van a habilitar
+ ya todas las
+ mentorías mensuales
+ históricas
+ que hemos tenido
+ desde que estamos
+ en Homeward
+ ¿de acuerdo?
+ tanto no solo esta
+ sino también se os van a habilitar
+ las anteriores
+ sugerencias
+ pasáis de ella
+ hasta el mes
+ número 5
+ hasta que terminéis
+ el programa de mentorías
+ ¿vale?
+ si la miráis
+ es responsabilidad
+ de cada uno
+ vale pues
+ dicho esto
+ voy a ir al tema
+ ¿vale?
+ he preparado
+ unas 10 expositivas
+ para explicarles
+ un poco
+ el tema
+ de
+ este tema
+ ¿vale?
+ así que lo tengo
+ por aquí
+ voy a presentar
+ pantalla
+ a partir de ahora
+ estaba todo el mundo
+ aceptando a la gente
+ que iba entrando
+ a partir de ahora
+ te tendré un ojo
+ como siempre
+ pero
+ me tendréis que dar
+ un espacio de tiempo
+ para que lo acepte
+ si vais saliendo
+ ostras
+ como se nota
+ que el tema
+ me gusta
+ vale
+ me gusta
+ me gusta
+ bien
+ vale
+ esto aquí
+ vale
+ el tema
+ principal
+ de la mentoría
+ de hoy
+ es una actualización
+ y explicaros
+ un poco
+ el aprendizaje
+ que llevamos
+ desde verano
+ desde finales
+ de julio
+ intentando
+ bueno
+ os voy a silenciar
+ a todos
+ que algunos
+ aún están ahí
+ con el micro
+ que llevamos
+ desde verano
+ o sea
+ para hacer un poco
+ recap
+ para que no se acuerda
+ o para poner un poco
+ en preámbulo también
+ la gente
+ que la primera vez
+ que está por aquí
+ desde verano
+ pues me
+ bueno
+ este año
+ me hice
+ un propósito
+ y dije
+ oye
+ una de las patas
+ que no estoy cubriendo
+ en nuestro programa
+ de mentorías
+ que hablo mucho
+ yo en redes sociales
+ sobre evaluaciones
+ de fondeo
+ que paso una
+ como lo hago
+ y tal
+ pero
+ hasta cierto punto
+ yo lo hacía
+ todo el rato manual
+ yo las evaluaciones
+ siempre repasaba manual
+ de hacer la inversa
+ en una cuenta
+ y otra
+ claro yo
+ con el potencial
+ que tenemos
+ con los resultados
+ que estamos teniendo
+ en cuentas
+ gestionadas
+ fondeadas
+ en darwinets
+ en todos estos sitios
+ me faltaba
+ cerrar esa pata
+ de cómo podemos
+ usar robots
+ qué tipo de robots
+ podemos usar
+ para pasar
+ realmente
+ evaluaciones
+ de fondeo
+ porque
+ es muy distinto
+ cómo afrontarías
+ una fondeada
+ con una evaluación
+ por tanto
+ ahí
+ le dimos bastante
+ el coco
+ desde el principio
+ de año
+ y este verano
+ pusimos un plan
+ en marcha
+ que era
+ con
+ con una metodología
+ mucho más sencilla
+ crear robots
+ que estén pensados
+ para pasar
+ evaluaciones
+ únicamente
+ de usar y tirar
+ robots
+ de usar y tirar
+ para ello
+ desarrollé
+ la herramienta
+ de gestión
+ de escalado
+ que en mentorías
+ mensuales
+ anteriores
+ ya he dado
+ tutoriales
+ cómo se usa
+ y demás
+ y que en un futuro
+ módulo
+ que va a salir
+ próximamente
+ en el primer
+ trimestre
+ de 2026
+ también la voy a
+ explicar
+ en clases
+ de escaladas
+ la idea
+ la idea
+ de esta gestión
+ de escalado
+ es poder
+ convertir
+ los robots
+ básicamente
+ cambiar
+ en la gestión
+ de riesgo
+ es decir
+ stop loss
+ take profit
+ de los robots
+ que queréis
+ exactamente igual
+ pero
+ si llevo
+ una operación
+ perdida
+ quiero arriesgar
+ mal en la siguiente
+ para recuperar
+ esa pérdida
+ y poder llegar
+ a nuestro TP
+ lo más posible
+ o si tenemos
+ una racha negativa
+ seguida
+ perdiendo
+ nos va a fundir
+ antes la buena
+ pero bueno
+ es el riesgo
+ beneficio
+ que estamos dispuestos
+ a asumir
+ en los exámenes
+ ¿vale?
+ el target
+ es aumentar
+ el 33%
+ de pasar
+ o sea
+ ahora mismo
+ haciendo lo manual
+ yo os presenté
+ os enseñé
+ que aproximadamente
+ tengo un ratio
+ del 33%
+ de pasar
+ es decir
+ de cada 3 cuentas
+ entre el 25
+ y el 33
+ para seros sinceros
+ de cada 3 cuentas
+ o 4 cuentas
+ evaluaciones
+ perdona
+ que compro
+ paso una
+ está muy bien
+ o sea
+ tú juegas con esos ratios
+ y al final
+ puedes ganar
+ puedes ser rentable
+ en cuentas de fondeo
+ y tener un buen beneficio
+ para tu bolsillo
+ ¿vale?
+ todo esto está explicado
+ empezamos el reto
+ en verano
+ todas nuestras ideas
+ tanto de Iván
+ y las mías
+ las pusimos en conjunto
+ lo materializamos
+ Iván de hecho
+ lo materializo
+ el que ha hecho todo
+ construir los robots
+ que hablábamos
+ y demás
+ construir sistemas
+ súper diversificados
+ en diferentes cuentas
+ en diferentes activos
+ en temporalidades bajas
+ porque al final
+ eran robots
+ de usar y tirar
+ por tanto
+ temporalidades bajas
+ los utilizamos
+ en 2-3
+ durante un mes
+ en todas las evaluaciones
+ y a crear otro
+ tenemos un sistema
+ que nos escupa
+ constantemente
+ robots únicamente
+ para evaluaciones
+ esta es la idea inicial
+ ¿vale?
+ por tanto
+ sabiendo ya
+ conociendo la idea inicial
+ os voy a presentar
+ la actualización
+ de los números
+ que ya os digo
+ que obviamente
+ los números
+ ha habido muchos errores
+ entre medias
+ es decir
+ los números
+ los errores
+ ensucian
+ esos números
+ y hemos cambiado
+ de rumbo
+ dos veces
+ ¿vale?
+ si cambiamos de rumbo
+ porque no hemos visto
+ cosas que nos gustaban
+ ¿vale?
+ por tanto
+ los números
+ no son
+ los números que veréis
+ no son
+ los que esperáis
+ son malos
+ pero veréis
+ a dónde hemos terminado
+ veréis
+ a dónde hemos terminado
+ no os quiero dar
+ más información
+ ahora lo veréis
+ a medida que vaya pasando
+ las diapositivas
+ ¿vale?
+ hemos pasado
+ por tres etapas
+ desde finales
+ de julio
+ agosto
+ que empezamos
+ seriamente con esto
+ en la cual
+ la primera etapa
+ es una etapa
+ que os he explicado
+ que es
+ porfolios independientes
+ es decir
+ nosotros queríamos
+ lo que yo quería era
+ tener un porfolio
+ con diferentes sistemas
+ que operan
+ diferentes activos
+ en temporada de bajas
+ que sea independiente
+ ¿a qué me refiero
+ con independiente?
+ me refiero a que
+ yo no tenga que hacer
+ ninguna inversa
+ operación inversa
+ en otra cuenta
+ para asegurarme
+ ciertos resultados
+ sino que ese porfolio
+ con la gestión de escala
+ es decir
+ me iban haciendo operaciones
+ y a medida que
+ unas ganaban
+ otras perdían
+ las que perdían
+ si había una pérdida
+ la siguiente
+ el robot que tocase
+ me arriesgase más
+ porque
+ a la larga
+ pues eso sería rentable
+ ¿vale?
+ por aquí me dice Ramón
+ creo que hay gente
+ esperando para entrar
+ no hay nadie
+ esperando para entrar
+ nadie
+ no hay nadie
+ no tengo nadie
+ espera
+ que vuelvan a entrar
+ si algo lo dice
+ por los grupos
+ si tenéis acceso
+ a los grupos
+ pues decirle
+ oye
+ Ramón no ha dicho
+ que no
+ o sea
+ que vuelvan
+ a darle al click
+ ¿se ve como Martingala?
+ no porque la Martingala
+ aguanta flotantes
+ aquí no aguantamos
+ flotantes negativos
+ ¿vale?
+ Martingala te tocaría
+ muchísimo antes
+ los límites diarios
+ ¿vale?
+ aquí tenemos todos
+ con Stoblo
+ lo que toca Stoblo
+ la siguiente
+ arriesgamos más
+ ¿vale?
+ tanto es
+ porfolios independientes
+ repito
+ independientes
+ es que no depende
+ de otra cuenta
+ sino que
+ queremos ganar
+ la intención
+ es ir a ganar
+ todas las evaluaciones
+ y que la gestión
+ de escalado
+ nos aumente ese ratio
+ ¿por qué?
+ porque arriesgamos más
+ en el siguiente trade
+ como tenemos
+ estrategias rentables
+ vamos a terminar
+ ganando más
+ del ratio
+ que teníamos
+ ¿vale?
+ luego pasamos
+ por una segunda etapa
+ esto vimos
+ que no nos terminó
+ de funcionar
+ en la cual
+ dijimos
+ vale
+ vamos a hacer
+ porfolios
+ conectados
+ cuando yo me refiero
+ conectados
+ es
+ haciendo inversa
+ otra cuenta
+ siguiendo
+ con la gestión
+ de escalado
+ y la etapa
+ número 3
+ es
+ estrategia simple
+ conectada
+ ¿vale?
+ no os voy a explicar
+ más
+ lo explicaré más
+ cuando lleguemos
+ a la fase 3
+ en la etapa 3
+ bien
+ más o menos
+ cuánto tiempo
+ hemos ejecutado
+ estas etapas
+ etapa 1
+ que es la que más
+ yo personalmente
+ tenía más
+ esperanzas
+ hemos estado
+ casi 3 meses
+ enteros
+ con ella
+ dándole tal
+ pagando
+ pagando
+ invirtiendo
+ en evaluaciones
+ evaluaciones
+ evaluaciones
+ evaluaciones
+ es verdad
+ que he pagado
+ cierto coste
+ de errores
+ técnicos
+ hemos tenido
+ en el gesto
+ de escalado
+ varios errores
+ que los hemos ido
+ detectando
+ en el momento
+ que íbamos
+ al límite
+ de la gestión
+ del riesgo
+ que nos permitían
+ las empresas
+ de fondeo
+ nos fallaban
+ ciertas evaluaciones
+ debido al riesgo
+ máximo
+ diario
+ no al
+ del diario
+ que eso nunca
+ debería tocar
+ pero
+ por errores técnicos
+ hemos tocado
+ algunas de ellas
+ y seguía
+ invirtiendo
+ para tener
+ unos números
+ fiables
+ luego
+ en la etapa 2
+ es de 2 meses
+ en la etapa 3
+ lo estamos implementando
+ desde casi
+ principios
+ de este mes
+ vale
+ cuáles son
+ los principales
+ KPIs
+ que hemos tenido
+ en esta etapa
+ luego me podréis
+ hacer todas las preguntas
+ que queráis
+ yo me espero
+ es decir
+ el contenido
+ no es demasiado largo
+ que os voy a dar
+ son resultados
+ y conclusiones
+ pero me espero
+ que me hagáis
+ preguntas
+ y ahí se demore
+ más
+ invirtamos tiempo
+ en eso
+ principales KPIs
+ hemos
+ no pasado
+ hemos realizado
+ 31 fases
+ vale
+ me refiero
+ fase 1
+ fase 2
+ es decir
+ una misma cuenta
+ relación
+ que hacemos
+ fase 1
+ y luego
+ hacemos fase 2
+ lo cuento
+ como 2
+ 2 fases
+ al final
+ lo tratamos
+ como una fase
+ distinta
+ de estas 31
+ fases
+ 7
+ 7
+ han sido
+ errores nuestros
+ hemos fallado
+ por errores técnicos
+ perdón
+ técnicos
+ es decir
+ ajenos
+ a nuestra
+ idea
+ vale
+ por eso
+ yo ya contaba
+ que había
+ cierta inversión
+ que se iba
+ a ir
+ a testear
+ lo que es
+ la herramienta
+ de la gestión
+ de escalado
+ pasa
+ lo que pasa
+ luego cuando
+ vas a más
+ más a real
+ bien
+ estos son los ratios
+ que hemos obtenido
+ esto es de todas
+ las etapas
+ en conjunto
+ de 24
+ fases
+ 1
+ de 24
+ fases
+ 1
+ contando
+ esas 31
+ bueno
+ perdón
+ de esas 31
+ fases
+ 24
+ han sido
+ fase 1
+ 7
+ han sido
+ fase 2
+ todo esto
+ contando
+ con errores
+ por tanto
+ con errores
+ hemos tenido
+ una tasa
+ esto no es la tasa
+ de estar
+ fondeado
+ esto es una tasa
+ de pasar
+ de fase 1
+ a fase 2
+ del 29%
+ pero como que
+ no es real
+ es más real
+ la segunda
+ esto es descontando
+ los errores
+ es decir
+ tuvimos un error
+ en fase 2
+ fijaos
+ hemos bajado
+ de 7 a 6
+ y bastantes errores
+ en fase 1
+ de estas 18
+ fases
+ 6
+ hemos llegado
+ en fase 2
+ y esto supone
+ un 33%
+ de pasar
+ de fase 1
+ a fase 2
+ repito
+ no es fondeado
+ vale
+ de estas 6 fases
+ ¿cuántas evaluaciones
+ hemos estado
+ fondeados?
+ 2
+ es decir
+ los números
+ no son muy buenos
+ os recuerdo
+ que estos números
+ son
+ de una fase
+ experimental
+ no una fase
+ de digamos
+ vale
+ sabemos que esto funciona
+ vamos a ver el ratio
+ esto sería la fase posterior
+ que nos encontramos
+ ahora
+ aquí han habido
+ aprendizajes
+ hemos cambiado
+ dos veces
+ de rumbo
+ y por tanto
+ obviamente
+ pues los números
+ no son demasiado
+ elevados
+ pero aquí
+ lo que importa
+ es todos los cambios
+ que hemos hecho
+ y los aprendizajes
+ que hemos obtenido
+ para subsanarlos
+ a día de hoy
+ ¿de acuerdo?
+ etapa 1
+ ahora os
+ os separo ya
+ los
+ los números
+ por etapas
+ porque al final
+ a lo mejor
+ las dos fondeadas
+ han sido al final
+ ¿sabes?
+ pero no era así
+ ¿vale?
+ la etapa 1
+ que es
+ recordad
+ porfolio
+ totalmente independiente
+ con la gestión
+ de escalado
+ que es la primera idea
+ donde
+ os presentamos
+ también
+ el desarrollo
+ en Statistic One
+ del Money Management
+ KPIs
+ donde os mostramos
+ los días de
+ los días
+ que tarda de media
+ en pasar a una fase
+ de evaluación
+ que eso era muy top
+ desarrollado por Iván
+ esos KPIs
+ son increíbles
+ esto proviene
+ todo de la fase
+ de la etapa 1
+ en la etapa 1
+ hicimos 15 fases
+ ya aquí
+ he quitado los errores
+ porque al final
+ pues no los cuento
+ no los tengo en cuenta
+ de 15 fases
+ de 15 fases
+ bueno
+ 14 y 6
+ un 42%
+ en la etapa 1
+ es decir
+ pasábamos
+ fases 2
+ pasábamos
+ íbamos pasando
+ fases 2
+ pero no se materializaban
+ por A o por B
+ por cosas del mercado
+ por cosas del porfolio
+ por complejidad
+ que íbamos metiendo
+ no se materializaban
+ en fondeada
+ porque al final
+ pues solo tuvimos una
+ en la etapa 2
+ que fue cortita
+ fue de
+ realmente
+ ahí tuvimos bastantes errores
+ en la etapa 2
+ por eso
+ realmente limpios
+ había 3 fases
+ 2 fases
+ en fase 1
+ y una fase en fase 2
+ un 50% de pasar
+ y 0 fondeadas
+ de esta fase 2
+ pues no la
+ no la conseguimos pasar
+ pero
+ esto no es representativo
+ esta etapa 2
+ porque
+ ya los aprendizajes
+ que tuvimos
+ de la etapa 1
+ ya nos dimos cuenta
+ rápidamente
+ que la etapa 2
+ no tenía sentido
+ y os lo explicaré
+ por qué
+ la etapa 2
+ recordad que son porfolios
+ simplemente
+ el único cambio
+ que hicimos
+ es
+ en lugar de
+ tener porfolio independiente
+ simplemente hacíamos
+ la inversa
+ del mismo porfolio
+ a otra cuenta de fondeo
+ a otra evaluación de fondeo
+ ¿vale?
+ pero rápidamente
+ lo cambiamos
+ ¿por qué?
+ porque no veíamos
+ veíamos un problema añadido
+ incluso
+ será mejor la etapa 1
+ que la etapa 2
+ y nos vamos
+ en una etapa 3
+ en la cual
+ ya llevamos dos fases
+ sin errores
+ terminadas
+ ¿vale?
+ dos fases 1
+ de las cuales
+ el 50%
+ la hemos pasado
+ que es lo
+ que nos dice la estadística
+ que nos dice la etapa 3
+ y nos dice la etapa 3
+ porque vamos
+ con una simple estrategia
+ a la inversa
+ ¿vale?
+ que es un poco
+ volver a los orígenes
+ y al finalizar
+ esta pues se ha materializado
+ pues por casualidad
+ por cosas de la vida
+ se ha materializado
+ esa única fase 2
+ que hemos conseguido
+ y es otra
+ de las fondeadas
+ que tenemos
+ estos son números
+ sacados de dos fases
+ no son muy representativos
+ pero ya me cuadra
+ un poco
+ con lo que venía
+ yo haciendo
+ desde hace años
+ en las evaluaciones
+ de fondeo
+ y que sepas
+ que actualmente
+ en esta etapa 3
+ tenemos ahora mismo
+ cuatro cuentas activas
+ ¿de acuerdo?
+ ahora viene
+ viene lo más importante
+ de esta sesión
+ y es donde
+ entiendo que vendrán
+ un poco más
+ las preguntas
+ y las cosas
+ y el aprendizaje
+ lo que es enriquecedor
+ para vosotros
+ os voy a explicar
+ en detalle
+ lo que hicimos
+ en cada fase
+ el objetivo inicial
+ que teníamos
+ en cada fase
+ el por qué
+ hicimos ese cambio
+ o en la etapa 1
+ por qué emprendimos esto
+ y una vez
+ terminada esa etapa
+ los motivos
+ por el cual
+ hemos cambiado de etapa
+ récordas de etapa 1
+ eran por folios independientes
+ podíamos tener
+ un sistema
+ de
+ del USD
+ euro USD
+ a 5 minutos
+ junto con una
+ de la libra llena
+ a 5 minutos
+ junto con otro
+ en
+ en euro CHF
+ cosas de estas
+ ¿vale?
+ mezcladas
+ 4, 5, 6 sistemas
+ en el mismo porfolio
+ a 5 minutos
+ en los cuales
+ ya sabéis que
+ la gestión escalada
+ pues podemos limitar
+ oye cuando llevemos
+ 3 trades
+ en el mismo día
+ no se abre más
+ y pasamos al día siguiente
+ ¿vale?
+ es decir
+ no íbamos a cumplir
+ todos los trades
+ que se
+ que se daban las señales
+ sino que
+ cuando llegamos
+ un cupo ese día
+ al día siguiente
+ ¿vale?
+ era un poco así
+ ¿qué es lo que hicimos?
+ estrategias de M5
+ ¿por qué las hicimos de M5?
+ porque nosotros necesitábamos
+ trades cada día
+ varios trades cada día
+ cuando
+ nosotros vamos a trabajar
+ un porfolio serio
+ que vamos a poner
+ en Darwinets
+ o en Axis Elet
+ o en cuentas
+ ya fundeadas
+ realmente nos da igual
+ no operar un día
+ u otro
+ pues si
+ trabajamos a H1
+ pues a lo mejor
+ de media nos abre
+ una operación
+ cada dos o tres días
+ hay días
+ que nos abren
+ dos
+ o días seguidos
+ y luego se tira
+ cuatro o cinco días
+ sin abrir nada
+ ¿por qué?
+ porque no va a hacer
+ la dirección
+ hacia donde va
+ esa estrategia
+ normal
+ pero nosotros
+ lo que íbamos a buscar
+ nosotros no queríamos
+ estrategias
+ que a la larga
+ sean rentables
+ repito
+ aquí buscábamos
+ estrategias
+ de usar y tirar
+ un sistema
+ que nos lo va
+ escupiendo
+ cada mes
+ o cada semana
+ y que será
+ M5
+ para aumentar
+ el número
+ de trades
+ por día
+ nosotros queríamos
+ que las fases
+ se pasasen rápido
+ no queríamos estar
+ un mes
+ con una fase
+ ni tres semanas
+ queríamos
+ que se pase
+ en cuestión
+ de entre tres
+ y diez días
+ cada fase
+ ¿vale?
+ creación de
+ portfolio independientes
+ creamos cada portfolio
+ es decir
+ teníamos
+ tres evaluaciones
+ cuatro evaluaciones
+ en marcha
+ pues creamos
+ un portfolio
+ distinto
+ para cada evaluación
+ totalmente independientes
+ tanto podrían palmar
+ las cuatro
+ como podríamos ganar
+ las cuatro
+ múltiples activos
+ como he comentado antes
+ y además
+ Iván hizo
+ un super esfuerzo
+ de desarrollar
+ módulos de money management
+ dentro de Strategic One
+ que os lo hemos dado
+ en mentorías anteriores
+ KPIs
+ donde repito
+ podéis ver
+ incluso los días
+ que se tarda
+ en pasar evaluaciones
+ cada cuando
+ se pierde una evaluación
+ esto
+ muy chulo
+ o sea
+ hubo un esfuerzo
+ en desarrollo
+ titánico
+ y
+ todo esto
+ lo que implementábamos
+ con una gestión
+ escalada
+ escalada
+ es decir
+ que a lo mejor
+ empezábamos arriesgando
+ el 1%
+ el 0,8%
+ de la cuenta
+ íbamos escalando
+ íbamos poniendo
+ un 1.2
+ de multiplicador
+ ¿qué nos permitía eso?
+ nos permitía
+ que a lo mejor
+ en un mismo día
+ podríamos abrir
+ 4, 5, 6, 7, 8, 9
+ trades distintos
+ claro
+ la conjunción
+ de tantas
+ estrategias
+ antes digo
+ entre 4 y 6
+ AM5
+ con un escalado
+ suave
+ podíamos perfectamente
+ tener 6 trades
+ al día
+ bien
+ pero esos trades
+ aunque los 6
+ sean positivos
+ empezamos
+ con un riesgo
+ un 0,8
+ un 0,8
+ un 0,8
+ por 6
+ no es
+ un 8%
+ de una fase
+ es decir
+ no nos podíamos
+ pasar una fase
+ en un día
+ y ya te digo yo
+ que la probabilidad
+ de que
+ 5 estrategias
+ en diferentes activos
+ todas 5
+ AM5
+ los 5 trades
+ los 6 trades
+ que abran
+ en ese día
+ la probabilidad
+ que todos sean
+ profit
+ TP
+ es 0
+ tendiendo a 0
+ ¿vale?
+ esto es lo que nos da
+ la diversificación
+ es que
+ obviamente
+ no todos palmarán
+ pero tampoco
+ todos ganarán
+ en un día
+ no pegaremos
+ pelotazos
+ y esto
+ hicimos
+ este objetivo
+ con el objetivo
+ de tener sistemas
+ independientes
+ tener sistemas
+ 4 o 5
+ y que tengamos
+ un custom project
+ en Statistic One
+ que vaya escupiendo
+ esos sistemas
+ automáticamente
+ para ir generando
+ nuestros portfolios
+ y vayamos poniendo
+ a medida que vamos
+ comprando
+ evaluaciones
+ el plan era perfecto
+ ¿vale?
+ y técnicamente
+ era factible
+ por lo que teníamos
+ que probarlo
+ en real
+ ¿por qué cambiamos
+ de etapa?
+ por estos aprendizajes
+ al final
+ nosotros necesitamos
+ resultados
+ a corto plazo
+ y cuando juntamos
+ demasiadas estrategias
+ juntas
+ en un mismo portfolio
+ aunque sean a M5
+ que a M5
+ el motivo
+ de poner M5
+ era corto plazo
+ pero juntar
+ diferentes estrategias
+ lo que he dicho antes
+ como que algunas
+ otras perdían
+ avanzábamos
+ muy poco
+ día tras día
+ en ese profit
+ ¿vale?
+ avanzábamos muy poco
+ repito
+ tuvimos bastantes
+ evaluaciones
+ 1 pasadas
+ de hecho el 33%
+ se pasaron
+ de 1 a 2
+ tuvimos bastantes
+ el tema era
+ que tardaban
+ más de lo debido
+ nos costaba mucho
+ a lo mejor
+ algunas
+ pues
+ se alineaban
+ los rastros
+ y lo hacían
+ un poco rápido
+ un poco rápido
+ en 8 o 10 días
+ pero la gran mayoría
+ se iban
+ a casi un mes
+ o por ahí
+ por eso
+ la primera etapa
+ son 3 meses
+ otro punto
+ era
+ que teníamos
+ menor control
+ de resultados
+ al tener
+ sistemas independientes
+ resultados
+ no en una operación
+ en sí
+ resultados
+ en cuentas
+ fondeadas
+ ¿bien?
+ o evaluaciones
+ pasadas
+ fase 1
+ o fase 2
+ me refiero
+ en garantías
+ entre comillas
+ ¿vale?
+ es decir
+ el tener 4
+ por fuera distinto
+ en 4 cuentas
+ aunque vayas
+ a ganarlas todas
+ e intentar ganar
+ todas las batallas
+ hacían menos
+ predecible
+ que yo tuviera
+ un sistema
+ que supiera
+ que al menos
+ cada 2 semanas
+ tuviera
+ una cuenta
+ fondeadas
+ a cada
+ no lo sabíamos
+ porque nos podía
+ alargar el tiempo
+ y 2
+ podíamos perder
+ las 4 también
+ y volver a empezar
+ y al final
+ queremos
+ al final
+ repito
+ la idea inicial
+ es crear un sistema
+ un sistema
+ que te escupa
+ cuentas
+ fondeadas
+ ¿de acuerdo?
+ a cierto coste
+ y no lo cumplía
+ el aprendizaje
+ número 3
+ demasiada dedicación
+ para el pobre
+ resultado
+ esto es importante
+ esto es importante
+ porque
+ mucha gente
+ no lo
+ no lo valora
+ el tiempo que tú
+ dedicas
+ por lo que vas a obtener
+ es decir
+ mucha gente
+ en redes sociales
+ se fija
+ con el
+ con el influencer
+ que pasa cuentas
+ de fondeo
+ todo el día
+ todo el día
+ te muestra
+ evaluaciones
+ pero no
+ nunca te muestra
+ lo que está palmando
+ el dinero que está palmando
+ detrás
+ a lo mejor palma más
+ de las que te ganan
+ ¿no?
+ esto ya lo sabemos
+ que tenemos que hacer
+ esa diferencia
+ y tenemos que ser rentables
+ ahí
+ pero va un paso
+ más allá
+ aquí voy a un paso
+ más allá
+ es
+ vale
+ tengo algo que
+ puede llegar a ser rentable
+ puede llegar a funcionar
+ proporcionalmente
+ más ingresos
+ que gastos
+ pero
+ la dedicación
+ que dedico
+ para ese sistema
+ que estoy montando
+ es una variable
+ que realmente
+ se transforma
+ en coste nuestro
+ en tiempo
+ no en dinero
+ sino en tiempo
+ dedicamos bastante tiempo
+ en monitorizar
+ en crear nuevos sistemas
+ en
+ no es que tenemos que tener
+ cuatro porfolios activos
+ hay que ver
+ si un porfolio
+ me ha dejado de funcionar
+ tener la máquina
+ que esté creando otro
+ juntar cada vez
+ cinco o seis estrategias
+ de activos distintos
+ y esto es rápido
+ esto es rápido
+ no es
+ crear un porfolio
+ no es crear un porfolio
+ a temporada
+ de una hora
+ cuatro horas
+ y lo pongo
+ y lo dejo meses trabajando
+ no no
+ aquí va
+ va por días semanas
+ vale
+ por tanto
+ la dedicación
+ aumenta aquí
+ y al final
+ pues
+ es un tiempo
+ al final pues
+ tiempo
+ dinero
+ y el punto número cuatro
+ ir a escalado suave
+ necesitas realizar
+ mucho estrés
+ que ya os lo he avanzado
+ y tardas demasiado
+ al final esto no es
+ no cumplir el objetivo
+ nosotros lo queremos
+ en el menor tiempo posible
+ obviamente
+ cumpliendo lo que nos piden
+ las cuentas de fondeo
+ que son mínimo
+ tres días de trading
+ y todas estas cosas
+ pero no tirarnos
+ un mes para una fase
+ de evaluación
+ sin saber si la vamos a pasar
+ o no
+ sin tener garantías
+ de si al menos una
+ la vamos a pasar
+ tanto todo esto
+ dijimos
+ vale
+ lo primero que nos centramos
+ es
+ está bien lo que hacemos
+ porque vamos pasando
+ a fases dos
+ al menos
+ nos falla algo
+ de materializar
+ que las fases dos
+ terminen en fondear
+ por A o por B
+ no terminan llegando
+ creíamos que era
+ por estadística
+ pues mira
+ una racha
+ de fases dos
+ que no materializamos
+ puede ser
+ porque medianamente
+ bien para empezar
+ materializamos bien
+ pasar fase uno
+ o fase dos
+ pero lo que nos faltaba
+ es rapidez
+ rapidez
+ oye
+ estamos tardando demasiado
+ en pasar a fase dos
+ al menos
+ hay que ir más rápido
+ luego ya solventaremos
+ veremos ya
+ como solventamos
+ el pasar fase dos
+ a la fondeada
+ vale
+ pues que hicimos aquí
+ dijimos
+ dijimos
+ dos cosas
+ bien
+ el hecho de tardar tanto
+ sin garantías
+ vamos a
+ vamos a crearnos
+ una garantía
+ y cuál es la garantía
+ hacer la inversa
+ en otra cuenta de fondeo
+ volvimos a hacer la inversa
+ por eso puse
+ por fuera conectada
+ digo vale
+ si vamos a tardar tanto
+ al menos asegurarnos
+ que una de las dos
+ la estamos pasando
+ no que nos
+ después de estar tanto tiempo
+ porque repito
+ el tiempo también es dinero
+ o coste de oportunidad
+ al menos que un
+ que tengamos
+ una de las dos
+ si trabajamos con cuatro
+ dos de las cuatro
+ pasadas
+ y la gestión de esclado
+ que es lo que hicimos
+ estrategias
+ M5
+ bueno
+ creo que ahí emitimos
+ algunas de M15
+ pero más o menos
+ con el mismo objetivo
+ vale
+ es el mismo objetivo
+ que es que hayan trades
+ creación de porfolios
+ seguimos creando
+ creación de porfolios
+ pendientes
+ aunque ahí los conectamos
+ múltiples activos
+ seguíamos haciendo
+ múltiples activos
+ gestión de escalado
+ la cambiamos a agresivo
+ es decir
+ ya no íbamos a 0.8
+ ya a lo mejor
+ ahí vamos
+ o seguíamos
+ no perdón
+ seguíamos yendo
+ a 0.8
+ 1
+ pero
+ el escalado
+ lo metíamos
+ más agresivo
+ en lugar de permitir
+ hacer 8 trades
+ en el día
+ a lo mejor
+ solo hacíamos
+ tres trades
+ entre todos
+ y a lo mejor
+ multiplicamos
+ por 1.7
+ 1.8
+ de esta forma
+ en un segundo trade
+ y es verdad
+ aquí buscábamos
+ porfolios
+ en la cual buscábamos
+ que las rachas
+ sean cortas
+ que si me viene
+ una operación ganadora
+ me venga una ganadora
+ si me viene una ganadora
+ me venga otra perdedora
+ si me viene una perdedora
+ me venga la ganadora
+ porque la alternancia
+ nos iba bien
+ si metíamos
+ un multiplicador
+ muy alto
+ porque si nos viene
+ una pérdida
+ como que sabíamos
+ que teníamos
+ muchas probabilidades
+ de tener una ganancia
+ posteriormente
+ íbamos a un multiplicador
+ elevado
+ por tanto
+ nos ganaría dinero
+ y luego conectamos
+ el mismo porfolio
+ con entradas inversas
+ en otra cuenta
+ de fonte
+ ¿cuál es el objetivo
+ con estos dos cambios?
+ repito
+ gestión de escalado agresivo
+ porfolios
+ a la inversa
+ tener sistemas dependientes
+ que pase evaluaciones
+ con alta tasa de éxito
+ con alta tasa de éxito
+ me refiero a
+ aquí debería haber puesto
+ con cierta garantía
+ para que al menos
+ si invertimos
+ todo ese tiempo
+ al menos nos garantice
+ que uno de los dos
+ me pase
+ que es la verdad
+ que es el segundo
+ aumentar la garantía
+ de tener exámenes pasados
+ en un cierto tiempo determinado
+ claro
+ lo de alta tasa de éxito
+ y lo de reducir el tiempo
+ viene dado
+ a que aumentábamos
+ el riesgo
+ porque recuperábamos
+ más rápido
+ por tanto
+ necesitábamos
+ menos trades
+ para llegar al
+ take profit
+ también necesitábamos
+ menos trades
+ para fundirla
+ obviamente
+ pero también
+ para llegar al
+ take profit
+ es lo que necesitamos
+ que haya rapidez
+ ¿vale?
+ rapidez y cierta garantía
+ son los dos objetivos
+ que queríamos
+ en esta fase
+ ¿cuál es el aprendizaje
+ que lo vimos
+ bastante rápido
+ que mezclar
+ estas dos cosas
+ no eran compatibles
+ una gestión
+ de escala agresiva
+ donde el multiplicador
+ sea alto
+ con operaciones inversas
+ no es compatible
+ y es muy sencillo
+ de entender
+ dos cuentas de 100.000
+ evaluaciones de 100.000
+ en una ganas 500
+ el primer trade
+ una ganas 500
+ el otro pierdes 500
+ ¿vale?
+ ¿ahora qué hace
+ el que está perdiendo?
+ multiplica por 1.8
+ el siguiente trade
+ el siguiente trade
+ está arriesgado
+ 800 dólares
+ está ganado
+ la de aquí
+ ha ganado
+ 500 dólares
+ si ahora esta pierde
+ que arriesga 500 dólares
+ porque no ha tenido
+ una pérdida
+ en esta cuenta
+ no ha tenido una pérdida
+ esta se pone a 100
+ y esta se pone a más 300
+ de puta madre
+ ¿vale?
+ si van alternándose
+ está bien
+ porque al final
+ vas terminando ganando
+ pero hay otras ramas
+ cuando empiezan a ver
+ esta gana
+ y esta pierde
+ esta habrá perdido
+ menos 500
+ menos 800
+ estaríamos en
+ menos 1300
+ y esta estaría
+ solo a 1000
+ más 1000
+ ahí perdemos
+ hemos perdido
+ más de lo que
+ de lo ganado
+ por tanto
+ no era tan compatible
+ el riesgo
+ elevado
+ con la inversa
+ concluimos
+ que de las dos cosas
+ hacer la operación
+ inversa
+ es lo que siempre
+ sigue funcionando
+ y
+ eso sí
+ una de las cosas
+ que hicimos es
+ aumentar el riesgo
+ ¿vale?
+ el escalado
+ no pero aumentar
+ el riesgo
+ sobre todo
+ el riesgo
+ inicial
+ de la primera operación
+ esto sí
+ que estaba
+ comprobado
+ que acortaba
+ considerablemente
+ el tiempo
+ de vida
+ de una evaluación
+ ya sea terminando
+ en T-Profit
+ o en Stop Loss
+ ¿de acuerdo?
+ ¿por tanto
+ ¿qué hicimos?
+ vale
+ aquí lo importante
+ es ir
+ a fuego
+ desde el inicio
+ muy a fuego
+ desde el inicio
+ y hacer operaciones
+ inversas
+ por tanto
+ aquí
+ y esto es
+ un poco
+ ejercicio
+ que yo tuve que hacer
+ interior mío
+ tuve que tirar
+ recular hacia atrás
+ dejar de lado
+ todo el tinglado
+ de porfolios
+ de gestión de escalado
+ de porfolios
+ todo lo que habíamos montado
+ al final
+ pues llegar a un punto
+ que cuando experimentas
+ y lo ves en real
+ pues tienes que tomar decisiones
+ y decir
+ oye
+ pues a lo mejor
+ todo este grueso
+ que hemos hecho
+ no ha servido
+ ha servido
+ para darme cuenta
+ de esto otro
+ ¿vale?
+ lo hemos apartado
+ lo hemos simplificado
+ todo muchísimo
+ y ahora
+ estamos en la fase
+ en la etapa 3
+ que es una estrategia simple
+ ¿quiere ver lo simple que es?
+ y conectada con la inversa
+ creación de una estrategia
+ muy simple
+ en el wizard
+ y por qué digo
+ es por qué no utilizar
+ el builder
+ la búsqueda
+ porque esto
+ os lo digo a vosotros
+ o sea
+ al final
+ vuelvo un poco
+ a lo que yo hacía
+ antes de forma manual
+ que era
+ entrar
+ yo antes lo hacía
+ entrada
+ aleatoria
+ euro dólar
+ compra-venta
+ en dos proveedores distintos
+ y esto lo repetía
+ hasta que uno me llegaba
+ al take profit
+ y luego
+ el otro me llegaba
+ a perder la cuenta
+ y iba
+ al límite diario
+ al límite que podía abrir
+ en una misma idea
+ o el día
+ ¿vale?
+ por tanto
+ en una perderé
+ y en otra ganaré
+ exactamente lo mismo
+ voy a perder comisiones
+ en ambas
+ eso sí
+ si por casualidad
+ con catenas
+ muchas alternadas
+ vas a palmar
+ bastante en comisiones
+ pero bueno
+ como que muchas empresas
+ o algunas empresas
+ se han puesto
+ muy tiquismiquis
+ de las entradas
+ aleatorias
+ ¿vale?
+ porque según ellos
+ consideran
+ o te pueden tirar atrás
+ una evaluación
+ si tú haces de gambler
+ es decir
+ abres sin ver el gráfico
+ abres una
+ una orden en compra
+ sin seguir un patrón
+ y eso al final
+ lo dictan ellos
+ luego ¿no?
+ tanto ellos te pueden saltar
+ y decir
+ oye
+ no estás siguiendo
+ una idea de trading
+ una regla de trading
+ estás siguiendo gambler
+ te quitamos la evaluación
+ si vosotros
+ anteriormente diseñáis
+ cualquier chorrada
+ de estrategia
+ en algo bizar
+ por ejemplo
+ un cruce de medias
+ a esta empresa
+ le podéis ir a decir
+ no no
+ fíjate
+ yo entro
+ cuando el cruce
+ de la media
+ de 20 periodos
+ con la de 60
+ se cruzan
+ yo entro
+ no te lo demuestro
+ pam pam pam pam
+ y ahí si te la quitan
+ pues ya es solo una empresa
+ pues que te van a robar
+ y ya está
+ pero al menos tienes
+ algo con los cuales
+ poderle decir
+ oye no no
+ yo sigo esta estrategia
+ encima la tengo automatizada
+ toma
+ ¿sabes?
+ ahí nos salvamos en eso
+ un solo activo
+ un solo activo
+ fíjate que estoy volviendo
+ regulando
+ a todo gas
+ y que hayan
+ un activo
+ pero que hayan
+ trades cada día
+ es decir
+ la estrategia
+ tiene que generar
+ trades cada día
+ porque a nosotros
+ lo que nos interesa
+ es la entrada
+ realmente
+ de verdad
+ nos da igual
+ en las evaluaciones
+ nos da igual
+ si la estrategia
+ es rentable o no
+ fijaros que no he puesto
+ estrategia rentable
+ es una estrategia
+ que le puedes explicar
+ y tenga sentido
+ y que te genere
+ que estrategias
+ pueden generar
+ cada día
+ entradas
+ pues os vais
+ a la temporada
+ desde 30 minutos
+ 15 minutos
+ 5 minutos
+ y hacer un simple
+ cruce de medias
+ podéis hacer
+ cuando el RSI
+ se vaya a 30
+ o a 70
+ podéis hacer
+ cuando el MACD
+ se cruce
+ podéis hacer
+ mil historias
+ podéis entrar
+ cuando supero
+ un máximo anterior
+ cuando supero
+ un mínimo anterior
+ al revés
+ da igual
+ la que se os ocurra
+ o veáis
+ en internet
+ más sencilla
+ de todas
+ que veáis
+ la automatización
+ es en algo wizard
+ que es sencillo
+ y tenéis al menos
+ el robot ahí
+ ¿vale?
+ ¿por qué en algo wizard?
+ porque de esta forma
+ nos permite exportar
+ en robot
+ y en robot
+ sacado del código
+ de strategy one
+ que nos irá bien
+ para pasarla
+ por el gestor
+ de escalado
+ ¿por qué hay que pasarla
+ por el gestor de escalado?
+ porque al menos
+ es verdad que
+ te posibilita
+ todo lo que hacíamos
+ anteriormente
+ pero ponerles
+ el multiplicador
+ a uno
+ que no multiplique
+ oye
+ esto es
+ repito
+ quiero hacer un parón
+ esto es
+ experiencia propia
+ con Iván
+ luego cada uno
+ a lo mejor
+ habrá gente
+ que habrá hecho
+ maravillas
+ con la gestión de escalado
+ pero
+ al menos
+ ahí te habilita
+ al poder
+ tener un trade
+ que te abra
+ a la inversa
+ ¿vale?
+ no solo
+ es la gestión de escalado
+ quien te permite
+ abrir trades
+ a la inversa
+ esto es para poner
+ un expert advisor
+ en otro sitio
+ sino que hoy
+ también os quiero mostrar
+ un expert advisor
+ que hemos desarrollado
+ que es un copy trader
+ ¿vale?
+ también podría utilizar
+ ambas cosas
+ ¿de acuerdo?
+ pero lo interesante
+ es que puedes abrir
+ la inversa
+ bueno
+ copy trader
+ no abre la inversa
+ perdona
+ no
+ sería con la gestión
+ de escalado
+ y punto número 4
+ riesgo alto por trade
+ si por ejemplo
+ una empresa de fondeo
+ como máximo
+ os dejan arriesgar al día
+ un 5%
+ y tal 4
+ o al 4 y medio
+ dejad un espacio
+ por si hay slipage
+ por si justamente
+ entra
+ en un momento
+ de alta volatilidad
+ yo diría un 4
+ 4,2
+ no más
+ hay empresas
+ que esto también
+ nos hemos visto
+ que nos han fusilado
+ por
+ porque nos han arriesgado
+ más
+ por ejemplo
+ creo que era
+ creo que era
+ Wall Street Funded
+ que hay
+ sí ¿no?
+ Wall Street Funded
+ es decir
+ es verdad
+ que solo te dejan
+ arriesgar
+ un 5% al día
+ pero
+ hay una norma
+ que dice
+ idea de trade
+ y eso también se ha puesto
+ mucho en la idea
+ de trade
+ por eso es importante
+ que hay una estrategia
+ lógica detrás
+ aunque no sea rentable
+ por cada idea
+ de trade
+ solo te dejan
+ arriesgar
+ un 3%
+ algo así
+ claro
+ esto significa que
+ en una misma entrada
+ en un mismo trade
+ no puedes arriesgar
+ más del 3%
+ tienes que esperar
+ a que el precio
+ se mueva un poco más
+ para que sea otra idea
+ de trade
+ ¿vale?
+ pronto ahí
+ pues lo tenéis que ajustar
+ tenéis que entender
+ en qué empresas
+ estáis haciendo trading
+ y cuáles son los límites
+ y ajustar eso
+ al máximo
+ ¿vale?
+ y
+ y ya está
+ ¿con qué objetivo?
+ reducir muchísimo
+ el esfuerzo
+ a dedicar
+ pero muchísimo
+ y esa estrategia
+ te va a servir
+ para todas las evaluaciones
+ no tienes que ir generando más
+ puedes inventarte
+ tres distintas
+ puedes inventarte
+ tres distintas
+ las tienes
+ y las tienes
+ para siempre
+ ¿vale?
+ simplemente para algún día
+ decir
+ oye
+ detrás hay esta lógica
+ para automatizar
+ lo que sabemos
+ que funciona de verdad
+ que al final
+ es un poco
+ recular un poco
+ en todas las movidas
+ que teníamos
+ en las cabezas
+ al final
+ yo creo que
+ rectificar
+ también
+ es de sabios
+ siempre
+ al final
+ es lo que
+ el objetivo
+ es que
+ todo el mundo
+ tenga más cuentas
+ fondeadas
+ y al final
+ es ir un poco
+ a automatizar
+ lo que
+ yo ya sabía
+ que estaba funcionando
+ de antes
+ obviamente
+ mejorándolo un poquito
+ que aquí la mejora
+ es
+ repito
+ en lugar de ir
+ de forma aleatoria
+ creamos una estrategia
+ que no nos cuesta nada
+ un cruce de media
+ lo que sea
+ alguna chorra de estas
+ y
+ y volver a la tasa
+ de fondearte
+ una de cada
+ tres
+ cuatro
+ sinceramente
+ yo tenía
+ esperanzas
+ y también
+ le convencí
+ en cierto modo
+ a Iván
+ de que podríamos
+ llegar
+ a incluso
+ tener un ratio
+ de fondeo
+ de una entre dos
+ una entre tres
+ entre ahí
+ el ratio
+ pero es tal
+ el esfuerzo
+ que hay que dedicar
+ y tal
+ el imax
+ de que hay que hacer
+ en ese sentido
+ que
+ que no vale la pena
+ que al final
+ con tener un ratio
+ entre uno
+ tres
+ cuatro
+ con cierta
+ inversión mínima
+ en cuentas
+ de fondeo
+ podéis montar
+ vuestra estructura
+ de cuentas
+ fondeadas
+ y luego
+ poner vuestros
+ portfolios
+ obviamente
+ por lo tanto
+ al final
+ un poco ejercicio
+ de evaluar
+ un poco el esfuerzo
+ podríamos haber dado
+ un pelín más
+ en cada etapa
+ lo podríamos haber dado
+ vale la pena
+ ese esfuerzo
+ sin saber el resultado
+ por el
+ por el mínimo incremento
+ que íbamos a buscar
+ pues yo considero
+ que no vale la pena
+ y al final
+ esta etapa tres
+ creo que es
+ hiper sencilla
+ hiper sencilla
+ o sea
+ es
+ repito
+ es un poco
+ tirar un poco
+ no es tirarlo a la basura
+ al final
+ es un poco
+ pues abandonar un poco
+ el esfuerzo
+ que hemos hecho
+ estos últimos meses
+ pero porque al final
+ queremos resultados
+ no
+ no
+ cosas guapas
+ ni que vendan mucho
+ ¿no?
+ tanto yo creo que esto
+ o creemos que esto
+ es lo que
+ nos va a funcionar
+ a partir de ahora
+ tenerlo automatizado
+ tener esos
+ ES que tengáis vosotros
+ lo bueno de todo esto
+ es que cada uno
+ podrá crear su propia estrategia
+ no habrá copy trading
+ de otra forma
+ tampoco habría copy trading
+ porque cada uno
+ se crea sus propios sistemas
+ pero
+ de esta forma tampoco
+ es decir
+ nos mantenemos
+ fuera del copy trading
+ entre nosotros
+ y automatizamos
+ algo que
+ yo personalmente
+ sé que funciona
+ porque lo he estado haciendo
+ durante
+ durante más de un año
+ de forma manual
+ eso sí
+ en la actualidad
+ tenemos
+ con este método
+ yo te digo
+ llevamos menos de un mes
+ con ello
+ tenemos una fondeada
+ que rescatamos
+ de una fase 2
+ de la anterior fase
+ pero a cambio
+ de esa fondeada
+ hemos quemado una
+ porque hacemos la inversa
+ ¿vale?
+ siempre que tenemos una fondeada
+ tenemos una quemada
+ y ahora
+ a día de hoy
+ tenemos cuatro activas
+ que
+ no sé si van
+ de mano
+ no apunté
+ los profits
+ o los negativos
+ que llevamos en ellas
+ pero
+ están por ahí
+ ¿no?
+ una creo que está
+ un menos 3
+ la otra un más 2
+ porque
+ la tomamos
+ con comisiones
+ y cosas extras
+ pero sí
+ van más o menos
+ sobre lo previsto
+ ¿vale?
+ pues y las cuatro
+ empresas que estamos
+ trabajando
+ son las que
+ ha puesto Iván
+ creo que ha contestado
+ uno que ha preguntado
+ en el chat
+ The Fiverr
+ Wall Street Funded
+ The Trading Pit
+ y Funded Nets
+ ¿vale?
+ creo que en todas ellas
+ hemos pasado fases
+ creo que sí
+ en todas ellas
+ creo que hemos llegado
+ a pasar fases
+ por tanto
+ nadie nos ha puesto
+ ningún problema
+ para hacer este tipo
+ de prácticas
+ y las dos fondeadas
+ han estado
+ en Wall Street Funded
+ y en Funded Nets
+ y yo personalmente
+ he estado
+ fondeado
+ en The Fiverr
+ y en The Trading Pit
+ o sea
+ no tenía ningún problema
+ con ninguna de las cuatro
+ vale
+ hasta aquí
+ el tema
+ de las evaluaciones
+ ahora viene el turno
+ de preguntas
+ ¿de acuerdo?
+ respondo la primera
+ que me habéis hecho
+ en el chat
+ ¿cuántos trades
+ estáis añadiendo
+ Ramón?
+ que haga mínimo
+ un trade al día
+ vamos a un trade al día
+ con estas estrategias
+ y oye
+ cuando hagas
+ una estrategia
+ por ejemplo
+ un cruce de medias
+ obviamente
+ si lo podéis
+ a cinco minutos
+ a la primera hora
+ del día
+ os va a entrar
+ porque siempre
+ se va a dar uno
+ no lo pongáis
+ cuando hay poca volatilidad
+ yo que sé
+ poned en estatística
+ en el Algo Wizard
+ que opere
+ de las nueve de la mañana
+ hasta las ocho de la tarde
+ donde sepáis
+ que hay más volatilidad
+ ¿vale?
+ por alguna razón
+ no usar
+ Stimov
+ a mí porque me banearon
+ vosotros lo podéis usar
+ si queréis
+ Javi dime
+ ¿qué tal Ramón?
+ ¿qué tal a todos?
+ buenas noches
+ quiero hacer
+ dos consultas
+ yo soy de la nueva
+ mentoría
+ de hecho todavía
+ no la terminé
+ nos queda un mes
+ pero ya estaba viendo
+ algunos de los videos
+ de las mentorías mensuales
+ así que
+ me familiaricé
+ con todos estos términos
+ pregunta uno es
+ si a la hora de hacer
+ una estrategia
+ a la inversa
+ literalmente
+ les ha sucedido
+ de que ninguna gana
+ que se pierdan las dos
+ porque
+ que gane una
+ y que la otra pierda
+ tiene sentido
+ pero bueno
+ habría que ver
+ si coincide
+ pero no nos ha pasado
+ no nos ha pasado
+ lo que sí puede pasar
+ es que
+ justamente
+ cuando
+ en una te gane
+ la otra te pierda
+ a la siguiente
+ te haga al revés
+ la que te ha ganado
+ te ha perdido
+ y constantemente
+ estás subiendo
+ bajando
+ subiendo bajando
+ no vas a llegar
+ todo el rato
+ a estar las dos
+ en 100.000
+ o igual
+ vas a partir
+ desde más abajo
+ porque las comisiones
+ te van comiendo
+ eso es el riesgo
+ que hay
+ es el único
+ es lo único
+ que te puede pasar
+ para perder las dos
+ a lo mejor
+ deberías hacer
+ yo qué sé
+ te diré
+ 53 en cada una
+ y que las comisiones
+ te hayan fundido
+ esto pasa
+ la probabilidad
+ de que te pase
+ eso es muy baja
+ realmente
+ pero una cosa
+ una cosa que sí
+ que pasaba
+ con la gestión
+ de escalado
+ es que a veces
+ la señal
+ se daba
+ en una cuenta
+ pero la inversa
+ no se daba
+ en la otra
+ entonces
+ imagino que esto
+ con el copy trading
+ se puede solucionar
+ pero esto sí
+ que tuvimos problemas
+ o sea
+ sobre todo
+ en temporalidades bajas
+ en M5
+ o M1
+ puede ser que el cruce
+ de media
+ se dé en una
+ pero como los gráficos
+ son ligeramente distintos
+ en la otra
+ no se dé
+ y no entre
+ esto nos había pasado
+ bien
+ y la segunda pregunta
+ es
+ el concepto
+ de los tiempos
+ es una decisión
+ propia
+ o sea
+ es un objetivo
+ personal
+ o las cuentas
+ o estas empresas
+ te piden un tiempo
+ determinado
+ como máximo
+ perdona
+ ¿cuál es la pregunta?
+ si el tema
+ de que el objetivo
+ de esto que están creando
+ es hacerlo
+ en el menor tiempo
+ posible
+ es algo propio
+ de lo que están
+ intentando hacer
+ o son condiciones
+ de estas cuentas
+ no no
+ es objetivo nuestro
+ es que yo
+ yo considero
+ que las evaluaciones
+ se tienen que pasar rápido
+ o las quemas
+ o las pasas
+ ok ok
+ te explico
+ lo que yo pienso
+ lo que yo pienso
+ luego cada uno
+ es libre de opinar
+ y de pensar
+ y hacer lo que
+ lo que considere
+ entiendo
+ entiendo
+ bueno perfecto
+ eso era
+ gracias
+ a ti Javi
+ voy a contestar
+ primero en chat
+ no ponen pegas
+ por los robots
+ en fondeo
+ si por el copy trading
+ como eres exactamente
+ el copy trading
+ realmente
+ no es
+ o sea
+ realmente
+ lo que ellos llaman
+ copy trading
+ es que
+ tú
+ uses el mismo robot
+ que yo
+ en la misma empresa
+ de fondeo
+ eso es copy trading
+ pero
+ no que yo
+ implemente sistemas
+ de copiar trades
+ en diferentes cuentas
+ de otras empresas
+ de fondeo
+ que realmente
+ te lo
+ realmente
+ técnicamente
+ está prohibido
+ tu poder copiar
+ trades a la inversa
+ de una empresa
+ u otra
+ pero entre ellas
+ no se hablan
+ pero de esto
+ no lo van a saber
+ nunca
+ ni lo podrán
+ ni lo podrán
+ nunca
+ como decir
+ demostrártelo
+ lo que está prohibido
+ es que
+ tú estés
+ en una cuenta
+ en ftmo
+ yo esté
+ en otra cuenta
+ en ftmo
+ y los dos
+ usemos
+ el mismo robot
+ eso es
+ esto está prohibido
+ veo que uno
+ de los criterios
+ que podamos
+ fondear
+ en un tiempo
+ corto
+ tendría sentido
+ que el factor
+ tiempo
+ que sea un sistema
+ lento
+ pero cumpla
+ un rato
+ de fondeo
+ superior
+ claro
+ lo que dice
+ es que nadie
+ te lo garantiza
+ es que
+ si tú vas
+ a un rato
+ de fondeo
+ superior
+ vas a
+ más trades
+ bueno
+ sí
+ puedes tener
+ más rate
+ más
+ sí
+ puedes ir
+ a más
+ ratio
+ sí
+ pero
+ a mi punto de ver
+ del negocio
+ de las cuentas
+ de fondeo
+ no tiene sentido
+ estar meses y meses
+ en una misma evaluación
+ no tiene sentido
+ en mi opinión
+ porque esto
+ trata de rotar
+ el capital
+ todo el rato
+ rotar el capital
+ y es un poco
+ el desapego
+ a esa evaluación
+ christopher
+ sí
+ me escucha
+ ramón
+ hola
+ hola
+ sí
+ bueno
+ respecto
+ al
+ cuántos
+ intentos
+ realizaste
+ y cuántas
+ pasaron
+ christopher
+ has entrado
+ desde el inicio
+ de esta mentoría
+ no
+ pues
+ luego te
+ te sugiero
+ que te la veas
+ vale
+ sí
+ y la otra pregunta
+ es
+ cómo
+ hacen la copia
+ eso no lo entendí
+ muy bien
+ cómo hacen la copia
+ o sea
+ la inversa
+ solo poniendo
+ los robots
+ en
+ esto es con
+ el gestor
+ de escalado
+ es una herramienta
+ sí
+ lo expliqué
+ en mentorías
+ mensuales
+ pasadas
+ tú
+ estás en edición
+ ahora mismo
+ no
+ ya
+ ya terminé
+ el curso
+ vale
+ pues en
+ mentorías
+ mensuales
+ pasadas
+ hago un tutorial
+ de la gestión
+ de escalado
+ repásatelo
+ porque ahí explico
+ cómo convertir
+ un robot
+ y que se añadan
+ esas opciones
+ ah ya
+ pero igualmente
+ tú tienes que tener
+ dos metatraders
+ abiertos
+ y todo eso
+ sí
+ vale
+ vale
+ gracias
+ es
+ Sergio
+ me acuerdo
+ a ver si es
+ sí
+ soy yo
+ Sergio
+ ¿qué tal?
+ bueno
+ pues estamos
+ sí
+ te quería preguntar
+ comentas
+ el hecho
+ de crear
+ la estrategia
+ simple
+ en algo
+ guadizar
+ esto quiere decir
+ que habéis probado
+ que el builder
+ no aumenta
+ la probabilidad
+ usando esta
+ estrategia simple
+ es decir
+ no aumenta
+ la probabilidad
+ de pasar
+ la evaluación
+ así es
+ porque íbamos
+ íbamos
+ a
+ es decir
+ si usásemos
+ estrategias
+ H1 hacia arriba
+ que es lo que
+ utilizamos
+ para crear
+ nuestros porfolios
+ y lo que realmente
+ creemos que tenemos
+ hay más fiabilidad
+ se nos iba
+ demasiado largo
+ el tiempo
+ de una evaluación
+ por tanto
+ ese es el objetivo
+ principal
+ para mí
+ a mi punto de ver
+ es pasarla rápido
+ tanto ya
+ sistemas H1
+ o para arriba
+ no encajaban en mi plan
+ nos teníamos que ir
+ en CFDs
+ por debajo
+ de H1
+ en brokers
+ que son cuentas
+ de fondeo
+ brokers donde te puedes
+ descargar datos a ti
+ como puede ser Darwin
+ si en brokers
+ de cuentas de fondeo
+ por lo tanto
+ no tenemos esos datos
+ por lo tanto
+ íbamos a crear
+ sistemas de usar
+ y tirar
+ y
+ claro
+ ¿sí?
+ entonces
+ básicamente
+ que no
+ no escalan bien
+ o sea
+ da igual
+ la estrategia
+ que te salga
+ que es
+ como hacer
+ la random
+ íbamos que
+ o sea
+ nos costaba mucho
+ incrementar ese ratio
+ pero mucho
+ mucho esfuerzo
+ y por tanto
+ pues decidimos
+ simplificarlo
+ saber lo que
+ funcionaba bien
+ y
+ regular un poco
+ hacia atrás
+ vale
+ pues nada está
+ merci
+ a ti
+ me alegro de verte
+ igualmente
+ bueno
+ oíte
+ ahora me ves
+ ahora sí
+ ahora sí
+ bueno
+ Sergio es el que
+ el que también está
+ en H1Millón
+ que lo comuniqué
+ el otro día
+ en el grupo
+ así que enhorabuena
+ de nuevo
+ gracias
+ voy a leer dicha
+ vale
+ Francis
+ para
+ tutorial de gestor
+ de escalado
+ mejor miraros
+ una clase
+ que hice entera
+ explicándolo
+ no se ha cambiado
+ desde entonces
+ vale
+ me sabe mal
+ porque al final
+ la mentoría de hoy
+ es de unos temas
+ que tenemos
+ planificados
+ tratar
+ vale
+ que horarios
+ se manejan
+ el mismo que Darwinets
+ los bloques
+ que utilizamos
+ todo lo hace
+ con robots
+ en automático
+ nada de manual
+ como es el proceso
+ Robert
+ lo explico
+ en mentorías
+ mensuales
+ antiguas
+ vale
+ no sé si
+ los que me preguntáis
+ esto
+ probablemente
+ seáis de ediciones
+ actuales
+ que no habéis visto
+ las mentorías
+ mensuales
+ no os preocupéis
+ de verdad
+ esto mirároslo
+ al final
+ ahora no
+ no es el momento
+ pero
+ si no
+ si eres antiguo
+ de alumno
+ mirad las mentorías
+ mensuales
+ anteriores
+ confío en una etapa 4
+ con a lo mejor
+ una entrada testada
+ y sin prisa
+ con señales
+ sin prisa
+ Axel
+ ya te digo yo
+ que no
+ no
+ va a haber prisa
+ no
+ no no no
+ no Axel
+ todo lo que tú
+ estás diciendo
+ me estás
+ describiendo
+ me estás
+ describiendo
+ estrategias
+ para poner
+ en cuentas
+ ya
+ fondeadas
+ no en evaluaciones
+ es tal cual
+ el porfolio
+ que pondrías
+ en cualquier cuenta
+ que quieras
+ mantener
+ a lo largo del tiempo
+ no sé si lo he entendido
+ bien
+ entonces
+ usa el mismo robot
+ que creas en el wizard
+ que luego lo pasa
+ a la gestión de escalado
+ pero una de ellas
+ es la inversión
+ exactamente
+ Omar
+ entonces la idea
+ es abrir una compra
+ de diamante
+ y una mente
+ en FMS
+ así es
+ yo creo que lo ideal
+ es el copy
+ a la inversa
+ yo lo hice con robots
+ con la gestión de escalado
+ de inversa
+ y las señales
+ muchas veces
+ no coinciden
+ en el tiempo
+ directamente
+ una cuenta
+ no entra
+ exactamente
+ es uno de los riesgos
+ que hay
+ que también hemos visto
+ no sería mejor
+ aumentar el número
+ de robots
+ para que haya más operaciones
+ no porque también
+ el aumentar
+ hace que el día
+ que te está ganando
+ otros te están perdiendo
+ y eso no significa
+ que sea el mal robot
+ simplemente que es estadística
+ todo lo hacemos
+ con las preguntas
+ si hacemos exámenes
+ de una fase o de dos
+ dos fases
+ todos dos fases
+ para tener ese espacio
+ de margen
+ de poder caer
+ que es muy importante
+ ¿Alguna vez han hablado
+ con respecto
+ a la limitante
+ que tenemos
+ de operar
+ MTL5
+ para los que estamos
+ en Estados Unidos
+ es una vez decidido
+ lo mejor imposible
+ operar MTL5
+ ¿Por qué?
+ ¿Eso es decidido
+ José Manuel?
+ ¿Qué limitación tenéis?
+ ¿Algún vídeo
+ creando una estrategia
+ simple
+ en la WIZAR
+ para M515M?
+ hay tutoriales
+ de algo WIZAR
+ de mentorías mensuales
+ hay una clase
+ seguro
+ que hicimos
+ tutorial completo
+ de algo WIZAR
+ mirároslo
+ también está ahí la clase
+ ¿vale?
+ está prohibido MTL5
+ en Estados Unidos
+ y MTL4
+ ¿Cómo que está prohibido
+ MTL5?
+ dirás
+ en algunos brokers
+ o sea
+ no creo que un país
+ prohíba
+ una plataforma
+ de trading
+ lo prohibirá
+ el broker
+ entiendo
+ creo que no es así
+ José Manuel
+ no sé
+ lo quiero poner en duda
+ hola
+ ¿qué tal?
+ habla José Manuel
+ sí
+ dime
+ de hecho
+ sí
+ yo he visto
+ mucha dificultad
+ a la hora
+ de comprar
+ una cuenta
+ de fondeo
+ por ejemplo
+ en
+ Funding Pips
+ ofrece
+ la plataforma
+ MetaTrader5
+ pero a la hora
+ de hacer el pago
+ restringe
+ MetaTrader5
+ porque
+ yo estoy
+ en Estados Unidos
+ FTMO
+ puedo crear
+ una cuenta
+ en FTMO
+ aquí en Estados Unidos
+ pero a la hora
+ de hacer el pago
+ dice ahí
+ que la plataforma
+ de trading
+ no está permitida
+ en Estados Unidos
+ y así
+ muchas más
+ como
+ E8 Markets
+ y otras
+ por el estilo
+ que tienen buena reputación
+ pero
+ MetaTrader5
+ no lo he podido
+ por esa razón
+ no he podido
+ por decir así
+ ir como ya
+ tomando en cuenta
+ algunas compañías
+ como para decir
+ esta voy a utilizar
+ ya en el momento
+ que termine mi formación
+ y voy a crear
+ estrategias
+ MetaTrader5
+ para cuentas de fondeo
+ o por el estilo
+ Pues primera noticia
+ con alguna VPN
+ algo que lo ha dicho
+ ahora también
+ R.S. Fernando
+ con alguna VPN
+ a lo mejor
+ que no vean
+ que estén
+ en Estados Unidos
+ Puede ser
+ con una VPN
+ pero me van a pedir
+ como se llama
+ la verificación
+ a la hora
+ de conectar
+ cuenta bancaria
+ y cosas
+ por el estilo
+ Ah, dices
+ para realizar el pago
+ tu información de pago
+ Sí
+ o sea
+ para abrir la cuenta
+ en
+ cuenta de empresas
+ de fondeo
+ no hay problema
+ pero
+ siempre y cuando
+ yo no escoja
+ MetaTrader5
+ como mi plataforma
+ de trading
+ puedes coger
+ DX
+ no sé qué
+ no sé qué otras
+ hay también
+ pero MetaTrader5
+ Esto se tiene que arreglar
+ de alguna manera
+ de algún sistema
+ de pago
+ en la cual
+ pues
+ la tarjeta de crédito
+ o la cuenta bancaria
+ no sea de Estados Unidos
+ No sé si esto
+ tenéis la posibilidad
+ Bueno, no quiero
+ acaparar mucho
+ este tema ahora
+ pero
+ pero
+ no lo desconocía
+ que los
+ gente
+ Ah, por el chat
+ ha habido gente
+ que decía
+ que no
+ que no estaba
+ prohibido
+ pero
+ si a ti te ha pasado
+ probablemente
+ en algunas empresas
+ que lo hayas experimentado
+ sí
+ Mira de probar
+ una de las cuatro
+ que yo te he dicho
+ a ver si ahí
+ tienes algún problema
+ o no
+ Ok
+ Sí, lo pregunté
+ en la clase anterior
+ con este
+ Sergi también
+ y sí
+ me decía que
+ había dificultades
+ al menos
+ en el conocimiento
+ de él decía
+ que lo teníamos
+ un tanto difícil
+ que necesitábamos
+ en Estados Unidos
+ pero
+ pensaba que
+ ustedes habían
+ este
+ trabajado
+ en alguna
+ solución
+ Yo sé que los CFD
+ están prohibidos
+ pero las cuentas de fondeo
+ no son CFD
+ porque es capital ficticio
+ por tanto
+ no entra en la regulación
+ podéis comprar
+ cuentas de fondeo
+ sin problema
+ podéis estar en dar
+ un estero
+ sin problema
+ porque es capital ficticio
+ todo lo que sea capital ficticio
+ sí que se permite
+ aunque sea CFD
+ Sí, eso sí
+ de hecho yo he comprado
+ Funding Pips
+ he comprado
+ E8 Markets
+ para trabajar
+ de forma manual
+ con TradeLocker
+ por ejemplo
+ la plataforma de trading
+ TradeLocker
+ pero específicamente
+ para decir
+ el portafolio
+ que estoy creando
+ conectarlo a MetaTrader 5
+ en estas plataformas
+ pues
+ por el momento
+ prueba en estas cuatro
+ que te he dicho
+ a ver si
+ alguna te va bien
+ Perfecto
+ Gracias
+ A ti
+ Cristian
+ Buenas noches
+ retomando el tema
+ de los objetivos
+ de la mentoría
+ de hoy
+ y si lo has comentado
+ en videos anteriores
+ de mentorías
+ yo estoy en el último grupo
+ finalizo ahorita
+ creo que en febrero
+ pero pues
+ para
+ tenerla clara
+ y es
+ actualmente
+ las estrategias
+ que se están desarrollando
+ están bajo el enfoque
+ de H1
+ porque es la estructura
+ que está
+ digamos que
+ definiéndose
+ en la metodología
+ la pregunta es
+ esto que estás
+ proponiendo ahora
+ de este modelo
+ de fondeo
+ aplicaría con esto mismo
+ o es desarrollar
+ otros modelos
+ para pasar
+ esa cuenta
+ de fondeo
+ pero igual
+ esto seguiría
+ andando
+ o sea
+ serían dos mundos
+ andando en paralelo
+ o en algún
+ momentico
+ se cruzan
+ esa es la duda
+ que me queda
+ con lo que estás
+ comentando hoy
+ Vale
+ los mundos
+ te refieres
+ evaluaciones de fondeo
+ y lo que estás aprendiendo
+ en el programa de mentoría
+ correcto
+ esto es únicamente
+ para pasar evaluaciones
+ de fondeo
+ únicamente
+ y lo que estás
+ tú aprendiendo
+ en el programa de mentoría
+ es para poner los sistemas
+ en cuentas
+ ya fondeadas
+ o bien
+ en cualquier
+ otro tipo de cuenta
+ que no sea una cuenta
+ de fondeo
+ ya sea una cuenta
+ de capital propia
+ ya sea una cuenta
+ en darwin
+ para crear tu tas récord
+ lo que sea que necesites
+ tener una consistencia
+ en los resultados
+ en evaluaciones
+ no necesitas tener consistencia
+ en evaluaciones
+ necesitas hacer un 7%
+ y punto
+ me queda claro
+ perfecto
+ muchas gracias
+ esa era
+ vale
+ de nada
+ Gonzalo
+ hola Ramón
+ mira
+ se me oye bien
+ ¿no?
+ sí
+ mira
+ bueno
+ mi pregunta es simple
+ no me he metido
+ mucho de lleno
+ con algo wizard
+ pero
+ ¿por qué se hacen
+ las estrategias
+ en algo wizard
+ y no se pueden crear
+ con un builder
+ por ejemplo?
+ las ventajas
+ y eso
+ porque
+ vas a dedicar
+ más tiempo
+ vale
+ para hacerlo
+ lo más simple posible
+ porque al final
+ el resultado
+ va a ser similar
+ vale
+ perfecto
+ gracias
+ voy a seguir
+ un poco
+ ahora el chat
+ por aquí dice
+ la edición abierta
+ puede tener acceso
+ a esta mentoría
+ sí
+ ahora
+ la última edición
+ que la primera vez
+ estáis aquí
+ os vamos a habilitar
+ a partir de mañana
+ todas las mentorías
+ mensuales
+ que hemos hecho
+ hasta la fecha
+ vale
+ por tanto
+ lo podéis ver todo
+ y es verdad
+ una de las cosas
+ también para el chico
+ de antes
+ de Estados Unidos
+ hay muchas de ellas
+ que te permiten
+ pagar con criptomonedas
+ y ahí sí que ya
+ no te piden
+ o sea
+ una verificación
+ de la cuenta bancaria
+ de este estilo
+ Ramón
+ buenas tardes
+ tienes un custom
+ project actualizado
+ de donde tiene
+ el último
+ donde está guardado
+ donde lo encuentro
+ aquí no hay custom projects
+ para esto
+ que he explicado
+ hoy
+ no sé
+ si te referías
+ a esto
+ el criptopunk
+ oficial
+ un poco bajo
+ hola
+ ahora sí
+ perdón
+ qué tal Ramón
+ un placer
+ un placer
+ a todos
+ un saludo
+ voy a hacer
+ una pregunta
+ de novato
+ en este tema
+ pregunto
+ porque
+ veo que has invertido
+ tiempo y dinero
+ en cuentas de fondeo
+ en pasar exámenes
+ y digo yo
+ sabiendo las reglas
+ de cada broker
+ o de cada cuenta
+ de fondeo
+ por así decirlo
+ seguro que me van a matar
+ con esta pregunta
+ pero
+ no hombre
+ mejor que pregunte
+ que no se pregunte
+ pero por qué no
+ hacerlo en cuentas demo
+ digo yo
+ para qué estar pagando
+ si primero podemos
+ testear en una cuenta demo
+ ver qué pasa
+ en diferentes situaciones
+ y una vez que vemos
+ que hay alta probabilidad
+ de pasar
+ esas reglas
+ o esas normas
+ pues se pone a trabajar
+ a ver qué tal
+ pasa
+ digo yo
+ para no gastar dinero
+ en exámenes
+ lo primero que hicimos
+ es abrirnos una cuenta demo
+ en Eftimo
+ que permitía
+ cuentas demo
+ y de hecho
+ esta la pasamos
+ ¿qué pasa en entornos demos?
+ que
+ primero de todo
+ hay muchas reglas
+ o sea
+ todo el mundo conoce
+ las reglas del fondeo
+ que es
+ drawdown diario
+ drawdown máximo
+ máximo de trade
+ porcentaje
+ lo típico
+ pero lo que no
+ lo que no conocemos
+ es
+ ideas de trade
+ cosas reglas
+ más secundarias
+ que te saltan
+ o te vienen con una
+ o te van
+ o las vas aprendiendo
+ a medida que vas utilizando
+ esa empresa de fondeo
+ esto en demo
+ no lo conoces
+ y segundo
+ en demo tampoco
+ conoces el broker
+ donde tú vas a hacer
+ el trading ahí
+ bueno por tanto
+ nosotros en demo
+ vimos que el funcionamiento
+ funcionaba bien
+ pero sinceramente
+ yo ya reservé
+ un capital
+ obviamente
+ lo hacemos
+ con cuentas bajas
+ no lo hacemos
+ con cuentas de 100.000
+ pero
+ no no
+ pero
+ entiendo
+ el concepto
+ o sea
+ por supuesto
+ mejor probar
+ sobre el terreno
+ que andar
+ inventando
+ un pavimento
+ pero
+ lo digo
+ como primera fase
+ de decir
+ bueno
+ primero veo
+ que más o menos
+ funciona
+ dentro de una cuenta
+ normal
+ yo mismo
+ voy monitoreando
+ las normas
+ que me autoimpongo
+ que fueron las
+ de una cuenta
+ de fondeo
+ y a partir de ahí
+ filtrando
+ las estrategias
+ que sean
+ digo bueno
+ las meto a trabajar
+ y lo que tú dices
+ pagando
+ un mínimo coste
+ producto mínimo viable
+ ¿sabes?
+ yo hay dos motivos
+ uno al que te he explicado
+ que es la regla
+ que también dice
+ tema de las noticias
+ también es otro tema
+ que tal
+ de las noticias
+ uno es para probar
+ ya en el terreno
+ que realmente
+ vamos a jugar
+ de verdad
+ y el punto número dos
+ es por tiempo
+ si yo me pongo
+ unos meses
+ a trabajar
+ en cuentas demo
+ luego
+ es decir
+ es tiempo que pierdo
+ para daros
+ la información
+ ya no solo a vosotros
+ primero de todo
+ para yo saber
+ la respuesta
+ claro
+ al final
+ es coste de oportunidad
+ si tengo el capital
+ de permitir
+ entrar antes
+ y hacer la prueba
+ pues dedicar
+ 3.000 euros
+ a comprar cuentas
+ con cuentas
+ de 15.000
+ 20.000
+ 10.000
+ ahora estamos con 10.000
+ pues decidí
+ hacer esa inversión
+ obtener los resultados
+ en medio año
+ un poco menos
+ si no hubiera estado más
+ es totalmente
+ es una pregunta
+ perfecta
+ o sea
+ ni nada
+ bien ti nada
+ bueno
+ gracias por
+ era más o menos
+ me imaginaba tu respuesta
+ pero
+ pero bueno
+ nada
+ mi caso
+ es como
+ bueno
+ primero por lo menos
+ ver cómo se funciona
+ algo
+ y luego
+ ya
+ totalmente
+ se tiene que hacer así
+ se tiene que hacer así
+ vale
+ gracias
+ un placer
+ igualmente
+ Luis Enrique
+ ¿qué tal Ramón?
+ mira
+ te quería preguntar
+ una cosa
+ porque
+ te he dicho
+ el tema de los trades
+ porque yo he podido
+ crear robots
+ de 5 minutos
+ que arriesgan
+ un 1%
+ y ganan 3
+ ¿vale?
+ pero el único problema
+ que estoy teniendo
+ es que no tengo
+ muchos trades
+ entonces no sé
+ si es que tú tienes
+ un KPI
+ diferente al que
+ nos ha dado
+ como el número
+ de trades
+ que estás utilizando
+ para que te abran
+ diariamente
+ o es el mismo KPI
+ que nos ha estado
+ enseñando en la
+ formación
+ ¿cómo las estás creando?
+ esta de 5 minutos
+ con el Builder ¿no?
+ por eso es lo que he comentado
+ hazlo con el Algo Wizard
+ saca tú una estrategia
+ invéntate una estrategia
+ por internet
+ pero es que te lo puedo decir
+ un cruce de media
+ entre la media 5
+ y la de 10 periodos
+ a 5 minutos
+ te va a generar
+ mínimo un treto
+ y no podría utilizar
+ esa misma que tengo
+ de la que he creado
+ y poner en el Algo Wizard
+ ya pero
+ bueno pues
+ claro
+ es que a ver
+ el trading rentable
+ no es el trading
+ que opera cada día
+ y eso lo vais viendo
+ poco a poco
+ a medida que vais aprendiendo más
+ operar cada día
+ la obsesión
+ de operar cada día
+ es fundir el dinero
+ por tanto
+ las estrategias
+ no abren trades
+ cada día
+ las estrategias
+ buenas de verdad
+ ¿por qué?
+ porque no cada día
+ el viento sopla
+ a tu favor
+ como debería
+ o no cada día
+ la estrategia
+ se da la señal
+ aunque sea 5 minutos
+ o 15
+ lo que sea
+ nosotros aquí
+ forzamos
+ queremos que hayan trades
+ cada día
+ pero no porque
+ la estrategia
+ sea rentable
+ sino para que
+ la estadística
+ de una cuenta
+ una a otra
+ llegue a take profit
+ a los 7%
+ tanto
+ tu afán
+ de ir
+ a
+ pasar una estrategia
+ que
+ presuntamente
+ es rentable
+ es para ganar dinero
+ a largo plazo
+ pasarla
+ a este marco
+ donde necesitamos
+ prisa
+ no tiene cabida
+ aunque sea
+ en 5 minutos
+ bueno
+ si tú mismo
+ me estás diciendo
+ que las que están saliendo
+ no abren cada día
+ pues
+ para mí
+ para mi punto de ver
+ el tema de las evaluaciones
+ de fondeo
+ que es
+ rápido
+ no tiene cabida
+ en mi visión
+ en tu visión
+ puede que sí
+ tú puedes
+ pasarla
+ a la wizard
+ puede
+ poder hacerlo
+ puedes
+ lo que pasa
+ es que si me dices
+ que te abre un trade
+ cada 4 días
+ pues a lo mejor
+ estarás
+ un mes y medio
+ en pasar una evaluación
+ vale
+ vale
+ perfecto
+ como ya has dicho
+ que abriera
+ o sea
+ prácticamente
+ un trade por día
+ pues
+ pensé que tenías
+ algún KPI
+ o estabas
+ poniendo
+ algún tipo
+ de número
+ de trade
+ al año
+ o como pones
+ del 2023
+ no sé
+ o algo así
+ al 2025
+ entonces le añade
+ un número específico
+ de trade
+ para que te abra
+ sea un día
+ o sea caso
+ la estrategia
+ es que ponemos
+ la bobizar
+ si no capásemos
+ a lo mejor
+ te abrirían
+ 23 al día
+ pero que al menos
+ sé que al menos
+ uno te lo abre
+ perfecto
+ gracias Ramón
+ a ti
+ vale
+ leo chance
+ una vez
+ paso la cuenta
+ de fondeo
+ que este
+ te dije
+ usas
+ sí
+ lo que estamos
+ platicando
+ en la mentoría
+ sí
+ tal cual es
+ las fondeadas
+ Ramón
+ a grandes rasgos
+ que activos
+ trabajaste
+ en las distintas etapas
+ forex
+ forex
+ porque en cuentas
+ de fondeo
+ operar oro
+ operar
+ sobre todo índices
+ operar índices
+ es carísimo
+ los swaps
+ sobre todo
+ aunque no íbamos
+ con swaps
+ es verdad
+ bueno Iván
+ corrígeme
+ creo que oro también
+ no sé si van a estar
+ por aquí ya o no
+ forex principalmente
+ sí
+ sí
+ en la fase 3
+ solo euro dólar
+ o sea
+ solo un activo
+ antes sí que poníamos oro
+ incluso
+ incluso
+ thousands
+ pero bueno
+ una mezcla de todo
+ es verdad
+ en fase 3
+ como que solo
+ hace falta
+ para dar un activo
+ el que tú
+ solo euro dólar
+ sí
+ Ramón
+ de todas las cuentas
+ fondeadas
+ que tienes operativas
+ cuál es la puntada
+ de número
+ que tienes
+ que tienes
+ de las que conseguiste
+ operar de manual
+ de las que
+ logrado con robots
+ no no
+ yo hasta que no tengo
+ la metodología probada
+ que le estaba haciendo
+ con Iván
+ yo lo hago manual
+ todo lo que tengo
+ de hecho
+ mías propias
+ desde agosto
+ que no paso ninguna
+ ni tampoco compro ninguna
+ con las que tengo
+ ya me vale
+ ahora mismo tengo dos
+ tengo una tocadísima
+ o sea
+ tengo tres
+ una tocada
+ dos tengo
+ ahora mismo
+ tirando bien
+ y desde agosto
+ que no compré
+ fue la última que compré
+ mía personal de siempre
+ todo lo que he comprado
+ a partir de agosto
+ ha sido para el experimento
+ y la verdad
+ no he podido comprar
+ para mí
+ porque ya tenía
+ evaluaciones compradas
+ para experimentos
+ ¿sabes?
+ y no quería operar
+ los mismos activos
+ bueno
+ un poco liada
+ también estaba conforme
+ también estaba muy conforme
+ con las dos que tengo
+ me ha ido muy bien
+ Axislet estos últimos meses
+ no me ha surgido
+ la necesidad
+ de querer comprarme más
+ pero ahora
+ cuando tengamos algo claro
+ aquí
+ saquemos algo claro
+ en la etapa 3
+ espero que sí
+ ahora ya sí
+ ya sí que
+ sacaré más
+ para mi nombre
+ claro
+ el cumpleaños
+ de la monica
+ testa
+ genial
+ gracias
+ me has preguntado algo
+ que no he entendido bien
+ no
+ pendejo
+ no
+ que me has respondido
+ a la
+ ah vale
+ vale
+ vale
+ para ti
+ quieres rápido
+ pasar el test
+ de fondeo
+ mira
+ pues
+ una fase
+ digo
+ pues una fase
+ me gustaría pasarla
+ en menos de 10 días
+ en menos de 2 semanas
+ a menos eso
+ bastante menos
+ cuando les tomo pasar
+ la evaluación
+ en la fase 3
+ hemos empezado
+ ya
+ hace poco
+ hace poco
+ o sea
+ esto ya
+ en la fase 3
+ os diré más
+ más información
+ en las próximas mentorías
+ no en la próxima
+ pero a lo mejor
+ dentro de dos
+ cuando hace una
+ estrategia
+ al wizard
+ le hace un backtest
+ que tienes en cuenta
+ es que el backtest
+ no me va a decir nada
+ básicamente
+ asegurarme
+ de que hayan trades
+ que hayan al mínimo
+ un trade por día
+ eso es lo mínimo
+ eso es lo único
+ no sé si tú
+ Iván
+ comprobar algo más
+ pero
+ eso es lo único
+ que buscamos
+ no no
+ que haga muchos
+ trades
+ o sea
+ sí
+ de hecho
+ no comprobo nada
+ solo hice una estrategia
+ muy al azar
+ o sea
+ cuando rompe
+ el máximo
+ de las últimas
+ 5 velas
+ compro
+ y cuando rompe
+ el mínimo
+ vendo
+ y ya está
+ o sea
+ pero sí que la corrí
+ para ver que
+ en un año
+ igual me hacía
+ 700
+ 800 trades
+ o sea
+ el interés
+ acabará bastantos
+ cada día
+ puedo operar
+ aperturas de Wall Street
+ por ejemplo
+ estoy campeón también
+ la putada de esto
+ primero de todo
+ que hay mucho
+ slippage
+ a esas horas
+ te puede coincidir
+ con noticias
+ o no
+ yo lo evitaría
+ ¿para qué?
+ si el objetivo
+ no es tener una estrategia rentable
+ ¿cuántos robots
+ soléis poner
+ más o menos
+ por cuenta fondeo?
+ uno
+ ahora
+ digo en evaluación
+ estamos hablando
+ de evaluación
+ de la mentoría
+ de hoy
+ en vez de cruce de media
+ usar los citadores activos
+ lo que tú quieras
+ lo que tú quieras
+ vale
+ Dante
+ aquí nos levanta la mano
+ hola a todos
+ ¿qué tal?
+ buenas tardes
+ yo quería hacer una pregunta
+ con respecto
+ a
+ nosotros siempre hablamos
+ de estrategias
+ y
+ yo quería saber
+ si hay algún estudio
+ con respecto
+ al mercado
+ a los datos
+ ¿a qué me refiero con esto?
+ ¿qué posibilidad habría
+ de conocer
+ al que tengo enfrente
+ que serían los datos
+ que tengo
+ para decir
+ che
+ con esta caracterización
+ de mercado
+ la estrategia
+ que mejor se acomoda
+ sería esta
+ o esta o aquella
+ hacia el futuro
+ ¿hay algún estudio
+ de esto
+ o no?
+ ya sé que lo tocamos
+ pero no sé
+ si tan directamente
+ no sé si me explico
+ bien en la pregunta
+ sí
+ pero lo que no entiendo
+ es
+ ¿qué tiene que ver eso
+ con el material de hoy?
+ no, no
+ es una pregunta
+ es una pregunta aparte
+ no es con el material de hoy
+ vale
+ te lo voy a responder corto
+ porque realmente
+ no es materia de hoy
+ el Strategic One
+ cuando tú por ejemplo
+ crear estrategias tendenciales
+ ya por defecto
+ generalmente
+ siempre te van a sacar
+ perdona
+ activos tendenciales
+ ya automáticamente
+ o por lo general
+ te van a sacar
+ estrategias de breakouts
+ o continuación de tendencia
+ nosotros manualmente
+ no hacemos ningún estudio
+ no es necesario
+ creo que no es necesario
+ ese tiempo
+ con los resultados
+ que estamos teniendo
+ no, no
+ está muy bien
+ al final es ser prácticos
+ muchas gracias
+ sigo un momento en el chat
+ ahora bueno
+ habéis probado
+ la F óptima
+ diluida al 10%
+ no sé qué significa eso
+ si me lo puedes traducir
+ un poco en lenguaje
+ mal entendible
+ Ángel
+ no entiende ese concepto
+ Ramón
+ mira
+ sí bueno
+ yo he seguido
+ hace ya mucho tiempo
+ a un creador
+ de sistemas automáticos
+ y demás
+ y bueno
+ implementó
+ lo que es la F óptima
+ que es una forma
+ de generar
+ más rentabilidad
+ la F óptima
+ pura por así decirlo
+ es bastante agresiva
+ pero claro
+ diluida al 10%
+ digamos que ese 10%
+ cuando
+ es que
+ es como decir
+ se acierto
+ ha puesto
+ ese 10%
+ a tope
+ con la F óptima
+ y siempre preservo
+ ese 90%
+ de capital
+ cuando pierdo
+ solamente pierdo
+ digamos ese 10%
+ entonces estoy preservando
+ capital
+ es una forma
+ de decir
+ oye
+ aumentar también
+ las posibilidades
+ de ser más rentable
+ no sé
+ si nunca las he escuchado
+ es que de hecho
+ también
+ en lo que habíais
+ en lo que habíais
+ puesto vosotros
+ por ahí
+ de eso
+ también venía la F óptima
+ que es la F de Kelly
+ ¿no?
+ o el sistema de Kelly
+ no sé
+ no te puedo contestar
+ Ángel
+ porque
+ no estoy complicando mucho
+ sí
+ yo al final
+ soy un chico
+ ya se me escapan
+ muchos conceptos
+ estadísticos
+ más avanzadores
+ lo que sea
+ pero yo al final
+ algo que tengo claro
+ es que
+ no me pienso
+ enredar por las ramas
+ si sé que algo
+ si puedo simplificar algo
+ y obtener
+ casi los mismos resultados
+ prefiero
+ hacer cosas simples
+ porque eso es más llevadero
+ a lo largo del tiempo
+ ¿qué es lo que me ha pasado
+ ahora aquí?
+ lo hemos complicado tanto
+ que al final
+ hemos llegado
+ a un momento
+ en el cual hemos reducido
+ el pase de evaluaciones
+ de fondeo
+ porque
+ tanto esfuerzo
+ y tantas cosas avanzan
+ y tanto tal
+ para un posible 0,1
+ yo soy un poco así
+ soy un poco reduccionista
+ de esta forma
+ lo mismo simplificando
+ se llega más lejos
+ quizás
+ o igual
+ o un pasito menos
+ da igual
+ ya pero ahorras tiempo
+ claro
+ vale gracias
+ a ti
+ Raúl
+ ¿por qué pasar
+ con problemas de fondeo
+ cuando puedes comprar cuentas
+ que no tienen fase de evaluación?
+ porque
+ te lo ha contestado Andrés
+ el Drodon
+ es demasiado ajustado
+ no vas a sacar
+ mucho dinero de ahí
+ al final queremos algo
+ relativamente holgado
+ para que podamos luego
+ sacar dinero
+ bueno en la fondeada
+ no entiendo muy bien
+ como si
+ os da igual
+ la estrategia es rentable o no
+ podéis estar seguros
+ de que con ella
+ vais a pasar la prueba
+ mírate Oscar
+ una mentoría mensual
+ en la cual explico
+ mi plan para pasar
+ evaluaciones de fondeo
+ que es como lo hacía yo
+ manualmente
+ bueno y lo sigo haciendo ahora
+ ahí explico
+ probabilidades
+ y el por qué
+ estadísticamente
+ sin tener una estrategia rentable
+ puedes pasarte
+ evaluaciones de fondeo
+ tienes que entender eso
+ una sesión solo de ello
+ ¿podríamos ayudar
+ o colaborar a tener en cuenta
+ según vuestra visión?
+ o sea
+ ¿cuál sería el mejor escenario
+ objetivo a buscar?
+ el escenario objetivo
+ a buscar
+ es pasarte
+ una de cada tres
+ una de cada tres
+ evaluaciones
+ evaluaciones
+ no
+ estar fondeado
+ no pasarte fases
+ pasar las dos fases
+ y en cada fase
+ como muy máximo
+ tirarte
+ siete días hábiles
+ eso es el escenario ideal
+ y tener un ratio
+ del
+ 33% superior
+ no digo de fase 1
+ a fase 2
+ digo de fase 1
+ a estar fondeando
+ directamente
+ eso es el escenario ideal
+ las que no tienen fase
+ de evaluación
+ por lo que no te permiten
+ Arturo
+ venga
+ vamos con las últimas
+ preguntas
+ si no lo voy a hacer
+ muy tarde aquí
+ si no
+ ¿Arturo?
+ no te oí
+ creo que no te oímos
+ bueno Arturo
+ no te oímos
+ te tengo que pasar
+ perdón
+ ya me escuchas
+ ahora sí
+ discúlpame
+ tuve que cambiar
+ de micrófono
+ bueno
+ la pregunta
+ viene con respecto
+ a la última
+ mentoría
+ del custom project
+ que nosotros
+ cargamos
+ toda la configuración
+ pues de
+ de Ramón
+ y la H
+ yo lo hice
+ con la R de Ramón
+ y
+ mi pregunta es
+ en los resultados
+ en lo último
+ de ese final
+ y de MQ4
+ salen diferentes
+ entonces digamos
+ una estrategia
+ de ese final
+ me sale
+ positiva
+ y en el
+ MQ4
+ sale
+ como si la estrategia
+ no fuera
+ rentable
+ no sé
+ si hay algo
+ malo ahí
+ o
+ no
+ Arturo
+ me sabe mal
+ cortarte
+ pero
+ mejor
+ lánzalo
+ en tu grupo
+ esto
+ porque
+ no es tema
+ de hoy
+ ahora mismo
+ me ha empezado
+ a decir cosas
+ que ya me he perdido
+ un poco
+ mejor
+ lánzalo
+ con pantallazos
+ en tu grupo
+ de Discord
+ y te asistirán
+ ahí
+ aunque sí
+ sino que ya
+ te lo preguntaba
+ así rápidamente
+ porque
+ ya lo había
+ preguntado
+ en el grupo
+ pero pues
+ todavía no
+ he conseguido
+ como una respuesta
+ entonces pues
+ no sé
+ por eso
+ te lo preguntaba
+ es que no te puedo
+ así a bote pronto
+ no te sabría
+ dar una respuesta
+ o sea
+ tendría que ver
+ más detalladamente
+ esa
+ por eso
+ vuelvo a hacer énfasis
+ vuelvo a reformarlo
+ de otra manera
+ o si hay alguna respuesta
+ que no te ha
+ no te ha encajado
+ decirle
+ oye esta respuesta
+ no me ha encajado
+ o no lo he terminado
+ de ver
+ porque
+ liso
+ muchas gracias
+ Ramón
+ vale
+ y lo siento
+ Arturo
+ podría repetir
+ las empresas
+ que estoy utilizando
+ hoy
+ The Trading Pit
+ The Five First
+ Funded Nets
+ y Wall Street Funded
+ proyectos de
+ 2026
+ seguir como
+ el último semestre
+ 2025
+ ya los iré
+ ya los iré diciendo
+ tengo que marchar
+ un saludo
+ vale
+ mira José Carlos
+ dice menciona ley
+ te echará un
+ un cable
+ vale Arturo
+ creo que hemos terminado
+ todas las preguntas
+ había un tema
+ que había dejado
+ como tema secundario
+ que siempre tengo
+ que es
+ una de copy trading
+ mirad
+ la de copy trading
+ como que aún no está lanzado
+ es decir
+ os diré un poco
+ la idea que tengo
+ en
+ en SymbolStats
+ es crear
+ un
+ a ver un momento
+ es crear un apartado
+ donde podamos subir
+ Expert Advisor
+ vale
+ nosotros ya tenemos
+ unos cuantos
+ tenemos un Expert Advisor
+ que te evita noticias
+ tenemos un Expert Advisor
+ que
+ que
+ que
+ que
+ que
+ que
+ que esto no hemos subido
+ aún para vosotros
+ algunos también
+ que tenemos
+ recopilados
+ que hemos recopilado
+ a lo largo de estos tiempos
+ ya sea por internet
+ y que lo hayamos pasado
+ por nuestra supervisión
+ o incluso hechos
+ por alumnos nuestros
+ que a día de hoy
+ pues están en
+ en un canal
+ de desarrolladores
+ que muy poca gente
+ entra
+ porque es verdad
+ que se hablan
+ de cosas muy avanzadas
+ pues me gustaría
+ como estanderezarlos
+ para que todo el mundo
+ los pueda utilizar
+ hay un repositorio común
+ de Expert Advisor
+ y
+ y
+ y lo tengas ahí
+ en SymbolStat
+ para que los pague descargado
+ vale
+ ahora recientemente
+ hemos desarrollado
+ uno de copy trading
+ para poder replicar
+ trades
+ independientemente
+ lo que haga la segunda cuenta
+ la primera la que manda
+ se abre un trade
+ en la otra se abre también
+ vale
+ que a veces a lo mejor
+ pues por indicadores
+ o por datos
+ no se ejecuta ese segundo trade
+ e incurrimos en que no podemos
+ hacer la inversa
+ os quería hacer una demo
+ pero realmente
+ os lo haré en otro momento
+ cuando tengamos
+ en otra mentoria mensual
+ pero básicamente
+ os quería enseñar
+ como en un MetaTrader
+ abrir una operación
+ y se abre la otra
+ automáticamente
+ nada más
+ no hay mucho más truco
+ ahí detrás
+ vale
+ pero lo tenía ahí
+ como enseñarlos
+ como tutorial
+ por si
+ quedábamos cortos
+ de tiempo
+ en la mentoria mensual
+ pero
+ llevamos una hora y media
+ creo que la gente
+ que estamos en España
+ pues
+ muchos de vosotros
+ queréis ir a cenar ya
+ así que
+ así que nada
+ esto lo dejaremos
+ cuando lo tengamos desarrollado
+ en esa pantalla
+ ya os la presentaré
+ con todos los expert advisors
+ pero que sepáis
+ que estamos en ello
+ vale
+ y nada
+ ir mejorando poco a poco
+ ya sabéis que siempre
+ intento venir con cosas nuevas
+ o con avances de cosas
+ que de proyectos
+ un poco más
+ más largos
+ tengo
+ me han preguntado
+ tengo en la cabeza
+ varios proyectos
+ varias movidas
+ que me quiero meter
+ nuevas en 2026
+ ya os lo iré contando
+ vale
+ porque a lo mejor
+ deciré algunas que no
+ siempre al final
+ es también un poco
+ dar
+ centrar el foco
+ en lo que realmente sabes
+ que le podrás dedicar
+ un tiempo de calidad
+ y nada
+ antes de irnos
+ pues
+ desearos
+ un feliz año 2026
+ los que llevéis
+ haciendo trading
+ este año 2025
+ pues quedan
+ dos días de trading
+ que os vaya muy bien
+ a mí me ha ido muy mal
+ los últimos dos tres días
+ no muy mal no
+ pero me he comido
+ unos stop-loss
+ que dices tú
+ siempre dices tú
+ joder
+ para qué los tengo
+ para qué los tengo abiertos
+ y yo mismo me respondo
+ y dices
+ Ramón tío
+ has trabajado sistemas
+ con una estrategia
+ que incluye
+ todos los días
+ del año hábiles
+ no tienes ningún motivo
+ de por qué desconectar
+ los sistemas
+ y esto
+ también os lo digo
+ a todos vosotros
+ no desconectes los sistemas
+ salvo que sean
+ un objetivo cortoplacista
+ tipo
+ en HCL
+ quiero pasar la fase
+ de un 7%
+ llego a un 7%
+ corta
+ corta
+ porque no necesitas
+ operar más
+ pero en Darwinets
+ en HCL
+ yo ya que estoy en un millón
+ que ahí ya no hay límite
+ o en otros sitios
+ pues con cuentas ya fondeadas
+ pues dices
+ no lo desconectéis nunca
+ porque a largo plazo
+ siempre van a salir
+ beneficiosos
+ sin cortarlo
+ ¿vale?
+ así que nada
+ muchas felicitaciones
+ veo en el chat
+ de verdad
+ pasadlo bien
+ estos
+ este final de año
+ principio de año
+ no os emborrachéis mucho
+ lo justo
+ y
+ y nada
+ que paséis un tiempo de calidad
+ que al final es lo que todo el mundo
+ está buscando
+ tener más tiempo de calidad
+ con los vuestros
+ y con
+ vuestros familiares
+ amigos
+ y familia cercana
+ así que feliz año
+ mucho éxito en 2026
+ que
+ que tengáis más retiros
+ y
+ y la rentabilidad
+ al menos sea
+ para los que no habéis tenido
+ un positivo
+ que sean positivo
+ y para los que tenéis un positivo
+ pues
+ que sigáis siendo positivos
+ da igual
+ si en el que viene
+ marcáis
+ un profit menor al de este año
+ o similar
+ realmente si vais marcando
+ange tras año
+ profit
+ profit en verde
+ pues eso que suma
+ para vuestro currículum
+ ¿vale?
+ igualmente Ramón
+ venga felices fiestas
+ y
+ y profit
+ ¿no?
+ y buenos profit
+ chao igualmente
+ chao a todos
+ chao
+ gracias Ramón
+ feliz año
+ muchísimas gracias
+ feliz año
+ feliz año
+ feliz año
+ feliz año a todos

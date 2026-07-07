@@ -1,0 +1,10 @@
+# Copiar a: C:\Users\TU_USUARIO\.cloudflared\config.yml
+# Sustituir TUNNEL_ID y lab-api.tudominio.com
+
+tunnel: TUNNEL_ID
+credentials-file: C:\Users\TU_USUARIO\.cloudflared\TUNNEL_ID.json
+
+ingress:
+  - hostname: lab-api.tudominio.com
+    service: http://127.0.0.1:8000
+  - service: http_status:404

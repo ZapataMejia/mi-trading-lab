@@ -1,0 +1,168 @@
+{
+  "config": {
+    "lookback_bars": 36,
+    "equal_tolerance_pips": 3.0,
+    "sess_start": 700,
+    "sess_end": 1400,
+    "risk_pct": 1.5,
+    "tp_ratio": 1.5,
+    "sl_buffer_pips": 3.0,
+    "max_trades_per_day": 1,
+    "initial_balance": 5000.0,
+    "mm_risk_pct": 1.5,
+    "broker_utc_offset_hours": 7,
+    "pip_size": 0.0001,
+    "allow_long": true,
+    "allow_short": true,
+    "equity_sample_bars": 12
+  },
+  "data_range": [
+    "2003-05-05",
+    "2026-07-01"
+  ],
+  "periods": {
+    "2017-2022 lab": {
+      "window_30d": {
+        "label": "30d",
+        "attempts": 31,
+        "passed": 8,
+        "pass_rate_pct": 25.8,
+        "median_days_to_meta": 15,
+        "p75_days_to_meta": 20,
+        "min_days": 5,
+        "max_days": 25,
+        "pct_pass_reach_meta_within_window": 100.0,
+        "expected_attempts_to_pass_once": 3.88
+      },
+      "window_60d": {
+        "label": "60d",
+        "attempts": 20,
+        "passed": 10,
+        "pass_rate_pct": 50.0,
+        "median_days_to_meta": 41,
+        "p75_days_to_meta": 50,
+        "min_days": 5,
+        "max_days": 57,
+        "pct_pass_reach_meta_within_window": 50.0,
+        "expected_attempts_to_pass_once": 2.0
+      },
+      "window_90d": {
+        "label": "90d",
+        "attempts": 20,
+        "passed": 6,
+        "pass_rate_pct": 30.0,
+        "median_days_to_meta": 48,
+        "p75_days_to_meta": 50,
+        "min_days": 5,
+        "max_days": 57,
+        "pct_pass_reach_meta_within_window": 33.3,
+        "expected_attempts_to_pass_once": 3.33
+      },
+      "full_period": {
+        "pass": false,
+        "days_to_meta": 385,
+        "static_dd": -20.11,
+        "daily_dd": 2.63,
+        "trades": 1351
+      }
+    },
+    "2022-2024 OOS": {
+      "window_30d": {
+        "label": "30d",
+        "attempts": 17,
+        "passed": 7,
+        "pass_rate_pct": 41.2,
+        "median_days_to_meta": 9,
+        "p75_days_to_meta": 23,
+        "min_days": 7,
+        "max_days": 28,
+        "pct_pass_reach_meta_within_window": 100.0,
+        "expected_attempts_to_pass_once": 2.43
+      },
+      "window_60d": {
+        "label": "60d",
+        "attempts": 12,
+        "passed": 5,
+        "pass_rate_pct": 41.7,
+        "median_days_to_meta": 23,
+        "p75_days_to_meta": 28,
+        "min_days": 7,
+        "max_days": 35,
+        "pct_pass_reach_meta_within_window": 80.0,
+        "expected_attempts_to_pass_once": 2.4
+      },
+      "window_90d": {
+        "label": "90d",
+        "attempts": 12,
+        "passed": 4,
+        "pass_rate_pct": 33.3,
+        "median_days_to_meta": 35,
+        "p75_days_to_meta": 88,
+        "min_days": 23,
+        "max_days": 88,
+        "pct_pass_reach_meta_within_window": 50.0,
+        "expected_attempts_to_pass_once": 3.0
+      },
+      "full_period": {
+        "pass": true,
+        "days_to_meta": 23,
+        "static_dd": -1.64,
+        "daily_dd": 1.98,
+        "trades": 735
+      }
+    },
+    "2017-2024 full": {
+      "window_30d": {
+        "label": "30d",
+        "attempts": 47,
+        "passed": 14,
+        "pass_rate_pct": 29.8,
+        "median_days_to_meta": 15,
+        "p75_days_to_meta": 18,
+        "min_days": 5,
+        "max_days": 25,
+        "pct_pass_reach_meta_within_window": 100.0,
+        "expected_attempts_to_pass_once": 3.36
+      },
+      "window_60d": {
+        "label": "60d",
+        "attempts": 31,
+        "passed": 14,
+        "pass_rate_pct": 45.2,
+        "median_days_to_meta": 28,
+        "p75_days_to_meta": 48,
+        "min_days": 5,
+        "max_days": 57,
+        "pct_pass_reach_meta_within_window": 57.1,
+        "expected_attempts_to_pass_once": 2.21
+      },
+      "window_90d": {
+        "label": "90d",
+        "attempts": 31,
+        "passed": 10,
+        "pass_rate_pct": 32.3,
+        "median_days_to_meta": 41,
+        "p75_days_to_meta": 50,
+        "min_days": 5,
+        "max_days": 88,
+        "pct_pass_reach_meta_within_window": 40.0,
+        "expected_attempts_to_pass_once": 3.1
+      },
+      "full_period": {
+        "pass": false,
+        "days_to_meta": 385,
+        "static_dd": -20.11,
+        "daily_dd": 2.63,
+        "trades": 2022
+      }
+    }
+  },
+  "user_projection": {
+    "pass_rate_30d_oos": 41.2,
+    "median_days_when_passes": 9,
+    "expected_monthly_attempts_to_pass": 2.43,
+    "prob_1_account_passes_first_try_pct": 41.2,
+    "prob_2_accounts_at_least_one_passes_pct": 65.4,
+    "realistic_timeline": "Cuando pasa: meta en ~9 d\u00edas (mediana). ~41.2% de ventanas 30d pasan \u2192 con 2 cuentas ~65.4% de lograr al menos 1 pass en el primer intento. Si falla, reintento mes 2-3."
+  }
+}

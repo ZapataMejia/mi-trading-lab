@@ -1,0 +1,34 @@
+{
+  "source": "eval_hunt_liq_sweep_oos.py \u2014 OOS 2022-2024",
+  "baseline": {
+    "lookback_bars": 36,
+    "sess_start": 700,
+    "sess_end": 1200,
+    "risk_pct": 2.0,
+    "tp_ratio": 1.5,
+    "w30_rate": 43.8,
+    "full_dd": null,
+    "full_daily_dd": null
+  },
+  "best": {
+    "lookback_bars": 36,
+    "sess_start": 700,
+    "sess_end": 1400,
+    "risk_pct": 1.5,
+    "tp_ratio": 1.5,
+    "sl_buffer_pips": 3.0,
+    "max_trades_per_day": 1,
+    "broker_utc_offset_hours": 7,
+    "w30_rate": 43.8,
+    "w30_pass": 7,
+    "w30_total": 16,
+    "w30_med": 9,
+    "full_dd": -1.64,
+    "full_daily_dd": 1.98,
+    "full_trades": 734,
+    "full_pass": true
+  },
+  "improved_vs_baseline_pp": 0.0,
+  "target_55pct_met": false,
+  "note": "OOS hunt \u00b7 daily DD \u22644.5% \u00b7 ventanas 30d cada 2 meses"
+}
