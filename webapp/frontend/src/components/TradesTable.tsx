@@ -32,9 +32,11 @@ function directionLabel(d: string, market: MarketType): { text: string; color: s
 export function TradesTable({
   trades,
   marketType = "polymarket",
+  priceDecimals,
 }: {
   trades: Trade[];
   marketType?: MarketType;
+  priceDecimals?: number;
 }) {
   const [limit, setLimit] = useState(25);
   const [statusFilter, setStatusFilter] = useState<StatusFilter>("all");
@@ -83,6 +85,7 @@ export function TradesTable({
 
   const shown = filtered.slice(0, limit);
   const isForex = marketType === "forex";
+  const decimals = priceDecimals ?? (isForex ? 5 : 3);
 
   return (
     <div className="space-y-3">
@@ -205,11 +208,11 @@ export function TradesTable({
                       </span>
                     </td>
                     <td className="py-2.5 pr-4 tabular-nums text-right" style={{ color: "var(--text-muted)" }}>
-                      {t.entry_price.toFixed(isForex ? 5 : 3)}
+                      {t.entry_price.toFixed(decimals)}
                     </td>
                     {isForex && (
                       <td className="py-2.5 pr-4 tabular-nums text-right" style={{ color: "var(--text-muted)" }}>
-                        {t.exit_price.toFixed(5)}
+                        {t.exit_price.toFixed(decimals)}
                       </td>
                     )}
                     {!isForex && (

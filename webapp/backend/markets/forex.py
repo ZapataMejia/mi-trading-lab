@@ -87,7 +87,25 @@ class ForexDataAdapter:
         "EURUSD": "EURUSD=X",
         "GBPUSD": "GBPUSD=X",
         "USDJPY": "USDJPY=X",
+        "NAS100": "NQ=F",
+        "US100": "NQ=F",
+        "NQ": "NQ=F",
     }
+
+    # Índices CFD — pip_size en puntos (no pips forex)
+    INDEX_SYMBOLS = frozenset({"NAS100", "US100", "NQ"})
+
+    @classmethod
+    def is_index(cls, symbol: str) -> bool:
+        return symbol.upper() in cls.INDEX_SYMBOLS
+
+    @classmethod
+    def default_pip_size(cls, symbol: str) -> float:
+        return 1.0 if cls.is_index(symbol) else 0.0001
+
+    @classmethod
+    def default_equal_tolerance(cls, symbol: str) -> float:
+        return 8.0 if cls.is_index(symbol) else 3.0
 
     @classmethod
     def _ts_index_path(cls, path: Path) -> Path:
@@ -261,10 +279,42 @@ class ForexDataAdapter:
             "cache_dir": str(CACHE_DIR),
             "cached_files": caches,
             "supported_symbols": list(cls.SYMBOL_MAP.keys()),
+            "index_symbols": sorted(cls.INDEX_SYMBOLS),
             "timeframes": ["M5"],
             "csv_format": "timestamp, open, high, low, close [, volume]",
-            "note": "Para historial largo (como Dukascopy en SQX), exporta CSV a data/forex_cache/EURUSD_M5.csv",
+            "note": "Forex: data/forex_cache/SYMBOL_M5.csv · NAS100/US100/NQ: sube CSV M5 o parquet en data/raw/nasdaq/",
         }
+
+    @classmethod
+    def _nasdaq_parquet_path(cls, symbol: str, timeframe: str) -> Path:
+        tf_map = {"M5": "5m", "M15": "15m", "H1": "1h", "M1": "1m"}
+        tf = tf_map.get(timeframe.upper(), timeframe.lower())
+        root = Path("data/raw/nasdaq")
+        for name in (symbol.upper(), "NQDK", "NQF", "NAS100"):
+            p = root / f"{name}_{tf}.parquet"
+            if p.is_file():
+                return p
+        return root / f"NAS100_{tf}.parquet"
+
+    @classmethod
+    def load_parquet_nasdaq(cls, path: Path) -> pd.DataFrame:
+        df = pd.read_parquet(path)
+        if isinstance(df.index, pd.DatetimeIndex):
+            df = df.reset_index()
+            if "index" in df.columns:
+                df = df.rename(columns={"index": "timestamp"})
+            elif "timestamp" not in df.columns:
+                df = df.rename(columns={df.columns[0]: "timestamp"})
+        return _normalize_ohlc(df)
+
+    @classmethod
+    def import_nasdaq_parquet(cls, symbol: str = "NAS100", timeframe: str = "M5") -> Path | None:
+        """Convierte parquet Dukascopy → CSV cache si existe."""
+        pq = cls._nasdaq_parquet_path(symbol, timeframe)
+        if not pq.is_file():
+            return None
+        df = cls.load_parquet_nasdaq(pq)
+        return cls.save_cache(df, symbol.upper() if symbol.upper() in cls.INDEX_SYMBOLS else "NAS100", timeframe)
 
     @classmethod
     def load_csv(cls, path: Path | str) -> pd.DataFrame:
@@ -354,6 +404,25 @@ class ForexDataAdapter:
             except Exception as exc:
                 logger.warning("Cache forex corrupto %s: %s", path, exc)
                 raise RuntimeError(f"Error leyendo {path}: {exc}") from exc
+
+        if df is None or df.empty:
+            if not path.exists():
+                cls.import_nasdaq_parquet(symbol, timeframe)
+            if path.exists():
+                try:
+                    if start and end:
+                        df = cls._load_csv_range(path, start, end)
+                    else:
+                        index = cls._ensure_ts_index(path)
+                        if index["rows"] > 80000:
+                            raise ValueError(
+                                f"CSV grande ({index['rows']:,} barras): indica period_start y period_end"
+                            )
+                        df = cls.load_csv(path)
+                    logger.info("Forex: cargado cache %s (%d barras)", path, len(df))
+                except Exception as exc:
+                    logger.warning("Cache forex corrupto %s: %s", path, exc)
+                    raise RuntimeError(f"Error leyendo {path}: {exc}") from exc
 
         if df is None or df.empty:
             if path.exists():

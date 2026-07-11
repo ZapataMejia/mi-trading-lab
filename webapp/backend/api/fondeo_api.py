@@ -2,11 +2,13 @@
 from __future__ import annotations
 
 import gc
+import io
 import itertools
 import json
 import logging
 import os
 import threading
+import csv
 from contextlib import contextmanager
 from pathlib import Path
 from typing import Any, Optional
@@ -14,6 +16,7 @@ from typing import Any, Optional
 import numpy as np
 import pandas as pd
 from fastapi import APIRouter, File, HTTPException, UploadFile
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field
 
 from webapp.backend.engine.fondeo_engine import FondeoConfig, run_fondeo_backtest
@@ -160,6 +163,8 @@ class LiquiditySweepRequest(BaseModel):
     atr_period: int = Field(14, ge=5, le=50)
     min_atr_pips: float = Field(0.0, ge=0, le=50)
     max_atr_pips: float = Field(0.0, ge=0, le=100)
+    pip_size: Optional[float] = Field(None, gt=0, description="Tamaño pip/punto; auto según símbolo si omites")
+    require_equal_levels: bool = False
 
 
 class LiquiditySweepMonthlyRequest(LiquiditySweepRequest):
@@ -195,6 +200,8 @@ def _to_config(req: FondeoBacktestRequest) -> FondeoConfig:
 
 
 def _to_liq_config(req: LiquiditySweepRequest) -> LiquiditySweepConfig:
+    sym = req.symbol.upper()
+    pip = req.pip_size if req.pip_size is not None else ForexDataAdapter.default_pip_size(sym)
     return LiquiditySweepConfig(
         lookback_bars=req.lookback_bars,
         equal_tolerance_pips=req.equal_tolerance_pips,
@@ -210,6 +217,7 @@ def _to_liq_config(req: LiquiditySweepRequest) -> LiquiditySweepConfig:
         allow_long=req.allow_long,
         allow_short=req.allow_short,
         equity_sample_bars=req.equity_sample_bars,
+        pip_size=pip,
         use_regime_filter=req.use_regime_filter,
         adx_period=req.adx_period,
         adx_min=req.adx_min,
@@ -217,6 +225,7 @@ def _to_liq_config(req: LiquiditySweepRequest) -> LiquiditySweepConfig:
         atr_period=req.atr_period,
         min_atr_pips=req.min_atr_pips,
         max_atr_pips=req.max_atr_pips,
+        require_equal_levels=req.require_equal_levels,
     )
 
 
@@ -753,6 +762,7 @@ def _month_breakdown_row(
     liq_cfg: LiquiditySweepConfig,
     ws_cfg: FondeoConfig,
     *,
+    symbol: str = "EURUSD",
     kind: str = "month",
 ) -> dict:
     chunk = bars[(bars["timestamp"] >= start) & (bars["timestamp"] <= end + " 23:59:59")].reset_index(drop=True)
@@ -765,7 +775,7 @@ def _month_breakdown_row(
             "bars": len(chunk),
             "error": "insufficient_data",
         }
-    result = run_liquidity_sweep(chunk, liq_cfg, symbol="EURUSD")
+    result = run_liquidity_sweep(chunk, liq_cfg, symbol=symbol)
     ev = evaluate_ws_classic(result, ws_cfg)
     checks = ev["checks"]
     fail_reasons = [
@@ -844,6 +854,7 @@ def liquidity_sweep_monthly_breakdown(req: LiquiditySweepMonthlyRequest) -> dict
             month_bars,
             liq_cfg,
             ws_cfg,
+            symbol=req.symbol,
         ))
 
     ytd_row = None
@@ -869,6 +880,7 @@ def liquidity_sweep_monthly_breakdown(req: LiquiditySweepMonthlyRequest) -> dict
                     ytd_bars,
                     liq_cfg,
                     ws_cfg,
+                    symbol=req.symbol,
                     kind="ytd",
                 )
 
@@ -882,6 +894,54 @@ def liquidity_sweep_monthly_breakdown(req: LiquiditySweepMonthlyRequest) -> dict
         "ytd": ytd_row,
         "strategy_config": liq_cfg.to_dict(),
     }
+
+
+@router.post("/liquidity-sweep/export-trades")
+def liquidity_sweep_export_trades(req: LiquiditySweepRequest) -> StreamingResponse:
+    """Exporta todos los trades del periodo a CSV (backtest manual)."""
+    _check_period_limit(req.period_start, req.period_end)
+    with _heavy_sim_slot():
+        liq_cfg = _to_liq_config(req)
+        bars = _load_liq_data(req)
+        if bars.empty:
+            raise HTTPException(404, "Sin barras en el rango seleccionado")
+        result = run_liquidity_sweep(bars, liq_cfg, symbol=req.symbol)
+
+    buf = io.StringIO()
+    writer = csv.writer(buf)
+    writer.writerow([
+        "timestamp",
+        "symbol",
+        "direction",
+        "entry_price",
+        "exit_price",
+        "stop_loss",
+        "take_profit",
+        "pnl",
+        "bankroll_after",
+        "is_winner",
+    ])
+    for t in result.trades:
+        extra = t.extra or {}
+        writer.writerow([
+            t.timestamp,
+            req.symbol,
+            t.direction,
+            round(t.entry_price, 5),
+            round(t.exit_price, 5),
+            extra.get("sl", ""),
+            extra.get("tp", ""),
+            round(t.pnl, 2),
+            round(t.bankroll_after, 2),
+            int(t.is_winner),
+        ])
+
+    filename = f"trades_{req.symbol}_{req.period_start}_{req.period_end}.csv"
+    return StreamingResponse(
+        iter([buf.getvalue()]),
+        media_type="text/csv; charset=utf-8",
+        headers={"Content-Disposition": f'attachment; filename="{filename}"'},
+    )
 
 
 @router.get("/liquidity-sweep/regime-compare")
@@ -900,6 +960,12 @@ async def upload_csv(
     symbol: str = "EURUSD",
     timeframe: str = "M5",
 ) -> dict:
+    sym = symbol.upper().strip()
+    if sym not in ForexDataAdapter.SYMBOL_MAP:
+        raise HTTPException(
+            400,
+            f"Símbolo no soportado: {symbol}. Usa: {', '.join(ForexDataAdapter.SYMBOL_MAP)}",
+        )
     content = await file.read()
     if not content:
         raise HTTPException(400, "Archivo vacio")
@@ -907,9 +973,13 @@ async def upload_csv(
         df = ForexDataAdapter.load_from_upload(content)
     except Exception as exc:
         raise HTTPException(400, f"CSV invalido: {exc}") from exc
-    path = ForexDataAdapter.save_cache(df, symbol, timeframe)
+    path = ForexDataAdapter.save_cache(df, sym, timeframe)
+    idx_path = ForexDataAdapter._ts_index_path(path)
+    if idx_path.is_file():
+        idx_path.unlink(missing_ok=True)
     return {
         "ok": True,
+        "symbol": sym,
         "path": str(path),
         "rows": len(df),
         "from": df["timestamp"].iloc[0].isoformat(),
