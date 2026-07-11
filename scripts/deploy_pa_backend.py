@@ -15,6 +15,9 @@ TOKEN = os.environ.get("PYTHONANYWHERE_API_TOKEN") or os.environ.get("PA_API_TOK
 
 FILES = [
     ROOT / "webapp/backend/api/fondeo_api.py",
+    ROOT / "webapp/backend/markets/forex.py",
+    ROOT / "webapp/backend/engine/indicators.py",
+    ROOT / "webapp/backend/engine/liquidity_sweep_engine.py",
     ROOT / "webapp/backend/main.py",
     ROOT / "webapp/backend/pa_main.py",
 ]
@@ -37,16 +40,19 @@ def upload_file(local: Path) -> None:
 
 
 def reload_webapp() -> None:
-    # La API lista webapps vacía en algunas cuentas; probar dominio directo.
-    candidates = [DOMAIN, f"www.{DOMAIN}"]
+    # v0 a veces devuelve 403/500; v1 funciona en cuentas nuevas de PA.
+    candidates = [
+        ("v1", f"https://www.pythonanywhere.com/api/v1/user/{USER}/websites/{DOMAIN}/reload/"),
+        ("v0", f"https://www.pythonanywhere.com/api/v0/user/{USER}/webapps/{DOMAIN}/reload/"),
+        ("v0-www", f"https://www.pythonanywhere.com/api/v0/user/{USER}/webapps/www.{DOMAIN}/reload/"),
+    ]
     last_err = ""
-    for domain in candidates:
-        url = f"https://www.pythonanywhere.com/api/v0/user/{USER}/webapps/{domain}/reload/"
+    for label, url in candidates:
         resp = requests.post(url, headers={"Authorization": f"Token {TOKEN}"}, timeout=60)
         if resp.status_code == 200:
-            print(f"  Reload OK ({domain})")
+            print(f"  Reload OK ({label})")
             return
-        last_err = f"{domain}: HTTP {resp.status_code} {resp.text[:120]}"
+        last_err = f"{label}: HTTP {resp.status_code} {resp.text[:120]}"
     print(f"  Aviso: reload API falló ({last_err}). Usa Web → Reload en el dashboard de PA.")
 
 
